@@ -1,0 +1,86 @@
+BreadcrumbList
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": ${siteUrl}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": `${siteUrl}/blog/`
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": title,
+      "item": fullCanonicalUrl,
+    }
+  ]
+}
+
+FAQPage
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What topics does this blog cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This blog is about technology, programming, best practices, and more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿How often new articles are published?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "New articles are published weekly."
+      }
+    }
+  ]
+}
+
+Person 
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Eloy Martínez Cuesta",
+  "url": "https://yoursite.com/about-me",
+  "sameAs": [
+    "https://www.linkedin.com/in/eloymartinezemc/",
+    "https://twitter.com/eloy_emc"
+  ]
+}
+
+WebSite
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Your WebSite",
+  "url": "https://yoursite.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://yoursite.com/buscar?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+
+ImageObject 
+
+{
+  "@context": "https://schema.org",
+  "@type": "ImageObject",
+  "url": "https://yoursite.com/image/image.jpg",
+  "width": 800,
+  "height": 600
+}
+
+

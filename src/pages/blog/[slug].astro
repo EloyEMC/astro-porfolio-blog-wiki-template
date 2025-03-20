@@ -1,9 +1,10 @@
 ---
 import { getCollection } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
+import { siteConfig } from '../../config'; // Importa siteConfig
 
 export async function getStaticPaths() {
-  const siteUrl = import.meta.env.SITE_URL; // URL base del sitio
+  const siteUrl = siteConfig.site; // Usa siteConfig.site
   const defaultImage = `${siteUrl}/default-image.png`; // Imagen por defecto para SEO
 
   const posts = await getCollection('blog');

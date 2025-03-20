@@ -1,0 +1,43 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { ClientRouter, slide } from "astro:transitions";
+import { GoogleAnalytics } from "astro-google-analytics";
+import { siteConfig } from "../config";
+import SEO from "@components/SEO.astro";
+import { type CollectionEntry } from 'astro:content';
+
+interface Props {
+  entry: CollectionEntry<'blog'>;
+  siteUrl: string;
+  defaultImage: string;
+  defaultLocale?: string;
+}
+
+const { entry, siteUrl, defaultImage, defaultLocale = "es_ES" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="dark">
+  <head>
+    <SEO entry={entry} siteUrl={siteUrl} defaultImage={defaultImage} defaultLocale={defaultLocale} />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    {
+      siteConfig.googleAnalysis && (
+        <GoogleAnalytics id={siteConfig.googleAnalysis} />
+      )
+    }
+    <ClientRouter />
+  </head>
+  <body class="min-h-screen bg-white dark:bg-gray-900">
+    <Header transition:persist />
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main class="py-12" transition:animate={slide({ duration: ".3s" })}>
+        <slot />
+      </main>
+      <Footer transition:persist />
+    </div>
+  </body>
+</html>

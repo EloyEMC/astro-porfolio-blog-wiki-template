@@ -1,0 +1,99 @@
+---
+import Icon from "./Icon.astro";
+import ThemeToggle from "./ThemeToggle.astro";
+import Search from "./Search.astro";
+import { siteConfig } from "../config";
+
+/** Elementos del menú principal */
+const navItems = [
+  { href: "/", text: "Home" },
+  { href: "/blog", text: "Blog" },
+  { href: "/tags", text: "Tags" },
+  { href: "/archive", text: "Archive" },
+];
+---
+
+<header class="py-4">
+  <!-- Logo y título (arriba en móvil) -->
+  <div class="flex justify-between items-center p-4 md:hidden">
+    <a
+      href="/"
+      class="text-3xl font-bold text-gray-900 dark:text-white flex items-center gap-0"
+    >
+      <Icon icon="terminal-window" />
+      <span>{siteConfig.title}</span>
+    </a>
+    <!-- Botón hamburguesa (solo en móvil) -->
+    <button
+      id="menu-button"
+      class="text-gray-700 dark:text-gray-100 text-4xl"
+      aria-label="Toggle Menu"
+    >
+      <Icon icon="list" />
+    </button>
+  </div>
+
+  <!-- Menú principal -->
+  <nav class="flex flex-col md:flex-row justify-between items-center p-4">
+    <!-- Logo (oculto en móvil) -->
+    <a
+      href="/"
+      class="hidden md:flex text-4xl font-bold text-indigo-950 dark:text-blue-600 items-center gap-2"
+    >
+      <Icon icon="terminal-window" />
+      <span class="text-black dark:text-gray-200 text-2xl">{siteConfig.title}</span>
+    </a>
+
+    <!-- Enlaces centrados en pantallas grandes -->
+    <div
+      id="mobile-menu"
+      class="hidden md:flex flex-col md:flex-row items-center gap-6 w-full md:w-auto"
+    >
+      <!-- Enlaces -->
+      <ul class="flex flex-col md:flex-row gap-6  md:absolute md:left-1/2 md:transform md:-translate-x-1/2 text-xl">
+        {
+          navItems.map(({ href, text }) => (
+            <li>
+              <a
+                href={href}
+                class="text-gray-700 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white"
+              >
+                {text}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <!-- Search + ThemeToggle (a la derecha en pantallas grandes) -->
+    <div class="flex items-center gap-8 mt-0 md:mt-0 ">
+      {siteConfig.search && <Search />}
+      <spam class="ml-4 text-3xl">
+      <ThemeToggle />
+      </spam>
+      
+    </div>
+    
+  </nav>
+</header>
+
+<script is:inline>
+  // Script para el menú móvil
+  const menuButton = document.getElementById('menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuButton?.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Cerrar menú al hacer clic fuera
+  document.addEventListener('click', (event) => {
+    if (
+      !mobileMenu.contains(event.target) &&
+      !menuButton.contains(event.target)
+    ) {
+      mobileMenu.classList.add('hidden');
+    }
+  });
+</script>

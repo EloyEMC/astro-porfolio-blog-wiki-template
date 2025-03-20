@@ -1,0 +1,76 @@
+---
+import { authors } from "../authors.js";
+
+const { author } = Astro.props;
+const authorData = authors[author] || null;
+---
+
+{authorData && (
+    <>
+      <section class="author-box border-2 rounded-lg p-6 flex gap-8 bg-neutral-900 text-white">
+            <img
+                src={authorData.image}
+                alt={authorData.name}
+                class="author-img rounded-full w-24 h-24 object-cover"
+                loading="lazy"
+                decoding="async"
+                
+            />
+            <div class="author-info">
+                <h3 class="text-xl font-semibold">{authorData.name}</h3>
+                <p class="text-sm text-gray-400">{authorData.bio}</p>
+                <div class="social-links mt-4 flex gap-3">
+                    {Object.entries(authorData.social).map(([network, url]) => (
+                        <a
+                            href={String(url)}
+                            class="text-blue-400 hover:text-blue-500 capitalize"
+                            target="_blank"
+                        >
+                            {network}
+                        </a>
+                    ))}
+                </div>
+            </div>
+        </section>
+         
+    </>
+    )}
+<style>
+  .author-box {
+	display: flex;
+	align-items: center;
+	background-color: #1a1a1a;
+	border-radius: 0.75rem;
+	padding: 1.5rem;
+	max-width: 100%;
+}
+
+.author-img {
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	border: 3px solid #fff;
+}
+
+.author-info h3 {
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.author-info p {
+	color: #d1d5db;
+	margin-top: 0.5rem;
+
+
+	.social-links a {
+		text-decoration: none;
+		margin-right: 0.5rem;
+		color: #58a6ff;
+	}
+
+	.social-links a:hover {
+		text-decoration: underline;
+	}
+}
+</style>

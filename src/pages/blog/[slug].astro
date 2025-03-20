@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 import { siteConfig } from '../../config'; // Importa siteConfig
 
+
 export async function getStaticPaths() {
   const siteUrl = siteConfig.site; // Usa siteConfig.site
   const defaultImage = `${siteUrl}/default-image.png`; // Imagen por defecto para SEO
@@ -11,13 +12,14 @@ export async function getStaticPaths() {
   return posts.map((post) => ({
     params: { slug: post.slug },
     props: { post, siteUrl, defaultImage },
+    author: post.data.author, // Pasa el autor desde el frontmatter
   }));
 }
 
-const { post, siteUrl, defaultImage } = Astro.props;
+const { post, siteUrl, defaultImage, author } = Astro.props;
 const { Content } = await post.render();
 ---
 
-<BlogPost post={post} siteUrl={siteUrl} defaultImage={defaultImage}>
+<BlogPost  post={post} siteUrl={siteUrl} defaultImage={defaultImage} author={author}>
   <Content />
 </BlogPost>

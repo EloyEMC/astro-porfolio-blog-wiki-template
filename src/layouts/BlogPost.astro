@@ -3,16 +3,18 @@ import PostBaseLayout from './PostBaseLayout.astro';
 import PostDate from '../components/PostDate.astro';
 import PostTags from '../components/PostTags.astro';
 import { type CollectionEntry } from 'astro:content';
+import AuthorBox from "@components/AuthorBox.astro";
 
 interface Props {
   post: CollectionEntry<'blog'>;
   siteUrl: string;
   defaultImage: string;
   defaultLocale?: string;
+  author?: string; // Añade author como una propiedad opcional
 }
 
 const { post, siteUrl, defaultImage, defaultLocale = "es_ES" } = Astro.props;
-const { title, description, date, tags, image, image_alt } = post.data;
+const { title, description, date, tags, image, image_alt, author  } = post.data;
 ---
 
 <PostBaseLayout siteUrl={siteUrl} defaultImage={defaultImage} defaultLocale={defaultLocale} entry={post}>
@@ -43,4 +45,5 @@ const { title, description, date, tags, image, image_alt } = post.data;
       <slot />
     </div>
   </article>
+  {author && <AuthorBox author={author} />} 
 </PostBaseLayout>

@@ -1,13 +1,18 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import { authors } from "../authors.js";
+
 
 interface Props {
   entry: CollectionEntry<'blog'>;
   siteUrl: string;
   defaultImage: string;
   defaultLocale?: string;
+  author?: string,
 }
 
+const { author } = Astro.props;
+const authorData = authors[author] || null;
 const { entry, siteUrl, defaultImage, defaultLocale = "es_ES" } = Astro.props;
 const { data, slug } = entry;
 
@@ -25,7 +30,6 @@ const {
   twitterCreator,
   twitterSite,
   canonicalUrl,
-  author,
   authorUrl,
   authorImage,
   ogType = "article",
@@ -35,7 +39,7 @@ const {
 } = data;
 
 // Generate the canonical URL
-const fullCanonicalUrl = canonicalUrl ||  Astro.url.href;
+const fullCanonicalUrl = canonicalUrl || Astro.url.href;
 
 // Generate the full image (using the site's base URL)
 const fullImageUrl = image ? `${siteUrl}${image}` : defaultImage;
@@ -99,10 +103,21 @@ const breadcrumbListJSON = {
       "@type": "ListItem",
       "position": 3,
       "name": title,
-      "item": fullCanonicalUrl,
+      "item": Astro.url.href,
     },
   ],
 };
+
+// Person (JSON-LD solo si authorData existe)
+const authorJSON = authorData ? {
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": authorData.name,
+  "url": authorData.social.website || "#", // URL del autor (opcional)
+  "image": authorData.image,
+  "sameAs": Object.values(authorData.social).filter(Boolean), // Filtra redes sociales válidas
+  "description": authorData.bio,
+} : null;
 ---
 
 <!-- Title -->
@@ -159,7 +174,10 @@ const breadcrumbListJSON = {
 <script type="application/ld+json" set:html={` ${JSON.stringify(schemaOrgJSON)} `}></script>
 <!-- BreadcrumbList (JSON-LD) -->
 <script type="application/ld+json" set:html={` ${JSON.stringify(breadcrumbListJSON)} `}></script>
-
+<!-- Author (JSON-LD) -->
+{authorJSON && (
+  <script type="application/ld+json" set:html={` ${JSON.stringify(authorJSON)} `}></script>
+)}
 
 <!-- Favicon (opcional) -->
 <link rel="icon" type="image/png" href={`${siteUrl}/favicon.png`} />

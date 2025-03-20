@@ -35,7 +35,7 @@ const {
 } = data;
 
 // Generar la URL canónica
-const fullCanonicalUrl = canonicalUrl || `${siteUrl}/blog/${slug}/`;
+const fullCanonicalUrl = canonicalUrl ||  Astro.url.href;
 
 // Generar la imagen completa (usando la URL base del sitio)
 const fullImageUrl = image ? `${siteUrl}${image}` : defaultImage;
@@ -130,9 +130,8 @@ const schemaOrgJSON = {
 ))}
 
 <!-- Schema.org (JSON-LD) -->
-<script type="application/ld+json">
-  {JSON.stringify(schemaOrgJSON)}
-</script>
+<script type="application/ld+json" set:html={` ${JSON.stringify(schemaOrgJSON)} `}></script>
+
 
 <!-- Favicon (opcional) -->
 <link rel="icon" type="image/png" href={`${siteUrl}/favicon.png`} />

@@ -21,7 +21,7 @@ export interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   lang:"es",
-  site: "https://eloy-blog.pages.dev/", // your site url
+  site: "https://eloy-blog.pages.dev", // your site url
   title: "Eloy Martínez Cuesta",
   slogan: "¿Quieres conocerme mejor?",
   image: "Image.webp",

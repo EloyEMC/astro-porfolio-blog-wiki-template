@@ -36,6 +36,7 @@ const {
   siteName,
   noindex,
   nofollow,
+  faqs,
 } = data;
 
 // Generate the canonical URL
@@ -118,6 +119,20 @@ const authorJSON = authorData ? {
   "sameAs": Object.values(authorData.social).filter(Boolean), // Filtra redes sociales válidas
   "description": authorData.bio,
 } : null;
+
+// Schema.org (JSON-LD) para FAQs (solo si hay FAQs)
+const faqJSON = faqs && faqs.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer,
+    },
+  })),
+} : null;
 ---
 
 <!-- Title -->
@@ -177,6 +192,10 @@ const authorJSON = authorData ? {
 <!-- Author (JSON-LD) -->
 {authorJSON && (
   <script type="application/ld+json" set:html={` ${JSON.stringify(authorJSON)} `}></script>
+)}
+<!-- FAQs (JSON-LD) -->
+{faqJSON && (
+  <script type="application/ld+json" set:html={` ${JSON.stringify(faqJSON)} `}></script>
 )}
 
 <!-- Favicon (opcional) -->

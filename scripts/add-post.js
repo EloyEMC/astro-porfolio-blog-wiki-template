@@ -18,6 +18,35 @@ description: Add your description here
 date: ${date}
 tags: []
 draft: true
+image: /activar-hormonas-felicidad-luz.webp
+image_alt: "Hormonas de la felicidad y la luz"
+twitter_img: /Eloy-martinez-cuesta-web.webp
+twitterCreator: "@eloy_emc"
+twitterSite: "@eloy_emc"
+canonicalUrl: "{Astro.url.href}" # Se generará dinámicamente en Astro
+keywords:
+  - iluminación
+  - marketing
+  - hormonas
+  - pscologia
+  - felicidad
+author: "eloymartinez"
+authorUrl: "https://www.linkedin.com/in/eloymartinezemc/"
+authorImage: "/eloy_feria_iluminacion.webp"
+publishedDate: "2023-08-25T00:00:00Z" # Fecha de publicación en formato ISO
+modifiedDate: "" # Puedes actualizarlo dinámicamente si es necesario
+ogType: "article" # Cambia a 'website' si es una página general
+locale: "es_ES"
+siteName: "Eloy Martínez Cuesta"
+noindex: false # Cambiar a true si no quieres que los buscadores indexen este post
+nofollow: false # Cambiar a true si no quieres que los enlaces del post sean seguidos por buscadores
+faqs:
+  - question: "¿Qué es Markdown?"
+    answer: "Markdown es un lenguaje de marcado ligero que se utiliza para formatear texto."
+  - question: "¿Cómo se usa Markdown?"
+    answer: "Puedes usar Markdown para crear documentos, páginas web o incluso correos electrónicos con formato."
+  - question: "¿Qué es Schema Markup?"
+    answer: "Schema Markup es un vocabulario estructurado que se agrega al HTML para ayudar a los motores de búsqueda a entender el contenido de una página."
 ---
 
 Write your content here...

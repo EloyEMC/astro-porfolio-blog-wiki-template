@@ -23,7 +23,15 @@ const blog = defineCollection({
 		siteName: z.string().optional(), // Campo opcional
 		noindex: z.boolean().optional(), // Campo opcional
 		nofollow: z.boolean().optional(), // Campo opcional
-    
+    // Nuevo campo para FAQs
+    faqs: z
+      .array(
+        z.object({
+          question: z.string(),
+          answer: z.string(),
+        })
+      )
+      .optional(), // Campo opcional
   }),
 });
 

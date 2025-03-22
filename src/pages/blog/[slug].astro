@@ -23,3 +23,51 @@ const { Content } = await post.render();
 <BlogPost  post={post} siteUrl={siteUrl} defaultImage={defaultImage} author={author}>
   <Content />
 </BlogPost>
+
+<style>
+  /* Estilos para la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+/* Estilos para las celdas de encabezado y datos */
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0; /* Borde gris claro */
+}
+
+/* Estilos para las filas */
+tr {
+  transition: background-color 0.2s ease; /* Transición suave para el hover */
+}
+
+/* Estilos para el encabezado */
+th {
+  background-color: #f7fafc; /* Fondo gris claro */
+  font-weight: 600;
+  color: #1a202c; /* Texto oscuro */
+}
+
+/* Estilos para las filas en el tema oscuro */
+.dark th {
+  background-color: #2d3748; /* Fondo gris oscuro */
+  color: #ffffff; /* Texto blanco */
+}
+
+.dark td {
+  border-bottom: 1px solid #4a5568; /* Borde gris oscuro */
+  color: #cbd5e0; /* Texto gris claro */
+}
+
+/* Efecto hover para las filas */
+tr:hover {
+  background-color: #edf2f7; /* Fondo gris claro al hacer hover */
+}
+
+.dark tr:hover {
+  background-color: #4a5568; /* Fondo gris oscuro al hacer hover */
+}
+</style>

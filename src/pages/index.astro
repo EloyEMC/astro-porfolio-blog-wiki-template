@@ -8,11 +8,19 @@ import HomeBaseLayout from "../layouts/HomeBaseLayout.astro";
 import { getAllTags, getPostsByTag } from '../utils/posts';
 
 
+interface Props {
+  siteUrl: string;
+  defaultImage: string;
+  title?: string; // Hacerla opcional si no siempre es necesaria
+  
+}
+
 const posts = await getCollection("blog");
 
 // Configure homepage post filtering
 const homePagePosts = filterPosts(posts, {
   ...siteConfig.homepage,
+  
 });
 
 const tags = getAllTags(posts);
@@ -24,9 +32,11 @@ const tagCounts = tags.map(tag => ({
 const projects = posts
    .slice(0, 4);
    
----
+--- 
 
-<HomeBaseLayout title={siteConfig.title}>
+<HomeBaseLayout  siteUrl="https://tusitio.com"
+defaultImage="https://tusitio.com/imagen-por-defecto.jpg"
+>
   <main
     class="relative w-full h-auto flex flex-col items-center justify-center p-4"
   >
@@ -48,23 +58,21 @@ const projects = posts
       >
         <h2 class="text-2xl font-bold text-gray-900 dark:text-white p-4">Sobre Mi:</h2>
         <p class="font-bold text-gray-900 dark:text-gray-400 p-4">
-          Me llamo Eloy pero mis amigos "no me llaman". Empecé en esto de la tecnología cuando existian los modems de 56K. Actualmete soy "experto" en nuevas tecnológias y sistemas IT.
-        </p>
-        <p class="font-bold text-gray-900 dark:text-gray-300 p-4">
-          Algunos de mis éxitos incluyen el aplicar una de mis pasiones, la iluminación, en grandes proyectos de la mano de los mejores arquitectos e ingenieros.
-        </p>
-        <p class="font-bold text-gray-900 dark:text-gray-400 p-4">
-          También tengo una vertiente de divulgación, pronto podrás disfrutar compartiendo con vosotros mis nuevos proyectos, donde aprenderemos juntos.
-        </p>
-        <p class="font-bold text-gray-900 dark:text-gray-300 p-4">
-           Espero que encuentres en este sitio web la información que necesitas para mejorar en tu proyecto, en tus webs o para saber como utilizar la IA.
-        </p>
-        <p class="font-bold text-gray-900 dark:text-amber-600 p-4">
-          P.D. : Si eres uno de esos "amigos" llama que es gratis.
+          ¡Hola! Soy Eloy, un apasionado de la tecnología desde que los módems de 56K sonaban como una banda de robots intentando ganar un Grammy. Desde aquellos días de conexiones que se cortaban si alguien llamaba por teléfono, he evolucionado (casi tanto como los sistemas operativos) y ahora me considero un "experto" en nuevas tecnologías y sistemas IT.
         </p>
         <p class="font-bold text-gray-900 dark:text-amber-300 p-4">
-          Defición de "experto": Esa persona que utiliza algo sin tener que llamar a otra.
+          Defición de "experto": Esa persona que utiliza algo sin tener que llamar a otra (aunque a veces Google sigue siendo mi mejor amigo).
         </p>
+        <p class="font-bold text-gray-900 dark:text-gray-400 p-4">
+          Entre mis logros más brillantes (nunca mejor dicho) está mi pasión por la iluminación. Sí, he iluminado grandes proyectos junto a arquitectos e ingenieros que saben más de estructuras que yo de memes. Si alguna vez has visto un edificio que parece sacado de una película de ciencia ficción, es probable que yo haya estado ahí, con mis cables y mis luces, haciendo magia.
+        </p>
+        <p class="font-bold text-gray-900 dark:text-gray-300 p-4">
+          Pero no todo es tecnología y luces brillantes. También tengo mi lado divulgador. Pronto podrás sumergirte en mis nuevos proyectos, donde aprenderemos juntos cosas que ni sabías que querías saber. Desde cómo domar una IA hasta cómo hacer que tu web no parezca de los 90.
+        </p>
+        <p class="font-bold text-gray-900 dark:text-gray-400 p-4">
+          En este sitio web va a encontrar la inspiración, la información o simplemente el entretenimiento que necesitas para darle un giro a tus proyectos. Y si no lo encuentras, bueno, siempre puedes contactarme. ¡Estoy aquí para ayudarte!
+        </p>
+        
         <div class="galeria p-8">
           <a href="/iluminacion" class="block">
             <img
@@ -129,7 +137,7 @@ const projects = posts
       <div
         class="card col-span-1 sm:col-span-2 row-span-2 sm:row-span-2 col-start-1 sm:col-start-3 row-start-1 sm:row-start-1 mb-4 p-4 bg-gray-50 dark:bg-gray-800/60 rounded-xl shadow-md hover:shadow-xl dark:shadow-gray-700/30 dark:hover:shadow-2xl dark:hover:shadow-primary-500/20 border border-gray-700 dark:border-gray-500/50 transition-all duration-200"
       >
-        <h1 class="text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+        <h1 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white">
           {siteConfig.slogan}
         </h1>
         <p class="text-xl mb-8 text-gray-600 dark:text-gray-300">

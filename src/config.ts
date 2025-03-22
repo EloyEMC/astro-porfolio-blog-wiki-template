@@ -23,10 +23,10 @@ export const siteConfig: SiteConfig = {
   lang:"es",
   site: "https://eloy-blog.pages.dev", // your site url
   title: "Eloy Martínez Cuesta",
-  slogan: "Eloy Martinez Cuesta y compañero de aprendizaje.",
+  slogan: "Innovación, Iluminación y Estrategia Digital",
   image: "logo-eloy-martinez-cuesta-marketing-digital-blanco.png",
   image_alt: "Descripción de la imagen",
-  description: "Bienvenido a EMC, donde combinamos nuestra pasión por la iluminación arquitectónica con estrategias efectivas de marketing digital y SEO.",
+  description: "Bienvenido a EMC: Donde la luz de la creatividad se encuentra con el poder del marketing digital y el SEO",
   social: {
     github: "https://github.com/EloyEMC", // leave empty if you don't want to show the github
     linkedin: "https://www.linkedin.com/in/eloymartinezemc/", // leave empty if you don't want to show the linkedin

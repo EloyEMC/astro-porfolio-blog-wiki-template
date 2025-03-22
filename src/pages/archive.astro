@@ -4,6 +4,12 @@ import { getCollection } from 'astro:content';
 import { filterPublishedPosts, sortPostsByDate } from '../utils/posts';
 import PostDate from '../components/PostDate.astro';
 
+interface Props {
+  siteUrl: string;         // URL del sitio (obligatorio)
+  defaultImage: string;    // Imagen por defecto (obligatorio)
+  title?: string;         // Título (opcional)
+  
+}
 const posts = await getCollection('blog');
 const publishedPosts = filterPublishedPosts(posts);
 const sortedPosts = sortPostsByDate(publishedPosts);
@@ -19,9 +25,14 @@ const postsByYear = sortedPosts.reduce((acc, post) => {
 }, {} as Record<number, typeof sortedPosts>);
 
 const years = Object.keys(postsByYear).sort((a, b) => Number(b) - Number(a));
+
 ---
 
-<BaseLayout title="Archive">
+<BaseLayout
+  siteUrl="https://tusitio.com"
+  defaultImage="https://tusitio.com/imagen-por-defecto.jpg"
+  title="Archive"
+>
   <h1 class="text-4xl font-bold mb-8 text-gray-900 dark:text-white">Archive</h1>
   
   {years.map(year => (

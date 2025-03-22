@@ -4,23 +4,44 @@ import Footer from '../components/Footer.astro'
 import { ClientRouter, slide } from 'astro:transitions'
 import { GoogleAnalytics } from 'astro-google-analytics'
 import { siteConfig } from '../config'
+import SEOPage from '@components/SEOPage.astro';
 
 interface Props {
-  title: string
-  description?: string
-  lang?: string
+  site?: string;
+  siteUrl: string;
+  defaultImage: string;
+  defaultLocale?: string;
+  author?: string;
+  title?: string;
+  
 }
 
-const { title, description, lang } = Astro.props
+// Definir las constantes para el SEO
+const { title = "Eloy Martínez Cuesta" } = Astro.props;
+const description = "La web de Eloy Martínez Cuesta, donde encontrarás novedades IA, iluminación, marketing, SEO, dev...";
+const slug = "";
+const { siteUrl, defaultImage, defaultLocale = "es_ES", } = Astro.props;
+const { author } = Astro.props;
+const authorData = author || null;
+
 ---
 
 <!doctype html>
-<html lang={siteConfig.lang} class="dark">
+<html lang="es" class="dark">
   <head>
+    <!-- Componente SEO -->
+    <SEOPage
+      title={title}
+      description={description}
+      siteUrl={siteUrl}
+      defaultImage={defaultImage}
+      slug={slug}
+      
+    />
+
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
-    <title>{title}</title>
+    <title>{title || "Eloy Martínez Cuesta"}</title>
     <link rel="icon" type="image/svg+xml" href="eloy-ico.svg" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     {siteConfig.googleAnalysis && <GoogleAnalytics id={siteConfig.googleAnalysis} />}
@@ -32,7 +53,7 @@ const { title, description, lang } = Astro.props
       <main class="py-12" transition:animate={slide({ duration: '.3s' })}>
         <slot />
       </main>
-      <Footer transition:persist />
     </div>
+    <Footer transition:persist />
   </body>
 </html>

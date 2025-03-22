@@ -3,12 +3,11 @@ title: ¿Qués es la Luz?
 image:  /la-luz-y-sus-propiedades.webp
 image_alt: "Pilares de Luz de distintas temperaturas se elvan hacia el cielo."
 description: "La luz, algo que hace visible las coas, per ¿Qué es la Luz? La luz es una onda."
-date: 2024-03-21
+date: 2025-03-21
 tags: [Luz, física, Espectro electromagnético]
 twitter_img: /Eloy-martinez-cuesta-web.webp
 twitterCreator: "@eloy_emc"
 twitterSite: "@eloy_emc"
-canonicalUrl: "{Astro.url.href}" # Se generará dinámicamente en Astro
 keywords:
   - iluminación
   - aprender
@@ -25,6 +24,25 @@ locale: "es_ES"
 siteName: "Eloy Martínez Cuesta"
 noindex: false # Cambiar a true si no quieres que los buscadores indexen este post
 nofollow: false # Cambiar a true si no quieres que los enlaces del post sean seguidos por buscadores
+FAQs:
+  - question: "¿Qué es la luz?"
+    answer: "La luz es una onda de energía y parte del espectro electromagnético, específicamente la radiación que puede ser percibida por el ojo humano."
+  
+  - question: "¿Cuáles son las propiedades más importantes de la luz?"
+    answer: "Las propiedades más importantes incluyen la propagación recta, la refracción, la reflexión y la visibilidad, que permiten al ojo humano ver formas y colores."
+  
+  - question: "¿Qué es la refracción de la luz?"
+    answer: "La refracción ocurre cuando la luz cambia de dirección al pasar de un medio a otro debido a un cambio en su velocidad. Un ejemplo común es el arco iris o la apariencia de un palo roto al ser sumergido en agua."
+  
+  - question: "¿Qué es la reflexión de la luz?"
+    answer: "La reflexión ocurre cuando la luz incide en una superficie y rebota en todas las direcciones. Ejemplos incluyen espejos y superficies metálicas pulidas."
+  
+  - question: "¿Qué es el espectro electromagnético?"
+    answer: "El espectro electromagnético es el conjunto de todas las longitudes de onda de radiación, que incluye desde la luz visible hasta otras formas de radiación como las ondas de radio o rayos X."
+  
+  - question: "¿Cómo se utiliza la óptica geométrica en el diseño lumínico?"
+    answer: "La óptica geométrica se basa en el principio de que la luz se propaga en línea recta, lo que es clave para calcular y predecir la posición de la luz, utilizando herramientas como Dialux o Relux."
+
 ---
 
 ### Contenido
@@ -37,6 +55,7 @@ nofollow: false # Cambiar a true si no quieres que los enlaces del post sean seg
     - [Reflexión](#reflexión)
     - [Propagación de la luz](#propagación-de-la-luz)
   - [Espectro electromagnético](#espectro-electromagnético)
+  - [FAQs sobre "¿Qué es la Luz?](#faqs-sobre-qué-es-la-luz)
 
 
 # Qué es la luz para el diseño de proyectos lumínicos
@@ -45,7 +64,7 @@ La humanidad siempre ha estado fascinada por el fenómeno de la luz. Desde Newto
 
 Por ejemplo, Newton pensaba que la luz estaba formada por partículas, pero hoy sabemos que esa teoría no es válida. ¿Por qué? Porque si dos haces de luz chocan, sus partículas no se dispersan en direcciones distintas.
 
-![Qué es la luz](/imageswebp/que-es-la-luz.webp)
+![Qué es la luz](/que-es-la-luz.webp)
 
 ## Definición de la luz
 
@@ -73,8 +92,8 @@ Cuando la luz pasa a través de un prisma con caras no paralelas, se produce la 
 
 Ejemplos comunes de refracción incluyen la ruptura aparente de un palo al introducirlo en agua o el arco iris que se forma después de la lluvia.
 
-![Refracción](/imageswebp/que-es-la-luz-propiedad-de-Refracion-224x300.webp)  
-![Refracción](/imageswebp/Que-es-la-luz-caracteristicas-refracion.webp)
+![Refracción](/que-es-la-luz-propiedad-de-Refracion-224x300.webp)  
+![Refracción](/Que-es-la-luz-caracteristicas-refracion.webp)
 
 #### También te puede interesar…
 
@@ -94,14 +113,39 @@ Una de las propiedades más evidentes de la luz es que **se propaga en línea re
 
 La óptica geométrica se basa en esta premisa para predecir la posición de la luz a lo largo de su transmisión. Este principio es fundamental en el cálculo de **curvas fotométricas**, las cuales se procesan mediante programas como **Dialux** o **Relux** para **calcular y renderizar** los resultados lumínicos.
 
-![Curva fotométrica](/imageswebp/que-es-la-luz-curva-fotometrica.webp)  
-![Dialux](/imageswebp/Que-es-la-luz-Dialux.webp)
+![Curva fotométrica](/que-es-la-luz-curva-fotometrica.webp)  
+![Dialux](/Que-es-la-luz-Dialux.webp)
 
 ## Espectro electromagnético
 
-![Espectro electromagnético](/imageswebp/Qu-es-la-luz-espectro-electromagnetico-1.webp)
+![Espectro electromagnético](/Qu-es-la-luz-espectro-electromagnetico-1.webp)
 
 El espectro electromagnético está constituido por todos los niveles de energía que la luz puede tener. Esto está directamente relacionado con la longitud de onda de la luz, que varía desde miles de kilómetros hasta femtómetros. Este espectro se representa comúnmente en una escala logarítmica para abarcar todas las posibles longitudes de onda.
 
 Este apartado es fundamental para el trabajo de los diseñadores de iluminación y se desarrollará más a fondo en un post complementario.
 
+## FAQs sobre "¿Qué es la Luz?
+
+- ¿Qué es la luz?
+
+La luz es una onda de energía y parte del espectro electromagnético, específicamente la radiación que puede ser percibida por el ojo humano.
+
+- ¿Cuáles son las propiedades más importantes de la luz? 
+
+Las propiedades más importantes incluyen la propagación recta, la refracción, la reflexión y la visibilidad, que permiten al ojo humano ver formas y colores.
+
+- ¿Qué es la refracción de la luz? 
+
+La refracción ocurre cuando la luz cambia de dirección al pasar de un medio a otro debido a un cambio en su velocidad. Un ejemplo común es el arco iris o la apariencia de un palo roto al ser sumergido en agua.
+
+- ¿Qué es la reflexión de la luz? 
+
+La reflexión ocurre cuando la luz incide en una superficie y rebota en todas las direcciones. Ejemplos incluyen espejos y superficies metálicas pulidas.
+
+- ¿Qué es el espectro electromagnético? 
+
+El espectro electromagnético es el conjunto de todas las longitudes de onda de radiación, que incluye desde la luz visible hasta otras formas de radiación como las ondas de radio o rayos X.
+
+- ¿Cómo se utiliza la óptica geométrica en el diseño lumínico? 
+
+La óptica geométrica se basa en el principio de que la luz se propaga en línea recta, lo que es clave para calcular y predecir la posición de la luz, utilizando herramientas como Dialux o Relux.

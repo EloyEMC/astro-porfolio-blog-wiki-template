@@ -1,38 +1,34 @@
-# Astro Zen Blog
+# Astro Eloy Blog
 
-<img width="1523" alt="ZEN-HOME" src="https://github.com/user-attachments/assets/3d8c3250-ec82-4cdf-9e84-ce4fd069b040" />
+
 
 A minimal, responsive, and SEO-friendly blog template built with Astro. Features clean design, dark mode support, and markdown-based content management.
 
-live demo: [Yujian's blog](https://blog.larryxue.dev/)
+
 
 If you find this project helpful, please consider giving it a star ⭐️.
 
 ## Awesome Blogs built on top of this template
 
-> For who want to build their own blog, I strongly recommend you to fork this repo and add your own features. This repo is a simple and clean blog template.
-
-- [Yujian's blog](https://blog.larryxue.dev/)
-- [Okaryo's blog](https://blog.okaryo.studio/20241228-migrate-blog-from-gatsby-to-astro/)
-
-
-[中文Readme](./docs/README_CN.md)
 
 ## Table of Contents
 
-- [Features](#features)
-- [Installation](#installation)
-- [Configuration](#configuration)
-  - [Site Settings](#site-settings)
-  - [HomePage Posts Filter](#homepage-posts-filter)
-  - [Theme](#theme)
-- [Writing Content](#writing-content)
-- [Creating New Posts](#creating-new-posts)
-- [Build and Deploy](#build-and-deploy)
-- [Project Structure](#project-structure)
-- [Features Roadmap](#features-roadmap)
-- [Contributing](#contributing)
-- [License](#license)
+- [Astro Eloy Blog](#astro-eloy-blog)
+  - [Awesome Blogs built on top of this template](#awesome-blogs-built-on-top-of-this-template)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Installation](#installation)
+  - [Configuration](#configuration)
+    - [Site Settings](#site-settings)
+    - [HomePage Posts Filter](#homepage-posts-filter)
+    - [Theme](#theme)
+  - [Writing Content](#writing-content)
+  - [Creating New Posts](#creating-new-posts)
+  - [Build and Deploy](#build-and-deploy)
+  - [Project Structure](#project-structure)
+  - [Features Roadmap](#features-roadmap)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ## Features
 
@@ -152,7 +148,7 @@ You can customize the template of the new post in `scripts/new-post.js`.
 ## Project Structure
 
 ```
-astro-zen-blog/
+eloy-blog/
 ├── src/
 │   ├── content/
 │   │   └── blog/    # Blog posts

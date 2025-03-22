@@ -1,14 +1,13 @@
 ---
 title: ¿Qué es la temperatura de color?
-image: /imageswebp/que-es-la-temperatura-de-color.webp
+image: /que-es-la-temperatura-de-color.webp
 image_alt: "Que es la temperatura de colo de la luz"
 description: Descubre los secretos de la luz, sus propiedades físicas, cómo la percibimos y su impacto en nuestra vida diaria. Aprende sobre la temperatura de color, el espectro electromagnético y cómo la luz influye en nuestro bienestar.
 date: 2025-03-21
 tags: [Luz, Temperatura de color, Espectro electromagnético, Ritmos circadianos, Iluminación LED]
-twitter_img: "/imageswebp/que-es-la-temperatura-de-color.webp"
+twitter_img: "imageswebp/que-es-la-temperatura-de-color.webp"
 twitterCreator: "@eloy_emc"
 twitterSite: "@eloy_emc"
-canonicalUrl: "{Astro.url.href}" # Se generará dinámicamente en Astro
 keywords:
   - iluminación
   - color
@@ -24,6 +23,40 @@ locale: "es_ES"
 siteName: "Eloy Martínez Cuesta"
 noindex: false # Cambiar a true si no quieres que los buscadores indexen este post
 nofollow: false # Cambiar a true si no quieres que los enlaces del post sean seguidos por buscadores
+faqs:
+  - question: "¿Qué son los ritmos circadianos?"
+    answer: "Los ritmos circadianos regulan los cambios en las características físicas y mentales que ocurren en el transcurso de un día. La palabra circadiano significa «alrededor de un día». El reloj biológico, ubicado en el hipotálamo, controla la mayoría de estos ritmos y puede ser afectado por la temperatura de color de la luz artificial."
+
+  - question: "¿Qué es la temperatura de color en la luz?"
+    answer: "La temperatura de color en la luz nos dice si la luz se ve más azulada o amarillenta. Se mide en Kelvin (K): valores altos indican una luz más azulada, mientras que valores bajos indican una luz más cálida y amarillenta."
+
+  - question: "¿Cómo sabemos si una luz es fría o cálida?"
+    answer: "Las luces frías tienen tonos azulados, similares a la luz del cielo en días nublados. Las luces cálidas son más amarillentas y acogedoras, como la luz de una vela."
+
+  - question: "¿Cómo vemos los colores?"
+    answer: "Nuestros ojos tienen células llamadas conos, que trabajan con los colores rojo, verde y azul. Cuando la luz entra en los ojos, estos conos combinan los colores para que podamos ver una amplia gama de tonalidades."
+
+  - question: "¿Por qué las bombillas tienen diferentes colores de luz?"
+    answer: "Las bombillas varían en color debido a su temperatura de color. Las incandescentes emiten luz cálida debido a su filamento caliente, mientras que las LED pueden emitir luz fría o cálida según su diseño."
+
+  - question: "¿Qué temperatura de color tienen las luces LED?"
+    answer: "Las luces LED pueden tener distintas temperaturas de color. Algunas son muy blancas, como la luz del día (6000K), mientras que otras son más cálidas y amarillas (3000K - 4000K)."
+
+  - question: "¿Cómo nos afecta la luz fría y la luz cálida?"
+    answer: "La luz fría nos ayuda a estar más alerta y despiertos, ideal para la mañana. La luz cálida es relajante y perfecta para la noche o para crear ambientes acogedores."
+
+  - question: "¿Qué es una bombilla incandescente?"
+    answer: "Es un tipo de bombilla con un filamento de tungsteno que brilla al calentarse con electricidad, emitiendo una luz cálida y suave."
+
+  - question: "¿Cómo el cerebro ve los colores?"
+    answer: "Nuestros ojos tienen conos que captan los colores rojo, verde y azul. Cuando la luz impacta estos conos, envían señales al cerebro, que las mezcla para generar la percepción del color."
+
+  - question: "¿Cuál es la temperatura de color de la luz del sol?"
+    answer: "La luz del sol tiene una temperatura de color cercana a los 5500K, proporcionando una iluminación natural equilibrada."
+
+  - question: "¿Cómo puedo elegir la mejor luz para mi habitación?"
+    answer: "Depende del ambiente que quieras crear. Para energía y concentración, elige una luz más fría. Para relajarte, una luz cálida es mejor. ¡Prueba distintas opciones y elige la que más te guste!"
+
 ---
 
 Hoy nos adentraremos en un emocionante viaje para descubrir [los secretos detrás de la iluminación técnica](https://eloymartinezcuesta.com/iluminacion/) y los [proyectos lumínicos](https://eloymartinezcuesta.com/proyectos-iluminacion/). Vamos a aprender sobre la temperatura de color, las propiedades físicas de la luz y cómo nuestros cerebros perciben los maravillosos colores que nos rodean.
@@ -69,7 +102,7 @@ Para empezar vamos a acotar la definición sobre qué es la temperatura de color
 
 La **temperatura de color de una fuente de luz** se define comparando su color dentro del espectro luminoso con el de la luz que emitiría un cuerpo negro calentado a una temperatura determinada. Por este motivo esta temperatura de color se expresa en **Kelvin**, a pesar de no reflejar expresamente una medida de temperatura, por ser la misma solo una medida.
 
-![Qué es la temperatura de color, ](/imageswebp/iluminacion-temperatura-de-color.webp)
+![Qué es la temperatura de color](/iluminacion-temperatura-de-color.webp)
 
 ### Luz Fría y Luz Cálida
 
@@ -93,7 +126,7 @@ A bajas temperaturas el cuerpo emite en onda larga, primero sin emisión de luz 
 
 Si aumenta la temperatura aumenta la emisión en violeta y ultravioleta, virando el color hacia el azul.
 
-![Espectro electromagnético](/imageswebp/Qu-es-la-luz-espectro-electromagnetico.webp)
+![Espectro electromagnético](/Qu-es-la-luz-espectro-electromagnetico.webp)
 
 ### Cómo Vemos los Colores
 
@@ -124,7 +157,7 @@ Un cuerpo negro a temperatura ambiente (unos 300 K) emite radiación de longitud
 
 A partir de cierto momento, irá sumando los colores del espectro en su orden (rojo, anaranjado, amarillo, verde, azul y violeta), sumando colores. Hacia una temperatura de 6000 K (aproximadamente la temperatura superficial del sol), emitirá en todo el espectro visible, consiguiendo luz blanca, y a partir de ese momento irá sumando radiación ultravioleta.
 
-![Temperatura de color](/imageswebp/que-es-temperatura-de-color-tabla.webp)
+![Temperatura de color](/que-es-temperatura-de-color-tabla.webp)
 
 ## El Gran Secreto del Cerebro
 
@@ -134,10 +167,10 @@ Ahora, hablemos de cómo el cerebro juega su papel. Los conos en nuestros ojos m
 
 Hablemos de las bombillas mágicas que nos dan luz en nuestras casas. Las bombillas incandescentes son como antorchas modernas. Contienen un hilo muy delgadito llamado tungsteno, y cuando pasa electricidad por él, ¡se pone muy caliente y brilla como una estrella! Esto era lo que nos iluminaba antes de la llegada del LED.
 
-[![Imagenes de los diarios de la epoca hablando de las primeras bombillas de Edison](/imageswebp/edison_2.webp)](/imageswebp/edison_2.webp)
-[![Imagenes de los diarios de la epoca hablando de las primeras bombillas de Edison](/imageswebp/edison_1.webp)](/imageswebp/edison_1.webp)
-[![Imagenes de los diarios de la epoca hablando de las primeras bombillas de Edison](/imageswebp/edison_3.webp)](/imageswebp/edison_3.webp)
-[![Imagenes de los diarios de la epoca hablando de las primeras bombillas de Edison](/imageswebp/edison_4.webp)](/imageswebp/edison_4.webp)
+[![Imagenes de los diarios de la epoca hablando de las primeras bombillas de Edison](/edison_2.webp)](/edison_2.webp)
+[![Imagenes de los diarios de la epoca hablando de las primeras bombillas de Edison](/edison_1.webp)](/edison_1.webp)
+[![Imagenes de los diarios de la epoca hablando de las primeras bombillas de Edison](/edison_3.webp)](/edison_3.webp)
+[![Imagenes de los diarios de la epoca hablando de las primeras bombillas de Edison](/edison_4.webp)](/edison_4.webp)
 
 La temperatura de color de estas bombillas es alrededor de 2700K. Es como una luz suave y amarillita, ¡como tener un cuento cálido antes de dormir!
 
@@ -191,7 +224,5 @@ La luz del sol tiene una temperatura de color alrededor de 5500K, lo que la hace
 
 ### **¿Cómo puedo elegir la mejor luz para mi habitación?**
 
-Depende de lo que quieras sentir en tu habitación. Si quieres energía, elige
-una luz más fría. Si buscas relajarte, una luz más cálida es genial. ¡Puedes
-probar diferentes luces y ver cuál te gusta más!
+Depende de lo que quieras sentir en tu habitación. Si quieres energía, elige una luz más fría. Si buscas relajarte, una luz más cálida es genial. ¡Puedes probar diferentes luces y ver cuál te gusta más!
 

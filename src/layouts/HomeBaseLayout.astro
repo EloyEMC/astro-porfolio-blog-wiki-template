@@ -4,24 +4,31 @@ import Footer from '../components/Footer.astro'
 import { ClientRouter, slide } from 'astro:transitions'
 import { GoogleAnalytics } from 'astro-google-analytics'
 import { siteConfig } from '../config'
+import SEOPage from '@components/SEOPage.astro'
 
-interface Props {
-  title: string
-  description?: string
-  lang?: string
-}
-
-const { title, description = 'A minimal blog focused on excellent reading experience', lang } = Astro.props
+const title = "Eloy Martínez Cuesta";
+const description = "La web de Eloy Martínez Cuesta, donde encontrarás novedades IA, iluminación, marketing, SEO, dev...";
+const siteUrl = "https://eloymartínezcuesta.com";
+const defaultImage = "/Eloy-martinez-cuesta-web.webp";
+const slug = "about";
+ 
 ---
 
 <!doctype html>
-<html lang={siteConfig.lang} class="dark">
+<html lang="es" class="dark">
   <head>
+    <SEOPage
+      title={title}
+      description={description}
+      siteUrl={siteUrl}
+      defaultImage={defaultImage}
+      slug={slug}
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{title}</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.webp" />
+    <link rel="icon" type="image/svg+xml" href="./public/favicon.ico" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     {siteConfig.googleAnalysis && <GoogleAnalytics id={siteConfig.googleAnalysis} />}
     <ClientRouter />

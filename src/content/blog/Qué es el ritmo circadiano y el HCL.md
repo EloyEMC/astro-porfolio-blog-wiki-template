@@ -3,12 +3,11 @@ title: ¿Qué es el Ritmo Circadiano?
 image: /activar-hormonas-felicidad-luz.webp
 image_alt: "Hormonas de la felicidad y la luz"
 description: "Welcome to my blog! This is my first post."
-date: 2024-03-21
+date: 2025-03-21
 tags: [welcome, first-post]
 twitter_img: /Eloy-martinez-cuesta-web.webp
 twitterCreator: "@eloy_emc"
 twitterSite: "@eloy_emc"
-canonicalUrl: "{Astro.url.href}" # Se generará dinámicamente en Astro
 keywords:
   - iluminación
   - marketing
@@ -46,7 +45,7 @@ nofollow: false # Cambiar a true si no quieres que los enlaces del post sean seg
 
 ## ¿Qué es el ritmo circadiano?
 
-![Ritmo circadiano de 24h](/imageswebp/ritmo-circadiano-hcl-iluminacion-led.webp)
+![Ritmo circadiano de 24h](/ritmo-circadiano-hcl-iluminacion-led.webp)
 
 Los denominados biológicamente **ritmos circadianos** son cambios físicos, mentales y conductuales que siguen un ciclo de un día, en 24 horas. Estos procesos biológicos naturales responden, principalmente, **a la presencia de la luz y la oscuridad**, y afectan a la mayoría de seres vivos, incluidos los animales, las plantas y los microbios. La rama de la biología que los estudia es la cronobiología.
 
@@ -64,9 +63,11 @@ Los ritmos circadianos pueden influir en las funciones importantes del cuerpo, c
 
 ## ¿Cómo el ciclo circadiano mejora tu salud?
 
-<a href="https://www.youtube.com/watch?v=qOXQgyjRm0I" target="_blank" class="video-container">
-  <img src="https://img.youtube.com/vi/qOXQgyjRm0I/0.jpg" alt="Video sobre el ritmo circadiano">
-    <div class="overlay">▶️ VER VIDEO EN YOUTUBE</div>
+<a href="https://youtu.be/qOXQgyjRm0I" target="_blank" class="inline-block relative w-[100%] h-auto border-4 border-gray-300 rounded-lg overflow-hidden">
+  <img src="https://img.youtube.com/vi/qOXQgyjRm0I/0.jpg" alt="Video sobre las hormonas de la felicidad" class="w-full h-full block aspect-video">
+  <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex justify-center items-center text-2xl font-bold text-center">
+    ▶️ VER VIDEO EN YOUTUBE
+  </div>
 </a>
 
 
@@ -133,7 +134,7 @@ No de la forma más efectiva. La tecnología actual del LED se basa en fósforo 
 
 Sin embargo, ya hay firmas trabajando en LED con base en luz violeta u otros colores para conseguir blancos sin este azul residual.
 
-![¿Qué es la temperatura de color?](/imageswebp/que-es-la-temperatura-de-color.webp)
+![¿Qué es la temperatura de color?](/que-es-la-temperatura-de-color.webp)
 
 ---
 
@@ -147,4 +148,4 @@ La **temperatura de color** es una medida que describe el color de la luz emitid
 
 La **luz** es una forma de energía que se propaga en forma de ondas electromagnéticas. Es esencial para la vida y nos permite percibir el mundo que nos rodea. Sus propiedades, como la reflexión, refracción y dispersión, son fundamentales en la iluminación técnica.
 
-![¿Qué es la luz?](/imageswebp/la-luz-y-sus-propiedades.webp)
+![¿Qué es la luz?](/la-luz-y-sus-propiedades.webp)

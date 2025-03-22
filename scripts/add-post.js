@@ -23,7 +23,6 @@ image_alt: "Hormonas de la felicidad y la luz"
 twitter_img: /Eloy-martinez-cuesta-web.webp
 twitterCreator: "@eloy_emc"
 twitterSite: "@eloy_emc"
-canonicalUrl: "{Astro.url.href}" # Se generará dinámicamente en Astro
 keywords:
   - iluminación
   - marketing

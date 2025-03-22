@@ -14,7 +14,9 @@ const blog = defineCollection({
     twitter_img: z.string().optional(), // Campo opcional
 		twitterCreator: z.string().optional(), // Campo opcional
 		twitterSite: z.string().optional(), // Campo opcional
-		canonicalUrl: z.string().optional(), // Campo opcional
+		canonicalUrl: z.object({
+      url: z.string(),
+    }).optional(),
     author: z.string().optional(), // Campo opcional
 		authorUrl: z.string().optional(), // Campo opcional
 		authorImage: z.string().optional(), // Campo opcional

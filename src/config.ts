@@ -23,8 +23,8 @@ export const siteConfig: SiteConfig = {
   lang:"es",
   site: "https://eloy-blog.pages.dev", // your site url
   title: "Eloy Martínez Cuesta",
-  slogan: "¿Quieres conocerme mejor?",
-  image: "Image.webp",
+  slogan: "Eloy Martinez Cuesta y compañero de aprendizaje.",
+  image: "logo-eloy-martinez-cuesta-marketing-digital-blanco.png",
   image_alt: "Descripción de la imagen",
   description: "Bienvenido a EMC, donde combinamos nuestra pasión por la iluminación arquitectónica con estrategias efectivas de marketing digital y SEO.",
   social: {

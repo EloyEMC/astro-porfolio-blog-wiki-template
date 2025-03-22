@@ -1,12 +1,22 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { siteConfig } from '../config.ts'; // Importar la configuración del sitio
+
+interface Props {
+  siteUrl: string;         // URL del sitio (obligatorio)
+  defaultImage: string;    // Imagen por defecto (obligatorio)
+  title?: string;         // Título (opcional)
+}
+
+
 ---
 
 <BaseLayout
-    siteUrl="https://tusitio.com"
-    defaultImage="https://tusitio.com/imagen-por-defecto.jpg"
-    title="Archive"
+  siteUrl={siteConfig.site} 
+  defaultImage={siteConfig.image} 
+  title="Aviso Legal, Cookies y Privacidad"
 >
+
     <h1 id="avisolegal" class="text-4xl font-bold mb-8 text-gray-900 dark:text-white">
         Aviso Legal
     </h1>

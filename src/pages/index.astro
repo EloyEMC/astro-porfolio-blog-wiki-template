@@ -2,45 +2,34 @@
 import BlocBlogPreview from "../components/BlocBlogPreview.astro";
 import SocialLinks from "../components/SocialLinks.astro";
 import { getCollection } from "astro:content";
-import { filterPosts } from "../utils/posts";
 import { siteConfig } from "../config";
 import HomeBaseLayout from "../layouts/HomeBaseLayout.astro";
-import { getAllTags, getPostsByTag } from '../utils/posts';
-
+import { getAllTags, getPostsByTag } from "../utils/posts";
 
 interface Props {
-  siteUrl: string;
-  defaultImage: string;
-  title?: string; // Hacerla opcional si no siempre es necesaria
-  
+  siteUrl: string; // URL del sitio (obligatorio)
+  defaultImage: string; // Imagen por defecto (obligatorio)
+  title?: string; // Título (opcional)
 }
 
 const posts = await getCollection("blog");
 
-// Configure homepage post filtering
-const homePagePosts = filterPosts(posts, {
-  ...siteConfig.homepage,
-  
-});
-
 const tags = getAllTags(posts);
-const tagCounts = tags.map(tag => ({
-  name: tag,
-  count: getPostsByTag(posts, tag).length
-})).sort((a, b) => b.count - a.count);
+const tagCounts = tags
+  .map((tag) => ({
+    name: tag,
+    count: getPostsByTag(posts, tag).length,
+  }))
+  .sort((a, b) => b.count - a.count);
 
-const projects = posts
-   .slice(0, 4);
-   
---- 
+const projects = posts.slice(0, 10);
+---
 
-<HomeBaseLayout  siteUrl="https://tusitio.com"
-defaultImage="https://tusitio.com/imagen-por-defecto.jpg"
->
+<HomeBaseLayout siteUrl={siteConfig.site} title="Eloy Martínez Cuesta">
   <main
     class="relative w-full h-auto flex flex-col items-center justify-center p-4"
   >
-     <div class="grid grid-cols-1 sm:grid-cols-6 gap-4 w-full max-w-full">
+    <div class="grid grid-cols-1 sm:grid-cols-6 gap-4 w-full max-w-full">
       <!-- Celda 1 -->
       <div
         class="card col-span-1 sm:col-span-2 row-span-8 sm:row-span-4 col-start-1 sm:col-start-3 row-start-3 sm:row-start-3 mb-4 p-4 bg-gray-50 dark:bg-gray-800/60 rounded-xl shadow-md hover:shadow-xl dark:shadow-gray-700/30 dark:hover:shadow-2xl dark:hover:shadow-primary-500/20 border border-gray-700 dark:border-gray-500/50 transition-all duration-200"
@@ -48,31 +37,50 @@ defaultImage="https://tusitio.com/imagen-por-defecto.jpg"
         <img
           src="eloy_feria_iluminacion 2.webp"
           alt="Eloy Marínez proyectos de iluminación en Valencia"
-          class="imagen w-[615px] h-[576px]  bg-gray-50 dark:bg-gray-800/60 rounded-xl shadow-md hover:shadow-xl dark:shadow-gray-700/30 dark:hover:shadow-2xl dark:hover:shadow-primary-500/20 border border-gray-700 dark:border-gray-500/50 transition-all duration-200"
+          class="imagen w-[615px] h-[576px] bg-gray-50 dark:bg-gray-800/60 rounded-xl shadow-md hover:shadow-xl dark:shadow-gray-700/30 dark:hover:shadow-2xl dark:hover:shadow-primary-500/20 border border-gray-700 dark:border-gray-500/50 transition-all duration-200"
         />
       </div>
 
       <!-- Celda 2 -->
       <div
-        class="card col-span-1 sm:col-span-2 row-span-6 sm:row-span-6 col-start-1 sm:col-start-1 row-start-11 sm:row-start-1  mb-4 p-4 bg-gray-50 dark:bg-gray-800/60 rounded-xl shadow-md hover:shadow-xl dark:shadow-gray-700/30 dark:hover:shadow-2xl dark:hover:shadow-primary-500/20 border border-gray-700 dark:border-gray-500/50 transition-all duration-200"
+        class="card col-span-1 sm:col-span-2 row-span-6 sm:row-span-6 col-start-1 sm:col-start-1 row-start-11 sm:row-start-1 mb-4 p-4 bg-gray-50 dark:bg-gray-800/60 rounded-xl shadow-md hover:shadow-xl dark:shadow-gray-700/30 dark:hover:shadow-2xl dark:hover:shadow-primary-500/20 border border-gray-700 dark:border-gray-500/50 transition-all duration-200"
       >
-        <h2 class="text-2xl font-bold text-gray-900 dark:text-white p-4">Sobre Mi:</h2>
+        <h2 class="text-2xl font-bold text-gray-900 dark:text-white p-4">
+          Sobre Mi:
+        </h2>
         <p class="font-bold text-gray-900 dark:text-gray-400 p-4">
-          ¡Hola! Soy Eloy, un apasionado de la tecnología desde que los módems de 56K sonaban como una banda de robots intentando ganar un Grammy. Desde aquellos días de conexiones que se cortaban si alguien llamaba por teléfono, he evolucionado (casi tanto como los sistemas operativos) y ahora me considero un "experto" en nuevas tecnologías y sistemas IT.
+          ¡Hola! Soy Eloy, un apasionado de la tecnología desde que los módems
+          de 56K sonaban como una banda de robots intentando ganar un Grammy.
+          Desde aquellos días de conexiones que se cortaban si alguien llamaba
+          por teléfono, he evolucionado (casi tanto como los sistemas
+          operativos) y ahora me considero un "experto" en nuevas tecnologías y
+          sistemas IT.
         </p>
         <p class="font-bold text-gray-900 dark:text-amber-300 p-4">
-          Defición de "experto": Esa persona que utiliza algo sin tener que llamar a otra (aunque a veces Google sigue siendo mi mejor amigo).
+          Defición de "experto": Esa persona que utiliza algo sin tener que
+          llamar a otra (aunque a veces Google sigue siendo mi mejor amigo).
         </p>
         <p class="font-bold text-gray-900 dark:text-gray-400 p-4">
-          Entre mis logros más brillantes (nunca mejor dicho) está mi pasión por la iluminación. Sí, he iluminado grandes proyectos junto a arquitectos e ingenieros que saben más de estructuras que yo de memes. Si alguna vez has visto un edificio que parece sacado de una película de ciencia ficción, es probable que yo haya estado ahí, con mis cables y mis luces, haciendo magia.
+          Entre mis logros más brillantes (nunca mejor dicho) está mi pasión por
+          la iluminación. Sí, he iluminado grandes proyectos junto a arquitectos
+          e ingenieros que saben más de estructuras que yo de memes. Si alguna
+          vez has visto un edificio que parece sacado de una película de ciencia
+          ficción, es probable que yo haya estado ahí, con mis cables y mis
+          luces, haciendo magia.
         </p>
         <p class="font-bold text-gray-900 dark:text-gray-300 p-4">
-          Pero no todo es tecnología y luces brillantes. También tengo mi lado divulgador. Pronto podrás sumergirte en mis nuevos proyectos, donde aprenderemos juntos cosas que ni sabías que querías saber. Desde cómo domar una IA hasta cómo hacer que tu web no parezca de los 90.
+          Pero no todo es tecnología y luces brillantes. También tengo mi lado
+          divulgador. Pronto podrás sumergirte en mis nuevos proyectos, donde
+          aprenderemos juntos cosas que ni sabías que querías saber. Desde cómo
+          domar una IA hasta cómo hacer que tu web no parezca de los 90.
         </p>
         <p class="font-bold text-gray-900 dark:text-gray-400 p-4">
-          En este sitio web va a encontrar la inspiración, la información o simplemente el entretenimiento que necesitas para darle un giro a tus proyectos. Y si no lo encuentras, bueno, siempre puedes contactarme. ¡Estoy aquí para ayudarte!
+          En este sitio web va a encontrar la inspiración, la información o
+          simplemente el entretenimiento que necesitas para darle un giro a tus
+          proyectos. Y si no lo encuentras, bueno, siempre puedes contactarme.
+          ¡Estoy aquí para ayudarte!
         </p>
-        
+
         <div class="galeria p-8">
           <a href="/iluminacion" class="block">
             <img
@@ -123,12 +131,18 @@ defaultImage="https://tusitio.com/imagen-por-defecto.jpg"
       <div
         class="col-span-1 sm:col-span-2 row-span-6 sm:row-span-6 col-start-1 sm:col-start-5 row-start-17 sm:row-start-1 mb-4 p-4 bg-gray-50 dark:bg-gray-800/60 rounded-xl shadow-md hover:shadow-xl dark:shadow-gray-700/30 dark:hover:shadow-2xl dark:hover:shadow-primary-500/20 border border-gray-700 dark:border-gray-500/50 transition-all duration-200"
       >
-        <h4 class="text-2xl font-bold text-gray-900 dark:text-white p-4">Últimas Publicaciones:</h4>
+        <h4 class="text-2xl font-bold text-gray-900 dark:text-white p-4">
+          Últimas Publicaciones:
+        </h4>
         <div class="p-8 blog-entry">
           <section>
-            {projects.map((post) => <BlocBlogPreview post={post} />)}            
+            {projects.map((post) => <BlocBlogPreview post={post} />)}
           </section>
-          <a href="/blog" class="text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 text-lg font-bold">Leer más</a>
+          <a
+            href="/blog"
+            class="text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 text-lg font-bold"
+            >Leer más</a
+          >
         </div>
       </div>
 
@@ -145,24 +159,32 @@ defaultImage="https://tusitio.com/imagen-por-defecto.jpg"
         </p>
         <SocialLinks />
       </div>
-      
+
       <!-- Celda 5 -->
       <div
         class="card col-span-1 sm:col-span-3 row-span-2 sm:row-span-2 col-start-1 row-start-23 sm:row-start-7 mb-4 p-4 bg-gray-50 dark:bg-gray-800/60 rounded-xl shadow-md hover:shadow-xl dark:shadow-gray-700/30 dark:hover:shadow-2xl dark:hover:shadow-primary-500/20 border border-gray-700 dark:border-gray-500/50 transition-all duration-200"
       >
-        <h2 class="text-2xl font-bold text-gray-900 dark:text-white p-4">Etiquetas principales:</h2>
+        <h2 class="text-2xl font-bold text-gray-900 dark:text-white p-4">
+          Etiquetas principales:
+        </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {tagCounts.map(({ name, count }) => (
-            <a
-              href={`/tags/${name}`}
-              class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-            >
-              <div class="flex items-center justify-between">
-                <span class="text-lg font-medium text-gray-900 dark:text-white">#{name}</span>
-                <span class="text-sm text-gray-600 dark:text-gray-400">{count} posts</span>
-              </div>
-            </a>
-          ))}
+          {
+            tagCounts.map(({ name, count }) => (
+              <a
+                href={`/tags/${name}`}
+                class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+              >
+                <div class="flex items-center justify-between">
+                  <span class="text-lg font-medium text-gray-900 dark:text-white">
+                    #{name}
+                  </span>
+                  <span class="text-sm text-gray-600 dark:text-gray-400">
+                    {count} posts
+                  </span>
+                </div>
+              </a>
+            ))
+          }
         </div>
       </div>
 
@@ -170,7 +192,9 @@ defaultImage="https://tusitio.com/imagen-por-defecto.jpg"
       <div
         class="flex flex-col md:flex-row justify-between items-center card col-span-1 sm:col-span-3 row-span-2 sm:row-span-2 col-start-1 sm:col-start-4 row-start-25 sm:row-start-7 mb-4 p-4 bg-gray-50 dark:bg-gray-800/60 rounded-xl shadow-md hover:shadow-xl dark:shadow-gray-700/30 dark:hover:shadow-2xl dark:hover:shadow-primary-500/20 border border-gray-700 dark:border-gray-500/50 transition-all duration-200"
       >
-        <h2 class="text-2xl font-bold text-gray-900 dark:text-white p-16">Sígueme en las redes sociales.</h2>
+        <h2 class="text-2xl font-bold text-gray-900 dark:text-white p-16">
+          Sígueme en las redes sociales.
+        </h2>
         <SocialLinks />
       </div>
     </div>
@@ -180,89 +204,91 @@ defaultImage="https://tusitio.com/imagen-por-defecto.jpg"
 <style>
   /* Animación de desvanecimiento */
   @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-
-  
 
   /* Aplicar las animaciones al botón */
   .animated-button {
-      animation: fadeIn 2s ease-out, bounce 1s ease-in-out 2s;
+    animation:
+      fadeIn 2s ease-out,
+      bounce 1s ease-in-out 2s;
   }
 
   .icon {
-      width: 1.5rem;
-      height: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .menu-footer {
-      --icon-size: var(--text-xl);
-      --icon-padding: 0.5rem;
-      display: flex;
-      justify-content: space-between;
-      gap: 0.75rem;
-      padding: 1.5rem 2rem 1.5rem 1.5rem;
-      background-color: var(--gray-999);
-      border-radius: 0 0 0.75rem 0.75rem;
-      box-shadow: var(--shadow-lg);
+    --icon-size: var(--text-xl);
+    --icon-padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 1.5rem 2rem 1.5rem 1.5rem;
+    background-color: var(--gray-999);
+    border-radius: 0 0 0.75rem 0.75rem;
+    box-shadow: var(--shadow-lg);
   }
 
   .socials {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.625rem;
-      font-size: var(--icon-size);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    font-size: var(--icon-size);
   }
 
   .social {
-      display: flex;
-      padding: var(--icon-padding);
-      text-decoration: none;
-      color: var(--accent-dark);
-      transition: color var(--theme-transition);
+    display: flex;
+    padding: var(--icon-padding);
+    text-decoration: none;
+    color: var(--accent-dark);
+    transition: color var(--theme-transition);
   }
 
   .social:hover,
   .social:focus {
-      color: var(--accent-text-over);
+    color: var(--accent-text-over);
   }
 
   /* Estilos para la galería */
   .galeria {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      grid-gap: 15px;
-      padding: 15px;
-      margin: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 15px;
+    padding: 15px;
+    margin: 25px;
   }
 
   .imagen {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 8px;
-      border: 2px solid #374151;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
-      filter: hue-rotate(300deg);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #374151;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    filter: hue-rotate(300deg);
   }
 
   .imagen:hover {
-      transform: scale(1.05);
-      filter: none;
+    transform: scale(1.05);
+    filter: none;
   }
 
   /* Estilos específicos para la Celda 3 */
   .blog-entry {
-      margin-bottom: 1rem;
+    margin-bottom: 1rem;
   }
-      li {
-          list-style: none;
-          font-size: 0.8rem;
-          line-height: 1.6;
-          margin-bottom: 1rem;
-      }
-      
-     
+  li {
+    list-style: none;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
 </style>

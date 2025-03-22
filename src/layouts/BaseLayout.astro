@@ -1,32 +1,32 @@
 ---
-import Header from '../components/Header.astro'
-import Footer from '../components/Footer.astro'
-import { ClientRouter, slide } from 'astro:transitions'
-import { GoogleAnalytics } from 'astro-google-analytics'
-import { siteConfig } from '../config'
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { ClientRouter, slide } from 'astro:transitions';
+import { GoogleAnalytics } from 'astro-google-analytics';
+import { siteConfig } from '../config';
 import SEOPage from '@components/SEOPage.astro';
 
 interface Props {
-  site?: string;
-  siteUrl: string;
-  defaultImage: string;
-  defaultLocale?: string;
-  author?: string;
-  title?: string;
-  
+  title?: string; // Título opcional
+  author?: string; // Autor opcional
+  defaultImage?: string;
+  siteUrl?: string;
 }
 
 // Definir las constantes para el SEO
 const { title = "Eloy Martínez Cuesta" } = Astro.props;
 const description = "La web de Eloy Martínez Cuesta, donde encontrarás novedades IA, iluminación, marketing, SEO, dev...";
 const slug = "";
-const { siteUrl, defaultImage, defaultLocale = "es_ES", } = Astro.props;
+const defaultLocale = "es_ES";
 const { author } = Astro.props;
 const authorData = author || null;
 
+// Obtener siteUrl y defaultImage directamente de siteConfig
+const siteUrl = siteConfig.site;
+const defaultImage = siteConfig.image || "ruta/a/imagen-por-defecto.jpg"; // Valor por defecto
 ---
 
-<!doctype html>
+<!doctype html> 
 <html lang="es" class="dark">
   <head>
     <!-- Componente SEO -->
@@ -36,7 +36,6 @@ const authorData = author || null;
       siteUrl={siteUrl}
       defaultImage={defaultImage}
       slug={slug}
-      
     />
 
     <meta charset="UTF-8" />

@@ -4,6 +4,7 @@ export interface SiteConfig {
   lang?: string;
   title: string;
   image?: string,
+  defaultImage?: string,
   image_alt?: string;
   slogan: string;
   description?: string; 
@@ -25,6 +26,7 @@ export const siteConfig: SiteConfig = {
   title: "Eloy Martínez Cuesta",
   slogan: "Innovación, Iluminación y Estrategia Digital",
   image: "logo-eloy-martinez-cuesta-marketing-digital-blanco.png",
+  defaultImage: "logo-eloy-martinez-cuesta-marketing-digital-blanco.png",
   image_alt: "Descripción de la imagen",
   description: "Bienvenido a EMC: Donde la luz de la creatividad se encuentra con el poder del marketing digital y el SEO",
   social: {

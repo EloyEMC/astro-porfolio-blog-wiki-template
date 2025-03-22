@@ -9,20 +9,19 @@ import SEOPage from '@components/SEOPage.astro';
 interface Props {
   site?: string;
   siteUrl: string;
-  defaultImage: string;
+  defaultImage?: string; // Hacer defaultImage opcional
   defaultLocale?: string;
   author?: string;
-  
+  title?: string;
 }
 
 // Definir las constantes para el SEO
-const title = "Eloy Martínez Cuesta";
 const description = "La web de Eloy Martínez Cuesta, donde encontrarás novedades IA, iluminación, marketing, SEO, dev...";
 const slug = "";
-const { siteUrl, defaultImage, defaultLocale = "es_ES", } = Astro.props;
+const { siteUrl, defaultLocale = "es_ES", title = "Eloy Martínez Cuesta" } = Astro.props;
 const { author } = Astro.props;
 const authorData = author || null;
-
+const defaultImage = siteConfig.image || "ruta/a/imagen-por-defecto.jpg"; // Valor por defecto
 ---
 
 <!doctype html>
@@ -35,7 +34,6 @@ const authorData = author || null;
       siteUrl={siteUrl}
       defaultImage={defaultImage}
       slug={slug}
-      
     />
 
     <!-- Metadatos básicos -->

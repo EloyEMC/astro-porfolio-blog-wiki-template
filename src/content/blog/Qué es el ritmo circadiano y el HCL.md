@@ -4,7 +4,7 @@ image: /activar-hormonas-felicidad-luz.webp
 image_alt: "Hormonas de la felicidad y la luz"
 description: "Welcome to my blog! This is my first post."
 date: 2025-03-21
-tags: [welcome, first-post]
+tags: [Iluminación LED, Ritmos circadianos, Luz]
 twitter_img: /Eloy-martinez-cuesta-web.webp
 twitterCreator: "@eloy_emc"
 twitterSite: "@eloy_emc"

@@ -4,7 +4,7 @@ image:  /la-luz-y-sus-propiedades.webp
 image_alt: "Pilares de Luz de distintas temperaturas se elvan hacia el cielo."
 description: "La luz, algo que hace visible las coas, per ¿Qué es la Luz? La luz es una onda."
 date: 2025-03-21
-tags: [Luz, física, Espectro electromagnético]
+tags: [Luz, Física, Espectro electromagnético]
 twitter_img: /Eloy-martinez-cuesta-web.webp
 twitterCreator: "@eloy_emc"
 twitterSite: "@eloy_emc"

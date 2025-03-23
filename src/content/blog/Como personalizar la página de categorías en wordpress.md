@@ -10,9 +10,9 @@ twitter_img: /Eloy-martinez-cuesta-web.webp
 twitterCreator: "@eloy_emc"
 twitterSite: "@eloy_emc"
 keywords:
-  - Plastico
-  - Polimeros
-  - Quimica  
+  - Wordpress
+  - Personalizar páginas
+  - CSM  
 author: "eloymartinez"
 authorUrl: "https://www.linkedin.com/in/eloymartinezemc/"
 authorImage: "/eloy_feria_iluminacion.webp"

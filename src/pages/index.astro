@@ -20,9 +20,14 @@ const tagCounts = tags
     name: tag,
     count: getPostsByTag(posts, tag).length,
   }))
-  .sort((a, b) => b.count - a.count);
+  .sort((a, b) => b.count - a.count) // Ordena de mayor a menor
+  .slice(0,6); // Toma las 4 etiquetas con más posts
 
-const projects = posts.slice(0, 10);
+
+  const projects = posts
+  .sort((a, b) => new Date(b.data.date) - new Date(a.data.date)) // Ordena por fecha descendente
+  .slice(0, 4); // Toma los 4 más recientes
+
 ---
 
 <HomeBaseLayout siteUrl={siteConfig.site} title="Eloy Martínez Cuesta">

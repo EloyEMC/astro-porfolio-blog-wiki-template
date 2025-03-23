@@ -1,7 +1,7 @@
 ---
 title: ¿Qué es el Ritmo Circadiano?
 image: /activar-hormonas-felicidad-luz.webp
-image_alt: "Hormonas de la felicidad y la luz"
+image_alt: "Los denominados biológicamente ritmos circadianos son cambios físicos, mentales y conductuales que siguen un ciclo de un día, en 24 horas"
 description: "Welcome to my blog! This is my first post."
 date: 2025-03-21
 tags: [Iluminación LED, Ritmos circadianos, Luz]
@@ -24,6 +24,8 @@ locale: "es_ES"
 siteName: "Eloy Martínez Cuesta"
 noindex: false # Cambiar a true si no quieres que los buscadores indexen este post
 nofollow: false # Cambiar a true si no quieres que los enlaces del post sean seguidos por buscadores
+
+
 ---
 
 ## Contenido

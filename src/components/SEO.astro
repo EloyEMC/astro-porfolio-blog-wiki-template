@@ -9,6 +9,7 @@ interface Props {
   defaultImage: string;
   defaultLocale?: string;
   author?: string,
+  answer: string,
 }
 
 const { author } = Astro.props;
@@ -36,6 +37,7 @@ const {
   noindex,
   nofollow,
   faqs,
+ 
 } = data;
 
 // Generate the canonical URL
@@ -132,6 +134,7 @@ const faqJSON = faqs && faqs.length > 0 ? {
     },
   })),
 } : null;
+
 ---
 
 <!-- Title -->
@@ -196,6 +199,7 @@ const faqJSON = faqs && faqs.length > 0 ? {
 {faqJSON && (
   <script type="application/ld+json" set:html={` ${JSON.stringify(faqJSON)} `}></script>
 )}
+
 
 <!-- Favicon (opcional) -->
 <link rel="icon" type="image/png" href={`${siteUrl}/favicon.png`} />

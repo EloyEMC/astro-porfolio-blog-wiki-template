@@ -6,21 +6,26 @@ interface Props {
 }
 
 const { currentPage, totalPages, baseUrl } = Astro.props;
+
+// Normalizar baseUrl para asegurarse de que termine con una barra
+const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 ---
 
 <nav class="flex justify-center gap-4 mt-12">
   {currentPage > 1 && (
     <a
-      href={`${baseUrl}${currentPage - 1}`}
+      href={`${normalizedBaseUrl}${currentPage - 1}`}
       class="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded hover:bg-gray-200 dark:hover:bg-gray-700"
+      aria-label="Previous Page"
     >
       Previous
     </a>
   )}
   {currentPage < totalPages && (
     <a
-      href={`${baseUrl}${currentPage + 1}`}
+      href={`${normalizedBaseUrl}${currentPage + 1}`}
       class="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded hover:bg-gray-200 dark:hover:bg-gray-700"
+      aria-label="Next Page"
     >
       Next
     </a>

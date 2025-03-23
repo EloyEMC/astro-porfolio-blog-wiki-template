@@ -109,6 +109,7 @@ La **pectina** es otro polisacárido presente en las plantas y se utiliza en la 
 
 #### Tabla: Polímeros Naturales en la Industria Alimentaria
 
+
 | Polímero Natural          | Aplicaciones en la Industria Alimentaria                                                                 |
 |---------------------------|---------------------------------------------------------------------------------------------------------|
 | Almidón                   | Espesante en salsas, sopas y postres. Mejora la textura de productos horneados.                         |
@@ -120,6 +121,7 @@ La **pectina** es otro polisacárido presente en las plantas y se utiliza en la 
 | Xantana                   | Espesante y estabilizador en productos lácteos, aderezos y salsas.                                       |
 | Inulina                   | Utilizada como ingrediente en alimentos bajos en calorías y como fibra dietética.                        |
 
+ 
 ---
 
 ### **Avances en la Medicina y la Ingeniería Biomédica**

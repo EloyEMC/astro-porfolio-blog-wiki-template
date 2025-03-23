@@ -44,4 +44,18 @@ export const tagSEOConfig: Record<string, { title: string; description: string }
     title: "Extrusión de Plásticos: Procesos, Tecnologías y Aplicaciones",
     description: "Conoce el proceso de extrusión de plásticos, una técnica clave en la fabricación de productos plásticos. Aprende sobre las tecnologías de extrusión, sus aplicaciones en la industria y cómo se optimiza este proceso para la producción eficiente.",
   },
+  "Diseño WEB": {
+    title: "Diseño WEB: Creación, Innovación y Experiencia de Usuario",
+    description: "Explora el mundo del Diseño WEB, donde la creatividad y la funcionalidad se unen para crear experiencias digitales únicas. Descubre las últimas tendencias en diseño, herramientas esenciales y buenas prácticas para desarrollar sitios web atractivos, intuitivos y optimizados para todos los dispositivos.",
+  },
+
+  "Wordpress": {
+    title: "Wordpress: Potencia y Flexibilidad para tu Sitio WEB",
+    description: "Sumérgete en el universo de Wordpress, la plataforma líder para la creación y gestión de sitios web. Aprende a personalizar temas, utilizar plugins, optimizar para SEO y aprovechar al máximo las funcionalidades de Wordpress para construir sitios web profesionales y escalables.",
+  },
+
+  "DEV": {
+    title: "DEV: Desarrollo WEB y Tecnologías de Programación",
+    description: "Adéntrate en el ámbito del desarrollo WEB y las tecnologías de programación. Conoce los lenguajes más utilizados, frameworks, buenas prácticas de codificación y cómo crear soluciones digitales robustas, seguras y eficientes para cualquier tipo de proyecto.",
+  },
 };

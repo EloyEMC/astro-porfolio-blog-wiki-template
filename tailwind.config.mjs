@@ -42,6 +42,27 @@ export default {
               borderRadius: '0.25rem',
               fontWeight: '400',
             },
+            table: {
+              width: '100%',
+              borderCollapse: 'collapse',
+              color: 'rgb(31, 41, 55)', // Color de texto en modo claro
+            },
+            thead: {
+              
+            },
+            tbody: {
+              backgroundColor: 'rgb(255, 255, 255)', // Fondo para las filas
+            },
+            th: {
+              borderBottom: '2px solid rgb(209, 213, 219)',
+              padding: '0.5rem',
+              textAlign: 'left',
+            },
+            td: {
+              borderBottom: '1px solid rgb(209, 213, 219)',
+              padding: '0.5rem',
+            },
+            
           },
         },
         dark: {
@@ -64,6 +85,22 @@ export default {
               color: 'rgb(229, 231, 235)',
               borderLeftColor: 'rgb(75, 85, 99)',
             },
+            table: {
+              color: 'rgb(229, 231, 235)', // Color de texto en modo oscuro
+            },
+            thead: {
+              backgroundColor: 'rgb(70, 66, 65)',
+            },
+            tbody: {
+              backgroundColor: 'rgb(70, 66, 65)',
+            },
+            th: {
+              borderBottom: '2px solid rgb(75, 85, 99)',
+            },
+            td: {
+              borderBottom: '2px solid rgb(75, 85, 99)',
+            },
+            
           },
         },
       },

@@ -1,6 +1,6 @@
 ---
 title: ¿Qué es el Ritmo Circadiano?
-image: /activar-hormonas-felicidad-luz.webp
+image: /ritmo-circadiano-hcl-iluminacion-led.webp
 image_alt: "Los denominados biológicamente ritmos circadianos son cambios físicos, mentales y conductuales que siguen un ciclo de un día, en 24 horas"
 description: "Welcome to my blog! This is my first post."
 date: 2025-03-21

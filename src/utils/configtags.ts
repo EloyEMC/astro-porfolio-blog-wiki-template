@@ -58,4 +58,23 @@ export const tagSEOConfig: Record<string, { title: string; description: string }
     title: "DEV: Desarrollo WEB y Tecnologías de Programación",
     description: "Adéntrate en el ámbito del desarrollo WEB y las tecnologías de programación. Conoce los lenguajes más utilizados, frameworks, buenas prácticas de codificación y cómo crear soluciones digitales robustas, seguras y eficientes para cualquier tipo de proyecto.",
   },
+
+  "Ahorro": {
+    title: "Ahorro: Gestión Financiera y Optimización de Recursos",
+    description: "Descubre estrategias y técnicas para optimizar tus finanzas personales y empresariales. Aprende sobre inversiones inteligentes, reducción de costos, eficiencia energética y métodos para maximizar el rendimiento de tus recursos económicos."
+  },
+  "Energía": {
+    title: "Energía: Tecnologías y Eficiencia Energética",
+    description: "Explora el mundo de las soluciones energéticas sostenibles. Conoce sobre energías renovables, eficiencia energética en hogares e industrias, normativas de etiquetado energético y las últimas innovaciones en tecnologías limpias."
+  },
+  "Consumidor": {
+    title: "Consumidor: Derechos y Educación del Consumidor",
+    description: "Información esencial sobre derechos del consumidor, análisis de productos, comparativas de mercado y guías de compra inteligente. Aprende a tomar decisiones informadas y protege tus intereses como consumidor."
+  },
+
+  "Termoformado": {
+    title: "Termoformado: Técnicas y Aplicaciones Industriales",
+    description: "Descubre las tecnologías de termoformado para plásticos, incluyendo métodos de vacío, presión y mecanizados. Aprende sobre moldes, materiales adecuados y aplicaciones en packaging, automoción y sectores médicos."
+  }
+
 };

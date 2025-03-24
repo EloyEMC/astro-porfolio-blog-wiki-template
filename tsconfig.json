@@ -3,7 +3,17 @@
   "include": [".astro/types.d.ts", "**/*", ".astro/collections/authors.js"],
   "exclude": ["dist"],
   "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
     "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
@@ -15,8 +25,7 @@
       "@styles/*": ["./src/styles/*"],
       "@utils/*": ["./src/utils/*"],
       "@icons/*": ["./src/components/icons/*"],
-      "@authors/*":["./src/config/*"]
+      "@authors/*": ["./src/config/*"]
     }
   }
 }
-

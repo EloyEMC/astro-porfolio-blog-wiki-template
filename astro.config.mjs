@@ -6,7 +6,7 @@ import { siteConfig } from './src/config';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: siteConfig.site,
+  site: "https://eloymartinezcuesta.com",
   integrations: [tailwind(), sitemap()],
   markdown: {
     rehypePlugins: [

@@ -29,5 +29,8 @@
     "type": "git",
     "url": "https://github.com/larry-xue/astro-zen-blog"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.20.8"
+  }
 }

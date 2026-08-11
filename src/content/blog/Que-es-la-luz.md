@@ -1,6 +1,6 @@
 ---
-title: "¿Qué es la luz?"
-seoTitle: "¿Qué es la luz? Propiedades y aplicación en iluminación | Eloy Martínez Cuesta"
+title: "¿Qué es realmente la luz?"
+seoTitle: "¿Qué es realmente la luz? Propiedades y aplicación en iluminación | Eloy Martínez Cuesta"
 image: "/la-luz-y-sus-propiedades.webp"
 image_alt: "Columnas de luz de distintos colores proyectadas hacia el cielo."
 description: "Qué es la luz, cómo se propaga, se refleja y se refracta, qué parte del espectro podemos ver y por qué estos fenómenos importan en iluminación."

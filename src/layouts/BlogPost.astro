@@ -4,7 +4,6 @@ import PostDate from '../components/PostDate.astro';
 import PostTags from '../components/PostTags.astro';
 import { type CollectionEntry } from 'astro:content';
 import AuthorBox from "../components/AuthorBox.astro";
-import NewsletterCta from '../components/NewsletterCta.astro';
 import RelatedPosts from '../components/RelatedPosts.astro';
 import RandomPosts from '../components/RandomPosts.astro';
 
@@ -86,7 +85,6 @@ const {
       <div class="editorial-prose editorial-post-body">
         <slot />
         {author && <AuthorBox author={author} />}
-        <NewsletterCta />
         <RelatedPosts posts={relatedPosts} />
         <RandomPosts posts={randomPosts} />
       </div>

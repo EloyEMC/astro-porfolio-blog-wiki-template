@@ -28,8 +28,12 @@ const {
   relatedPosts = [],
   randomPosts = [],
 } = Astro.props;
-const { title, description, date, tags, image, image_alt, author } = post.data;
-const tocHeadings = headings.filter(({ depth }) => depth >= 2 && depth <= 3);
+    const { title, description, date, tags, image, image_alt, author } = post.data;
+    const normalizeAnchor = (value: string) => value
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
+    const tocHeadings = headings.filter(({ depth }) => depth >= 2 && depth <= 3);
 ---
 
 <PostBaseLayout siteUrl={siteUrl} defaultImage={defaultImage} defaultLocale={defaultLocale} entry={post}>
@@ -70,7 +74,7 @@ const tocHeadings = headings.filter(({ depth }) => depth >= 2 && depth <= 3);
               <ol>
                 {tocHeadings.map(({ depth, text, slug }) => (
                   <li class:list={{ "editorial-post-toc-subitem": depth === 3 }}>
-                    <a href={`#${slug}`}>{text}</a>
+                    <a href={`#${normalizeAnchor(slug)}`}>{text}</a>
                   </li>
                 ))}
               </ol>
@@ -111,10 +115,11 @@ const tocHeadings = headings.filter(({ depth }) => depth >= 2 && depth <= 3);
           }
         };
         const headingByHash = new Map(
-          Array.from(document.querySelectorAll<HTMLElement>(".editorial-post-body h2, .editorial-post-body h3"), (heading) => [
-            normalizeHash(heading.id),
-            heading,
-          ]),
+          Array.from(document.querySelectorAll<HTMLElement>(".editorial-post-body h2, .editorial-post-body h3"), (heading) => {
+            const normalizedId = normalizeHash(heading.id);
+            heading.id = normalizedId;
+            return [normalizedId, heading];
+          }),
         );
         const headings = links
           .map((link) => headingByHash.get(normalizeHash(link.hash.slice(1))))

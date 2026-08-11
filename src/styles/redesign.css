@@ -200,7 +200,6 @@ html.dark body {
 	text-transform: uppercase;
 }
 .content-nav .content-nav-icon,
-.content-nav .content-nav-history,
 .content-nav #search-button {
 	display: inline-grid;
 	place-items: center;
@@ -215,13 +214,10 @@ html.dark body {
 	letter-spacing: 0;
 	opacity: 1;
 }
-.content-nav .content-nav-history,
 .content-nav #search-button {
 	width: 2.25rem;
 	border-left: 0;
-}
-.content-nav .content-nav-history:last-of-type {
-	border-right: 1px solid rgba(241, 238, 232, 0.24);
+	color: var(--paper);
 }
 .content-nav-menu {
 	display: none !important;
@@ -230,8 +226,7 @@ html.dark body {
 	display: none;
 }
 
-.content-nav .content-nav-icon svg,
-.content-nav .content-nav-history svg {
+.content-nav .content-nav-icon svg {
 	width: 1rem;
 	height: 1rem;
 	fill: none;

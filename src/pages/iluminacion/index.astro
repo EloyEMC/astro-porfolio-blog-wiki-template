@@ -10,30 +10,31 @@ const illuminationPosts = posts.filter((post) =>
 ).slice(0, 4);
 
 const sectionLinks = [
-  { label: "Proyectos seleccionados", href: "#proyectos" },
-  { label: "Conocimiento técnico", href: "#conocimiento" },
-  { label: "Artículos de iluminación", href: "#articulos" },
-  { label: "Casos y aprendizajes", href: "#casos" },
-  { label: "Herramientas relacionadas", href: "#herramientas" },
+  { label: "Proyecto y prescripción", href: "#proyecto-prescripcion" },
+  { label: "Producto y tecnología", href: "#producto-tecnologia" },
+  { label: "Mercado y negocio", href: "#mercado-negocio" },
+  { label: "Conocimiento", href: "#conocimiento" },
+  { label: "Herramientas y proyectos", href: "#herramientas" },
 ];
 ---
 
 <InteriorLayout
-  title="Iluminación — Eloy Martínez Cuesta"
-  description="Ideas, criterio y experiencia para entender la iluminación, el producto y los espacios."
+  title="Iluminación profesional | Eloy Martínez Cuesta"
+  description="Más de 20 años de experiencia en iluminación profesional, proyectos, prescripción, producto, tecnología y desarrollo de negocio."
   slug="iluminacion"
 >
   <section class="illumination-page" aria-labelledby="illumination-title">
     <header class="illumination-header">
       <p class="interior-eyebrow">01 / Iluminación</p>
-      <h1 id="illumination-title" class="interior-title">La experiencia primero. La tecnología después.</h1>
-      <p class="interior-intro">Más de dos décadas trabajando con proyectos, prescripción, producto, distribución, clientes y mercado. Aquí vive la parte más profunda de mi conocimiento profesional.</p>
+      <h1 id="illumination-title" class="interior-title">Iluminación profesional.</h1>
+      <p class="illumination-declaration">La experiencia primero. La tecnología después.</p>
+      <p class="interior-intro">Más de 20 años trabajando con iluminación profesional desde distintos ángulos: proyectos, prescripción, producto, distribución, retail, clientes y desarrollo de negocio.</p>
+      <p class="illumination-lead">La iluminación es el conocimiento sobre el que construyo todo lo demás. La tecnología, el software y la inteligencia artificial me permiten hoy llevar esa experiencia más lejos.</p>
     </header>
 
     <div class="illumination-feature">
       <figure class="illumination-visual" aria-labelledby="illumination-visual-caption">
-        <div class="illumination-glow" aria-hidden="true"></div>
-        <div class="illumination-shadow" aria-hidden="true"></div>
+        <img src="/iluminacion-profesional-hero.webp" alt="Luz natural proyectada sobre una superficie arquitectónica" width="1717" height="916" />
         <figcaption id="illumination-visual-caption">La luz no es solo una cuestión técnica: también define cómo habitamos, trabajamos y percibimos un espacio.</figcaption>
       </figure>
 
@@ -45,61 +46,94 @@ const sectionLinks = [
               <li><a href={link.href}><span>{String(index + 1).padStart(2, "0")}</span>{link.label}</a></li>
             ))}
           </ol>
-          <a class="section-index-cta" href="#articulos">Explorar contenidos <span aria-hidden="true">→</span></a>
+          <a class="section-index-cta" href="#conocimiento">Explorar contenidos <span aria-hidden="true">→</span></a>
         </nav>
       </aside>
     </div>
 
     <hr class="interior-divider" />
 
-    <section id="conocimiento" class="editorial-section" aria-labelledby="criteria-title">
-      <p class="interior-eyebrow">Experiencia / Criterio</p>
-      <h2 id="criteria-title">Tres formas de mirar un proyecto.</h2>
+    <section class="editorial-section" aria-labelledby="criteria-title">
+      <p class="interior-eyebrow">EXPERIENCIA / CRITERIO</p>
+      <h2 id="criteria-title">Más de 20 años viendo la iluminación desde distintos ángulos.</h2>
+      <p class="section-intro">Un proyecto de iluminación no empieza ni termina eligiendo una luminaria. Hay arquitectura, personas, necesidades, producto, técnica, presupuesto, instalación, distribución y negocio.</p>
       <div class="criteria-grid">
-        <article id="proyectos">
+        <article id="proyecto-prescripcion">
           <p class="criteria-number">01</p>
           <h3>Proyecto y prescripción</h3>
-          <p>Leer el espacio, entender a las personas y convertir sus necesidades en una propuesta de luz coherente, viable y con intención.</p>
+          <p class="criteria-subtitle">Convertir necesidades en soluciones.</p>
+          <p>Leer el espacio, entender el proyecto y trabajar con arquitectos, ingenierías, interioristas y clientes para convertir requisitos técnicos y necesidades reales en una solución de iluminación coherente, viable y con intención.</p>
         </article>
-        <article>
+        <article id="producto-tecnologia">
           <p class="criteria-number">02</p>
-          <h3>Producto y técnica</h3>
-          <p>Conocer la tecnología para elegir mejor: rendimiento, óptica, control, eficiencia y calidad puestos al servicio del resultado.</p>
+          <h3>Producto y tecnología</h3>
+          <p class="criteria-subtitle">Conocer para poder elegir.</p>
+          <p>Fotometría, ópticas, control, eficiencia, calidad de luz e integración. Conocer cómo funciona el producto permite elegir con criterio y entender por qué una solución funciona mejor que otra.</p>
         </article>
-        <article id="casos">
+        <article id="mercado-negocio">
           <p class="criteria-number">03</p>
           <h3>Mercado y negocio</h3>
-          <p>Conectar fabricantes, distribución y clientes para que las buenas decisiones también sean sostenibles en el tiempo.</p>
+          <p class="criteria-subtitle">Una solución también tiene que funcionar fuera del plano.</p>
+          <p>Fabricantes, distribución, retail, KAM y clientes forman parte del mismo ecosistema. La experiencia comercial y de desarrollo de negocio permite conectar la solución técnica con las necesidades reales del mercado.</p>
         </article>
       </div>
     </section>
 
-    <section id="articulos" class="editorial-section selected-content" aria-labelledby="articles-title">
-      <p class="interior-eyebrow">Contenido seleccionado</p>
-      <h2 id="articles-title">Artículos para profundizar.</h2>
+    <section id="conocimiento" class="editorial-section selected-content" aria-labelledby="knowledge-title">
+      <p class="interior-eyebrow">CONOCIMIENTO</p>
+      <h2 id="knowledge-title">Entender la luz para decidir mejor.</h2>
+      <p class="section-intro">Conceptos, preguntas y aprendizajes que aparecen una y otra vez trabajando con iluminación, explicados de forma rigurosa, comprensible y útil.</p>
       <div class="illumination-grid">
-            {illuminationPosts.map((post) => (
-              <article class:list={["illumination-card", { "illumination-card--image": post.data.image }]}>
-                {post.data.image && (
-                  <div class="illumination-card-background">
-                    <Image src={post.data.image} alt="" aria-hidden="true" width={800} height={500} decoding="async" loading="lazy" />
-                  </div>
-                )}
-                <div class="illumination-card-content">
-                  <p class="interior-eyebrow">{post.data.date.toLocaleDateString("es-ES", { year: "numeric", month: "long" })}</p>
-                  <h3><a href={`/blog/${post.slug}/`}>{post.data.title}</a></h3>
-                  {post.data.description && <p>{post.data.description}</p>}
-                  <a class="card-link" href={`/blog/${post.slug}/`}>Leer artículo <span aria-hidden="true">→</span></a>
-                </div>
-              </article>
-            ))}
+        {illuminationPosts.map((post) => (
+          <article class:list={["illumination-card", { "illumination-card--image": post.data.image }]}>
+            {post.data.image && (
+              <div class="illumination-card-background">
+                <a href={`/blog/${post.slug}/`} aria-label={`Leer ${post.data.title}`}>
+                  <Image src={post.data.image} alt="" aria-hidden="true" width={800} height={500} decoding="async" loading="lazy" />
+                </a>
+              </div>
+            )}
+            <div class="illumination-card-content">
+              <p class="interior-eyebrow">{post.data.date.toLocaleDateString("es-ES", { year: "numeric", month: "long" })}</p>
+              <h3><a href={`/blog/${post.slug}/`}>{post.data.title}</a></h3>
+              {post.data.description && <p>{post.data.description}</p>}
+              <a class="card-link" href={`/blog/${post.slug}/`}>Leer artículo <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        ))}
       </div>
+      <a class="section-cta" href="/articulos/">Ver todos los artículos sobre iluminación <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="editorial-section section-note" aria-labelledby="technology-title">
+      <p class="interior-eyebrow">ILUMINACIÓN + TECNOLOGÍA</p>
+      <h2 id="technology-title">Cuando conoces un problema desde dentro, puedes construir mejores herramientas.</h2>
+      <p>Durante años he trabajado con información técnica, producto, proyectos, clientes y datos de iluminación. El software y la inteligencia artificial permiten ahora transformar parte de ese conocimiento en herramientas útiles. No se trata de aplicar IA porque sí. Se trata de identificar problemas que conozco por experiencia y utilizar la tecnología cuando realmente puede resolverlos mejor.</p>
+      <a class="section-cta" href="/tecnologia/">Explorar tecnología <span aria-hidden="true">→</span></a>
     </section>
 
     <section id="herramientas" class="editorial-section section-note" aria-labelledby="tools-title">
-      <p class="interior-eyebrow">Herramientas relacionadas</p>
-      <h2 id="tools-title">El criterio también se construye compartiendo.</h2>
-      <p>Una selección viva de referencias, aprendizajes y recursos para seguir pensando la iluminación con rigor y curiosidad.</p>
+      <p class="interior-eyebrow">HERRAMIENTAS Y PROYECTOS</p>
+      <h2 id="tools-title">Del conocimiento a la herramienta.</h2>
+      <p>Algunas ideas dejan de ser artículos y se convierten en aplicaciones. Estoy desarrollando herramientas y experimentos digitales relacionados con iluminación, producto, datos, automatización e inteligencia artificial. Son también una forma de explorar una pregunta: ¿Qué podemos construir cuando combinamos conocimiento profundo de un sector con la capacidad actual del software y la IA?</p>
+      <a class="section-cta" href="/proyectos/">Ver proyectos <span aria-hidden="true">→</span></a>
     </section>
   </section>
 </InteriorLayout>
+
+<style>
+  .illumination-declaration { margin: 1rem 0 1.5rem; color: var(--paper); font-size: clamp(1.25rem, 2vw, 1.75rem); line-height: 1.2; }
+  .illumination-lead, .section-intro { max-width: 48rem; color: var(--muted-ink); font-size: 1.05rem; line-height: 1.7; }
+  .illumination-visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .illumination-card-background a { display: block; width: 100%; height: 100%; }
+  .illumination-visual figcaption { background: linear-gradient(transparent, rgba(0, 0, 0, .7)); padding-top: 3rem; }
+  .criteria-subtitle { margin: 0 0 1rem; color: var(--paper) !important; font-size: 1rem !important; }
+  .section-cta { display: inline-block; margin-top: 2rem; color: var(--paper); font-size: .75rem; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; }
+  .section-cta span { color: var(--gold); }
+  @media (max-width: 780px) {
+    .illumination-feature { grid-template-columns: 1fr; }
+    .illumination-visual { min-height: 22rem; }
+    .section-index { padding-left: 0; border-left: 0; }
+    .criteria-grid { grid-template-columns: 1fr; }
+  }
+</style>

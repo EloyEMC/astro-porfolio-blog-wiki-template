@@ -40,6 +40,6 @@ export const siteConfig: SiteConfig = {
     tags: [],
     excludeTags: [],
   },
-  googleAnalysis: "", // your google analysis id
+  googleAnalysis: "G-9W0RCLSX3X", // Google Analytics measurement ID
   search: true, // set this to false if you don't want to provide a search feature
 };

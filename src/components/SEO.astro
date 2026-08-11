@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import { absoluteUrl } from "../utils/seo";
 import { authors } from "../authors.js";
 
 
@@ -40,12 +41,14 @@ const {
  
 } = data;
 
-// Generate the canonical URL
-const fullCanonicalUrl =  `${siteUrl}/blog/${slug}/`;
+const normalizedSiteUrl = siteUrl.replace(/\/+$/, '');
 
-// Generate the full image (using the site's base URL)
-const fullImageUrl = image ? `${siteUrl}${image}` : defaultImage;
-const fullTwitterImageUrl = twitter_img ? `${siteUrl}${twitter_img}` : fullImageUrl;
+// Generate the canonical URL
+const fullCanonicalUrl = `${normalizedSiteUrl}/blog/${slug}/`;
+
+// Generate absolute image URLs for social crawlers and JSON-LD
+const fullImageUrl = absoluteUrl(siteUrl, image || defaultImage);
+const fullTwitterImageUrl = absoluteUrl(siteUrl, twitter_img || fullImageUrl);
 
 // Meta robots
 const metaRobots: string[] = [];
@@ -65,8 +68,8 @@ const schemaOrgJSON = {
   "author": {
     "@type": "Person",
     "name": author || "Unknown Author", // Valor por defecto si author es undefined
-    "url": authorUrl || siteUrl, // Usa siteUrl si authorUrl no está definido
-    "image": authorImage ? `${siteUrl}${authorImage}` : undefined, // Opcional
+    "url": authorUrl || normalizedSiteUrl, // Usa siteUrl si authorUrl no está definido
+    "image": authorImage ? absoluteUrl(siteUrl, authorImage) : undefined, // Opcional
   },
 
   "image": fullImageUrl,
@@ -86,13 +89,13 @@ const breadcrumbListJSON = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": siteUrl,
+      "item": normalizedSiteUrl,
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Artículos",
-      "item": `${siteUrl}/articulos/`,
+      "item": `${normalizedSiteUrl}/articulos/`,
     },
     {
       "@type": "ListItem",
@@ -169,7 +172,7 @@ const faqJSON = faqs && faqs.length > 0 ? {
 <!-- Autor -->
 {author && <meta name="author" content={author} />}
 {authorUrl && <link rel="author" href={authorUrl} />}
-{authorImage && <meta name="author-image" content={`${siteUrl}${authorImage}`} />}
+{authorImage && <meta name="author-image" content={absoluteUrl(siteUrl, authorImage)} />}
 
 <!-- Date -->
 <meta property="article:published_time" content={date.toISOString()} />

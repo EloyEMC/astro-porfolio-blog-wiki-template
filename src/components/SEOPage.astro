@@ -1,4 +1,6 @@
 ---
+import { absoluteUrl } from "../utils/seo";
+
 interface Props {
   title: string;
   description?: string;
@@ -36,8 +38,8 @@ const {
 const normalizedSiteUrl = siteUrl.replace(/\/+$/, '');
 const normalizedSlug = (slug || '').replace(/^\/+|\/+$/g, '');
 const fullCanonicalUrl = `${normalizedSiteUrl}${normalizedSlug ? `/${normalizedSlug}` : ''}/`;
-const fullImageUrl = image ? `${siteUrl}${image}` : defaultImage;
-const fullTwitterImageUrl = twitter_img ? `${siteUrl}${twitter_img}` : fullImageUrl;
+const fullImageUrl = absoluteUrl(siteUrl, image || defaultImage);
+const fullTwitterImageUrl = absoluteUrl(siteUrl, twitter_img || fullImageUrl);
 
 const metaRobots: string[] = [];
 if (noindex) metaRobots.push('noindex');
@@ -68,7 +70,7 @@ const schemaOrgJSON = {
     "name": siteName || "Eloy Martínez Cuesta",
     "logo": {
       "@type": "ImageObject",
-      "url": `${siteUrl}/logo-eloy-martinez-cuesta-marketing-digital-blanco.png`,
+      "url": `${normalizedSiteUrl}/logo-eloy-martinez-cuesta-marketing-digital-blanco.png`,
       "width": 600,
       "height": 60,
     },

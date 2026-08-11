@@ -6,21 +6,11 @@ import Search from "./Search.astro";
   <a class="content-nav-icon" href="/" aria-label="Home" title="Home">
     <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10Z" /></svg>
   </a>
-  <button class="content-nav-history" type="button" data-history="back" aria-label="Go back" title="Go back">
+  <button class="content-nav-history" type="button" aria-label="Go back" title="Go back" onclick="window.history.back()">
     <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 5-7 7 7 7" /></svg>
   </button>
-  <button class="content-nav-history" type="button" data-history="forward" aria-label="Go forward" title="Go forward">
+  <button class="content-nav-history" type="button" aria-label="Go forward" title="Go forward" onclick="window.history.forward()">
     <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7" /></svg>
   </button>
   <Search />
 </nav>
-
-<script is:inline>
-  document.addEventListener("click", (event) => {
-    const target = event.target instanceof HTMLElement ? event.target.closest("[data-history]") : null;
-    if (!target) return;
-    const direction = target.getAttribute("data-history");
-    if (direction === "back") window.history.back();
-    if (direction === "forward") window.history.forward();
-  });
-</script>

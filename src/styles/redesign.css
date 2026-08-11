@@ -122,8 +122,8 @@ html.dark body {
 	flex: 1 1 auto;
 	overflow: visible;
 	color: var(--paper);
-	font: 600 clamp(0.56rem, 0.82vw, 0.86rem) / 1.2 var(--font-brand);
-	letter-spacing: clamp(0.04em, 0.08vw, 0.08em);
+	font: 600 clamp(0.5rem, 0.52vw, 0.6rem) / 1.2 var(--font-brand);
+	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	white-space: nowrap;
 }

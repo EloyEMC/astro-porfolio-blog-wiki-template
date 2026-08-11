@@ -88,4 +88,62 @@ const tocHeadings = headings.filter(({ depth }) => depth >= 2 && depth <= 3);
       </div>
     </div>
   </article>
-</PostBaseLayout>
+    </PostBaseLayout>
+
+    <script>
+      let stopContentsSpy: (() => void) | undefined;
+
+      const setupContentsSpy = () => {
+        stopContentsSpy?.();
+
+        const contents = document.querySelector<HTMLElement>(".editorial-post-toc");
+        if (!contents) return;
+
+        const links = Array.from(contents.querySelectorAll<HTMLAnchorElement>("a[href^='#']"));
+        const headings = links
+          .map((link) => document.getElementById(link.hash.slice(1)))
+          .filter((heading): heading is HTMLElement => heading !== null);
+
+        if (!headings.length) return;
+
+        const setActive = (heading: HTMLElement) => {
+          links.forEach((link) => {
+            const active = link.hash === `#${heading.id}`;
+            link.classList.toggle("is-active", active);
+            if (active) link.setAttribute("aria-current", "location");
+            else link.removeAttribute("aria-current");
+          });
+        };
+
+        const updateActive = () => {
+          const activationLine = window.innerHeight * 0.28;
+          const current = headings.reduce((active, heading) => {
+            const headingTop = heading.getBoundingClientRect().top;
+            return headingTop <= activationLine ? heading : active;
+          }, headings[0]);
+          setActive(current);
+        };
+
+        let frame = 0;
+        const onScroll = () => {
+          if (frame) return;
+          frame = window.requestAnimationFrame(() => {
+            frame = 0;
+            updateActive();
+          });
+        };
+
+        updateActive();
+        window.addEventListener("scroll", onScroll, { passive: true });
+        window.addEventListener("resize", onScroll);
+
+        stopContentsSpy = () => {
+          window.removeEventListener("scroll", onScroll);
+          window.removeEventListener("resize", onScroll);
+          if (frame) window.cancelAnimationFrame(frame);
+        };
+      };
+
+      document.addEventListener("astro:page-load", setupContentsSpy);
+      setupContentsSpy();
+    </script>

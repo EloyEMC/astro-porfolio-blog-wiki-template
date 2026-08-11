@@ -2090,10 +2090,12 @@ html.dark body {
 		padding-left 0.2s ease;
 }
 .editorial-post-toc a:hover,
-.editorial-post-toc a:focus-visible {
+.editorial-post-toc a:focus-visible,
+.editorial-post-toc a.is-active {
 	border-left-color: var(--gold);
 	padding-left: 1rem;
 	color: var(--paper);
+	font-weight: 600;
 }
 .editorial-post-toc-subitem {
 	margin-left: 1rem;

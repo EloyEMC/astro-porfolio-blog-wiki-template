@@ -43,7 +43,10 @@ html.dark body {
 }
 
 .article-shell {
-	overflow-y: visible;
+	overflow: visible;
+}
+.article-shell .interior-drawer {
+	overflow: visible;
 }
 
 .interior-drawer {
@@ -2075,13 +2078,22 @@ html.dark body {
 	color: var(--gold);
 }
 .editorial-post-toc a {
+	display: block;
+	border-left: 2px solid transparent;
+	padding: 0.2rem 0 0.2rem 0.75rem;
 	color: var(--muted-ink);
 	font-size: 0.9rem;
 	text-decoration: none;
+	transition:
+		border-color 0.2s ease,
+		color 0.2s ease,
+		padding-left 0.2s ease;
 }
 .editorial-post-toc a:hover,
-.editorial-post-toc a:focus {
-	color: var(--gold);
+.editorial-post-toc a:focus-visible {
+	border-left-color: var(--gold);
+	padding-left: 1rem;
+	color: var(--paper);
 }
 .editorial-post-toc-subitem {
 	margin-left: 1rem;
@@ -2129,8 +2141,8 @@ html.dark body {
 	grid-column: 2;
 	grid-row: 1;
 	align-self: start;
-	position: sticky;
-	top: 2rem;
+	position: static;
+	height: fit-content;
 	width: 100%;
 	min-width: 0;
 	margin: 0;
@@ -2225,6 +2237,12 @@ html.dark body {
 .editorial-post-body > .author-box {
 	margin-right: 0;
 	margin-left: 0;
+}
+@media (min-width: 1101px) {
+	.editorial-post-aside {
+		position: sticky;
+		top: 2rem;
+	}
 }
 @media (max-width: 1100px) {
 	.editorial-post {

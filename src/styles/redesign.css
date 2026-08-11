@@ -2141,7 +2141,7 @@ html.dark body {
 }
 .editorial-post-aside {
 	grid-column: 2;
-	grid-row: 1;
+	grid-row: 1 / span 2;
 	align-self: start;
 	position: static;
 	height: fit-content;

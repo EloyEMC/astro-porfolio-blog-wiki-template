@@ -1,25 +1,365 @@
 ---
 import InteriorLayout from "../../layouts/InteriorLayout.astro";
+
+const sectionLinks = [
+  { label: "Problemas reales", href: "#problemas-reales" },
+  { label: "Software y automatización", href: "#software-automatizacion" },
+  { label: "Inteligencia artificial", href: "#inteligencia-artificial" },
+  { label: "Herramientas", href: "#herramientas" },
+  { label: "Laboratorio", href: "#laboratorio" },
+];
 ---
 
 <InteriorLayout
-  title="Tecnología — Eloy Martínez Cuesta"
-  description="Tecnología aplicada a productos, contenidos y soluciones digitales para proyectos reales."
+  title="Tecnología aplicada | Software, automatización e IA | Eloy Martínez Cuesta"
+  description="Software, automatización e inteligencia artificial aplicados a problemas reales de iluminación, producto, datos y negocio."
   slug="tecnologia"
 >
-  <section aria-labelledby="technology-title">
-    <p class="interior-eyebrow">02 / Tecnología</p>
-    <h1 id="technology-title" class="interior-title">Tecnología que resuelve.</h1>
-    <p class="interior-intro">Una selección de ideas sobre desarrollo web, SEO y herramientas digitales. El contenido existente sigue publicado en el blog, sin cambiar sus URLs.</p>
-    <div class="illumination-grid">
-      <article class="illumination-card">
-        <h2><a href="/blog/">Explorar el blog</a></h2>
-        <p>Artículos técnicos y prácticos sobre tecnología digital.</p>
-      </article>
-      <article class="illumination-card">
-        <h2><a href="/tags/Diseño%20WEB">Diseño web</a></h2>
-        <p>Accede a los contenidos existentes relacionados con la creación y mantenimiento de webs.</p>
-      </article>
+  <section class="technology-page" aria-labelledby="technology-title">
+    <header class="technology-header">
+      <p class="interior-eyebrow">02 / Tecnología</p>
+      <h1 id="technology-title" class="interior-title">Tecnología aplicada.</h1>
+      <p class="technology-declaration">Construir antes que hablar de ello.</p>
+      <p class="interior-intro">
+        Mi interés por el software, la automatización y la inteligencia artificial nace de una necesidad muy concreta: resolver problemas.
+      </p>
+      <p class="technology-lead">
+        Después de más de 20 años trabajando con iluminación, producto, proyectos, clientes y negocio, conozco procesos que pueden hacerse mejor y preguntas para las que todavía faltan buenas herramientas. La tecnología me permite convertir parte de ese conocimiento en soluciones que antes no podía construir.
+      </p>
+    </header>
+
+    <div class="technology-feature">
+      <figure class="technology-visual" aria-labelledby="technology-visual-caption">
+        <img
+          src="/tecnologia-aplicada-hero.png"
+          alt="Red de conexiones y datos iluminada sobre una superficie oscura"
+          width="2048"
+          height="1152"
+        />
+        <figcaption id="technology-visual-caption">
+          La herramienta importa menos que el problema que ayuda a resolver.
+        </figcaption>
+      </figure>
+
+      <aside class="section-index" aria-labelledby="technology-index-title">
+        <p id="technology-index-title" class="interior-eyebrow">En esta sección</p>
+        <nav aria-label="Contenido de tecnología">
+          <ol>
+            {sectionLinks.map((link, index) => (
+              <li><a href={link.href}><span>{String(index + 1).padStart(2, "0")}</span>{link.label}</a></li>
+            ))}
+          </ol>
+          <a class="section-index-cta" href="#herramientas">Explorar herramientas <span aria-hidden="true">→</span></a>
+        </nav>
+      </aside>
     </div>
+
+    <hr class="interior-divider" />
+
+    <section id="problemas-reales" class="editorial-section" aria-labelledby="problems-title">
+      <p class="interior-eyebrow">EXPERIENCIA + TECNOLOGÍA</p>
+      <h2 id="problems-title">Primero entender el problema. Después elegir la tecnología.</h2>
+      <p class="section-intro">
+        No empiezo pensando en qué framework, modelo de IA o lenguaje utilizar. Empiezo intentando entender qué problema merece la pena resolver.
+      </p>
+      <div class="criteria-grid">
+        <article>
+          <p class="criteria-number">01</p>
+          <h3>Entender el contexto.</h3>
+          <p class="criteria-subtitle">Conocimiento vertical.</p>
+          <p>La experiencia en iluminación, producto, proyectos y mercado permite detectar necesidades que desde fuera pueden pasar desapercibidas.</p>
+        </article>
+        <article>
+          <p class="criteria-number">02</p>
+          <h3>Elegir la herramienta adecuada.</h3>
+          <p class="criteria-subtitle">Tecnología al servicio del problema.</p>
+          <p>Software, APIs, automatización e inteligencia artificial son medios. La tecnología depende del problema, no al revés.</p>
+        </article>
+        <article>
+          <p class="criteria-number">03</p>
+          <h3>Convertir una idea en algo utilizable.</h3>
+          <p class="criteria-subtitle">Producto antes que demostración.</p>
+          <p>Diseñar, construir, probar y mejorar. Una solución empieza a tener valor cuando alguien puede utilizarla para hacer algo mejor, más rápido o de forma más sencilla.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="software-automatizacion" class="editorial-section section-note" aria-labelledby="software-title">
+      <p class="interior-eyebrow">SOFTWARE Y AUTOMATIZACIÓN</p>
+      <h2 id="software-title">Menos trabajo repetido. Más tiempo para decidir.</h2>
+      <p>
+        Hay tareas que consumen atención sin aportar criterio: ordenar información, repetir pasos, buscar datos o trasladar contenidos entre herramientas. El software y la automatización permiten convertir esos procesos en sistemas más claros, medibles y fáciles de mejorar.
+      </p>
+      <p>
+        El punto de partida sigue siendo el conocimiento del trabajo real. La automatización no sustituye la experiencia: la libera para que pueda utilizarse donde más valor aporta.
+      </p>
+      <div class="technology-links">
+        <a class="section-cta" href="/iluminacion/">Ver el contexto de iluminación <span aria-hidden="true">→</span></a>
+        <a class="section-cta" href="/tags/Diseño%20WEB">Explorar contenidos web <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section id="inteligencia-artificial" class="editorial-section section-note" aria-labelledby="ai-title">
+      <p class="interior-eyebrow">INTELIGENCIA ARTIFICIAL</p>
+      <h2 id="ai-title">IA donde aporta valor.</h2>
+      <p>
+        La inteligencia artificial amplía lo que puedo construir, pero no sustituye el conocimiento necesario para saber qué construir.
+      </p>
+      <p>
+        La utilizo para explorar nuevas interfaces, trabajar con información, automatizar procesos y experimentar con formas diferentes de acceder al conocimiento técnico.
+      </p>
+      <p>
+        El objetivo no es añadir IA a todo. Es utilizarla cuando permite resolver mejor un problema.
+      </p>
+    </section>
+
+    <section id="herramientas" class="editorial-section" aria-labelledby="tools-title">
+      <p class="interior-eyebrow">PROYECTOS / HERRAMIENTAS</p>
+      <h2 id="tools-title">Construir para aprender. Aprender para construir mejor.</h2>
+      <p class="section-intro">
+        A partir de aquí, la tecnología se demuestra con herramientas y resultados, no con una lista de tecnologías. En el repositorio actual hay material real sobre trabajo web y resultados de iluminación; todavía no hay información pública suficiente para describir Disano Tools o una API de iluminación sin inventar funcionalidades.
+      </p>
+
+      <div class="technology-case-grid">
+        <article class="technology-case technology-case--image">
+          <figure>
+            <img src="/Como-personalizar-la-pagina-de-categorias-en-wordpress-anadir-imagen-principal-a-la-categoria-con-ACF6.webp" alt="Resultado real de una personalización de categorías en WordPress" loading="lazy" width="1024" height="683" />
+          </figure>
+          <div class="technology-case-content">
+            <p class="criteria-number">CASO DOCUMENTADO</p>
+            <h3>Diseño web y contenidos que se pueden mantener.</h3>
+            <p>Los artículos sobre WordPress recogen problemas concretos de publicación, estructura y mantenimiento web, con capturas reales del proceso y del resultado.</p>
+            <p class="technology-case-meta">Problema: mejorar una web existente · Estado: contenido publicado</p>
+            <a class="card-link" href="/blog/como-personalizar-la-página-de-categorías-en-wordpress/">Explorar caso <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="technology-case technology-case--image">
+          <figure>
+            <img src="/Captura-de-pantalla-2021-03-04-a-las-12.00.10.webp" alt="Captura real de resultados de consumo y coste energético de iluminación" loading="lazy" width="1024" height="768" />
+          </figure>
+          <div class="technology-case-content">
+            <p class="criteria-number">DATOS Y DECISIÓN</p>
+            <h3>Convertir datos técnicos en una decisión comprensible.</h3>
+            <p>Las capturas existentes muestran cómo los datos de iluminación pueden traducirse en resultados que ayudan a comparar consumo, coste y rendimiento.</p>
+            <p class="technology-case-meta">Contexto: iluminación y eficiencia · Estado: evidencia visual disponible</p>
+            <a class="card-link" href="/iluminacion/">Ver el contexto <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="laboratorio" class="editorial-section section-note" aria-labelledby="lab-title">
+      <p class="interior-eyebrow">LABORATORIO</p>
+      <h2 id="lab-title">No todo tiene que convertirse en producto.</h2>
+      <p>
+        Algunas ideas empiezan como una pregunta, una prueba o unas pocas líneas de código. Este es el espacio para experimentar con APIs, agentes, automatización, datos, interfaces e inteligencia artificial antes de saber si acabarán convirtiéndose en una herramienta real.
+      </p>
+      <p>
+        No presento aquí experimentos concretos que no estén documentados todavía. El laboratorio también sirve para conservar esa fase de exploración sin convertir cada prueba en una promesa.
+      </p>
+    </section>
+
+    <section class="editorial-section technology-business" aria-labelledby="business-title">
+      <p class="interior-eyebrow">ILUMINACIÓN + TECNOLOGÍA + NEGOCIO</p>
+      <h2 id="business-title">El valor aparece cuando los tres mundos se encuentran.</h2>
+      <p>
+        Conocer un sector permite detectar problemas. La tecnología permite construir nuevas soluciones. Entender el negocio ayuda a decidir cuáles tienen sentido.
+      </p>
+      <a class="section-cta" href="/proyectos/">Ver proyectos <span aria-hidden="true">→</span></a>
+    </section>
   </section>
 </InteriorLayout>
+
+<style>
+  .technology-page {
+    --section-line: rgba(241, 238, 232, 0.18);
+  }
+
+  .technology-header {
+    max-width: 62rem;
+  }
+
+  .technology-header .interior-title {
+    max-width: 58rem;
+  }
+
+  .technology-declaration {
+    margin: 1rem 0 1.5rem;
+    color: var(--paper);
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+    line-height: 1.2;
+  }
+
+  .technology-lead,
+  .technology-page .section-intro {
+    max-width: 48rem;
+    color: var(--muted-ink);
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .technology-feature {
+    display: grid;
+    grid-template-columns: minmax(0, 1.65fr) minmax(14rem, 0.75fr);
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+
+  .technology-visual {
+    position: relative;
+    min-height: 34rem;
+    overflow: hidden;
+    margin: 0;
+    background: var(--ink);
+  }
+
+  .technology-visual img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(0.72) contrast(1.05);
+  }
+
+  .technology-visual::after {
+    position: absolute;
+    inset: 35% 0 0;
+    background: linear-gradient(transparent, rgba(16, 16, 15, 0.88));
+    content: "";
+    pointer-events: none;
+  }
+
+  .technology-visual figcaption {
+    position: absolute;
+    z-index: 1;
+    right: 1.5rem;
+    bottom: 1.35rem;
+    left: 1.5rem;
+    max-width: 30rem;
+    color: rgba(241, 238, 232, 0.78);
+    font-size: 0.78rem;
+    line-height: 1.5;
+  }
+
+  .technology-page .editorial-section {
+    scroll-margin-top: 2rem;
+  }
+
+  .technology-page .editorial-section + .editorial-section {
+    margin-top: 7rem;
+  }
+
+  .technology-page .editorial-section h2 {
+    max-width: 42rem;
+    margin: 0.9rem 0 3rem;
+    color: var(--paper);
+    font-size: clamp(2.2rem, 4vw, 4.5rem);
+    letter-spacing: -0.06em;
+    line-height: 0.98;
+  }
+
+  .technology-page .criteria-grid {
+    margin-top: 2.5rem;
+  }
+
+  .technology-page .section-note {
+    max-width: 48rem;
+    padding-bottom: 3rem;
+  }
+
+  .technology-page .section-note h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .technology-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2.5rem;
+  }
+
+  .technology-case-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .technology-case {
+    overflow: hidden;
+    border: 1px solid var(--section-line);
+    background: color-mix(in srgb, var(--ink) 92%, var(--paper));
+  }
+
+  .technology-case figure {
+    height: 16rem;
+    margin: 0;
+    overflow: hidden;
+    background: var(--ink);
+  }
+
+  .technology-case figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(0.78) contrast(1.04);
+  }
+
+  .technology-case-content {
+    display: flex;
+    min-height: 19rem;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .technology-case h3 {
+    margin: 0.7rem 0 1rem;
+    color: var(--paper);
+    font-size: 1.35rem;
+    line-height: 1.15;
+  }
+
+  .technology-case p:not(.criteria-number):not(.technology-case-meta) {
+    color: var(--muted-ink);
+    line-height: 1.65;
+  }
+
+  .technology-case-meta {
+    margin-top: auto;
+    padding-top: 1.25rem;
+    color: var(--paper);
+    font-size: 0.78rem;
+    line-height: 1.5;
+  }
+
+  .technology-case .card-link {
+    align-self: flex-start;
+    margin-top: 1.25rem;
+  }
+
+  .technology-business {
+    max-width: 48rem;
+    padding-bottom: 3rem;
+  }
+
+  @media (max-width: 780px) {
+    .technology-feature,
+    .technology-case-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .technology-visual {
+      min-height: 22rem;
+    }
+
+    .technology-page .section-index {
+      padding-left: 0;
+      border-left: 0;
+    }
+
+    .technology-page .criteria-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

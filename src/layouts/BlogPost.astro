@@ -100,15 +100,31 @@ const tocHeadings = headings.filter(({ depth }) => depth >= 2 && depth <= 3);
         if (!contents) return;
 
         const links = Array.from(contents.querySelectorAll<HTMLAnchorElement>("a[href^='#']"));
+        const normalizeHash = (value: string) => {
+          try {
+            return decodeURIComponent(value)
+              .normalize("NFD")
+              .replace(/[\u0300-\u036f]/g, "")
+              .toLowerCase();
+          } catch {
+            return value.toLowerCase();
+          }
+        };
+        const headingByHash = new Map(
+          Array.from(document.querySelectorAll<HTMLElement>(".editorial-post-body h2, .editorial-post-body h3"), (heading) => [
+            normalizeHash(heading.id),
+            heading,
+          ]),
+        );
         const headings = links
-          .map((link) => document.getElementById(link.hash.slice(1)))
-          .filter((heading): heading is HTMLElement => heading !== null);
+          .map((link) => headingByHash.get(normalizeHash(link.hash.slice(1))))
+          .filter((heading): heading is HTMLElement => heading !== undefined);
 
         if (!headings.length) return;
 
         const setActive = (heading: HTMLElement) => {
           links.forEach((link) => {
-            const active = link.hash === `#${heading.id}`;
+            const active = normalizeHash(link.hash.slice(1)) === normalizeHash(heading.id);
             link.classList.toggle("is-active", active);
             if (active) link.setAttribute("aria-current", "location");
             else link.removeAttribute("aria-current");

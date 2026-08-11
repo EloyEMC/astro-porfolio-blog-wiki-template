@@ -20,6 +20,7 @@ const { data, slug } = entry;
 
 const {
   title,
+  seoTitle,
   description,
   date,
   modifiedDate,
@@ -60,7 +61,7 @@ const robotsContent = metaRobots.join(', ');
 const schemaOrgJSON = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": title,
+  "headline": seoTitle || title,
   "description": description || "Default description", // Valor por defecto si description es undefined
   "url": fullCanonicalUrl,
   "datePublished": date.toISOString(),
@@ -134,7 +135,7 @@ const faqJSON = faqs && faqs.length > 0 ? {
 ---
 
 <!-- Title -->
-<title>{title}</title>
+<title>{seoTitle || title}</title>
 
 <!-- Description -->
 {description && <meta name="description" content={description} />}
@@ -149,7 +150,7 @@ const faqJSON = faqs && faqs.length > 0 ? {
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content={ogType} />
-<meta property="og:title" content={title} />
+<meta property="og:title" content={seoTitle || title} />
 {description && <meta property="og:description" content={description} />}
 <meta property="og:image" content={fullImageUrl} />
     {image_alt && <meta property="og:image:alt" content={image_alt} />}
@@ -161,7 +162,7 @@ const faqJSON = faqs && faqs.length > 0 ? {
 <meta name="twitter:card" content="summary_large_image" />
 {twitterSite && <meta name="twitter:site" content={twitterSite} />}
 {twitterCreator && <meta name="twitter:creator" content={twitterCreator} />}
-<meta name="twitter:title" content={title} />
+<meta name="twitter:title" content={seoTitle || title} />
 {description && <meta name="twitter:description" content={description} />}
 <meta name="twitter:image" content={fullTwitterImageUrl} />
 {image_alt && <meta name="twitter:image:alt" content={image_alt} />}

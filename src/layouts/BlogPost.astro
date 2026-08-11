@@ -116,7 +116,7 @@ const tocHeadings = headings.filter(({ depth }) => depth >= 2 && depth <= 3);
         };
 
         const updateActive = () => {
-          const activationLine = window.innerHeight * 0.28;
+          const activationLine = window.innerHeight * 0.45;
           const current = headings.reduce((active, heading) => {
             const headingTop = heading.getBoundingClientRect().top;
             return headingTop <= activationLine ? heading : active;

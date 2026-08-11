@@ -1,4 +1,27 @@
-# Example: Permitir a todos los bots de búsqueda escanear e indexar el sitio web.
-# Full syntax: https://developers.google.com/search/docs/advanced/robots/create-robots-txt
+# robots.txt
 User-agent: *
 Allow: /
+Allow: /blog/
+Allow: /tags/
+Allow: /archive/
+
+Disallow: /admin/
+Disallow: /login/
+Disallow: /user/
+Disallow: /dashboard/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /search/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+Sitemap: https://eloymartinezcuesta.com/sitemap-index.xml

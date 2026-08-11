@@ -1,0 +1,105 @@
+---
+import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
+import InteriorLayout from "../../layouts/InteriorLayout.astro";
+import { filterPublishedPosts, sortPostsByDate } from "../../utils/posts";
+
+const posts = sortPostsByDate(filterPublishedPosts(await getCollection("blog")));
+const illuminationPosts = posts.filter((post) =>
+  post.data.tags?.some((tag) => tag.toLowerCase().includes("luz") || tag.toLowerCase().includes("ilumin"))
+).slice(0, 4);
+
+const sectionLinks = [
+  { label: "Proyectos seleccionados", href: "#proyectos" },
+  { label: "Conocimiento técnico", href: "#conocimiento" },
+  { label: "Artículos de iluminación", href: "#articulos" },
+  { label: "Casos y aprendizajes", href: "#casos" },
+  { label: "Herramientas relacionadas", href: "#herramientas" },
+];
+---
+
+<InteriorLayout
+  title="Iluminación — Eloy Martínez Cuesta"
+  description="Ideas, criterio y experiencia para entender la iluminación, el producto y los espacios."
+  slug="iluminacion"
+>
+  <section class="illumination-page" aria-labelledby="illumination-title">
+    <header class="illumination-header">
+      <p class="interior-eyebrow">01 / Iluminación</p>
+      <h1 id="illumination-title" class="interior-title">La experiencia primero. La tecnología después.</h1>
+      <p class="interior-intro">Más de dos décadas trabajando con proyectos, prescripción, producto, distribución, clientes y mercado. Aquí vive la parte más profunda de mi conocimiento profesional.</p>
+    </header>
+
+    <div class="illumination-feature">
+      <figure class="illumination-visual" aria-labelledby="illumination-visual-caption">
+        <div class="illumination-glow" aria-hidden="true"></div>
+        <div class="illumination-shadow" aria-hidden="true"></div>
+        <figcaption id="illumination-visual-caption">La luz no es solo una cuestión técnica: también define cómo habitamos, trabajamos y percibimos un espacio.</figcaption>
+      </figure>
+
+      <aside class="section-index" aria-labelledby="section-index-title">
+        <p id="section-index-title" class="interior-eyebrow">En esta sección</p>
+        <nav aria-label="Contenido de iluminación">
+          <ol>
+            {sectionLinks.map((link, index) => (
+              <li><a href={link.href}><span>{String(index + 1).padStart(2, "0")}</span>{link.label}</a></li>
+            ))}
+          </ol>
+          <a class="section-index-cta" href="#articulos">Explorar contenidos <span aria-hidden="true">→</span></a>
+        </nav>
+      </aside>
+    </div>
+
+    <hr class="interior-divider" />
+
+    <section id="conocimiento" class="editorial-section" aria-labelledby="criteria-title">
+      <p class="interior-eyebrow">Experiencia / Criterio</p>
+      <h2 id="criteria-title">Tres formas de mirar un proyecto.</h2>
+      <div class="criteria-grid">
+        <article id="proyectos">
+          <p class="criteria-number">01</p>
+          <h3>Proyecto y prescripción</h3>
+          <p>Leer el espacio, entender a las personas y convertir sus necesidades en una propuesta de luz coherente, viable y con intención.</p>
+        </article>
+        <article>
+          <p class="criteria-number">02</p>
+          <h3>Producto y técnica</h3>
+          <p>Conocer la tecnología para elegir mejor: rendimiento, óptica, control, eficiencia y calidad puestos al servicio del resultado.</p>
+        </article>
+        <article id="casos">
+          <p class="criteria-number">03</p>
+          <h3>Mercado y negocio</h3>
+          <p>Conectar fabricantes, distribución y clientes para que las buenas decisiones también sean sostenibles en el tiempo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="articulos" class="editorial-section selected-content" aria-labelledby="articles-title">
+      <p class="interior-eyebrow">Contenido seleccionado</p>
+      <h2 id="articles-title">Artículos para profundizar.</h2>
+      <div class="illumination-grid">
+            {illuminationPosts.map((post) => (
+              <article class:list={["illumination-card", { "illumination-card--image": post.data.image }]}>
+                {post.data.image && (
+                  <div class="illumination-card-background">
+                    <Image src={post.data.image} alt="" aria-hidden="true" width={800} height={500} decoding="async" loading="lazy" />
+                  </div>
+                )}
+                <div class="illumination-card-content">
+                  <p class="interior-eyebrow">{post.data.date.toLocaleDateString("es-ES", { year: "numeric", month: "long" })}</p>
+                  <h3><a href={`/blog/${post.slug}/`}>{post.data.title}</a></h3>
+                  {post.data.description && <p>{post.data.description}</p>}
+                  <a class="card-link" href={`/blog/${post.slug}/`}>Leer artículo <span aria-hidden="true">→</span></a>
+                </div>
+              </article>
+            ))}
+      </div>
+    </section>
+
+    <section id="herramientas" class="editorial-section section-note" aria-labelledby="tools-title">
+      <p class="interior-eyebrow">Herramientas relacionadas</p>
+      <h2 id="tools-title">El criterio también se construye compartiendo.</h2>
+      <p>Una selección viva de referencias, aprendizajes y recursos para seguir pensando la iluminación con rigor y curiosidad.</p>
+    </section>
+  </section>
+</InteriorLayout>

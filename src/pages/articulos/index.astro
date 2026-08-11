@@ -1,0 +1,74 @@
+---
+import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
+import InteriorLayout from "../../layouts/InteriorLayout.astro";
+import { filterPublishedPosts, sortPostsByDate } from "../../utils/posts";
+
+const posts = sortPostsByDate(filterPublishedPosts(await getCollection("blog")));
+const [featuredPost, ...recentPosts] = posts;
+---
+
+<InteriorLayout
+  title="Artículos — Eloy Martínez Cuesta"
+  description="Artículos sobre iluminación, tecnología, negocio y las decisiones que conectan estos ámbitos."
+  slug="articulos"
+>
+  <section class="articles-page" aria-labelledby="articles-title">
+    <header>
+      <p class="interior-eyebrow">04 / Artículos</p>
+      <h1 id="articles-title" class="interior-title">Pensar. Explicar. Compartir.</h1>
+      <p class="interior-intro">El archivo reúne textos escritos desde la experiencia: explicaciones claras, aprendizajes y herramientas para quienes trabajan en proyectos reales.</p>
+    </header>
+
+    {featuredPost && (
+      <section class="editorial-section articles-feature-section" aria-labelledby="featured-article-title">
+        <p class="interior-eyebrow">Artículo destacado</p>
+            <article class:list={["illumination-card", "articles-feature", { "articles-card--image": featuredPost.data.image }]}>
+              {featuredPost.data.image && (
+                <div class="articles-card-background">
+                  <Image src={featuredPost.data.image} alt={featuredPost.data.title} width={1200} height={700} decoding="async" loading="eager" />
+                </div>
+              )}
+              <div class="articles-card-content">
+                <p class="interior-eyebrow">{featuredPost.data.date.toLocaleDateString("es-ES", { year: "numeric", month: "long" })}</p>
+                <h2 id="featured-article-title"><a href={`/blog/${featuredPost.slug}/`}>{featuredPost.data.title}</a></h2>
+                {featuredPost.data.description && <p>{featuredPost.data.description}</p>}
+              </div>
+              <a class="card-link" href={`/blog/${featuredPost.slug}/`}>Leer artículo <span aria-hidden="true">→</span></a>
+            </article>
+      </section>
+    )}
+
+    <section class="editorial-section articles-recent" aria-labelledby="recent-articles-title">
+      <div class="articles-section-heading">
+        <div>
+          <p class="interior-eyebrow">Últimas publicaciones</p>
+          <h2 id="recent-articles-title">Lecturas recientes.</h2>
+        </div>
+        <a class="section-index-cta" href="/archive/">Ver archivo completo <span aria-hidden="true">→</span></a>
+      </div>
+
+      {recentPosts.length > 0 ? (
+        <div class="articles-list">
+          {recentPosts.map((post) => (
+                <article class:list={["articles-list-item", { "articles-card--image": post.data.image }]}>
+                  {post.data.image && (
+                    <div class="articles-card-background">
+                      <Image src={post.data.image} alt={post.data.title} width={800} height={500} decoding="async" loading="lazy" />
+                    </div>
+                  )}
+                  <p class="interior-eyebrow">{post.data.date.toLocaleDateString("es-ES", { year: "numeric", month: "long" })}</p>
+                  <div class="articles-card-content">
+                    <h3><a href={`/blog/${post.slug}/`}>{post.data.title}</a></h3>
+                    {post.data.description && <p>{post.data.description}</p>}
+                  </div>
+                  <a class="articles-list-arrow" href={`/blog/${post.slug}/`} aria-label={`Leer ${post.data.title}`}><span aria-hidden="true">↗</span></a>
+                </article>
+          ))}
+        </div>
+      ) : (
+        <p class="articles-empty">Todavía no hay más publicaciones. Vuelve pronto para descubrir nuevas lecturas.</p>
+      )}
+    </section>
+  </section>
+</InteriorLayout>

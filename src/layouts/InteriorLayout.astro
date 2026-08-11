@@ -1,0 +1,48 @@
+---
+import { ClientRouter } from "astro:transitions";
+import { GoogleAnalytics } from "astro-google-analytics";
+import { siteConfig } from "../config";
+import SEOPage from "../components/SEOPage.astro";
+import Sidebar from "../components/Sidebar.astro";
+import ContentNav from "../components/ContentNav.astro";
+import "../styles/global.css";
+import "../styles/redesign.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  slug?: string;
+}
+
+const {
+  title = "Eloy Martínez Cuesta",
+  description = "Iluminación, tecnología y negocio con Eloy Martínez Cuesta.",
+  slug = "iluminacion",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="dark">
+  <head>
+    <SEOPage title={title} description={description} siteUrl={siteConfig.site} defaultImage={siteConfig.image || ""} slug={slug} />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon-emc-512.png?v=4" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-emc-32.png?v=4" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-emc-16.png?v=4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-emc-v4.png?v=1" />
+    {siteConfig.googleAnalysis && <GoogleAnalytics id={siteConfig.googleAnalysis} />}
+    <ClientRouter />
+  </head>
+  <body class="interior-shell">
+    <div id="_drawer" class="interior-drawer">
+      <Sidebar />
+      <div class="interior-main">
+        <ContentNav />
+        <main class="interior-content">
+          <slot />
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

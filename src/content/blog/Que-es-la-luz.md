@@ -2,7 +2,7 @@
 title: ¿Qués es la Luz?
 image:  /la-luz-y-sus-propiedades.webp
 image_alt: "Pilares de Luz de distintas temperaturas se elvan hacia el cielo."
-description: "La luz, algo que hace visible las coas, per ¿Qué es la Luz? La luz es una onda."
+description: Explicación de la luz como radiación electromagnética, sus propiedades de reflexión y refracción, la propagación rectilínea y su relación con el diseño lumínico.
 date: 2025-03-21
 tags: [Luz, Física, Espectro electromagnético]
 twitter_img: /Eloy-martinez-cuesta-web.webp
@@ -44,19 +44,6 @@ FAQs:
     answer: "La óptica geométrica se basa en el principio de que la luz se propaga en línea recta, lo que es clave para calcular y predecir la posición de la luz, utilizando herramientas como Dialux o Relux."
 
 ---
-
-### Contenido
-
-- [Qué es la luz para el diseño de proyectos lumínicos](#qué-es-la-luz-para-el-diseño-de-proyectos-lumínicos)
-  - [Definición de la luz](#definición-de-la-luz)
-  - [Propiedades de la luz](#propiedades-de-la-luz)
-    - [Refracción](#refracción)
-      - [También te puede interesar…](#también-te-puede-interesar)
-    - [Reflexión](#reflexión)
-    - [Propagación de la luz](#propagación-de-la-luz)
-  - [Espectro electromagnético](#espectro-electromagnético)
-  - [FAQs sobre "¿Qué es la Luz?](#faqs-sobre-qué-es-la-luz)
-
 
 # Qué es la luz para el diseño de proyectos lumínicos
 
@@ -130,22 +117,22 @@ Este apartado es fundamental para el trabajo de los diseñadores de iluminación
 
 La luz es una onda de energía y parte del espectro electromagnético, específicamente la radiación que puede ser percibida por el ojo humano.
 
-- ¿Cuáles son las propiedades más importantes de la luz? 
+- ¿Cuáles son las propiedades más importantes de la luz?
 
 Las propiedades más importantes incluyen la propagación recta, la refracción, la reflexión y la visibilidad, que permiten al ojo humano ver formas y colores.
 
-- ¿Qué es la refracción de la luz? 
+- ¿Qué es la refracción de la luz?
 
 La refracción ocurre cuando la luz cambia de dirección al pasar de un medio a otro debido a un cambio en su velocidad. Un ejemplo común es el arco iris o la apariencia de un palo roto al ser sumergido en agua.
 
-- ¿Qué es la reflexión de la luz? 
+- ¿Qué es la reflexión de la luz?
 
 La reflexión ocurre cuando la luz incide en una superficie y rebota en todas las direcciones. Ejemplos incluyen espejos y superficies metálicas pulidas.
 
-- ¿Qué es el espectro electromagnético? 
+- ¿Qué es el espectro electromagnético?
 
 El espectro electromagnético es el conjunto de todas las longitudes de onda de radiación, que incluye desde la luz visible hasta otras formas de radiación como las ondas de radio o rayos X.
 
-- ¿Cómo se utiliza la óptica geométrica en el diseño lumínico? 
+- ¿Cómo se utiliza la óptica geométrica en el diseño lumínico?
 
 La óptica geométrica se basa en el principio de que la luz se propaga en línea recta, lo que es clave para calcular y predecir la posición de la luz, utilizando herramientas como Dialux o Relux.

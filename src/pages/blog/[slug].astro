@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 import { siteConfig } from '../../config'; // Importa siteConfig
+import { filterPublishedPosts, getRandomPosts, getRelatedPosts } from '../../utils/posts';
 
 
 
@@ -10,24 +11,38 @@ export async function getStaticPaths() {
   const siteUrl = siteConfig.site; // Usa siteConfig.site
   const defaultImage = `${siteUrl}/default-image.png`; // Imagen por defecto para SEO
 
-  const posts = await getCollection('blog');
-  return posts.map((post) => ({
-  params: { slug: post.slug },
-  props: { 
-    post, 
-    siteUrl, 
-    defaultImage,
-    author: post.data.author // ✅ Ahora está dentro de props
-  },
-}));
+      const posts = filterPublishedPosts(await getCollection('blog'));
+      return posts.map((post) => {
+        const relatedPosts = getRelatedPosts(posts, post);
+        const randomPosts = getRandomPosts(posts, post, relatedPosts);
+
+        return {
+          params: { slug: post.slug },
+          props: {
+            post,
+            siteUrl,
+            defaultImage,
+            relatedPosts,
+            randomPosts,
+            author: post.data.author,
+          },
+        };
+      });
 
 }
 
-const { post, siteUrl, defaultImage, author } = Astro.props;
-const { Content } = await post.render();
+const { post, siteUrl, defaultImage, author, relatedPosts, randomPosts } = Astro.props;
+const { Content, headings } = await post.render();
 ---
 
-<BlogPost  post={post} siteUrl={siteUrl} defaultImage={defaultImage} author={author}>
-  <article class="prose dark:prose-dark"> 
+    <BlogPost
+      post={post}
+      siteUrl={siteUrl}
+      defaultImage={defaultImage}
+      author={author}
+      headings={headings}
+      relatedPosts={relatedPosts}
+      randomPosts={randomPosts}
+    >
   <Content />
 </BlogPost>

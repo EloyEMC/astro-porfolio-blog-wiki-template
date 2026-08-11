@@ -32,21 +32,22 @@ const years = Object.keys(postsByYear).sort((a, b) => Number(b) - Number(a));
   siteUrl={siteConfig.site} 
   defaultImage={siteConfig.image} 
   title="Archive"
+  slug="archive"
 >
-  <h1 class="text-4xl font-bold mb-8 text-gray-900 dark:text-white">Archive</h1>
-  
+<h1 class="editorial-page-title">Archive</h1>
+
   {years.map(year => (
-    <section class="mb-12"> 
-      <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100">{year}</h2>
-      <ul class="space-y-4">
+    <section class="editorial-archive-year">
+      <h2 class="editorial-section-title">{year}</h2>
+      <ul class="editorial-archive-list">
         {postsByYear[year].map(post => (
-          <li class="flex items-baseline gap-4">
-            <span class="text-sm whitespace-nowrap">
+<li class="editorial-archive-item">
+            <span class="editorial-archive-date">
               <PostDate date={post.data.date} />
             </span>
             <a 
               href={`/blog/${post.slug}`}
-              class="text-gray-900 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400"
+              class="editorial-archive-link"
             >
               {post.data.title}
             </a>

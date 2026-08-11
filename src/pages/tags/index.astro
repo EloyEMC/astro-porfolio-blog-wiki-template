@@ -11,18 +11,18 @@ const tagCounts = tags.map(tag => ({
 })).sort((a, b) => b.count - a.count);
 ---
 
-<BaseLayout title="Tags">
-  <h1 class="text-4xl font-bold mb-8 text-gray-900 dark:text-white">Categorías y Etiquetas</h1>
-  
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+<BaseLayout title="Tags" slug="tags">
+<h1 class="editorial-page-title">Categorías y Etiquetas</h1>
+
+  <div class="editorial-tag-grid">
     {tagCounts.map(({ name, count }) => (
       <a
         href={`/tags/${name}`}
-        class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+        class="editorial-tag-card"
       >
         <div class="flex items-center justify-between">
-          <span class="text-lg font-medium text-gray-900 dark:text-white">#{name}</span>
-          <span class="text-sm text-gray-600 dark:text-gray-400">{count} posts</span>
+<span class="editorial-tag-name">#{name}</span>
+          <span class="editorial-tag-count">{count} posts</span>
         </div>
       </a>
     ))}

@@ -2,7 +2,7 @@
 title: ¿Qué es el Ritmo Circadiano?
 image: /ritmo-circadiano-hcl-iluminacion-led.webp
 image_alt: "Los denominados biológicamente ritmos circadianos son cambios físicos, mentales y conductuales que siguen un ciclo de un día, en 24 horas"
-description: "Welcome to my blog! This is my first post."
+description: Análisis de los ritmos circadianos, sus efectos sobre el sueño y la salud, y el papel de la luz, la luminoterapia y el Human Centric Lighting.
 date: 2025-03-21
 tags: [Iluminación LED, Ritmos circadianos, Luz]
 twitter_img: /Eloy-martinez-cuesta-web.webp
@@ -28,26 +28,9 @@ nofollow: false # Cambiar a true si no quieres que los enlaces del post sean seg
 
 ---
 
-## Contenido
-
-- [Contenido](#contenido)
-- [¿Qué es el ritmo circadiano?](#qué-es-el-ritmo-circadiano)
-- [¿Cómo afectan la salud los ritmos circadianos?](#cómo-afectan-la-salud-los-ritmos-circadianos)
-- [¿Cómo el ciclo circadiano mejora tu salud?](#cómo-el-ciclo-circadiano-mejora-tu-salud)
-- [¿Es el Jet Lag un trastorno del ritmo circadiano?](#es-el-jet-lag-un-trastorno-del-ritmo-circadiano)
-- [¿Qué trastornos del sueño provoca el ritmo circadiano incorrecto?](#qué-trastornos-del-sueño-provoca-el-ritmo-circadiano-incorrecto)
-- [¿Qué factores pueden cambiar los ritmos circadianos?](#qué-factores-pueden-cambiar-los-ritmos-circadianos)
-- [¿Qué métodos se utilizan para recuperar el ritmo circadiano?](#qué-métodos-se-utilizan-para-recuperar-el-ritmo-circadiano)
-- [¿Qué es el Human Centric Lighting?](#qué-es-el-human-centric-lighting)
-- [¿Funciona el HCL con la iluminación LED?](#funciona-el-hcl-con-la-iluminación-led)
-- [¿Qué es la temperatura de color?](#qué-es-la-temperatura-de-color)
-- [¿Qué es la luz?](#qué-es-la-luz)
-
 ---
 
 ## ¿Qué es el ritmo circadiano?
-
-![Ritmo circadiano de 24h](/ritmo-circadiano-hcl-iluminacion-led.webp)
 
 Los denominados biológicamente **ritmos circadianos** son cambios físicos, mentales y conductuales que siguen un ciclo de un día, en 24 horas. Estos procesos biológicos naturales responden, principalmente, **a la presencia de la luz y la oscuridad**, y afectan a la mayoría de seres vivos, incluidos los animales, las plantas y los microbios. La rama de la biología que los estudia es la cronobiología.
 
@@ -71,8 +54,6 @@ Los ritmos circadianos pueden influir en las funciones importantes del cuerpo, c
     ▶️ VER VIDEO EN YOUTUBE
   </div>
 </a>
-
-
 
 La alteración del **ritmo circadiano** puede afectar a nuestra salud. Estos cambios no generan enfermedades directamente, pero sí favorecen la aparición de ciertas patologías. Estudios epidemiológicos han relacionado el trabajo por turnos, donde los patrones de sueño se encuentran alterados, con el desarrollo de diversos tipos de cáncer. Esto no quiere decir que toda persona que tenga un trabajo de este tipo vaya a padecer cáncer, sino que podría tener una mayor predisposición.
 

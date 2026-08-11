@@ -2,16 +2,16 @@
 import Icon from "./Icon.astro"
 ---
 
-<button id="search-button" class="text-gray-700 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white text-3xl" aria-label="Search" >
+<button id="search-button" class="legacy-search-button" aria-label="Search">
  
   <Icon icon="search-button" />
 </button>
 
-<div id="search-modal" class="fixed inset-0 bg-gray-500 bg-opacity-75 z-50 hidden items-start justify-center pt-24">
-  <div class="flex items-start bg-white dark:bg-gray-800 rounded-lg p-6 max-w-2xl w-full mx-4 flex-col">
-    <input type="text" id="search-input" class="w-full p-2 border rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white mb-4" placeholder="Search posts..." autocomplete="off" />
-    <div id="search-results" class="max-h-96 overflow-y-auto w-full">
-      <div class="p-4 text-gray-500 dark:text-gray-400">No results found</div>
+<div id="search-modal" class="legacy-search-modal hidden">
+  <div class="legacy-search-dialog">
+    <input type="text" id="search-input" class="legacy-search-input" placeholder="Search posts..." autocomplete="off" />
+    <div id="search-results" class="legacy-search-results">
+      <div class="legacy-search-empty">No results found</div>
     </div>
   </div>
 </div>
@@ -76,7 +76,7 @@ import Icon from "./Icon.astro"
     searchModal?.classList.add('hidden')
     searchInput.value = ''
     searchResults.innerHTML = `
-            <div class="p-4 text-gray-500 dark:text-gray-400">
+<div class="legacy-search-empty">
           No results found
         </div>
   `
@@ -85,15 +85,15 @@ import Icon from "./Icon.astro"
   function highlightText(text, query) {
     if (!query) return text
     const regex = new RegExp(`(${query})`, 'gi')
-    return text.replace(regex, '<mark class="bg-yellow-200 dark:bg-yellow-800">$1</mark>')
+    return text.replace(regex, '<mark class="legacy-search-highlight">$1</mark>')
   }
 
   function handleSearch(e) {
     const query = e.target.value.toLowerCase()
 
-    if (!query) {
+if (!query) {
       searchResults.innerHTML = `
-        <div class="p-4 text-gray-500 dark:text-gray-400">
+        <div class="legacy-search-empty">
           No results found
         </div>
       `
@@ -133,9 +133,9 @@ import Icon from "./Icon.astro"
   }
 
   function displayResults(results) {
-    if (results.length === 0) {
+if (results.length === 0) {
       searchResults.innerHTML = `
-        <div class="p-4 text-gray-500 dark:text-gray-400">
+        <div class="legacy-search-empty">
           No results found
         </div>
       `
@@ -145,18 +145,18 @@ import Icon from "./Icon.astro"
           (post) => `
             <a
               href="/blog/${post.slug}"
-              class="block p-4 hover:bg-gray-100 dark:hover:bg-gray-700 hover:rounded transition-all duration-200 transform"
+              class="legacy-search-result"
             >
-              <h3 class="font-medium text-gray-900 dark:text-white">
+              <h3 class="legacy-search-result-title">
                 ${post.matchedTitle || post.title}
               </h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400">
+              <p class="legacy-search-result-description">
                 ${post.description || ''}
               </p>
               ${
                 post.matchedContent
                   ? `
-                <p class="text-sm text-gray-600 dark:text-gray-300 mt-2 font-mono">
+                <p class="legacy-search-result-excerpt">
                   ${post.matchedContent}
                 </p>
               `
@@ -165,7 +165,7 @@ import Icon from "./Icon.astro"
               ${post.tags
                 ?.map(
                   (tag) => `
-                  <span class="inline-block bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-full mt-2 mr-2">
+                  <span class="legacy-search-tag">
                     ${tag}
                   </span>
                   `

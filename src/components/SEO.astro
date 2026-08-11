@@ -8,8 +8,8 @@ interface Props {
   siteUrl: string;
   defaultImage: string;
   defaultLocale?: string;
-  author?: string,
-  answer: string,
+      author?: string;
+
 }
 
 const { author } = Astro.props;
@@ -68,14 +68,7 @@ const schemaOrgJSON = {
     "url": authorUrl || siteUrl, // Usa siteUrl si authorUrl no está definido
     "image": authorImage ? `${siteUrl}${authorImage}` : undefined, // Opcional
   },
-  "publisher": {
-    "@type": "Organization",
-    "name": siteName || "Default Site Name", // Valor por defecto si siteName es undefined
-    "logo": {
-      "@type": "ImageObject",
-      "url": `${siteUrl}/public/logo-eloy-martinez-cuesta-marketing-digital-blanco.png`, // Ajusta la ruta del logo
-    },
-  },
+
   "image": fullImageUrl,
   "keywords": keywords?.join(', ') || "", // Valor por defecto si keywords es undefined
   "mainEntityOfPage": {
@@ -98,8 +91,8 @@ const breadcrumbListJSON = {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Blog",
-      "item": `${siteUrl}/blog/`,
+      "name": "Artículos",
+      "item": `${siteUrl}/articulos/`,
     },
     {
       "@type": "ListItem",
@@ -156,6 +149,7 @@ const faqJSON = faqs && faqs.length > 0 ? {
 <meta property="og:title" content={title} />
 {description && <meta property="og:description" content={description} />}
 <meta property="og:image" content={fullImageUrl} />
+    {image_alt && <meta property="og:image:alt" content={image_alt} />}
 {siteName && <meta property="og:site_name" content={siteName} />}
 <meta property="og:locale" content={defaultLocale} />
 <meta property="og:url" content={fullCanonicalUrl} />
@@ -167,6 +161,7 @@ const faqJSON = faqs && faqs.length > 0 ? {
 <meta name="twitter:title" content={title} />
 {description && <meta name="twitter:description" content={description} />}
 <meta name="twitter:image" content={fullTwitterImageUrl} />
+{image_alt && <meta name="twitter:image:alt" content={image_alt} />}
 
 <!-- Canonical URL -->
 <link rel="canonical" href={fullCanonicalUrl} />
@@ -202,7 +197,10 @@ const faqJSON = faqs && faqs.length > 0 ? {
 
 
 <!-- Favicon (opcional) -->
-<link rel="icon" type="image/png" href={`${siteUrl}/favicon.png`} />
+<link rel="icon" type="image/png" href="/favicon-emc-512.png?v=4" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-emc-32.png?v=4" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-emc-16.png?v=4" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-emc-v4.png?v=1" />
 
 <!-- Theme Color (opcional) -->
 <meta name="theme-color" content="#ffffff" />

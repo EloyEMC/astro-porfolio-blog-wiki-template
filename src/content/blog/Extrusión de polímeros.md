@@ -1,6 +1,6 @@
 ---
 title: Extrusión de polímeros
-description: La extrusión es un proceso continuo o semi-continuo que más que un molde requiere de un dado que formará la sección transversal deseada como un tubo o un perfil.
+description: "Introducción al proceso de extrusión de polímeros: configuraciones de husillo, componentes, dados, parámetros de calidad y procesos especializados como termoformado y calandrado."
 date: 2025-03-23
 tags: [Polímeros, Plástico, Extrusión ]
 draft: false
@@ -54,46 +54,29 @@ faqs:
 ---
 # Procesos de Extrusión de Polímeros
 
-- [Procesos de Extrusión de Polímeros](#procesos-de-extrusión-de-polímeros)
-  - [¿Qué es la extrusión?](#qué-es-la-extrusión)
-    - [Ventajas clave:](#ventajas-clave)
-  - [Tipos de Extrusión](#tipos-de-extrusión)
-    - [Por configuración:](#por-configuración)
-    - [Por producto final:](#por-producto-final)
-  - [Componentes principales](#componentes-principales)
-    - [Husillo extrusor](#husillo-extrusor)
-    - [Cabezales (dados):](#cabezales-dados)
-  - [Procesos especializados](#procesos-especializados)
-    - [Termoformado](#termoformado)
-    - [Calandrado](#calandrado)
-  - [# 🔄 Preguntas Frecuentes sobre Extrusión de Polímeros](#--preguntas-frecuentes-sobre-extrusión-de-polímeros)
-  - [🧩 Conceptos Básicos](#-conceptos-básicos)
-    - [❓ ¿Qué materiales se pueden extrudir?](#-qué-materiales-se-pueden-extrudir)
-    - [❓ ¿Cuál es la diferencia entre extrusión e inyección?](#-cuál-es-la-diferencia-entre-extrusión-e-inyección)
-  - [⚙️ Configuraciones de Máquinas](#️-configuraciones-de-máquinas)
-    - [❓ ¿Cuándo usar extrusión mono-husillo vs doble-husillo?](#-cuándo-usar-extrusión-mono-husillo-vs-doble-husillo)
-    - [❓ ¿Qué es la co-extrusión?](#-qué-es-la-co-extrusión)
-  - [Lecturas recomendadas](#lecturas-recomendadas)
-  - [Video demostrativo](#video-demostrativo)
-
 
 ## ¿Qué es la extrusión?
+
 La extrusión es un proceso continuo o semi-continuo que utiliza un dado para dar forma a materiales plásticos, creando perfiles con sección transversal fija (tubos, láminas, etc.).
 
 ![Extrusora de polímeros](/Extrusor-de-polimeros-extrusora.webp)
 
-### Ventajas clave:
+### Ventajas clave
+
 - Capacidad para crear secciones transversales complejas
 - Excelente acabado superficial
 - Trabaja con materiales frágiles (solo esfuerzos de compresión)
 
 ## Tipos de Extrusión
-### Por configuración:
+
+### Por configuración
+
 - **Mono-husillo**: Un solo tornillo plastificador
 - **Doble-husillo**: Dos tornillos para mezclado intensivo
 - **Co-extrusión**: Múltiples extrusores alimentando un dado común
 
-### Por producto final:
+### Por producto final
+
 - **Extrusión de perfiles**: Barras, tubos, molduras
 - **Extrusión de lámina/película**: Para termoformado o empaques
 - **Película soplada**: Bolsas plásticas
@@ -101,7 +84,9 @@ La extrusión es un proceso continuo o semi-continuo que utiliza un dado para da
 - **Compounding**: Mezcla de aditivos y polímeros
 
 ## Componentes principales
+
 ### Husillo extrusor
+
 ![Zonas del husillo](/Extrusor-de-polimeros-extrusora-husillo-zonas.webp)
 
 1. **Zona de alimentación**: Introduce el material
@@ -110,19 +95,24 @@ La extrusión es un proceso continuo o semi-continuo que utiliza un dado para da
 
 Relación L/D típica: 24:1 para polímeros cristalinos
 
-### Cabezales (dados):
+### Cabezales (dados)
+
 ![Tipos de cabezales](/Extrusor-de-polimeros-extrusora-cabezales-plano.webp)
+
 - **Plano**: Para láminas/películas
 - **Con torpedo**: Para tubos y perfiles huecos
 - **Anulares**: Para película soplada
 
 ## Procesos especializados
+
 ### Termoformado
+
 Proceso post-extrusión donde láminas se calientan y moldean por vacío/presión.
 
 ![Termoformado](/Extrusor-de-polimeros-extrusora-termo-formado.webp)
 
 ### Calandrado
+
 Proceso para láminas sensibles al calor usando rodillos co-rotantes.
 
 ![Calandrado](/Extrusor-de-polimeros-extrusora-estacion-calandrado.webp)
@@ -132,8 +122,10 @@ Proceso para láminas sensibles al calor usando rodillos co-rotantes.
 ## 🧩 Conceptos Básicos
 
 ### ❓ ¿Qué materiales se pueden extrudir?
+
 **✅ Respuesta:**  
 La extrusión es versátil y puede procesar:
+
 - 🔹 **Polímeros** (termoplásticos, elastómeros)
 - 🔹 **Metales** (aluminio, cobre)
 - 🔹 **Cerámicas**
@@ -143,6 +135,7 @@ La extrusión es versátil y puede procesar:
 ---
 
 ### ❓ ¿Cuál es la diferencia entre extrusión e inyección?
+
 | **Extrusión** | **Inyección** |
 |--------------|--------------|
 | 🌡️ Temperaturas moderadas | 🌡️ Altas temperaturas |
@@ -153,6 +146,7 @@ La extrusión es versátil y puede procesar:
 ## ⚙️ Configuraciones de Máquinas
 
 ### ❓ ¿Cuándo usar extrusión mono-husillo vs doble-husillo?
+
 **🔄 Mono-husillo:**  
 ✔ Ideal para procesos simples  
 ✔ Menor costo operativo  
@@ -167,13 +161,16 @@ La extrusión es versátil y puede procesar:
 ---
 
 ### ❓ ¿Qué es la co-extrusión?
+
 **✨ Proceso avanzado que permite:**  
+
 - Crear productos multicapa (3-7 capas)  
 - Combinar propiedades de diferentes materiales  
 - Ejemplo típico: Films para empaques con:  
   🔸 Capa
 
 ## Lecturas recomendadas
+
 - [Plastics Extrusion Technology](https://amzn.to/3qP6LFl)
 - [Polymer Science and Nanotechnology](https://amzn.to/30Oou5f)
 - [Notas de estudio de polímeros](https://amzn.to/3rQEVd8)

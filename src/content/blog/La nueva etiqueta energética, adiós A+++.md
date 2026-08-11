@@ -2,7 +2,7 @@
 title: La nueva etiqueta energética, adiós A+++
 image:  /nueva-etiqueta-eficiencia-energetica-2021.webp
 image_alt: "Nuevas etiquetas energeticas de aparatos eléctricos"
-description: "Las etiquetas energéticas de los electrodomésticos se transforman. Desde ahora desaparecen la A+++, A++ y A+ para simplificar las escalas, estas irán de la A, que identificará a los aparatos más eficientes, a la G, en el lado contrario."
+description: "Qué cambia con la etiqueta energética europea: la escala A-G, los nuevos criterios de ensayo, el calendario de aplicación, el código QR y la calculadora de consumo del proyecto BELT."
 date: 2025-03-21
 tags: [Ahorro, Energía, Consumidor]
 twitter_img: /Eloy-martinez-cuesta-web.webp
@@ -59,31 +59,19 @@ FAQs:
 
 ¡Ya está aquí la nueva etiqueta energética 2021!
 
-Este 1 de marzo las etiquetas energéticas de los electrodomésticos se transforman. Desde ahora desaparecen la A+++, A++ y A+ para simplificar las escalas, estas irán de la A, que identificará a los aparatos más eficientes, a la G, en el lado contrario. 
+Este 1 de marzo las etiquetas energéticas de los electrodomésticos se transforman. Desde ahora desaparecen la A+++, A++ y A+ para simplificar las escalas, estas irán de la A, que identificará a los aparatos más eficientes, a la G, en el lado contrario.
 
 El cambio ha sido impulsado desde instancias europeas, «simplifica y clarifica» el esquema, se afirma desde Bruselas. Las tiendas tienen hasta final de año para agotar las existencias de electrodomésticos con las etiquetas antiguas. Hasta entonces, los productos podrán tener ambas etiquetas.
-
-Contenido
-- [Etiqueta energética](#etiqueta-energética)
-  - [Etiqueta antigua (Directiva Europea 2010/30)](#etiqueta-antigua-directiva-europea-201030)
-  - [Etiqueta nueva, reescalada (Reglamento UE 2017/1369)](#etiqueta-nueva-reescalada-reglamento-ue-20171369)
-- [Aplicación de la nueva etiqueta energética](#aplicación-de-la-nueva-etiqueta-energética)
-- [El proyecto Belt](#el-proyecto-belt)
-  - [Resultados previstos](#resultados-previstos)
-  - [Belt en España](#belt-en-españa)
-  - [Calcular el consumo de tus electrodomésticos](#calcular-el-consumo-de-tus-electrodomésticos)
-- [FAQs sobre la Nueva Etiqueta Energética 2021](#faqs-sobre-la-nueva-etiqueta-energética-2021)
-
 
 ## Etiqueta energética
 
 ### Etiqueta antigua (Directiva Europea 2010/30)
 
-La antigua etiqueta de eficiencia energética (imagen de la izquierda) tenía siete clases, de A a G, pero con el tiempo la eficiencia de las lavadoras mejoraba y hubo que introducir la **clase A+** , más tarde la**  A++** y la **A+++**. En resumen, tenían muchas **A** y eso podía ser es confuso para el consumidor final.
+La antigua etiqueta de eficiencia energética (imagen de la izquierda) tenía siete clases, de A a G, pero con el tiempo la eficiencia de las lavadoras mejoraba y hubo que introducir la **clase A+** , más tarde la**A++** y la **A+++**. En resumen, tenían muchas **A** y eso podía ser es confuso para el consumidor final.
 
-  * **Clases.**  Tenía 7 clases que van de A+++, la de máxima eficiencia, a la clase D, la más baja eficiencia, asociadas con colores de verde oscuro a rojo. Se basa en un índice de eficiencia energética (EEI) que tiene en cuenta el consumo anual de energía, los programas, la carga.
-  * **Pictogramas.**  Destacaban el consumo de agua anual en 220 ciclos, y no por programa; la capacidad de carga en programa normal de algodón a 60 °C o 40 °C, la que sea menor, la clase de eficiencia del centrifugado (escala de A a la G) y el ruido en las fases de lavado y centrifugado.
-  * **Consumo anual de energía.**  Consumo anual de energía en kWh (teniendo en cuenta 220 ciclos de lavado estándar anuales, e incluyendo el stand-by). Esta cifra puede variar según el uso en el hogar.
+* **Clases.**  Tenía 7 clases que van de A+++, la de máxima eficiencia, a la clase D, la más baja eficiencia, asociadas con colores de verde oscuro a rojo. Se basa en un índice de eficiencia energética (EEI) que tiene en cuenta el consumo anual de energía, los programas, la carga.
+* **Pictogramas.**  Destacaban el consumo de agua anual en 220 ciclos, y no por programa; la capacidad de carga en programa normal de algodón a 60 °C o 40 °C, la que sea menor, la clase de eficiencia del centrifugado (escala de A a la G) y el ruido en las fases de lavado y centrifugado.
+* **Consumo anual de energía.**  Consumo anual de energía en kWh (teniendo en cuenta 220 ciclos de lavado estándar anuales, e incluyendo el stand-by). Esta cifra puede variar según el uso en el hogar.
 
 [![Nueva etiqueta energética](/nueva-etiqueta-energetica-2021-1-1024x877.webp)](/nueva-etiqueta-energetica-2021-1.webp)
 
@@ -107,7 +95,7 @@ En todo caso, los consumidores podrán acceder a la información online, a trav�
 
 **Código QR.**  Escaneándolo se accede a más datos sobre el producto.
 
-**Clase asignada.  **Señala el grupo en el que está encuadrado el producto etiquetado.
+**Clase asignada.**Señala el grupo en el que está encuadrado el producto etiquetado.
 
 **Límites más exigentes.**  Los aparatos quedarán en una clase energética más baja que la actual, al ser los límites más estrictos.
 
@@ -123,11 +111,11 @@ El calendario de implantación ha sido paulatino.
 
 ![Nueva etiqueta Energética](/nueva-etiqueta-eficiencia-energetica-2021.webp)
 
-  * **Otoño 2019** : los fabricantes formaron a sus empleados de ventas.
-  * **Noviembre 2020,**  por ley, los fabricantes deben incluir ambas etiquetas en los productos, pero la nueva no se expondrá al público en las tiendas.
-  * **Marzo 2021,  las nuevas etiquetas para [lavavajillas](https://amzn.to/3uVdj8w), [lavadoras](https://amzn.to/3e90jq8), [lavadorasecadoras](https://amzn.to/3qfV4Hs), [frigoríficos](https://amzn.to/3rgF6y8), [pantallas y monitores](https://amzn.to/3c2FKbV) deben ser visibles en las tiendas. ** 
-  * **Septiembre de 2021,**  deberán mostrarse las nuevas etiquetas de **[lámparas y bombillas](https://amzn.to/3rk4lPW)**.
-  * **2022**  nuevas etiquetas para [aires acondicionados](https://amzn.to/3kLm4gF) y [secadoras](https://amzn.to/2MPdbX8).
+* **Otoño 2019** : los fabricantes formaron a sus empleados de ventas.
+* **Noviembre 2020,**  por ley, los fabricantes deben incluir ambas etiquetas en los productos, pero la nueva no se expondrá al público en las tiendas.
+* **Marzo 2021,  las nuevas etiquetas para [lavavajillas](https://amzn.to/3uVdj8w), [lavadoras](https://amzn.to/3e90jq8), [lavadorasecadoras](https://amzn.to/3qfV4Hs), [frigoríficos](https://amzn.to/3rgF6y8), [pantallas y monitores](https://amzn.to/3c2FKbV) deben ser visibles en las tiendas.**
+* **Septiembre de 2021,**  deberán mostrarse las nuevas etiquetas de **[lámparas y bombillas](https://amzn.to/3rk4lPW)**.
+* **2022**  nuevas etiquetas para [aires acondicionados](https://amzn.to/3kLm4gF) y [secadoras](https://amzn.to/2MPdbX8).
 
 Ejemplo de una nueva etiqueta energética
 
@@ -148,12 +136,11 @@ La gran novedad es que incorporarán [un código QR que permite acceder a más i
   </div>
 </a>
 
-
 El proyecto BELT tiene los siguientes tres objetivos principales:
 
-  * Facilitar el período de transición a la nueva etiqueta rediseñada, informando y formando a todos los principales interesados ​​y agentes del mercado.
-  * para estimular a los consumidores a elegir productos con mejor rendimiento energético
-  * estimular a los fabricantes a investigar y seguir mejorando sus productos, estimulando así la innovación y la inversión.
+* Facilitar el período de transición a la nueva etiqueta rediseñada, informando y formando a todos los principales interesados ​​y agentes del mercado.
+* para estimular a los consumidores a elegir productos con mejor rendimiento energético
+* estimular a los fabricantes a investigar y seguir mejorando sus productos, estimulando así la innovación y la inversión.
 
 ### Resultados previstos
 
@@ -163,7 +150,7 @@ BELT creará campañas de comunicación dirigidas a todas las partes interesadas
 
 ### Belt en España
 
-OCU forma parte del **proyecto europeo  [Belt (Boost Energy Label Take Up)](https://www.belt-project.eu/) **que tiene como objetivo apoyar en la transición evitando los errores de interpretación y ayudando, por un lado, a los consumidores para que sigan eligiendo productos de mejor rendimiento, y por el otro, a los fabricantes para que investiguen y lancen **electrodomésticos más eficientes**.
+OCU forma parte del **proyecto europeo  [Belt (Boost Energy Label Take Up)](https://www.belt-project.eu/)**que tiene como objetivo apoyar en la transición evitando los errores de interpretación y ayudando, por un lado, a los consumidores para que sigan eligiendo productos de mejor rendimiento, y por el otro, a los fabricantes para que investiguen y lancen **electrodomésticos más eficientes**.
 
 ### Calcular el consumo de tus electrodomésticos
 
@@ -181,7 +168,7 @@ El proyecto BELT a creado una herramienta para calcular el consumo de tus aparat
 La Unión Europea ha simplificado la escala para hacerla más clara. Las antiguas clases A+++, A++ y A+ desaparecen, y la nueva escala va de A (más eficiente) a G (menos eficiente). Esto evita la saturación de productos en categorías "A" y permite comparar mejor la eficiencia.
 
 2. ¿Qué electrodomésticos llevan la nueva etiqueta?
-   
+
         Se aplica a:
 
         Neveras, congeladores y frigoríficos.
@@ -234,4 +221,3 @@ Clase energética (A-G) con colores (verde a rojo).
 
 ¿Tienes más dudas?
 Si necesitas ayuda para entender la nueva etiqueta o elegir un electrodoméstico eficiente, consulta la web oficial de la UE o el proyecto BELT.
-

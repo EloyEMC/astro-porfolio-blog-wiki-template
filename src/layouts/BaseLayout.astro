@@ -5,18 +5,22 @@ import { ClientRouter, slide } from 'astro:transitions';
 import { GoogleAnalytics } from 'astro-google-analytics';
 import { siteConfig } from '../config';
 import SEOPage from '@components/SEOPage.astro';
+import '../styles/global.css';
+import '../styles/redesign.css';
 
 interface Props {
   title?: string; // Título opcional
   author?: string; // Autor opcional
   defaultImage?: string;
   siteUrl?: string;
+  slug?: string;
+  noindex?: boolean;
+  canonical?: boolean;
 }
 
 // Definir las constantes para el SEO
-const { title = "Eloy Martínez Cuesta" } = Astro.props;
+const { title = "Eloy Martínez Cuesta", slug, noindex = false, canonical = true } = Astro.props;
 const description = "La web de Eloy Martínez Cuesta, donde encontrarás novedades IA, iluminación, marketing, SEO, dev...";
-const slug = "";
 const defaultLocale = "es_ES";
 const { author } = Astro.props;
 const authorData = author || null;
@@ -36,20 +40,23 @@ const defaultImage = siteConfig.image || "ruta/a/imagen-por-defecto.jpg"; // Val
       siteUrl={siteUrl}
       defaultImage={defaultImage}
       slug={slug}
+      noindex={noindex}
+      canonical={canonical}
     />
 
     <meta charset="UTF-8" />
-    <meta name="description" content={description} />
-    <title>{title || "Eloy Martínez Cuesta"}</title>
-    <link rel="icon" type="image/svg+xml" href="/eloy-ico.svg" />
+    <link rel="icon" type="image/png" href="/favicon-emc-512.png?v=4" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-emc-32.png?v=4" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-emc-16.png?v=4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-emc-v4.png?v=1" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     {siteConfig.googleAnalysis && <GoogleAnalytics id={siteConfig.googleAnalysis} />}
     <ClientRouter />
   </head>
-  <body class="min-h-screen bg-white dark:bg-gray-900">
+<body class="legacy-shell">
     <Header transition:persist />
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <main class="py-12" transition:animate={slide({ duration: '.3s' })}>
+    <div class="legacy-content">
+      <main class="legacy-main" transition:animate={slide({ duration: '.3s' })}>
         <slot />
       </main>
     </div>

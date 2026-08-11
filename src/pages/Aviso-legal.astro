@@ -15,12 +15,14 @@ interface Props {
   siteUrl={siteConfig.site} 
   defaultImage={siteConfig.image} 
   title="Aviso Legal, Cookies y Privacidad"
+  slug="Aviso-legal"
 >
 
-    <h1 id="avisolegal" class="text-4xl font-bold mb-8 text-gray-900 dark:text-white">
+    <article class="editorial-legal editorial-prose">
+    <h1 id="avisolegal" class="editorial-page-title">
         Aviso Legal
     </h1>
-    <h2 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">
+<h2 class="editorial-section-title">
         Titular del sitio web:
     </h2>
     <ul class="list-disc">
@@ -47,7 +49,7 @@ interface Props {
     <br />
     <hr />
     <br />
-    <h2 id="cookies" class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">
+<h2 id="cookies" class="editorial-section-title">
         Política de Cookies:
     </h2>
     <p class="font-bold text-gray-900 dark:text-gray-400 p-4">
@@ -55,7 +57,7 @@ interface Props {
         A continuación, te explicamos qué son las cookies, cómo las usamos y
         cómo puedes gestionarlas.
     </p>
-    <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">
+<h3 class="editorial-section-title">
         ¿Qué son las cookies?
     </h3>
     <p class="font-bold text-gray-900 dark:text-gray-400 p-4">
@@ -64,7 +66,7 @@ interface Props {
         recuerde tus preferencias y acciones, facilitando una navegación más
         eficiente y personalizada.
     </p>
-    <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">
+<h3 class="editorial-section-title">
         Tipos de cookies que utilizamos:
     </h3>
     <ul class="list-disc">
@@ -81,7 +83,7 @@ interface Props {
             analizar el tráfico y el comportamiento de los usuarios.
         </li>
     </ul>
-    <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">
+<h3 class="editorial-section-title">
         Cómo gestionar las cookies:
     </h3>
     <p class="font-bold text-gray-900 dark:text-gray-400 p-4">
@@ -94,7 +96,7 @@ interface Props {
     <br />
     <hr />
     <br />
-    <h2 id="privacidad" class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">
+<h2 id="privacidad" class="editorial-section-title">
         Política de Privacidad
     </h2>
     <p class="font-bold text-gray-900 dark:text-gray-400 p-4">
@@ -102,7 +104,7 @@ interface Props {
         personales. Esta política explica cómo recopilamos, usamos y protegemos
         la información que nos proporcionas.
     </p>
-    <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">
+<h3 class="editorial-section-title">
         Información que recopilamos:
     </h3>
     <ul class="list-disc">
@@ -115,7 +117,7 @@ interface Props {
             web, como tu dirección IP, tipo de navegador y páginas visitadas.
         </li>
     </ul>
-    <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">
+<h3 class="editorial-section-title">
         Uso de la información: </h3>
         <p class="font-bold text-gray-900 dark:text-gray-400 p-4">
             Utilizamos tus datos para:
@@ -134,14 +136,14 @@ interface Props {
             que hayas dado tu consentimiento.
         </li>
     </ul>
-    <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">
+<h3 class="editorial-section-title">
         Protección de datos:
     </h3>
     <p class="font-bold text-gray-900 dark:text-gray-400 p-4">
         Implementamos medidas de seguridad técnicas y organizativas para
         proteger tus datos contra accesos no autorizados, pérdida o alteración.
     </p>
-    <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">
+<h3 class="editorial-section-title">
         Tus derechos:
     </h3>
     <p class="font-bold text-gray-900 dark:text-gray-400 p-4">
@@ -149,7 +151,7 @@ interface Props {
         datos personales. Para ejercer estos derechos, puedes contactarnos a
         través de hola@eloymartinezcuesta.com
     </p>
-    <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">
+<h3 class="editorial-section-title">
         Compartir datos con terceros:
     </h3>
     <p class="font-bold text-gray-900 dark:text-gray-400 p-4">
@@ -165,4 +167,5 @@ interface Props {
     </p>
     <hr />
     <br />
+    </article>
 </BaseLayout>

@@ -29,13 +29,13 @@ const tagSEO = tagSEOConfig[tag] || {
 };
 ---
 
-<BaseLayout title={`Posts tagged with #${tag}`}>
-  <h1 class="text-4xl font-bold mb-8 text-gray-900 dark:text-white">Post de la categoría: #{tag}</h1>
+<BaseLayout title={`Posts tagged with #${tag}`} slug={`tags/${tag}`}>
+<h1 class="editorial-page-title">Post de la categoría: #{tag}</h1>
    <!-- Descripción SEO visible en pantalla -->
-   <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 p-4 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-800 bg-opacity-55">
+   <p class="editorial-intro editorial-tag-description">
     {tagSEO.description}
   </p>
-  <section>
+  <section class="editorial-post-list">
     {sortedPosts.map((post) => <BlogPreview post={post} />)}
   </section>
 </BaseLayout>

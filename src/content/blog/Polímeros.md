@@ -1,6 +1,6 @@
 ---
 title: Polímeros- Conceptos Básicos
-description: Te explicamos qué son los polímeros, su clasificación, propiedades y características. Además, los polímeros naturales y sintéticos.
+description: "Guía introductoria sobre los polímeros: monómeros, clasificaciones, comportamiento térmico, propiedades, ejemplos industriales y diferencias entre materiales naturales y sintéticos."
 date: 2025-03-23
 tags: [Polímeros, Plásticos, Extrusión ]
 draft: false
@@ -58,40 +58,17 @@ faqs:
 
 Para empezar este apartado sobre los plásticos, vamos a comenzar por lo más básico: los polímeros. Te explicamos qué son, su clasificación, propiedades y características, incluyendo polímeros naturales y sintéticos.
 
-![Macromolécula de Polipropileno](/science-polymer-engineering-macromolecule-material-science-polimero.webp)
-
 Los polímeros son macromoléculas formadas por moléculas más simples llamadas monómeros.
-
-## Contenido
-- [Contenido](#contenido)
-- [¿Qué es un polímero?](#qué-es-un-polímero)
-  - [Lecturas recomendadas:](#lecturas-recomendadas)
-- [Clasificación de polímeros](#clasificación-de-polímeros)
-  - [Por origen:](#por-origen)
-  - [Por composición:](#por-composición)
-  - [Por estructura de cadena:](#por-estructura-de-cadena)
-  - [Por comportamiento térmico:](#por-comportamiento-térmico)
-- [Polímeros naturales](#polímeros-naturales)
-- [Polímeros sintéticos](#polímeros-sintéticos)
-- [Propiedades de los polímeros](#propiedades-de-los-polímeros)
-- [Ejemplos importantes](#ejemplos-importantes)
-- [Videos recomendados:](#videos-recomendados)
-- [Preguntas Frecuentes sobre Polímeros](#preguntas-frecuentes-sobre-polímeros)
-  - [🔍 Conceptos Básicos](#-conceptos-básicos)
-  - [🌿 Clasificación](#-clasificación)
-  - [⚙️ Propiedades y Usos](#️-propiedades-y-usos)
-  - [🏭 Aplicaciones Industriales](#-aplicaciones-industriales)
-  - [🌡️ Comportamiento](#️-comportamiento)
-  - [🔬 Curiosidades](#-curiosidades)
-
 
 ## ¿Qué es un polímero?
 
 Químicamente hablando, los polímeros son macromoléculas constituidas por cadenas de unidades más simples (monómeros) unidas mediante enlaces covalentes. Su nombre proviene del griego:
+
 - "polys" = muchos
 - "meros" = segmento
 
 Estas moléculas son generalmente orgánicas y de enorme importancia tanto en la naturaleza como en la industria. Ejemplos incluyen:
+
 - ADN en nuestras células
 - Almidón en plantas
 - Nailon
@@ -99,33 +76,39 @@ Estas moléculas son generalmente orgánicas y de enorme importancia tanto en la
 
 El desarrollo industrial de los polímeros comenzó a finales del siglo XIX e inicios del XX.
 
-### Lecturas recomendadas:
+### Lecturas recomendadas
+
 - [Comunicaciones sobre Materiales Plásticos Poliméricos](https://amzn.to/3l7s6IX)
 - [Introducción a la Química de los Polímeros](https://amzn.to/3bDhePS)
 - [Tecnología de polímeros: Procesado y propiedades](https://amzn.to/3rCAVwG)
 
 ## Clasificación de polímeros
 
-### Por origen:
+### Por origen
+
 - **Naturales**: Origen biológico
 - **Sintéticos**: Creados por el ser humano
 - **Semisintéticos**: Transformados a partir de naturales
 
-### Por composición:
+### Por composición
+
 - **Orgánicos**: Cadena principal de carbono
 - **Orgánicos vinílicos**: Con enlaces dobles carbono-carbono
 - **Orgánicos no vinílicos**: Con oxígeno/nitrógeno en cadena principal
 - **Inorgánicos**: Basados en otros elementos (azufre, silicio)
 
-### Por estructura de cadena:
+### Por estructura de cadena
+
 ![Tipos de estructuras poliméricas](/Captura-de-pantalla-2021-03-12-a-las-11.30.32.webp)
+
 - **Lineal**: Unión repetitiva simple
 - **Ramificado**: Con cadenas laterales
 - **Entrecruzado**: Enlaces entre cadenas
 - **Homopolímero**: Monómeros iguales
 - **Copolímero**: Dos o más monómeros diferentes
 
-### Por comportamiento térmico:
+### Por comportamiento térmico
+
 - **Elastómeros**: Se deforman pero recuperan forma
 - **Termoestables**: Se descomponen con calor
 - **Termoplásticos**: Se funden con calor y solidifican al enfriar
@@ -135,6 +118,7 @@ El desarrollo industrial de los polímeros comenzó a finales del siglo XIX e in
 ![Ejemplos de polímeros naturales](/polimero-caucho-natural.webp)
 
 Existen como biomoléculas en organismos vivos:
+
 - Proteínas (seda, lana)
 - Polisacáridos (celulosa, almidón)
 - Caucho natural
@@ -145,6 +129,7 @@ Existen como biomoléculas en organismos vivos:
 ![Baquelita, primer polímero sintético](/Baquelita-polimeros-sinteticos-1-1024x992.webp)
 
 Creados por el ser humano desde 1907 (baquelita). Se dividen en:
+
 - **Termoplásticos**: Se ablandan/funden con calor
 - **Termorrígidos**: Se descomponen con calor
 
@@ -155,6 +140,7 @@ Se producen mediante reacciones controladas de polimerización.
 ![Aplicaciones eléctricas](/polimeros-sinteticos-cables-eléctricos-aislante-malos-conductores.webp)
 
 Características principales:
+
 - Malos conductores eléctricos (excepto polímeros conductores especiales)
 - Comportamiento variable con la temperatura
 - Versatilidad en aplicaciones industriales
@@ -167,7 +153,7 @@ Características principales:
 4. **Polipropileno (PP)**: Empaques, textiles
 5. **Poliuretano**: Calzado, pinturas, fibras
 
-## Videos recomendados:
+## Videos recomendados
 
 - Clasificación de los Polímeros
   
@@ -176,6 +162,7 @@ Características principales:
   <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex justify-center items-center text-2xl font-bold text-center">
     ▶️ VER VIDEO EN YOUTUBE
   </div>
+
 </a>
 
 - Estructura y Propiedades de los Polímeros
@@ -209,11 +196,13 @@ La baquelita (1907), creada con fenol y formaldehído, fue el primer polímero s
 ### 🌿 Clasificación
 
 **¿Cómo se clasifican los polímeros por origen?**  
+
 - **Naturales**: Provenientes de organismos vivos (ej. celulosa, caucho natural)  
 - **Sintéticos**: Creados por el hombre (ej. PVC, nailon)  
 - **Semisintéticos**: Modificados a partir de naturales (ej. celofán)  
 
 **¿Qué diferencia a termoplásticos y termoestables?**  
+
 | Tipo | Comportamiento térmico | Ejemplos |  
 |------|------------------------|----------|  
 | Termoplásticos | Se funden y pueden remodelarse | Polipropileno (PP), PVC |  
@@ -246,6 +235,7 @@ La mayoría son excelentes aislantes eléctricos debido a su estructura molecula
 
 **¿Existen polímeros conductores de electricidad?**  
 Sí, desde 1974 se desarrollan polímeros conductores especiales (como poliacetileno dopado) usados en:  
+
 - Electrónica flexible  
 - Pantallas táctiles  
 - Baterías orgánicas  
@@ -253,6 +243,7 @@ Sí, desde 1974 se desarrollan polímeros conductores especiales (como poliaceti
 ### 🌡️ Comportamiento
 
 **¿Cómo afecta la temperatura a los polímeros?**  
+
 - **Bajas temperaturas**: Se vuelven rígidos y frágiles  
 - **Temperatura ambiente**: Comportamiento elástico  
 - **Altas temperaturas**:  

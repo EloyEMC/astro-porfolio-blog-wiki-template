@@ -2,7 +2,7 @@
 title: ¿Qué es la temperatura de color?
 image: /que-es-la-temperatura-de-color.webp
 image_alt: "Que es la temperatura de colo de la luz"
-description: Descubre los secretos de la luz, sus propiedades físicas, cómo la percibimos y su impacto en nuestra vida diaria. Aprende sobre la temperatura de color, el espectro electromagnético y cómo la luz influye en nuestro bienestar.
+description: "Introducción a la temperatura de color: escala Kelvin, luz cálida y fría, espectro electromagnético, percepción del color, bombillas incandescentes y ritmos circadianos."
 date: 2025-03-21
 tags: [Luz, Temperatura de color, Espectro electromagnético, Ritmos circadianos, Iluminación LED]
 twitter_img: "imageswebp/que-es-la-temperatura-de-color.webp"
@@ -61,30 +61,6 @@ faqs:
 
 Hoy nos adentraremos en un emocionante viaje para descubrir [los secretos detrás de la iluminación técnica](https://eloymartinezcuesta.com/iluminacion/) y los [proyectos lumínicos](https://eloymartinezcuesta.com/proyectos-iluminacion/). Vamos a aprender sobre la temperatura de color, las propiedades físicas de la luz y cómo nuestros cerebros perciben los maravillosos colores que nos rodean.
 
-## Contenido
-
-- [Contenido](#contenido)
-- [La Maravilla de la Luz y sus Propiedades](#la-maravilla-de-la-luz-y-sus-propiedades)
-- [¡Colores por Todas Partes!](#colores-por-todas-partes)
-- [La temperatura de color de la luz](#la-temperatura-de-color-de-la-luz)
-  - [Luz Fría y Luz Cálida](#luz-fría-y-luz-cálida)
-  - [Temperatura de Color](#temperatura-de-color)
-- [La temperatura de color y espectro electromagnético](#la-temperatura-de-color-y-espectro-electromagnético)
-  - [Cómo Vemos los Colores](#cómo-vemos-los-colores)
-- [La temperatura de color en la luz blanca](#la-temperatura-de-color-en-la-luz-blanca)
-- [El Gran Secreto del Cerebro](#el-gran-secreto-del-cerebro)
-- [La Aventura de las Bombillas Incandescentes](#la-aventura-de-las-bombillas-incandescentes)
-- [¿Qué son los ritmos circadianos?](#qué-son-los-ritmos-circadianos)
-  - [¿Qué es la temperatura de color en la luz?](#qué-es-la-temperatura-de-color-en-la-luz)
-  - [¿Cómo sabemos si una luz es fría o cálida?](#cómo-sabemos-si-una-luz-es-fría-o-cálida)
-  - [¿Cómo vemos los colores?](#cómo-vemos-los-colores-1)
-  - [¿Por qué las bombillas tienen diferentes colores de luz?](#por-qué-las-bombillas-tienen-diferentes-colores-de-luz)
-  - [¿Qué temperatura de color tienen las luces LED?](#qué-temperatura-de-color-tienen-las-luces-led)
-  - [¿Cómo nos afecta la luz fría y la luz cálida?](#cómo-nos-afecta-la-luz-fría-y-la-luz-cálida)
-  - [¿Qué es una bombilla incandescente?](#qué-es-una-bombilla-incandescente)
-  - [¿Cómo el cerebro ve los colores?](#cómo-el-cerebro-ve-los-colores)
-  - [¿Cuál es la temperatura de color de la luz del sol?](#cuál-es-la-temperatura-de-color-de-la-luz-del-sol)
-  - [**¿Cómo puedo elegir la mejor luz para mi habitación?**](#cómo-puedo-elegir-la-mejor-luz-para-mi-habitación)
 
 ## La Maravilla de la Luz y sus Propiedades
 
@@ -92,7 +68,7 @@ Hoy nos adentraremos en un emocionante viaje para descubrir [los secretos detrá
 
 La luz tiene unas propiedades mágicas llamadas longitud de onda. Algunas longitudes de onda son cortitas y hacen que veamos colores como el violeta y el azul. Otras son más larguitas y nos traen colores como el naranja y el rojo. ¡Así es como el mundo se llena de arcoíris de colores!
 
-## ¡Colores por Todas Partes!
+## ¡Colores por Todas Partes
 
 Imaginen un día soleado en el parque. El sol nos regala su luz dorada, que llamamos «luz cálida». Pero espera, ¿sabían que la luz no es siempre del mismo color? ¡Así es! La temperatura de color nos dice qué color tiene la luz. ¡Es como si le pusiéramos una etiqueta de colores a la luz!
 
@@ -225,4 +201,3 @@ La luz del sol tiene una temperatura de color alrededor de 5500K, lo que la hace
 ### **¿Cómo puedo elegir la mejor luz para mi habitación?**
 
 Depende de lo que quieras sentir en tu habitación. Si quieres energía, elige una luz más fría. Si buscas relajarte, una luz más cálida es genial. ¡Puedes probar diferentes luces y ver cuál te gusta más!
-

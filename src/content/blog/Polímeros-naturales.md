@@ -1,6 +1,6 @@
 ---
 title: Polímeros Naturales- Descubriendo la Fascinante Química de la Naturaleza
-description: Los polímeros naturales son macromoléculas orgánicas que se encuentran en la naturaleza y están formadas por la repetición de unidades más pequeñas llamadas monómeros.
+description: Recorrido por la estructura y diversidad de los polímeros naturales, sus usos en alimentación y biomedicina, y el potencial sostenible de los bioplásticos.
 date: 2025-03-22
 tags: [Polímeros, Plástico, Extrusión ]
 draft: false
@@ -48,31 +48,6 @@ faqs:
 
 Hoy estoy aquí para guiarlos a través de un viaje informativo sobre los [polímeros naturales](https://eloymartinezcuesta.com/polimeros-y-plasticos/). Desde explorar su estructura única hasta comprender sus aplicaciones prácticas y su impacto en la sostenibilidad, este artículo les brindará una visión integral de estos compuestos químicos sorprendentes que la naturaleza nos ofrece.
 
-## Contenido
-
-- [Contenido](#contenido)
-- [**Estructura y Diversidad de Polímeros Naturales**](#estructura-y-diversidad-de-polímeros-naturales)
-- [**Propiedades y Aplicaciones en Diversas Industrias**](#propiedades-y-aplicaciones-en-diversas-industrias)
-  - [**Industria Alimentaria: Explorando el Potencial de los Polímeros Naturales**](#industria-alimentaria-explorando-el-potencial-de-los-polímeros-naturales)
-    - [Tabla: Polímeros Naturales en la Industria Alimentaria](#tabla-polímeros-naturales-en-la-industria-alimentaria)
-  - [**Avances en la Medicina y la Ingeniería Biomédica**](#avances-en-la-medicina-y-la-ingeniería-biomédica)
-    - [Tabla: Polímeros Naturales en la Industria Farmacéutica y Biomédica](#tabla-polímeros-naturales-en-la-industria-farmacéutica-y-biomédica)
-- [**Perspectivas Sostenibles y Futuras Innovaciones**](#perspectivas-sostenibles-y-futuras-innovaciones)
-  - [**Bioplásticos: Una Alternativa Sostenible**](#bioplásticos-una-alternativa-sostenible)
-  - [**Nuevas Fronteras en la Ingeniería de Polímeros Naturales**](#nuevas-fronteras-en-la-ingeniería-de-polímeros-naturales)
-- [**Explorando la Intersección de la Naturaleza y la Ciencia de los Polímeros**](#explorando-la-intersección-de-la-naturaleza-y-la-ciencia-de-los-polímeros)
-- [**Preguntas Frecuentes sobre Polímeros Naturales**](#preguntas-frecuentes-sobre-polímeros-naturales)
-  - [**¿Qué son los polímeros naturales?**](#qué-son-los-polímeros-naturales)
-  - [**¿Cuál es la diferencia entre polímeros naturales y sintéticos?**](#cuál-es-la-diferencia-entre-polímeros-naturales-y-sintéticos)
-  - [**¿Cuáles son algunos ejemplos de polímeros naturales y sus aplicaciones?**](#cuáles-son-algunos-ejemplos-de-polímeros-naturales-y-sus-aplicaciones)
-  - [**¿Cuál es la importancia de los polímeros naturales en la sostenibilidad?**](#cuál-es-la-importancia-de-los-polímeros-naturales-en-la-sostenibilidad)
-  - [**¿Qué son los bioplásticos y cómo se producen a partir de polímeros naturales?**](#qué-son-los-bioplásticos-y-cómo-se-producen-a-partir-de-polímeros-naturales)
-  - [**¿Cómo se utilizan los polímeros naturales en la medicina?**](#cómo-se-utilizan-los-polímeros-naturales-en-la-medicina)
-  - [**¿Cuáles son los desafíos en la utilización de polímeros naturales?**](#cuáles-son-los-desafíos-en-la-utilización-de-polímeros-naturales)
-  - [**¿Cómo se están investigando nuevos usos para los polímeros naturales?**](#cómo-se-están-investigando-nuevos-usos-para-los-polímeros-naturales)
-  - [**¿Los polímeros naturales son adecuados para aplicaciones de alta tecnología?**](#los-polímeros-naturales-son-adecuados-para-aplicaciones-de-alta-tecnología)
-  - [**¿Cómo puedo contribuir a la sostenibilidad utilizando polímeros naturales?**](#cómo-puedo-contribuir-a-la-sostenibilidad-utilizando-polímeros-naturales)
-  - [Fuentes:](#fuentes)
 
 ---
 
@@ -109,7 +84,6 @@ La **pectina** es otro polisacárido presente en las plantas y se utiliza en la 
 
 #### Tabla: Polímeros Naturales en la Industria Alimentaria
 
-
 | Polímero Natural          | Aplicaciones en la Industria Alimentaria                                                                 |
 |---------------------------|---------------------------------------------------------------------------------------------------------|
 | Almidón                   | Espesante en salsas, sopas y postres. Mejora la textura de productos horneados.                         |
@@ -121,7 +95,6 @@ La **pectina** es otro polisacárido presente en las plantas y se utiliza en la 
 | Xantana                   | Espesante y estabilizador en productos lácteos, aderezos y salsas.                                       |
 | Inulina                   | Utilizada como ingrediente en alimentos bajos en calorías y como fibra dietética.                        |
 
- 
 ---
 
 ### **Avances en la Medicina y la Ingeniería Biomédica**
@@ -211,7 +184,7 @@ Puedes optar por productos fabricados con bioplásticos o materiales basados en 
 
 ---
 
-### Fuentes:
+### Fuentes
 
 1. Neira-Carrillo, A., Muñoz, D. Y., Zazzali, P. A., Marini, Y. A., Vilches, S. V., & Palma, R. E. (2013). [Encapsulación de biomoléculas usando polímeros naturales: un nuevo enfoque en la entrega de fármacos en medicina](https://revistateoria.uchile.cl/index.php/ACV/article/view/30204). _Avances en Ciencias Veterinarias_, _28_(2), pág-31.
 

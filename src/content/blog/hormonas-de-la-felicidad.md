@@ -2,7 +2,7 @@
 title: La Luz activa las Hormonas de la Felicidad
 image: /activar-hormonas-felicidad-luz.webp
 image_alt: "Hormonas de la felicidad y la luz"
-description: "Las hormonas de la felicidad son neurotransmisores producidos por el cerebro. ¿Les influye la Luz?"
+description: Explicación de cómo la luz y el diseño de los espacios pueden relacionarse con endorfinas, serotonina, dopamina y oxitocina, junto con el ritmo circadiano.
 date: 2025-03-21
 tags: ["Hormonas", "Psicología", "Luz"]
 twitter_img: /Eloy-martinez-cuesta-web.webp
@@ -57,20 +57,6 @@ faqs:
 
 ---
 
-## Contenido
-
-- [Contenido](#contenido)
-- [¿Cuáles son las hormonas de la felicidad?](#cuáles-son-las-hormonas-de-la-felicidad)
-  - [Endorfina](#endorfina)
-  - [Serotonina](#serotonina)
-  - [Dopamina](#dopamina)
-  - [Oxitocina](#oxitocina)
-- [Cómo activar las hormonas de la felicidad con la luz](#cómo-activar-las-hormonas-de-la-felicidad-con-la-luz)
-  - [Ritmo circadiano](#ritmo-circadiano)
-  - [Creando entornos luminosos para la activación hormonal](#creando-entornos-luminosos-para-la-activación-hormonal)
-- [Preguntas frecuentes relacionadas con el tema de hormonas de la felicidad y la luz:](#preguntas-frecuentes-relacionadas-con-el-tema-de-hormonas-de-la-felicidad-y-la-luz)
-  - [Fuentes:](#fuentes)
-
 ## ¿Cuáles son las hormonas de la felicidad?
 
 **Las hormonas de la felicidad**, también conocidas como **neurotransmisores**, son sustancias químicas producidas por el cerebro que influyen en nuestro estado de ánimo, emociones y bienestar general. Estas hormonas son **la endorfina, serotonina, dopamina y oxitocina**, y desempeñan un papel esencial en nuestro equilibrio emocional.
@@ -81,8 +67,6 @@ faqs:
     ▶️ VER VIDEO EN YOUTUBE
   </div>
 </a>
-
-
 
 ### Endorfina
 
@@ -122,7 +106,7 @@ faqs:
 - *Diseño de espacios*: La disposición del mobiliario y la iluminación puede influir en nuestra experiencia emocional. Espacios abiertos, bien iluminados y visualmente atractivos pueden aumentar la liberación de endorfinas y dopamina, generando un ambiente positivo.
 - *Elementos naturales*: Integrar elementos naturales, como plantas y vistas al aire libre, puede tener un efecto positivo en la liberación de hormonas de la felicidad al proporcionar una sensación de conexión con la naturaleza.
 
-## Preguntas frecuentes relacionadas con el tema de hormonas de la felicidad y la luz:
+## Preguntas frecuentes relacionadas con el tema de hormonas de la felicidad y la luz
 
 - ¿Qué son exactamente las hormonas de la felicidad?
   
@@ -164,7 +148,7 @@ En el ámbito del marketing, la comprensión de cómo la iluminación afecta las
 
 Sí, la exposición a la luz natural durante el día y la reducción de la exposición a la luz brillante en la noche puede ayudar a sincronizar el ritmo circadiano y mejorar la calidad del sueño, lo que a su vez tiene un impacto positivo en las hormonas de la felicidad.
 
-### Fuentes:
+### Fuentes
 
 Vivar, P. [CAMBIO EN LA ILUMINACIÓN.](https://pedrovivar.com/el-sol-es-comida/)
 
@@ -173,4 +157,3 @@ González, G. F. L. M. P. [La química de las Emociones y los Sentimientos.](htt
 Lillo Jover, J., Álvaro Llorente, L., Moreira Villegas, H., & del Carmen Durán Pulido, M. (2010). [Luz y ritmos circadianos: efectos en la salud y en el desempeño. Ansiedad y estrés, 16.](https://www.ansiedadyestres.es/sites/default/files/rev/ucm/2010/anyes2010a21.pdf)
 
 [Googe scholar](https://scholar.google.es/scholar?hl=es&as_sdt=0%2C5&q=hormonas+de+la+felicidad+y+la+luz&btnG=)
-

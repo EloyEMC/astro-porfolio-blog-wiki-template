@@ -1,6 +1,6 @@
 ---
 title: Cómo poner cajas de autor en wordpress en Generatepress
-description: El Cuadro de Autor es una valiosa herramienta que nos permite mostrar información relevante sobre el autor de una publicación, mejora el EEAT, te ayudo a crear una.
+description: Explicación práctica para añadir una caja de autor en GeneratePress, configurar Gravatar y elegir entre plugins, hooks y CSS en sus versiones Free y Premium.
 date: 2025-03-23
 tags: [Diseño WEB, Wordpress, DEV ]
 draft: false
@@ -60,31 +60,6 @@ WordPress.
 
 **El Cuadro de Autor** es una valiosa herramienta que nos permite mostrar información relevante sobre el autor de una publicación, lo cual es especialmente importante para mejorar las señales de Experiencia, Autoridad y Fiabilidad (Expertise, Authoritativeness, Trustworthiness) de [Quality Raters de Google](https://www.google.com/search/howsearchworks/how-search-works/rigorous-testing/) que utiliza Google para mejorar su algoritmo de búsqueda.
 
-### Contenido
-
-- [**¿Por qué es importante el Cuadro de Autor en su sitio web?**](#por-qué-es-importante-el-cuadro-de-autor-en-su-sitio-web)
-- [**Antes de agregar el cuadro de autor en WordPress** **activa tu gravatar**](#antes-de-agregar-el-cuadro-de-autor-en-wordpress-activa-tu-gravatar)
-- [**Implementación del Cuadro de Autor en GeneratePress Theme**](#implementación-del-cuadro-de-autor-en-generatepress-theme)
-  - [**Usando Complementos en GeneratePress Free:**](#usando-complementos-en-generatepress-free)
-  - [**Implementación sin plugin en GeneratePress Premium:**](#implementación-sin-plugin-en-generatepress-premium)
-    - [**Activar el Módulo de Elementos:**](#activar-el-módulo-de-elementos)
-    - [**Añadir un Nuevo hook de Elemento:**](#añadir-un-nuevo-hook-de-elemento)
-    - [**Configurar el gancho:**](#configurar-el-gancho)
-    - [**Personalizar con CSS:**](#personalizar-con-css)
-    - [**¿Donde colocar el CSS de la caja de autor personalizada?**](#donde-colocar-el-css-de-la-caja-de-autor-personalizada)
-- [**Opinión personal**](#opinión-personal)
-- [**FAQs: Agregando el Cuadro de Autor en WordPress con GeneratePress Theme**](#faqs-agregando-el-cuadro-de-autor-en-wordpress-con-generatepress-theme)
-  - [**¿Por qué es importante agregar un cuadro de autor en mi sitio web?**](#por-qué-es-importante-agregar-un-cuadro-de-autor-en-mi-sitio-web)
-  - [**¿Qué es Gravatar y por qué necesito configurarlo para el cuadro de autor?**](#qué-es-gravatar-y-por-qué-necesito-configurarlo-para-el-cuadro-de-autor)
-  - [**¿Cómo puedo habilitar Gravatar en mi sitio de WordPress?**](#cómo-puedo-habilitar-gravatar-en-mi-sitio-de-wordpress)
-  - [**¿Cuál es la diferencia entre el tema GeneratePress gratuito y Premium en cuanto al cuadro de autor?**](#cuál-es-la-diferencia-entre-el-tema-generatepress-gratuito-y-premium-en-cuanto-al-cuadro-de-autor)
-  - [**¿Cuáles son algunos de los complementos recomendados para agregar el cuadro de autor en GeneratePress gratuito?**](#cuáles-son-algunos-de-los-complementos-recomendados-para-agregar-el-cuadro-de-autor-en-generatepress-gratuito)
-  - [**¿Cuál es el método preferido para agregar el cuadro de autor en GeneratePress Premium Theme?**](#cuál-es-el-método-preferido-para-agregar-el-cuadro-de-autor-en-generatepress-premium-theme)
-  - [**¿Puedo personalizar el diseño del cuadro de autor en GeneratePress Premium Theme?**](#puedo-personalizar-el-diseño-del-cuadro-de-autor-en-generatepress-premium-theme)
-  - [**¿Es necesario tener una cuenta en Gravatar para mostrar la biografía del autor en el cuadro de autor?**](#es-necesario-tener-una-cuenta-en-gravatar-para-mostrar-la-biografía-del-autor-en-el-cuadro-de-autor)
-  - [**¿Qué beneficios obtengo al agregar el cuadro de autor en mi sitio web?**](#qué-beneficios-obtengo-al-agregar-el-cuadro-de-autor-en-mi-sitio-web)
-  - [**¿Cuál es el mejor enfoque para agregar el cuadro de autor en mi sitio web?**](#cuál-es-el-mejor-enfoque-para-agregar-el-cuadro-de-autor-en-mi-sitio-web)
-
 
 ## **¿Por qué es importante el Cuadro de Autor en su sitio web?**
 
@@ -126,7 +101,6 @@ Para configurar Gravatar, simplemente debe seguir estos pasos:
 > subido.
 >
 
-
 Una vez configurado, su imagen de perfil de Gravatar se mostrará al comentar en sitios de WordPress, en la biografía del autor y en los foros de WordPress, funcionando para todos sus perfiles en la plataforma. Es importante tener en cuenta que tanto Gravatar como la información biográfica son utilizados por el sitio web de WordPress en ciertos casos, lo que ayuda a enriquecer la experiencia del lector y aumentar la credibilidad del contenido y del autor.
 
 ## **Implementación del Cuadro de Autor en GeneratePress Theme**
@@ -139,20 +113,18 @@ Existen varios complementos disponibles en el repositorio de WordPress que puede
 
 ![](https://eloymartinezcuesta.com/wp-content/uploads/2023/07/plugins-caja-autor-wordpress-simple-author-box.webp)
 
-  * **Cuadro de Autor Simple[(Simple Author Box)](https://wordpress.org/plugins/simple-author-box/)**: Este es un complemento sencillo pero efectivo que nos permite personalizar el diseño de la caja de autor y agregar hasta 30 perfiles de redes sociales.
+- **Cuadro de Autor Simple[(Simple Author Box)](https://wordpress.org/plugins/simple-author-box/)**: Este es un complemento sencillo pero efectivo que nos permite personalizar el diseño de la caja de autor y agregar hasta 30 perfiles de redes sociales.
 
 ![](https://eloymartinezcuesta.com/wp-content/uploads/2023/07/plugins-caja-autor-wordpress-starbox-genetatepress.webp)
 
-  * **Starbox: La Caja de Autor para Humanos ([Starbox Author](https://wordpress.org/plugins/starbox/)):** Este complemento es altamente recomendado por el equipo de soporte de GeneratePress para los usuarios de la versión Premium.
+- **Starbox: La Caja de Autor para Humanos ([Starbox Author](https://wordpress.org/plugins/starbox/)):** Este complemento es altamente recomendado por el equipo de soporte de GeneratePress para los usuarios de la versión Premium.
 
 [![](https://eloymartinezcuesta.com/wp-content/uploads/2023/07/plugins-caja-autor-wordpress-molongui-authorship-generatepress.webp)](https://eloymartinezcuesta.com/wp-content/uploads/2023/07/plugins-caja-autor-wordpress-molongui-authorship-generatepress.webp)
 
-  * **La caja elegante para autor (Molongui Authorship)** : Este plugin incluye una única plantilla en la versión gratuita, pero siete diseños más en la premium. Lo que más me gusta de Molongui Authorship es que se puede modificar su aspecto desde el personalizado de la plantilla de tu web. Por supuesto, permite personalizar todos sus elementos (nombre, avatar, descripción, botones sociales) y también el diseño (fondo, borde, sombra, etc).
+- **La caja elegante para autor (Molongui Authorship)** : Este plugin incluye una única plantilla en la versión gratuita, pero siete diseños más en la premium. Lo que más me gusta de Molongui Authorship es que se puede modificar su aspecto desde el personalizado de la plantilla de tu web. Por supuesto, permite personalizar todos sus elementos (nombre, avatar, descripción, botones sociales) y también el diseño (fondo, borde, sombra, etc).
 
 ### **Implementación sin plugin en GeneratePress Premium:**
 
-    
-    
 A destacar de esta opción que con ayuda de algún [plugin simple de Hooks puedes añadirlo en cualquier tema.](https://www.hostinger.com/tutorials/what-are-wordpress-hooks/)
 
 En la versión Premium del tema GeneratePress, podemos optar por utilizar el método de Hooks para agregar el Cuadro de Autor sin necesidad de instalar un complemento adicional. A continuación, se describen los pasos para hacerlo:
@@ -183,8 +155,7 @@ Ahora es cuando podemos añadir nuestro código al Hook para crear nuestro cuadr
 
 **Primer Código:**
 
-    
-```html      
+```html
     <div class="author-box">
         <div class="avatar"><?php echo get_avatar( get_the_author_meta( 'ID' )); ?></div>
      
@@ -203,11 +174,11 @@ Ahora es cuando podemos añadir nuestro código al Hook para crear nuestro cuadr
         </div>
      
     </div>
-```    
+```
 
 **Segundo Código:**
 
-```html    
+```html
     
     <div class="author-box">
         <div class="avatar">
@@ -224,16 +195,16 @@ Ahora es cuando podemos añadir nuestro código al Hook para crear nuestro cuadr
            </div>
         </div>
     </div>
-```    
+```
 
 **Tercer código:**
 
 En este código he ampliado la caja con varias cosas:
 
-  * He añadido enlaces con iconos a las redes sociales
-  * He modificado el aspecto y la posición de la foto
+- He añadido enlaces con iconos a las redes sociales
+- He modificado el aspecto y la posición de la foto
 
-```html    
+```html
     
     <div class="author-box">
         <div class="avatar-container">
@@ -255,7 +226,7 @@ En este código he ampliado la caja con varias cosas:
             <a href="https://www.linkedin.com/in/tuperfil/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
     </div>
-```    
+```
 
 Como ves es muy fácil modificarlo para crear tu caja de autor personalizada.
 
@@ -314,7 +285,7 @@ Código CSS opción 1:
     }
     
     .author-description {
-    	margin-bottom: 10px;
+     margin-bottom: 10px;
     }
     
     /* For Mobile Devices */
@@ -322,14 +293,14 @@ Código CSS opción 1:
         .author-box {
             flex-direction: column;
             text-align: center;
-    	padding: 50px 10px;
+     padding: 50px 10px;
         }
     
         .author-box .avatar {
             margin-right: 0;
             margin-bottom: 10px;
             width: 100%;
-    	margin-top: -35px;
+     margin-top: -35px;
         }
     
         .author-box .avatar img {
@@ -338,69 +309,73 @@ Código CSS opción 1:
     }
     
 ```
+
 Código CSS para segunda opción:
+
 ```css
     
     
     .autor-box {
-    	relleno: 3%;
-    	parte inferior del relleno: 10px;
-    	margen superior: 30px;
-    	tamaño de fuente: 0,9 em;
-    	color de fondo: #fff;
-    	pantalla: -webkit-caja;
-    	pantalla: -ms-flexbox;
-    	pantalla: flexible;
-    	-webkit-box-align: centro;
-    	-ms-flex-alinear: centro;
-    	alinear elementos: centro;
+     relleno: 3%;
+     parte inferior del relleno: 10px;
+     margen superior: 30px;
+     tamaño de fuente: 0,9 em;
+     color de fondo: #fff;
+     pantalla: -webkit-caja;
+     pantalla: -ms-flexbox;
+     pantalla: flexible;
+     -webkit-box-align: centro;
+     -ms-flex-alinear: centro;
+     alinear elementos: centro;
             sombra de caja: 0 9px 28px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     }
     .autor-box .avatar {
-    	ancho: 250px;
-    	altura: automático;
-    	borde-radio: 100%;
-    	margen derecho: 30px;
+     ancho: 250px;
+     altura: automático;
+     borde-radio: 100%;
+     margen derecho: 30px;
     }
     h5.autor-título {
-    	margen inferior: 0,1 em;
-    	peso de fuente: 600;
+     margen inferior: 0,1 em;
+     peso de fuente: 600;
     }
     .autor-descripción {
-    	altura de línea: 1.6em
+     altura de línea: 1.6em
     }
     .autor-enlaces a {
-    	margen superior: -1,5em;
-    	tamaño de fuente: 2em;
-    	altura de línea: 2em;
-    	flotador izquierdo;
+     margen superior: -1,5em;
+     tamaño de fuente: 2em;
+     altura de línea: 2em;
+     flotador izquierdo;
     }
     @media (ancho máximo: 768px) {
-    	.autor-box {
-    		relleno: 20px;
-    		relleno inferior: 25px;
-    		margen superior: 60px;
-    		dirección de flexión: columna;
-    		alineación de texto: centro;
-    	}
-    	.autor-box .avatar {
-    		margen derecho: 0;
-    		ancho: 100%;
-    		margen superior: -25px;
-    	}
-    	.autor-box .avatar img {
-    		ancho máximo: 100px;
-    	}
-    	.autor-enlaces a {
-    		flotante: ninguno;
-    		alinear-auto: centro;
-    	}
-    	.autor-descripción {
-    		margen inferior: -0.1em;
-    	}
+     .autor-box {
+      relleno: 20px;
+      relleno inferior: 25px;
+      margen superior: 60px;
+      dirección de flexión: columna;
+      alineación de texto: centro;
+     }
+     .autor-box .avatar {
+      margen derecho: 0;
+      ancho: 100%;
+      margen superior: -25px;
+     }
+     .autor-box .avatar img {
+      ancho máximo: 100px;
+     }
+     .autor-enlaces a {
+      flotante: ninguno;
+      alinear-auto: centro;
+     }
+     .autor-descripción {
+      margen inferior: -0.1em;
+     }
     }
 ```
+
 Código CSS para personalizar la 3º opción:
+
 ```css
     
     
@@ -490,12 +465,12 @@ Código CSS para personalizar la 3º opción:
             margin-bottom: -0.1em;
         }
     }
-```    
+```
 
 #### **¿Donde colocar el CSS de la caja de autor personalizada?**
 
 Tienes varias opciones, desde hacerlo en tu archivo style.css de tu tema hijo, GeneratePress Child a la más sencilla y menos peligrosa, añadirlo en la parte
-de personalización de CSS adicional. 
+de personalización de CSS adicional.
 
 Qué encontrarás en **Apariencia >Apariencia>CSS Adicional**
 
@@ -546,4 +521,3 @@ Al agregar el cuadro de autor, aumentas la confianza y la credibilidad de tu sit
 ### **¿Cuál es el mejor enfoque para agregar el cuadro de autor en mi sitio web?**
 
 El mejor enfoque para agregar el cuadro de autor depende de tus necesidades y de si estás utilizando la versión gratuita o Premium de GeneratePress. Si tienes la versión gratuita, instalar un complemento como Simple Author Box puede ser una opción. Si utilizas GeneratePress Premium, utilizar el método de Hook sin complementos puede ofrecer una solución más personalizada y optimizada.
-

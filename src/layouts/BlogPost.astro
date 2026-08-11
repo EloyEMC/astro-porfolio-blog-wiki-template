@@ -4,46 +4,88 @@ import PostDate from '../components/PostDate.astro';
 import PostTags from '../components/PostTags.astro';
 import { type CollectionEntry } from 'astro:content';
 import AuthorBox from "../components/AuthorBox.astro";
+import NewsletterCta from '../components/NewsletterCta.astro';
+import RelatedPosts from '../components/RelatedPosts.astro';
+import RandomPosts from '../components/RandomPosts.astro';
 
 interface Props {
   post: CollectionEntry<'blog'>;
   siteUrl: string;
   defaultImage: string;
   defaultLocale?: string;
-  author?: string; // Añade author como una propiedad opcional
+  author?: string;
+  headings?: Array<{ depth: number; text: string; slug: string }>;
+  relatedPosts?: CollectionEntry<'blog'>[];
+  randomPosts?: CollectionEntry<'blog'>[];
 }
 
-const { post, siteUrl, defaultImage, defaultLocale = "es_ES" } = Astro.props;
-const { title, description, date, tags, image, image_alt, author  } = post.data;
+const {
+  post,
+  siteUrl,
+  defaultImage,
+  defaultLocale = "es_ES",
+  headings = [],
+  relatedPosts = [],
+  randomPosts = [],
+} = Astro.props;
+const { title, description, date, tags, image, image_alt, author } = post.data;
+const tocHeadings = headings.filter(({ depth }) => depth >= 2 && depth <= 3);
 ---
 
 <PostBaseLayout siteUrl={siteUrl} defaultImage={defaultImage} defaultLocale={defaultLocale} entry={post}>
-  <article class="max-w-3xl mx-auto px-4">
-    {image && <img src={image} alt={image_alt} class="w-full h-[400px] object-cover rounded-xl shadow-lg mb-8" loading="eager" />}
-    <header class="mb-12">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-gray-100">
-        {title}
-      </h1>
-      <div class="mb-6">
-        <PostDate date={date} />
+  <article class="editorial-post">
+    <div class="editorial-post-utility" aria-label="Breadcrumb">
+      <a href="/">Inicio</a>
+      <span aria-hidden="true">/</span>
+      <a href="/articulos/">Artículos</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">{title}</span>
+    </div>
+
+    <div class="editorial-post-layout">
+      <div class="editorial-post-main">
+        <header class="editorial-post-header">
+          <p class="editorial-post-kicker">Artículo de fondo</p>
+          <h1 class="editorial-post-title">{title}</h1>
+          <div class="editorial-post-meta">
+            <PostDate date={date} />
+            {tags && <PostTags tags={tags} />}
+          </div>
+        </header>
+
+        {image && (
+          <figure class="editorial-post-lead">
+            <img src={image} alt={image_alt || title} loading="eager" decoding="async" />
+          </figure>
+        )}
       </div>
-      {tags && <PostTags tags={tags} />}
-    </header>
-    <div
-      class="prose prose-lg dark:prose-invert
-      prose-headings:text-gray-900 dark:prose-headings:text-gray-100
-      prose-p:text-gray-700 dark:prose-p:text-gray-300
-      prose-a:text-primary-600 dark:prose-a:text-primary-400
-      hover:prose-a:text-primary-500 dark:hover:prose-a:text-primary-300
-      prose-strong:text-gray-900 dark:prose-strong:text-gray-100
-      prose-code:text-gray-300 dark:prose-code:text-gray-400
-      prose-blockquote:text-gray-700 dark:prose-blockquote:text-gray-300
-      prose-span:text-gray-700 dark:prose-span:text-gray-300
-      prose-li:text-gray-700 dark:prose-li:text-gray-300
-      max-w-none"
-    >
-      <slot />
+
+      {(description || tocHeadings.length > 0) && (
+        <aside class="editorial-post-aside" aria-label="Article information">
+          {description && <p class="editorial-post-description">{description}</p>}
+
+          {tocHeadings.length > 0 && (
+            <nav class="editorial-post-toc" aria-label="Table of contents">
+              <p class="editorial-post-toc-title">Contents</p>
+              <ol>
+                {tocHeadings.map(({ depth, text, slug }) => (
+                  <li class:list={{ "editorial-post-toc-subitem": depth === 3 }}>
+                    <a href={`#${slug}`}>{text}</a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          )}
+        </aside>
+      )}
+
+      <div class="editorial-prose editorial-post-body">
+        <slot />
+        {author && <AuthorBox author={author} />}
+        <NewsletterCta />
+        <RelatedPosts posts={relatedPosts} />
+        <RandomPosts posts={randomPosts} />
+      </div>
     </div>
   </article>
-  {author && <AuthorBox author={author} />} 
 </PostBaseLayout>

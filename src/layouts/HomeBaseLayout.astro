@@ -1,69 +1,30 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { ClientRouter, slide } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 import { GoogleAnalytics } from 'astro-google-analytics';
 import { siteConfig } from '../config';
 import SEOPage from '@components/SEOPage.astro';
 
-interface Props {
-  site?: string;
-  siteUrl: string;
-  defaultImage?: string; // Hacer defaultImage opcional
-  defaultLocale?: string;
-  author?: string;
-  title?: string;
-}
+import '../styles/global.css';
+import '../styles/redesign.css';
 
-// Definir las constantes para el SEO
-const description = "La web de Eloy Martínez Cuesta, donde encontrarás novedades IA, iluminación, marketing, SEO, dev...";
-const slug = "";
-const { siteUrl, defaultLocale = "es_ES", title = "Eloy Martínez Cuesta" } = Astro.props;
-const { author } = Astro.props;
-const authorData = author || null;
-const defaultImage = siteConfig.image || "ruta/a/imagen-por-defecto.jpg"; // Valor por defecto
+interface Props { siteUrl: string; defaultImage?: string; title?: string; }
+const { siteUrl, title = 'Eloy Martínez Cuesta' } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es" class="dark">
   <head>
-    <!-- Componente SEO -->
-    <SEOPage
-      title={title}
-      description={description}
-      siteUrl={siteUrl}
-      defaultImage={defaultImage}
-      slug={slug}
-    />
-
-    <!-- Metadatos básicos -->
+    <SEOPage title={title} description={siteConfig.description} siteUrl={siteUrl} defaultImage={siteConfig.image || ''} slug="" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-
-    <!-- Sitemap -->
-    <link rel="sitemap" href="/sitemap-index.xml" />
-
-    <!-- Google Analytics (si está configurado) -->
+    <link rel="icon" type="image/png" href="/favicon-emc-512.png?v=4" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-emc-32.png?v=4" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-emc-16.png?v=4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-emc-v4.png?v=1" />
     {siteConfig.googleAnalysis && <GoogleAnalytics id={siteConfig.googleAnalysis} />}
-
-    <!-- ClientRouter para transiciones -->
     <ClientRouter />
   </head>
-  <body class="absolute top-0 z-[-2] h-screen w-screen bg-white dark:bg-gray-900">
-    <div class="">
-      <!-- Header con persistencia -->
-      <Header transition:persist />
-
-      <!-- Contenido principal con animación de slide -->
-      <main class="py-4" transition:animate={slide({ duration: '.3s' })}>
-        <slot />
-      </main>
-
-      <!-- Footer con persistencia -->
-      <Footer transition:persist />
-    </div>
-  </body>
+      <body>
+        <main><slot /></main>
+      </body>
 </html>

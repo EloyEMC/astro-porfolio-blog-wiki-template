@@ -1,13 +1,13 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import { ClientRouter, slide } from "astro:transitions";
 import { GoogleAnalytics } from "astro-google-analytics";
 import { siteConfig } from "../config";
 import SEO from "../components/SEO.astro";
+import Sidebar from "../components/Sidebar.astro";
+import ContentNav from "../components/ContentNav.astro";
 import { type CollectionEntry } from 'astro:content';
-import { authors } from "../authors.js";
-import AuthorBox from "../components/AuthorBox.astro";
+import "../styles/global.css";
+import "../styles/redesign.css";
 
 interface Props {
   entry: CollectionEntry<'blog'>;
@@ -17,9 +17,7 @@ interface Props {
   author?: string;
 }
 
-const { entry, siteUrl, defaultImage, defaultLocale = "es_ES", } = Astro.props;
-const { author } = Astro.props;
-const authorData = authors[author] || null;
+const { entry, siteUrl, defaultImage, defaultLocale = "es_ES" } = Astro.props;
 ---
 
 <!doctype html>
@@ -27,7 +25,11 @@ const authorData = authors[author] || null;
   <head>
     <SEO entry={entry} siteUrl={siteUrl} defaultImage={defaultImage} defaultLocale={defaultLocale} />
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./public/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon-emc-512.png?v=4" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-emc-32.png?v=4" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-emc-16.png?v=4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-emc-v4.png?v=1" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     {
       siteConfig.googleAnalysis && (
@@ -36,54 +38,15 @@ const authorData = authors[author] || null;
     }
     <ClientRouter />
   </head>
-  <body class="min-h-screen bg-white dark:bg-gray-900">
-    <Header transition:persist />
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <main class="py-12" transition:animate={slide({ duration: ".3s" })}>
+<body class="interior-shell">
+  <div id="_drawer" class="interior-drawer">
+    <Sidebar />
+    <div class="interior-main">
+      <ContentNav />
+      <main class="interior-content" transition:animate={slide({ duration: ".3s" })}>
         <slot />
       </main>
-      <Footer transition:persist />
     </div>
-    <AuthorBox author={author}/>
-  </body>
+  </div>
+</body>
 </html>
-
-<style>
-  .author-box {
-	display: flex;
-	align-items: center;
-	background-color: #1a1a1a;
-	border-radius: 0.75rem;
-	padding: 1.5rem;
-	max-width: 100%;
-}
-
-.author-img {
-	border-radius: 50%;
-	width: 80px;
-	height: 80px;
-	object-fit: cover;
-	border: 3px solid #fff;
-}
-
-.author-info h3 {
-	font-size: 1.25rem;
-	font-weight: bold;
-}
-
-.author-info p {
-	color: #d1d5db;
-	margin-top: 0.5rem;
-
-
-	.social-links a {
-		text-decoration: none;
-		margin-right: 0.5rem;
-		color: #58a6ff;
-	}
-
-	.social-links a:hover {
-		text-decoration: underline;
-	}
-}
-</style>

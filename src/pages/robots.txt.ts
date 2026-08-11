@@ -1,17 +1,15 @@
-import type { APIRoute } from 'astro';
+import type { APIRoute } from "astro";
 
 const getRobotsTxt = (sitemapURL: URL) => `
 # robots.txt optimizado
 
 # Permitir acceso a todos los robots de búsqueda
 User-agent: *
-# Permitir indexar las páginas principales
+# Permitir indexar las páginas públicas
 Allow: /
-
-# Permitir indexar el blog y sus secciones relacionadas
 Allow: /blog/
 Allow: /tags/
-Allow: /archives/
+Allow: /archive/
 
 
 # Bloquear el acceso a áreas privadas o no deseadas (ajusta según tu estructura)
@@ -44,7 +42,8 @@ Sitemap: ${sitemapURL.href}
 `;
 
 export const GET: APIRoute = ({ site }) => {
-  const sitemapURL = new URL('sitemap-index.xml', site);
-  console.log('sitemapURL = ', sitemapURL);
-  return new Response(getRobotsTxt(sitemapURL));
+	const sitemapURL = new URL("/sitemap-index.xml", site);
+	return new Response(getRobotsTxt(sitemapURL), {
+		headers: { "Content-Type": "text/plain" },
+	});
 };

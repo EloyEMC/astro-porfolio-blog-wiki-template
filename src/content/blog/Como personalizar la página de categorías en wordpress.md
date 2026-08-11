@@ -1,6 +1,6 @@
 ---
 title: Cómo Personalizar la Página de Categorías en WordPress
-description: Las páginas de categorías son una parte esencial de cualquier sitio web, si utilizas WordPress exploraremos cómo puedes personalizarla.
+description: Guía para personalizar las páginas de categorías de WordPress con plugins o código, añadir imágenes y mejorar su estructura, SEO y visualización responsive.
 date: 2025-03-23
 tags: [Diseño WEB, Wordpress, DEV ]
 draft: false
@@ -53,28 +53,6 @@ faqs:
 ---
 Las páginas de categorías son una parte esencial de cualquier sitio web que organice su contenido en diferentes temas o categorías. Si utilizas WordPress como plataforma para tu sitio web, tienes la oportunidad de personalizar estas páginas de categorías para mejorar la apariencia y la experiencia del usuario. En este artículo, exploraremos cómo puedes personalizar la página de categorías en WordPress de acuerdo con tus necesidades y preferencias. **¿Te ayuda en el SEO? No dejes de leer el artículo para descubrirlo.**
 
-## Contenido
-
-- [Contenido](#contenido)
-- [Comprender la Estructura de las Páginas de Categorías en WordPress](#comprender-la-estructura-de-las-páginas-de-categorías-en-wordpress)
-- [Seleccionar el Método de Personalización](#seleccionar-el-método-de-personalización)
-  - [Personalización Sin Código con Plugins de WordPress](#personalización-sin-código-con-plugins-de-wordpress)
-    - [Plugins de Personalización](#plugins-de-personalización)
-  - [Personalización Con Código](#personalización-con-código)
-    - [Creación de un Child Theme](#creación-de-un-child-theme)
-    - [Crear Campo Imagen](#crear-campo-imagen)
-    - [Incluir Consulta en `functions.php` del Child Theme](#incluir-consulta-en-functionsphp-del-child-theme)
-- [Resolución y Formato](#resolución-y-formato)
-  - [Resolución](#resolución)
-  - [Formato](#formato)
-- [Tamaños Recomendados](#tamaños-recomendados)
-  - [Imagen Destacada en Entradas o Páginas](#imagen-destacada-en-entradas-o-páginas)
-  - [Miniaturas y Galerías](#miniaturas-y-galerías)
-    - [Cabecera (Header) o Imagen de Portada](#cabecera-header-o-imagen-de-portada)
-- [Optimización para SEO y Rendimiento](#optimización-para-seo-y-rendimiento)
-- [Pruebas y Visualización Responsiva](#pruebas-y-visualización-responsiva)
-- [Mantenimiento Continuo](#mantenimiento-continuo)
-- [Faqs sobre: Cómo Personalizar la Página de Categorías en WordPress](#faqs-sobre-cómo-personalizar-la-página-de-categorías-en-wordpress)
 
 ---
 
@@ -182,20 +160,25 @@ function has_category_thumbnail() {
 }  
 // Fin en categorias
 ```
+
 Recuerda tener instalado un tema hijo y realizar las modificaciones en él.
 
 En la plantilla se tendría que añadir el siguiente código, dependiendo de la zona donde quieres que aparezca:
+
 ```php
 if ( has_category_thumbnail() ) {
   echo '<img src="' . category_thumbnail_url() . '" />';
 }
 ```
+
 ## Resolución y Formato
 
 ### Resolución
+
 La resolución de las imágenes se mide en píxeles por pulgada (PPI o DPI). Para imágenes web, una resolución de 72 PPI es común y suficiente para la visualización en pantalla.
 
 ### Formato
+
 El formato más común y recomendado para las imágenes web es JPEG (o JPG). Es un formato comprimido que ofrece una buena calidad de imagen y un tamaño de archivo razonable. Para imágenes con transparencias, como logotipos, utiliza el formato PNG.
 
 ## Tamaños Recomendados
@@ -252,39 +235,38 @@ Personalizar la página de categorías en WordPress puede marcar la diferencia e
 
 ## Faqs sobre: Cómo Personalizar la Página de Categorías en WordPress
 
-
-  - ¿Qué son las páginas de categorías en WordPress?
+- ¿Qué son las páginas de categorías en WordPress?
   
     Las páginas de categorías en WordPress son páginas que agrupan y muestran entradas (posts) relacionadas con una categoría específica. Estas páginas son útiles para organizar el contenido de un sitio web y mejorar la navegación para los usuarios.
 
-  - ¿Por qué es importante personalizar las páginas de categorías en WordPress?
+- ¿Por qué es importante personalizar las páginas de categorías en WordPress?
   
     Personalizar las páginas de categorías en WordPress es importante porque permite mejorar la experiencia del usuario, optimizar el diseño para SEO, y destacar visualmente el contenido de cada categoría. Además, una buena personalización puede aumentar el tiempo de permanencia en el sitio y mejorar la tasa de conversión.
 
-  - ¿Se puede personalizar la página de categorías sin usar código?
+- ¿Se puede personalizar la página de categorías sin usar código?
   
     Sí, es posible personalizar la página de categorías sin usar código mediante el uso de plugins como Elementor, Category Page Enhanced o Category Templates. Estos plugins ofrecen opciones de personalización mediante interfaces gráficas fáciles de usar.
 
-  - ¿Qué es un Child Theme y por qué es recomendable usarlo para personalizar WordPress?
+- ¿Qué es un Child Theme y por qué es recomendable usarlo para personalizar WordPress?
 
     Un Child Theme es un tema secundario que hereda las funcionalidades y estilos de un tema principal (parent theme). Es recomendable usarlo para personalizar WordPress porque permite realizar modificaciones sin afectar el tema principal, lo que facilita las actualizaciones y evita la pérdida de cambios.
 
-  - ¿Cómo se añade una imagen a una categoría en WordPress?
+- ¿Cómo se añade una imagen a una categoría en WordPress?
 
     Para añadir una imagen a una categoría en WordPress, puedes usar el plugin Advanced Custom Fields (ACF) para crear un campo de imagen en el formulario de categorías. Luego, debes modificar el archivo `functions.php` del Child Theme y los archivos de plantilla para mostrar la imagen en la página de la categoría.
 
-  - ¿Qué formatos de imagen son recomendables para las páginas de categorías?
+- ¿Qué formatos de imagen son recomendables para las páginas de categorías?
   
     Los formatos recomendables para las imágenes en las páginas de categorías son JPEG (para imágenes con buena calidad y tamaño reducido) y PNG (para imágenes con transparencia). Además, es importante optimizar las imágenes para web para garantizar un buen rendimiento.
 
-  - ¿Cómo afecta la personalización de las páginas de categorías al SEO?
+- ¿Cómo afecta la personalización de las páginas de categorías al SEO?
 
     La personalización de las páginas de categorías puede mejorar el SEO al permitir la inclusión de textos optimizados, imágenes con etiquetas alt, y una estructura de contenido más clara. Esto ayuda a los motores de búsqueda a entender mejor el contenido y mejorar el posicionamiento.
 
-  - ¿Qué herramientas se pueden usar para probar la visualización responsiva de las páginas de categorías?
+- ¿Qué herramientas se pueden usar para probar la visualización responsiva de las páginas de categorías?
   
     Puedes usar herramientas como el modo de desarrollo del navegador (DevTools), servicios en línea como BrowserStack, o plugins de WordPress para probar la visualización responsiva de las páginas de categorías en diferentes dispositivos y tamaños de pantalla.
 
-  - ¿Es necesario realizar mantenimiento después de personalizar las páginas de categorías?
+- ¿Es necesario realizar mantenimiento después de personalizar las páginas de categorías?
 
     Sí, es recomendable realizar mantenimiento periódico después de personalizar las páginas de categorías, especialmente después de actualizaciones de WordPress, temas o plugins. Esto asegura que las personalizaciones sigan funcionando correctamente y no causen conflictos.s

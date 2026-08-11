@@ -23,3 +23,9 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Pi and local harness state
+.pi/
+.pi/npm/
+.atl/
+.codegraph/

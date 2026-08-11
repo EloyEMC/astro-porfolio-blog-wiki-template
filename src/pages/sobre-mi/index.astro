@@ -1,0 +1,26 @@
+---
+import InteriorLayout from "../../layouts/InteriorLayout.astro";
+import { siteConfig } from "../../config";
+---
+
+<InteriorLayout
+  title="Sobre mí — Eloy Martínez Cuesta"
+  description="Eloy Martínez Cuesta: iluminación, tecnología y negocio aplicados a proyectos reales."
+  slug="sobre-mi"
+>
+  <section aria-labelledby="about-title">
+    <p class="interior-eyebrow">06 / Sobre mí</p>
+    <h1 id="about-title" class="interior-title">Hacer que las ideas funcionen.</h1>
+    <p class="interior-intro">Soy Eloy Martínez Cuesta. Trabajo entre la iluminación, la tecnología y el negocio para convertir necesidades concretas en soluciones útiles, comprensibles y sostenibles.</p>
+    <div class="illumination-grid">
+      <article class="illumination-card">
+        <h2><a href={`mailto:${siteConfig.social.email}`}>Hablemos</a></h2>
+        <p>Si tienes un proyecto real sobre el que quieras conversar, puedes escribirme.</p>
+      </article>
+      <article class="illumination-card">
+        <h2><a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a></h2>
+        <p>Consulta mi perfil profesional y mi recorrido.</p>
+      </article>
+    </div>
+  </section>
+</InteriorLayout>

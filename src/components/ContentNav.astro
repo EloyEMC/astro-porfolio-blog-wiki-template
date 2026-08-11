@@ -1,0 +1,22 @@
+---
+import Search from "./Search.astro";
+---
+
+<nav class="content-nav" aria-label="Controles de navegación">
+  <a class="content-nav-icon" href="/" aria-label="Home" title="Home">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10Z" /></svg>
+  </a>
+
+  <Search />
+</nav>
+
+    <script is:inline>
+      document.addEventListener("click", (event) => {
+        const target = event.target instanceof HTMLElement ? event.target.closest("[data-history]") : null;
+        if (!target) return;
+        const direction = target.getAttribute("data-history");
+        if (direction === "back") window.history.back();
+        if (direction === "forward") window.history.forward();
+      });
+
+    </script>

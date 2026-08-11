@@ -7,15 +7,15 @@ interface Props {
 
 const { currentPage, totalPages, baseUrl } = Astro.props;
 
-// Normalizar baseUrl para asegurarse de que termine con una barra
+// Normalize baseUrl to ensure it ends with a slash.
 const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 ---
 
-<nav class="flex justify-center gap-4 mt-12">
+<nav class="legacy-pagination" aria-label="Pagination">
   {currentPage > 1 && (
     <a
       href={`${normalizedBaseUrl}${currentPage - 1}`}
-      class="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded hover:bg-gray-200 dark:hover:bg-gray-700"
+      class="legacy-pagination-link"
       aria-label="Previous Page"
     >
       Previous
@@ -24,7 +24,7 @@ const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
   {currentPage < totalPages && (
     <a
       href={`${normalizedBaseUrl}${currentPage + 1}`}
-      class="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded hover:bg-gray-200 dark:hover:bg-gray-700"
+      class="legacy-pagination-link"
       aria-label="Next Page"
     >
       Next

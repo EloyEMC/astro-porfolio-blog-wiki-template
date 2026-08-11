@@ -199,7 +199,8 @@ html.dark body {
 	text-decoration: none;
 	text-transform: uppercase;
 }
-.content-nav .content-nav-icon {
+.content-nav .content-nav-icon,
+.content-nav .content-nav-history {
 	display: inline-grid;
 	place-items: center;
 	width: 3rem;
@@ -213,6 +214,13 @@ html.dark body {
 	letter-spacing: 0;
 	opacity: 1;
 }
+.content-nav .content-nav-history {
+	width: 2.25rem;
+	border-left: 0;
+}
+.content-nav .content-nav-history:last-of-type {
+	border-right: 1px solid rgba(241, 238, 232, 0.24);
+}
 .content-nav-menu {
 	display: none !important;
 }
@@ -220,7 +228,8 @@ html.dark body {
 	display: none;
 }
 
-.content-nav .content-nav-icon svg {
+.content-nav .content-nav-icon svg,
+.content-nav .content-nav-history svg {
 	width: 1rem;
 	height: 1rem;
 	fill: none;

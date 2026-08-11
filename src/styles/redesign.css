@@ -2117,15 +2117,18 @@ html.dark body {
 }
 .editorial-post-aside {
 	grid-column: 2;
-	grid-row: 1 / span 2;
+	grid-row: 1;
+	align-self: start;
 	position: sticky;
 	top: 2rem;
 	width: 100%;
+	max-height: calc(100vh - 4rem);
 	min-width: 0;
 	margin: 0;
 	padding: 1.25rem 0 1.5rem;
 	border-top: 1px solid rgba(241, 238, 232, 0.18);
 	border-bottom: 1px solid rgba(241, 238, 232, 0.18);
+	overflow-y: auto;
 }
 .editorial-post-aside .editorial-post-description,
 .editorial-post-aside .editorial-post-toc {

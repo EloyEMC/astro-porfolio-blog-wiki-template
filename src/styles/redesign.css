@@ -200,7 +200,8 @@ html.dark body {
 	text-transform: uppercase;
 }
 .content-nav .content-nav-icon,
-.content-nav .content-nav-history {
+.content-nav .content-nav-history,
+.content-nav #search-button {
 	display: inline-grid;
 	place-items: center;
 	width: 3rem;
@@ -214,7 +215,8 @@ html.dark body {
 	letter-spacing: 0;
 	opacity: 1;
 }
-.content-nav .content-nav-history {
+.content-nav .content-nav-history,
+.content-nav #search-button {
 	width: 2.25rem;
 	border-left: 0;
 }
@@ -239,19 +241,21 @@ html.dark body {
 	stroke-width: 1.8;
 }
 .content-nav #search-button {
-	width: 3rem;
-	height: 3rem;
 	padding: 0;
 	font-size: 0;
-	border-top: 1px solid rgba(241, 238, 232, 0.24);
 	border-right: 1px solid rgba(241, 238, 232, 0.24);
-	border-bottom: 1px solid rgba(241, 238, 232, 0.24);
+}
+.content-nav .content-nav-history + #search-button {
+	border-left: 1px solid rgba(241, 238, 232, 0.24);
 }
 .content-nav #search-button svg {
 	width: 1rem;
 	height: 1rem;
-	fill: currentColor;
-	stroke: none;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 2.5;
+	stroke-linecap: round;
+	stroke-linejoin: round;
 }
 .content-nav a:hover,
 .content-nav button:hover,

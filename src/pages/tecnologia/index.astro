@@ -117,36 +117,47 @@ const sectionLinks = [
       <p class="interior-eyebrow">PROYECTOS / HERRAMIENTAS</p>
       <h2 id="tools-title">Construir para aprender. Aprender para construir mejor.</h2>
       <p class="section-intro">
-        A partir de aquí, la tecnología se demuestra con herramientas y resultados, no con una lista de tecnologías. En el repositorio actual hay material real sobre trabajo web y resultados de iluminación; todavía no hay información pública suficiente para describir Disano Tools o una API de iluminación sin inventar funcionalidades.
+        Dos herramientas reales para convertir información técnica en decisiones de proyecto: presupuestos estructurados y acceso programático al catálogo DISANO.
       </p>
-
-      <div class="technology-case-grid">
-        <article class="technology-case technology-case--image">
-          <figure>
-            <img src="/Como-personalizar-la-pagina-de-categorias-en-wordpress-anadir-imagen-principal-a-la-categoria-con-ACF6.webp" alt="Resultado real de una personalización de categorías en WordPress" loading="lazy" width="1024" height="683" />
-          </figure>
-          <div class="technology-case-content">
-            <p class="criteria-number">CASO DOCUMENTADO</p>
-            <h3>Diseño web y contenidos que se pueden mantener.</h3>
-            <p>Los artículos sobre WordPress recogen problemas concretos de publicación, estructura y mantenimiento web, con capturas reales del proceso y del resultado.</p>
-            <p class="technology-case-meta">Problema: mejorar una web existente · Estado: contenido publicado</p>
-            <a class="card-link" href="/blog/como-personalizar-la-página-de-categorías-en-wordpress/">Explorar caso <span aria-hidden="true">→</span></a>
+    
+      <article class="technology-product technology-product--featured">
+        <figure class="technology-product-visual">
+          <img src="/disano-tools-screenshot.png" alt="Interfaz de BC3-Tools con herramientas para convertir archivos PDF, Excel y BC3" width="1280" height="720" />
+        </figure>
+        <div class="technology-product-content">
+          <p class="criteria-number">DISANO TOOLS · PRODUCCIÓN</p>
+          <h3>Información de producto cuando la necesitas.</h3>
+          <p class="technology-product-label">Problema</p>
+          <p>La información técnica aparece repartida entre catálogos, familias y referencias.</p>
+          <p class="technology-product-label">Solución</p>
+          <p>Una suite para convertir, analizar y gestionar archivos BC3, con búsqueda de producto y exportación a formatos de presupuesto.</p>
+          <div class="technology-product-links">
+            <a class="card-link" href="https://disano.eloymartinezcuesta.com" target="_blank" rel="noreferrer">Ver herramienta <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="https://github.com/EloyEMC/BC3-Suite" target="_blank" rel="noreferrer">Ver código <span aria-hidden="true">↗</span></a>
           </div>
-        </article>
-
-        <article class="technology-case technology-case--image">
-          <figure>
-            <img src="/Captura-de-pantalla-2021-03-04-a-las-12.00.10.webp" alt="Captura real de resultados de consumo y coste energético de iluminación" loading="lazy" width="1024" height="768" />
-          </figure>
-          <div class="technology-case-content">
-            <p class="criteria-number">DATOS Y DECISIÓN</p>
-            <h3>Convertir datos técnicos en una decisión comprensible.</h3>
-            <p>Las capturas existentes muestran cómo los datos de iluminación pueden traducirse en resultados que ayudan a comparar consumo, coste y rendimiento.</p>
-            <p class="technology-case-meta">Contexto: iluminación y eficiencia · Estado: evidencia visual disponible</p>
-            <a class="card-link" href="/iluminacion/">Ver el contexto <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    
+      <article class="technology-product technology-product--api">
+        <div class="technology-api-panel" aria-label="Endpoints públicos de API DISANO">
+          <span class="technology-api-prompt">GET</span>
+          <code>/api/productos</code>
+          <span class="technology-api-prompt">GET</span>
+          <code>/api/familias</code>
+          <span class="technology-api-prompt">GET</span>
+          <code>/api/bc3</code>
+        </div>
+        <div class="technology-product-content">
+          <p class="criteria-number">API DISANO · DATOS</p>
+          <h3>Un catálogo de iluminación preparado para integrarse.</h3>
+          <p>La API expone productos y tarifas de DISANO para que otras aplicaciones puedan consultar referencias, familias y datos de catálogo sin duplicar esa información.</p>
+          <p class="technology-case-meta">API REST · FastAPI · Entorno de producción</p>
+          <div class="technology-product-links">
+            <a class="card-link" href="https://api.eloymartinezcuesta.com" target="_blank" rel="noreferrer">Consultar API <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://github.com/EloyEMC/API-DISANO" target="_blank" rel="noreferrer">Ver código <span aria-hidden="true">↗</span></a>
           </div>
-        </article>
-      </div>
+        </div>
+      </article>
     </section>
 
     <section id="laboratorio" class="editorial-section section-note" aria-labelledby="lab-title">
@@ -272,85 +283,153 @@ const sectionLinks = [
     margin-bottom: 1.5rem;
   }
 
+  .technology-page .section-cta,
+  .technology-page .text-link {
+    color: var(--paper);
+  }
+
+  .technology-page .section-cta:hover,
+  .technology-page .section-cta:focus-visible,
+  .technology-page .text-link:hover,
+  .technology-page .text-link:focus-visible {
+    color: var(--gold);
+  }
+
   .technology-links {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem 2.5rem;
   }
 
-  .technology-case-grid {
+  .technology-product {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    border-top: 1px solid var(--section-line);
+    padding-top: 1.5rem;
   }
-
-  .technology-case {
-    overflow: hidden;
-    border: 1px solid var(--section-line);
-    background: color-mix(in srgb, var(--ink) 92%, var(--paper));
+    
+  .technology-product--featured {
+    grid-template-columns: minmax(0, 1.6fr) minmax(16rem, 0.8fr);
   }
-
-  .technology-case figure {
-    height: 16rem;
+    
+  .technology-product--api {
+    grid-template-columns: minmax(16rem, 0.8fr) minmax(0, 1.2fr);
+    align-items: center;
+    margin-top: 4rem;
+  }
+    
+  .technology-product-visual {
+    min-height: 31rem;
     margin: 0;
     overflow: hidden;
     background: var(--ink);
   }
-
-  .technology-case figure img {
+    
+  .technology-product-visual img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: saturate(0.78) contrast(1.04);
+    object-position: top center;
   }
-
-  .technology-case-content {
+    
+  .technology-product-content {
     display: flex;
-    min-height: 19rem;
+    min-height: 100%;
     flex-direction: column;
-    padding: 1.5rem;
+    justify-content: center;
   }
-
-  .technology-case h3 {
-    margin: 0.7rem 0 1rem;
+    
+  .technology-product h3 {
+    max-width: 30rem;
+    margin: 0.7rem 0 1.25rem;
     color: var(--paper);
-    font-size: 1.35rem;
-    line-height: 1.15;
+    font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+    line-height: 1.05;
   }
-
-  .technology-case p:not(.criteria-number):not(.technology-case-meta) {
+    
+  .technology-product-content p:not(.criteria-number):not(.technology-product-label):not(.technology-case-meta) {
+    max-width: 34rem;
     color: var(--muted-ink);
     line-height: 1.65;
   }
-
+    
+  .technology-product-label {
+    margin: 0.8rem 0 0.15rem;
+    color: var(--paper);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+    
   .technology-case-meta {
-    margin-top: auto;
-    padding-top: 1.25rem;
+    margin-top: 1.5rem;
     color: var(--paper);
     font-size: 0.78rem;
     line-height: 1.5;
   }
-
-  .technology-case .card-link {
-    align-self: flex-start;
-    margin-top: 1.25rem;
+    
+  .technology-product-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 1.5rem;
+    margin-top: 1.5rem;
   }
-
+    
+  .technology-product--api .technology-product-content {
+    padding-bottom: 1rem;
+  }
+    
+  .technology-api-panel {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.9rem 1rem;
+    align-content: center;
+    min-height: 15rem;
+    padding: 2rem;
+    background: #10100f;
+    border: 1px solid var(--section-line);
+    color: var(--paper);
+    font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+  }
+    
+  .technology-api-panel code {
+    color: var(--paper);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+    
+  .technology-api-prompt {
+    color: var(--gold);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.72em;
+    font-weight: 700;
+  }
+    
   .technology-business {
     max-width: 48rem;
     padding-bottom: 3rem;
   }
+    
+  .technology-business h2 {
+    max-width: 36rem;
+    font-size: clamp(2rem, 3.2vw, 3.4rem) !important;
+  }
 
   @media (max-width: 780px) {
     .technology-feature,
-    .technology-case-grid {
+    .technology-product--featured,
+    .technology-product--api {
       grid-template-columns: 1fr;
     }
 
     .technology-visual {
       min-height: 22rem;
+    }
+
+    .technology-product-visual {
+      min-height: 20rem;
     }
 
     .technology-page .section-index {

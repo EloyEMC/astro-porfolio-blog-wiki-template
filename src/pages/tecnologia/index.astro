@@ -152,10 +152,7 @@ const sectionLinks = [
           <h3>Un catálogo de iluminación preparado para integrarse.</h3>
           <p>La API expone productos y tarifas de DISANO para que otras aplicaciones puedan consultar referencias, familias y datos de catálogo sin duplicar esa información.</p>
           <p class="technology-case-meta">API REST · FastAPI · Entorno de producción</p>
-          <div class="technology-product-links">
-            <a class="card-link" href="https://api.eloymartinezcuesta.com" target="_blank" rel="noreferrer">Consultar API <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="https://github.com/EloyEMC/API-DISANO" target="_blank" rel="noreferrer">Ver código <span aria-hidden="true">↗</span></a>
-          </div>
+          <p class="technology-product-contact">Si necesitas acceder a la API DISANO para un proyecto, puedes solicitar información por correo: <a href="mailto:eloy.martinez@disano.it">eloy.martinez@disano.it</a></p>
         </div>
       </article>
     </section>
@@ -382,7 +379,23 @@ const sectionLinks = [
   .technology-product--api .technology-product-content {
     padding-bottom: 1rem;
   }
-    
+
+  .technology-product-contact {
+    max-width: 34rem;
+    margin-top: 1.5rem;
+    color: var(--muted-ink);
+    line-height: 1.65;
+  }
+
+  .technology-product-contact a {
+    color: var(--paper);
+  }
+
+  .technology-product-contact a:hover,
+  .technology-product-contact a:focus-visible {
+    color: var(--gold);
+  }
+
   .technology-api-panel {
     display: grid;
     grid-template-columns: auto 1fr;

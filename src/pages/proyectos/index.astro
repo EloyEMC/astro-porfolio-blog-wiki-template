@@ -201,10 +201,17 @@ const pendingProjects = [
   .projects-page .section-cta span { color: var(--gold); }
   .projects-page .section-cta:hover, .projects-page .section-cta:focus-visible { color: var(--paper); text-decoration: none; }
 
+  @media (max-width: 1040px) {
+    .tools-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+    .tool-feature { grid-template-columns: minmax(14rem, 0.8fr) minmax(0, 1fr); }
+    .tool-note { border-left: 0; border-top: 1px solid var(--projects-line); padding: 1.5rem 0 0; }
+  }
+
   @media (max-width: 760px) {
     .projects-section { margin-top: 4rem; }
-    .featured-grid, .tools-layout, .tool-feature { grid-template-columns: 1fr; gap: 1.5rem; }
+    .featured-grid, .tool-feature { grid-template-columns: 1fr; gap: 1.5rem; }
+    .tools-layout { gap: 1.5rem; }
     .pending-projects ul { columns: 1; }
-    .tool-note, .open-source-feature, .lab-project { border-left: 0; border-top: 1px solid var(--projects-line); padding: 1.5rem 0 0; }
+    .open-source-feature, .lab-project { border-left: 0; border-top: 1px solid var(--projects-line); padding: 1.5rem 0 0; }
   }
 </style>

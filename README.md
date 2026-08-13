@@ -1,176 +1,141 @@
-# Astro Eloy Blog
+# Eloy Martínez Cuesta
 
+Sitio web personal de Eloy Martínez Cuesta, construido con Astro alrededor de tres áreas de trabajo:
 
+**Iluminación · Tecnología · Negocio**
 
-A minimal, responsive, and SEO-friendly blog template built with Astro. Features clean design, dark mode support, and markdown-based content management.
+El proyecto ya no es una plantilla genérica de blog. Es una web editorial y profesional que reúne experiencia en iluminación, proyectos reales, herramientas digitales, software, laboratorio y artículos técnicos.
 
+## Estado del proyecto
 
+El sitio está en desarrollo activo. La arquitectura visual, el contenido y las páginas principales se han adaptado a la identidad de Eloy y a su forma de trabajar: entender primero el problema y construir después una solución útil.
 
-If you find this project helpful, please consider giving it a star ⭐️.
+La futura extracción de una plantilla reutilizable se realizará en una fase posterior. Este repositorio representa actualmente el sitio personal, no una plantilla independiente.
 
-## Awesome Blogs built on top of this template
+## Secciones principales
 
+- `/` — Página de inicio y navegación principal.
+- `/iluminacion/` — Experiencia y conocimiento aplicado a la iluminación profesional.
+- `/tecnologia/` — Software, automatización, datos, APIs y herramientas para problemas reales.
+- `/proyectos/` — Proyectos de iluminación, herramientas digitales, open source y laboratorio.
+- `/articulos/` — Índice de artículos.
+- `/trayectoria/` — Recorrido profesional.
+- `/sobre-mi/` — Presentación personal y contacto.
 
-## Table of Contents
+## Stack
 
-- [Astro Eloy Blog](#astro-eloy-blog)
-  - [Awesome Blogs built on top of this template](#awesome-blogs-built-on-top-of-this-template)
-  - [Table of Contents](#table-of-contents)
-  - [Features](#features)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-    - [Site Settings](#site-settings)
-    - [HomePage Posts Filter](#homepage-posts-filter)
-    - [Theme](#theme)
-  - [Writing Content](#writing-content)
-  - [Creating New Posts](#creating-new-posts)
-  - [Build and Deploy](#build-and-deploy)
-  - [Project Structure](#project-structure)
-  - [Features Roadmap](#features-roadmap)
-  - [Contributing](#contributing)
-  - [License](#license)
+- [Astro](https://astro.build/) 5
+- TypeScript
+- Markdown y MDX para los artículos
+- Tailwind CSS y CSS específico por página
+- `@astrojs/rss` para el feed RSS
+- `@astrojs/sitemap` para el sitemap
+- JSON-LD y metadatos SEO reutilizables
+- Cloudflare Pages para el despliegue
 
-## Features
+## Desarrollo local
 
-- 📝 Markdown/MDX for content authoring
-- 🎨 Clean and minimalist design
-- 🏷️ Tag-based organization
-- 🌓 Dark mode support
-- 🔍 SEO optimized
-- 📱 Fully responsive
-- 🔗 Social media integration
-- 📰 RSS feed & sitemap support
-- ⚡ Fast performance
-- 🛠️ Google analysis interation
-- 🔍 Local search functionality
+### Requisitos
 
-![lighthouse score](https://github.com/larry-xue/larry-xue/blob/master/assets/lighthouse.gif)
+- Node.js `>=18.20.8`
+- npm
 
-## Installation
-
-1. Use the Astro CLI to create a new project:
-
-   ```bash
-   npm create astro@latest -- --template larry-xue/astro-zen-blog
-   cd ./to_your_project
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-
-   ```bash
-   npm run dev
-   ```
-
-## Configuration
-
-### Site Settings
-
-1. Open `src/config.ts` and customize your site settings:
-
-```typescript
-export const siteConfig: SiteConfig = {
-  site: "https://example.com/", // your site URL
-  title: "Your Blog",
-  slogan: "Exploring the World with Code",
-  description: "Write a description here",
-  social: {
-    github: "https://github.com/username",
-    linkedin: "https://www.linkedin.com/in/username",
-    email: "your@email.com",
-    rss: true,
-  },
-  homepage: {
-    maxPosts: 5, // Maximum number of posts to display
-    tags: [], // Only display posts with these tags
-    excludeTags: [], // Exclude posts with these tags
-  },
-  googleAnalytics: "G-XXXXXXXXXX", // Google Analytics tracking ID
-  search: true, // Enable local search
-};
-```
-
-### HomePage Posts Filter
-
-If you want more customization in homepage posts. You can customize the posts displayed by writing a custom filter with updating the `filterPublishedPosts` function in `src/utils/posts.ts`.:
-
-### Theme
-
-Update primary and secondary colors in `tailwind.config.js`:
-
-## Writing Content
-
-1. Create new blog posts in the `src/content/blog/` directory
-2. Use the following frontmatter template:
-
-```markdown
----
-title: "Your Post Title"
-description: "A brief description of your post"
-date: YYYY-MM-DD
-tags: ["tag1", "tag2"]
-image: "cover image URL"
----
-
-Your content here...
-```
-
-Of course, you can customize the metadata as needed in `src/content/config.ts`.
-
-## Creating New Posts
-
-To create a new blog post, this template provide an npm scripts to help you create a new post:
+### Instalación
 
 ```bash
-# this will create a new markdown file in src/content/blog/filename.md
-npm run new-post \<filename\>
+npm install
 ```
 
-You can customize the template of the new post in `scripts/new-post.js`.
+### Servidor de desarrollo
 
-## Build and Deploy
-
-1. Build your site:
-
-   ```bash
-   npm run build
-   ```
-
-2. Deploy options:
-
-   - **Cloudflare Pages**: [Deploy to Cloudflare Pages](https://developers.cloudflare.com/pages/framework-guides/deploy-an-astro-site/#deploy-with-cloudflare-pages)
-
-## Project Structure
-
+```bash
+npm run dev
 ```
+
+La web estará disponible en `http://localhost:4321`.
+
+### Compilar el sitio
+
+```bash
+npm run build
+```
+
+### Vista previa de producción
+
+```bash
+npm run preview
+```
+
+## Contenido
+
+Los artículos viven en `src/content/blog/` y utilizan frontmatter validado por el esquema de contenido del proyecto.
+
+Para crear un artículo nuevo:
+
+```bash
+npm run new-post nombre-del-articulo
+```
+
+La configuración editorial y de sitio se encuentra en:
+
+- `src/config.ts`
+- `src/content/config.ts`
+
+## Estructura del proyecto
+
+```text
 eloy-blog/
+├── public/                  # Imágenes, fuentes y otros recursos estáticos
+├── scripts/                 # Scripts de apoyo, incluido el creador de artículos
 ├── src/
-│   ├── content/
-│   │   └── blog/    # Blog posts
-│   ├── layouts/     # Page layouts
-│   ├── components/  # UI components
-│   └── config.ts    # Site configuration
-├── public/          # Static assets
-└── astro.config.mjs # Astro configuration
+│   ├── components/          # Componentes Astro reutilizables
+│   ├── content/blog/        # Artículos en Markdown/MDX
+│   ├── layouts/             # Layouts de inicio, interiores y artículos
+│   ├── pages/               # Rutas públicas del sitio
+│   ├── styles/              # Estilos globales y del sistema visual
+│   ├── utils/               # Utilidades de contenido y SEO
+│   ├── config.ts             # Configuración editorial y datos del sitio
+│   └── content/config.ts     # Validación de colecciones de contenido
+├── astro.config.mjs
+├── package.json
+└── README.md
 ```
 
-## Features Roadmap
+## Principios del proyecto
 
-This project is almost complete. If you have any suggestions or feedback, please feel free to open an issue or pull request.
+- El contenido y la experiencia de lectura tienen prioridad sobre la lógica de plantilla.
+- La identidad visual debe mantenerse sobria, editorial y orientada a la claridad.
+- Las páginas deben explicar problemas y soluciones reales, no presentar tecnología como decoración.
+- Las URLs y los artículos existentes se mantienen estables salvo decisión explícita.
+- Los schemas SEO se construyen de forma centralizada y reutilizable.
+- Las imágenes deben optimizarse antes de incorporarse a `public/`.
 
-## Contributing
+## Despliegue
 
-Contributions are welcome! Feel free to:
+El sitio se compila como un proyecto Astro estático y se despliega en Cloudflare Pages.
 
-1. Fork the repository
-2. Create your feature branch
-3. Submit a pull request
+Configuración principal de salida:
 
-## License
+```toml
+pages_build_output_dir = "dist"
+```
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+El comando de compilación y la versión de Node se configuran en el panel de Cloudflare Pages.
+
+## Próxima fase: extraer una plantilla
+
+Cuando la identidad y la arquitectura del sitio estén suficientemente consolidadas, se podrá separar lo reutilizable de lo específico de Eloy para crear una plantilla independiente.
+
+Esa plantilla deberá extraer, entre otros elementos:
+
+- layouts y componentes visuales reutilizables;
+- sistema de navegación y páginas interiores;
+- configuración SEO y JSON-LD;
+- colección de artículos y scripts editoriales;
+- documentación de instalación y personalización.
+
+Esa extracción no forma parte todavía de este repositorio: primero se termina y estabiliza el sitio real.
+
+## Licencia
+
+Este repositorio contiene el sitio personal y sus contenidos. La licencia y las condiciones de reutilización se definirán junto con la futura plantilla.

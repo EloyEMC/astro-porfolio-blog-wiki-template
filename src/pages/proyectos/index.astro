@@ -57,6 +57,10 @@ const pendingProjects = [
         <a href="#open-source">Open source</a>
         <a href="#laboratorio">Laboratorio</a>
       </nav>
+      <figure class="projects-hero">
+        <img src="/proyecto-estadio.webp" alt="Estadio iluminado al anochecer" fetchpriority="high" />
+        <figcaption>La luz también construye la experiencia de un lugar.</figcaption>
+      </figure>
     </header>
 
     <section id="iluminacion" class="projects-section projects-lighting" aria-labelledby="lighting-title">
@@ -156,6 +160,9 @@ const pendingProjects = [
 
   .projects-header { max-width: 63rem; }
   .projects-header .interior-title { max-width: 58rem; }
+  .projects-hero { margin: 3rem 0 0; }
+  .projects-hero img { display: block; width: 100%; aspect-ratio: 16 / 7; object-fit: cover; object-position: center; }
+  .projects-hero figcaption { margin-top: 0.75rem; color: var(--projects-muted); font-size: 0.78rem; letter-spacing: 0.04em; }
   .projects-declaration { margin: 1rem 0 1.5rem; color: var(--paper); font-size: clamp(1.25rem, 2vw, 1.75rem); line-height: 1.2; }
   .projects-intro-detail { max-width: 48rem; color: var(--projects-muted); line-height: 1.7; }
   .projects-nav { display: flex; flex-wrap: wrap; gap: 0.7rem 1.4rem; margin-top: 2rem; }
@@ -165,10 +172,9 @@ const pendingProjects = [
   .projects-section h2 { max-width: 42rem; margin: 0.35rem 0 1rem; color: var(--paper); }
   .projects-page h3 { color: var(--paper); }
   .section-lead { max-width: 38rem; color: var(--projects-muted); }
-  .featured-grid { display: grid; grid-template-columns: 1.18fr 0.9fr; gap: 3.5rem 2rem; margin-top: 3rem; }
-  .featured-project--gandia-atletismo { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(14rem, 0.55fr); gap: 2rem; align-items: end; }
-  .project-image-link { display: block; overflow: hidden; background: #191919; }
-  .project-image-link img, .tool-feature > img { display: block; width: 100%; height: auto; object-fit: cover; transition: transform 300ms ease; }
+  .featured-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; margin-top: 3rem; }
+  .project-image-link { display: block; aspect-ratio: 4 / 3; overflow: hidden; background: #191919; }
+  .project-image-link img, .tool-feature > img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 300ms ease; }
   .project-image-link:hover img { transform: scale(1.02); }
   .project-copy { padding-top: 1rem; }
   .project-category { margin: 0 0 0.7rem; color: var(--projects-muted); font-size: 0.72rem; letter-spacing: 0.13em; text-transform: uppercase; }
@@ -196,7 +202,7 @@ const pendingProjects = [
 
   @media (max-width: 760px) {
     .projects-section { margin-top: 4rem; }
-    .featured-grid, .featured-project--gandia-atletismo, .tools-layout, .tool-feature { grid-template-columns: 1fr; gap: 1.5rem; }
+    .featured-grid, .tools-layout, .tool-feature { grid-template-columns: 1fr; gap: 1.5rem; }
     .pending-projects ul { columns: 1; }
     .tool-note, .open-source-feature, .lab-project { border-left: 0; border-top: 1px solid var(--projects-line); padding: 1.5rem 0 0; }
   }

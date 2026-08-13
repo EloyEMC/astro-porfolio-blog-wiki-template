@@ -42,6 +42,19 @@ html.dark body {
 	color: var(--paper);
 }
 
+/* Interior pages use the editorial palette, not the legacy blog tokens. */
+.interior-shell h1,
+.interior-shell h2,
+.interior-shell h3,
+.interior-shell h4,
+.interior-shell h5 {
+	color: var(--paper);
+}
+
+.interior-shell a {
+	color: inherit;
+}
+
 .article-shell {
 	overflow: visible;
 }

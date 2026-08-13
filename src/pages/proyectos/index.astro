@@ -154,8 +154,8 @@ const pendingProjects = [
 
 <style>
   .projects-page {
-    --projects-line: rgba(241, 238, 232, 0.18);
-    --projects-muted: rgba(241, 238, 232, 0.66);
+    --projects-line: rgba(241, 238, 232, 0.14);
+    --projects-muted: var(--muted-ink);
   }
 
   .projects-header { max-width: 63rem; }
@@ -193,12 +193,13 @@ const pendingProjects = [
   .tool-note h3 { font-size: 1.5rem; margin-bottom: 1rem; }
   .project-links { display: flex; flex-wrap: wrap; gap: 1.25rem; margin-top: 1.5rem; }
   .open-source-feature { max-width: 48rem; margin-top: 2.5rem; }
-  .projects-lab { background: linear-gradient(90deg, rgba(241, 238, 232, 0.035), transparent); padding-bottom: 1rem; }
+  .projects-lab { padding-bottom: 1rem; }
   .lab-project { max-width: 43rem; margin-top: 2.5rem; }
   .projects-footer { border-top: 1px solid var(--projects-line); margin-top: 6rem; padding: 2rem 0 1rem; }
   .projects-footer h2 { max-width: 38rem; }
-  .section-cta { display: inline-block; color: var(--paper); margin-top: 1rem; text-decoration: none; }
-  .section-cta:hover { text-decoration: underline; text-underline-offset: 0.25rem; }
+  .projects-page .section-cta { display: inline-block; margin-top: 2rem; color: var(--paper); font-size: 0.75rem; letter-spacing: 0.1em; text-decoration: none; text-transform: uppercase; }
+  .projects-page .section-cta span { color: var(--gold); }
+  .projects-page .section-cta:hover, .projects-page .section-cta:focus-visible { color: var(--paper); text-decoration: none; }
 
   @media (max-width: 760px) {
     .projects-section { margin-top: 4rem; }

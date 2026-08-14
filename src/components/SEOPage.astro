@@ -1,5 +1,6 @@
 ---
 import { siteConfig } from "../config";
+import type { SeoPerson } from "../utils/seo";
 import { absoluteUrl, createSeoSchemas, normalizeUrl } from "../utils/seo";
 import JsonLd from "./JsonLd.astro";
 
@@ -29,13 +30,14 @@ interface Props {
   slug?: string;
   canonicalUrl?: string;
   canonical?: boolean;
+  person?: SeoPerson;
 }
 
 const {
   title, description, siteUrl, defaultImage, defaultLocale = "es_ES", image, image_alt,
   keywords, twitter_img, twitterCreator, twitterSite, ogType = "website", siteName,
   noindex, nofollow, faqs, author, authorUrl, authorImage, date, modifiedDate, tags,
-  slug, canonicalUrl, canonical = true,
+  slug, canonicalUrl, canonical = true, person,
 } = Astro.props;
 const fullCanonicalUrl = normalizeUrl(siteUrl, canonicalUrl || `/${(slug || "").replace(/^\/+|\/+$/g, "")}`);
 const fullImageUrl = absoluteUrl(siteUrl, image || defaultImage);
@@ -57,6 +59,7 @@ const schemas = createSeoSchemas({
   inLanguage: siteConfig.lang,
   logo: siteConfig.image,
   author: author ? { name: author, url: authorUrl, image: authorImage ? absoluteUrl(siteUrl, authorImage) : undefined } : undefined,
+  person,
   datePublished: date,
   dateModified: modifiedDate,
   article: ogType === "article",

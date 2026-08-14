@@ -8,6 +8,12 @@ export interface SeoAuthor {
 	sameAs?: string[];
 }
 
+export interface SeoPerson {
+	name: string;
+	image: string;
+	sameAs: string[];
+}
+
 export interface SeoSchemaInput {
 	siteUrl: string;
 	title: string;
@@ -20,6 +26,7 @@ export interface SeoSchemaInput {
 	siteSameAs?: string[];
 	inLanguage?: string;
 	author?: SeoAuthor;
+	person?: SeoPerson;
 	category?: string;
 	datePublished?: Date;
 	dateModified?: string | Date;
@@ -61,14 +68,14 @@ function compact<T extends JsonLd>(value: T): T {
 	return value;
 }
 
-function personSchema(author: SeoAuthor): JsonLd {
+function personSchema(siteUrl: string, person: SeoAuthor | SeoPerson): JsonLd {
 	return compact({
 		"@type": "Person",
-		name: author.name,
-		url: author.url,
-		image: author.image,
-		description: author.bio,
-		sameAs: author.sameAs,
+		name: person.name,
+		url: "url" in person ? person.url : undefined,
+		image: person.image ? absoluteUrl(siteUrl, person.image) : undefined,
+		description: "bio" in person ? person.bio : undefined,
+		sameAs: person.sameAs,
 	});
 }
 
@@ -142,7 +149,7 @@ export function createSeoSchemas(input: SeoSchemaInput): JsonLd[] {
 					? input.dateModified.toISOString()
 					: input.dateModified,
 			inLanguage: input.inLanguage,
-			author: input.author ? personSchema(input.author) : undefined,
+			author: input.author ? personSchema(input.siteUrl, input.author) : undefined,
 			articleSection: input.article ? input.category : undefined,
 			publisher: input.article ? publisher : undefined,
 			mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
@@ -161,6 +168,7 @@ export function createSeoSchemas(input: SeoSchemaInput): JsonLd[] {
 			}),
 		);
 	}
+	if (input.person) schemas.push(personSchema(input.siteUrl, input.person));
 	const breadcrumb = breadcrumbSchema(input.siteUrl, input.breadcrumbs);
 	if (breadcrumb) schemas.push(breadcrumb);
 	const faq = faqSchema(input.faqs);

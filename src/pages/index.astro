@@ -1,12 +1,13 @@
 ---
 import HomeBaseLayout from "../layouts/HomeBaseLayout.astro";
-import { siteConfig } from "../config";
+import { siteConfig, verifiedPerson } from "../config";
 ---
 
 <HomeBaseLayout
   siteUrl={siteConfig.site}
   title="Eloy Martínez Cuesta | Iluminación, tecnología y negocio"
   description="Profesional de la iluminación con más de 20 años de experiencia en proyectos, producto y negocio. Tecnología, software e IA aplicados a problemas reales."
+  person={verifiedPerson}
 >
   <section class="home-index" aria-labelledby="home-title">
     <header class="home-header">

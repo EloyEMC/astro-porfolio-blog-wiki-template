@@ -1,5 +1,21 @@
 import type { PostFilter } from "./utils/posts";
 
+export interface SeoPerson {
+	name: string;
+	image: string;
+	sameAs: string[];
+}
+
+export const verifiedPerson: SeoPerson = {
+	name: "Eloy Martínez Cuesta",
+	image: "/eloy-author.webp",
+	sameAs: [
+		"https://github.com/EloyEMC",
+		"https://www.linkedin.com/in/eloymartinezemc/",
+		"https://twitter.com/eloy_emc",
+	],
+};
+
 export interface SiteConfig {
 	lang?: string;
 	title: string;

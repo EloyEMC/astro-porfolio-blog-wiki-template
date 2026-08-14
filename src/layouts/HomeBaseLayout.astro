@@ -1,20 +1,20 @@
 ---
 import { ClientRouter } from 'astro:transitions';
 import { GoogleAnalytics } from 'astro-google-analytics';
-import { siteConfig } from '../config';
+import { siteConfig, type SeoPerson } from '../config';
 import SEOPage from '@components/SEOPage.astro';
 
 import '../styles/global.css';
 import '../styles/redesign.css';
 
-interface Props { siteUrl: string; defaultImage?: string; title?: string; description?: string; }
-const { siteUrl, title = 'Eloy Martínez Cuesta', description = siteConfig.description } = Astro.props;
+interface Props { siteUrl: string; defaultImage?: string; title?: string; description?: string; person?: SeoPerson; }
+const { siteUrl, title = 'Eloy Martínez Cuesta', description = siteConfig.description, person } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es" class="dark">
   <head>
-    <SEOPage title={title} description={description} siteUrl={siteUrl} defaultImage={siteConfig.defaultImage || siteConfig.image || ''} image_alt={siteConfig.image_alt} slug="" />
+    <SEOPage title={title} description={description} siteUrl={siteUrl} defaultImage={siteConfig.defaultImage || siteConfig.image || ''} image_alt={siteConfig.image_alt} slug="" person={person} />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/favicon-emc-512.png?v=4" />

@@ -4,23 +4,201 @@ import { siteConfig } from "../../config";
 ---
 
 <InteriorLayout
-  title="Sobre mí — Eloy Martínez Cuesta"
-  description="Eloy Martínez Cuesta: iluminación, tecnología y negocio aplicados a proyectos reales."
+  title="Sobre mí | Eloy Martínez Cuesta"
+  description="Una mirada personal a la curiosidad, la iluminación, el aprendizaje y la forma de construir soluciones de Eloy Martínez Cuesta."
   slug="sobre-mi"
 >
-  <section aria-labelledby="about-title">
-    <p class="interior-eyebrow">06 / Sobre mí</p>
-    <h1 id="about-title" class="interior-title">Hacer que las ideas funcionen.</h1>
-    <p class="interior-intro">Soy Eloy Martínez Cuesta. Trabajo entre la iluminación, la tecnología y el negocio para convertir necesidades concretas en soluciones útiles, comprensibles y sostenibles.</p>
-    <div class="illumination-grid">
-      <article class="illumination-card">
-        <h2><a href={`mailto:${siteConfig.social.email}`}>Hablemos</a></h2>
-        <p>Si tienes un proyecto real sobre el que quieras conversar, puedes escribirme.</p>
-      </article>
-      <article class="illumination-card">
-        <h2><a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a></h2>
-        <p>Consulta mi perfil profesional y mi recorrido.</p>
-      </article>
-    </div>
-  </section>
+  <div class="about-page">
+    <header class="about-hero">
+      <p class="interior-eyebrow">06 / Sobre mí</p>
+      <div class="about-hero-grid">
+        <div>
+          <h1 id="about-title" class="interior-title">Siempre he necesitado entender cómo funcionan las cosas.</h1>
+          <p class="about-lead">Supongo que empezó con mi abuelo.</p>
+          <p>De pequeño me enseñó a desmontar cosas con la intención de arreglarlas. Lo de volver a montarlas exactamente igual ya era otra historia: casi siempre sobraba alguna pieza.</p>
+          <p>Con los años he mejorado bastante. Sigo siendo el manitas de casa, el que arregla cosas y el que se mete en las reformas, pero aquella curiosidad por desmontar, entender y volver a construir sigue exactamente en el mismo sitio.</p>
+          <p>Quizá por eso nunca he dejado de aprender.</p>
+        </div>
+        <figure class="about-portrait">
+          <img src="/eloy_feria_iluminacion-2.webp" alt="Eloy Martínez Cuesta en una feria de iluminación" fetchpriority="high" />
+          <figcaption>Desmontar. Entender. Volver a construir.</figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <main class="about-content">
+      <section class="about-section" aria-labelledby="learning-title">
+        <p class="interior-eyebrow">Curiosidad / Aprendizaje</p>
+        <h2 id="learning-title">Una cosa lleva a la otra.</h2>
+        <p>Muchas veces empiezo a aprender algo simplemente por curiosidad.</p>
+        <p>Después quiero entenderlo mejor. Luego dominarlo. Después encuentro cómo aplicarlo a mi trabajo o a mi día a día y, sin darme cuenta, termina formando parte de mí.</p>
+        <p>Antes buscaba respuestas en personas mayores que yo, porque eran quienes acumulaban la experiencia.</p>
+        <p>Ahora que el mayor muchas veces soy yo, aprendo también de gente mucho más joven. Internet, cursos, vídeos, comunidades, libros, másteres... nunca hemos tenido tanto conocimiento al alcance de la mano.</p>
+        <p>Y cuando no encuentro la herramienta que necesito, a veces intento construirla.</p>
+        <p>Para mí aprender tiene sentido cuando puedo hacer algo con lo aprendido. Y todavía más cuando puedo compartirlo con alguien a quien le resulta útil.</p>
+      </section>
+
+      <section class="about-section about-section--feature" aria-labelledby="lighting-title">
+        <p class="interior-eyebrow">Iluminación</p>
+        <h2 id="lighting-title">Llegué por casualidad. Me quedé por curiosidad.</h2>
+        <div class="about-columns">
+          <div>
+            <p>Antes de entrar en iluminación trabajaba como comercial vendiendo un producto que sentía que vendía «a peso».</p>
+            <p>No me llenaba.</p>
+            <p>Vi una oportunidad en una empresa de iluminación y me presenté sin saber prácticamente nada del sector. Debí venderme bastante bien, porque confiaron en mí.</p>
+          </div>
+          <div>
+            <p>Entonces tocaba demostrarlo.</p>
+            <p>En pocos meses intenté aprender todo lo que pude: técnica, teoría, producto y software. Aprendía, lo aplicaba y terminaba compartiéndolo con mis propios compañeros.</p>
+            <p>Más de veinte años después sigo aquí.</p>
+            <p>Y todavía sigo aprendiendo.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" aria-labelledby="light-title">
+        <p class="interior-eyebrow">La luz</p>
+        <h2 id="light-title">La luz viste la construcción y el espacio.</h2>
+        <p>Lo que me apasiona de la iluminación no es una luminaria como objeto.</p>
+        <p class="about-pull">Es el resultado.</p>
+        <p>Ver cómo la luz transforma una arquitectura, cambia la percepción de un espacio y le da vida.</p>
+        <p>Y me gusta tanto el resultado como el camino para llegar hasta él: compartir el proceso con arquitectos, ingenierías, clientes, compañeros y todas las personas que participan en un proyecto.</p>
+        <p>Algunas relaciones profesionales terminan convirtiéndose, con los años, en algo más cercano a una amistad.</p>
+        <p>Eso también forma parte del resultado.</p>
+      </section>
+
+      <section class="about-section about-section--feature" aria-labelledby="business-title">
+        <p class="interior-eyebrow">Clientes / Negocio</p>
+        <h2 id="business-title">Servicio antes que venta.</h2>
+        <p>Nunca me he considerado un vendedor agresivo.</p>
+        <p>Prefiero entender qué necesita realmente un cliente y encontrar la solución adecuada.</p>
+        <p>Y sí: alguna vez eso significa recomendarle que no utilice el producto que podría venderle.</p>
+        <p class="about-aside">Espero que mi jefe no esté leyendo esta parte.</p>
+        <p>Hay ventas que es mejor perder una vez que perder un cliente para siempre.</p>
+        <p>No me gusta vender material a peso.</p>
+        <p>Me gusta construir soluciones y experiencias y que, cuando termine un proyecto, todas las partes sintamos que hemos hecho algo que merecía la pena.</p>
+        <p>La confianza tarda mucho más en construirse que una venta.</p>
+      </section>
+
+      <section class="about-section" aria-labelledby="build-title">
+        <p class="interior-eyebrow">Construir</p>
+        <h2 id="build-title">Si no existe, quizá podamos hacerlo.</h2>
+        <p>La programación llegó después, pero el mecanismo es exactamente el mismo que cuando desmontaba cosas con mi abuelo.</p>
+        <div class="about-step-list" aria-label="Proceso de construcción">
+          <span>Hay un problema.</span>
+          <span>Quiero entender cómo funciona.</span>
+          <span>Empiezo a investigar.</span>
+          <span>Pruebo.</span>
+          <span>Me equivoco.</span>
+          <span>Vuelvo a probar.</span>
+          <span>Y en algún momento aparece algo que funciona.</span>
+        </div>
+        <p>Ahora quiero utilizar esa capacidad para construir herramientas que faciliten el trabajo a compañeros y clientes.</p>
+        <p>Software, APIs, automatización o inteligencia artificial son herramientas nuevas.</p>
+        <p>La intención sigue siendo bastante antigua:</p>
+        <p class="about-pull">resolver problemas y ayudar.</p>
+      </section>
+
+      <section class="about-section about-section--feature" aria-labelledby="team-title">
+        <p class="interior-eyebrow">Equipo</p>
+        <h2 id="team-title">Las cosas importantes rara vez se hacen solo.</h2>
+        <p>Cuando termina un gran proyecto suelo disfrutar del resultado unos cinco minutos.</p>
+        <p>Más o menos.</p>
+        <p>Normalmente me da tiempo a escribir a mis responsables para agradecer el trabajo de todas las personas que han participado.</p>
+        <p>Después ya estoy pensando en lo siguiente.</p>
+        <p>Porque con los años he aprendido algo:</p>
+        <p class="about-pull">solo en equipo salen las cosas.</p>
+        <p>Una marca personal habla inevitablemente de una persona. Pero detrás de muchos de los proyectos que aparecen en esta web hay compañeros, clientes, arquitectos, ingenierías, instaladores y muchas otras personas con las que he tenido la suerte de trabajar.</p>
+        <p>El mérito nunca pertenece a una sola parte.</p>
+      </section>
+
+      <section class="about-section" aria-labelledby="outside-title">
+        <p class="interior-eyebrow">Fuera del trabajo</p>
+        <h2 id="outside-title">Mi cabeza tampoco se apaga al salir de la oficina.</h2>
+        <p>En casa sigo arreglando cosas.</p>
+        <p>También llevo años viendo K-Dramas con mi mujer. Ella elige la serie, naturalmente. Yo he aprendido a no discutir ciertas decisiones importantes.</p>
+        <p>Durante muchos años fui también papá taxi. Mis hijos practicaban deporte de competición y muchas tardes y fines de semana significaban entrenamientos, viajes y competiciones.</p>
+        <p>Hoy una de las cosas de las que más orgulloso me siento es precisamente de ellos.</p>
+        <p>He intentado enseñarles que lo importante no es no fracasar ni no caerse.</p>
+        <p class="about-pull">Lo importante es cuántas veces eres capaz de levantarte.</p>
+        <p>Y ahora tengo la suerte de ver cómo empiezan a aplicarlo en sus propias vidas.</p>
+      </section>
+
+      <section class="about-section about-section--feature" aria-labelledby="stories-title">
+        <p class="interior-eyebrow">Historias</p>
+        <h2 id="stories-title">También tengo algunas cosas pendientes con mi imaginación.</h2>
+        <p>Me gusta leer, aunque últimamente tengo más libros pendientes que tiempo para leerlos.</p>
+        <p>Y desde hace años tengo también varias novelas esperando salir de un cajón.</p>
+        <p>Algunas mezclan ciencia ficción, historia y ciencia real. Otras se acercan más al thriller. Todas tienen bastante de personas.</p>
+        <p>Las ideas aparecen y empiezan a crecer. A veces incluso continúan mientras duermo.</p>
+        <p>De alguna manera termino viviendo la historia desde dentro hasta que necesito sacarla de mi cabeza y escribirla.</p>
+        <p>No sé si a los demás les parecerán tan interesantes como a mí.</p>
+        <p>Pero habrá que publicarlas para descubrirlo.</p>
+        <p>Y, pase lo que pase, estarán hechas con cariño.</p>
+      </section>
+
+      <section class="about-section" aria-labelledby="next-title">
+        <p class="interior-eyebrow">Seguir</p>
+        <h2 id="next-title">A los cinco minutos ya estoy pensando en lo siguiente.</h2>
+        <p>Todavía quedan herramientas por construir.</p>
+        <p>Proyectos por resolver.</p>
+        <p>Cosas que aprender.</p>
+        <p>Novelas que terminar.</p>
+        <p>Lugares pendientes a los que viajar con mi mujer y mi familia.</p>
+        <p>Y seguramente unas cuantas cosas que todavía ni siquiera sé que acabarán interesándome.</p>
+        <p>No tengo demasiado interés en saber de antemano cómo terminará todo.</p>
+        <p>Si pudiera hablar con el Eloy que entró por primera vez en una empresa de iluminación sin saber prácticamente nada del sector, creo que no le daría ningún consejo.</p>
+        <p>Le dejaría recorrer el camino.</p>
+        <p>Porque algunas partes han sido difíciles.</p>
+        <p>Pero precisamente ahí estaba buena parte de lo interesante.</p>
+      </section>
+    </main>
+
+    <footer class="about-footer">
+      <p class="interior-eyebrow">Iluminación · Tecnología · Negocio</p>
+      <h2>Sigo aprendiendo.</h2>
+      <p>No tengo todas las respuestas.</p>
+      <p>Pero sigo teniendo muchas preguntas.</p>
+      <p>Y probablemente esa sea una de las razones por las que sigo construyendo cosas.</p>
+      <nav class="about-links" aria-label="Conocer más">
+        <a class="section-cta" href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer">Conóceme en LinkedIn <span aria-hidden="true">→</span></a>
+        <a class="section-cta" href="/trayectoria/">Ver trayectoria <span aria-hidden="true">→</span></a>
+        <a class="section-cta" href="/proyectos/">Ver proyectos <span aria-hidden="true">→</span></a>
+      </nav>
+    </footer>
+  </div>
 </InteriorLayout>
+
+<style>
+  .about-page { --about-line: rgba(241, 238, 232, 0.16); --about-muted: var(--muted-ink); }
+  .about-hero { max-width: 70rem; }
+  .about-hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.72fr); gap: clamp(2rem, 7vw, 7rem); align-items: end; margin-top: 3rem; }
+  .about-hero .interior-title { max-width: 44rem; margin: 0; }
+  .about-hero p:not(.interior-eyebrow), .about-section p, .about-footer p:not(.interior-eyebrow) { max-width: 42rem; color: var(--about-muted); line-height: 1.75; }
+  .about-lead { margin: 1.5rem 0 0; color: var(--paper) !important; font-size: clamp(1.3rem, 2.2vw, 1.8rem); line-height: 1.2 !important; }
+  .about-portrait { margin: 0; }
+  .about-portrait img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; filter: saturate(0.8); }
+  .about-portrait figcaption { margin-top: 0.75rem; color: var(--about-muted); font-size: 0.78rem; }
+  .about-content { max-width: 70rem; }
+  .about-section, .about-footer { border-top: 1px solid var(--about-line); margin-top: clamp(5rem, 10vw, 10rem); padding-top: 1.5rem; }
+  .about-section h2, .about-footer h2 { max-width: 43rem; margin: 0.6rem 0 1.5rem; color: var(--paper); font-size: clamp(2rem, 4.2vw, 4.2rem); letter-spacing: -0.055em; line-height: 0.98; }
+  .about-section--feature { max-width: 58rem; }
+  .about-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(2rem, 6vw, 6rem); }
+  .about-columns p { margin-top: 0; }
+  .about-pull { color: var(--paper) !important; font-size: clamp(1.4rem, 2.4vw, 2.2rem); letter-spacing: -0.025em; line-height: 1.2 !important; }
+  .about-aside { color: var(--gold) !important; font-size: 0.78rem; letter-spacing: 0.04em; }
+  .about-step-list { display: flex; flex-wrap: wrap; gap: 0.6rem 1rem; max-width: 45rem; margin: 2rem 0; }
+  .about-step-list span { border-bottom: 1px solid var(--gold); padding-bottom: 0.25rem; color: var(--paper); font-size: 0.8rem; }
+  .about-footer { max-width: 70rem; padding-bottom: 1rem; }
+  .about-footer h2 { margin-bottom: 1rem; }
+  .about-links { display: flex; flex-wrap: wrap; gap: 1rem 2rem; margin-top: 2.5rem; }
+  .section-cta { color: var(--paper); font-size: 0.75rem; letter-spacing: 0.1em; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 0.4rem; text-transform: uppercase; }
+  .section-cta span { color: var(--gold); }
+  @media (max-width: 760px) {
+    .about-hero-grid, .about-columns { grid-template-columns: 1fr; gap: 2.5rem; }
+    .about-portrait { max-width: 30rem; margin-left: auto; }
+    .about-section, .about-footer { margin-top: 5rem; }
+    .about-section h2, .about-footer h2 { font-size: clamp(2rem, 10vw, 3.3rem); }
+    .about-links { display: grid; gap: 1.25rem; }
+  }
+</style>

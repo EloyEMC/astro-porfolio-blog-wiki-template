@@ -1,7 +1,7 @@
 ---
 title: Extrusión de polímeros
 category: Conocimiento
-description: "Introducción al proceso de extrusión de polímeros: configuraciones de husillo, componentes, dados, parámetros de calidad y procesos especializados como termoformado y calandrado."
+description: "Guía sobre la extrusión de polímeros: husillos, dados, parámetros de calidad y procesos como el termoformado y el calandrado."
 date: 2025-03-23
 tags: [Polímeros, Plástico, Extrusión ]
 draft: false

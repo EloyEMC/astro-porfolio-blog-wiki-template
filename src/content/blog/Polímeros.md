@@ -1,7 +1,7 @@
 ---
 title: Polímeros- Conceptos Básicos
 category: Conocimiento
-description: "Guía introductoria sobre los polímeros: monómeros, clasificaciones, comportamiento térmico, propiedades, ejemplos industriales y diferencias entre materiales naturales y sintéticos."
+description: "Introducción a los polímeros: monómeros, clasificación, comportamiento térmico, propiedades, ejemplos industriales y diferencias entre polímeros naturales y sintéticos."
 date: 2025-03-23
 tags: [Polímeros, Plástico, Extrusión ]
 draft: false

@@ -7,6 +7,15 @@ import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
 	site: "https://eloymartinezcuesta.com",
+	redirects: {
+		"/programacion/como-poner-cajas-de-autor-en-wordpress-en-generatepress/":
+			"/blog/cómo-poner-cajas-de-autor-en-wordpress-en-generatepress/",
+		"/marketing/que-es-el-ritmo-circadiano-y-el-hcl/":
+			"/blog/qué-es-el-ritmo-circadiano-y-el-hcl/",
+		"/eficiencia-energetica/nueva-etiqueta-energetica-2021/":
+			"/blog/la-nueva-etiqueta-energética-adiós-a/",
+		"/aviso-legal-imprint/": "/Aviso-legal/",
+	},
 	devToolbar: {
 		enabled: false,
 	},

@@ -3,7 +3,7 @@ title: ¿Qué es la temperatura de color?
 category: Iluminación
 image: /que-es-la-temperatura-de-color.webp
 image_alt: "Temperatura de color de una fuente de luz"
-description: "Introducción a la temperatura de color: escala Kelvin, luz cálida y fría, espectro electromagnético, percepción del color, bombillas incandescentes y ritmos circadianos."
+description: "Qué es la temperatura de color, cómo se mide en Kelvin y qué diferencia hay entre luz cálida, neutra y fría en iluminación."
 date: 2025-03-21
 tags: [Luz, Temperatura de color, Espectro electromagnético, Ritmos circadianos, Iluminación LED]
 twitter_img: /que-es-la-temperatura-de-color.webp

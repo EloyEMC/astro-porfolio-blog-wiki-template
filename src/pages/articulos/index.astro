@@ -215,33 +215,41 @@ const breadcrumbSchema = {
 </InteriorLayout>
 
 <script>
-  const search = document.querySelector<HTMLInputElement>("[data-articles-search]");
-  const filterButtons = [...document.querySelectorAll<HTMLButtonElement>("[data-theme-filter]")];
-  const items = [...document.querySelectorAll<HTMLElement>("[data-article-item]")];
-  const empty = document.querySelector<HTMLElement>("[data-articles-empty]");
-  let selectedTheme = "all";
+  const initializeArticles = () => {
+    const search = document.querySelector<HTMLInputElement>("[data-articles-search]");
+    if (!search || search.dataset.initialized === "true") return;
 
-  const updateArticles = () => {
-    const query = search?.value.trim().toLowerCase() ?? "";
-    let visible = 0;
-    items.forEach((item) => {
-      const matchesTheme = selectedTheme === "all" || item.dataset.theme === selectedTheme;
-      const matchesSearch = !query || (item.dataset.searchText ?? "").includes(query);
-      const isVisible = matchesTheme && matchesSearch;
-      item.hidden = !isVisible;
-      if (isVisible) visible += 1;
+    search.dataset.initialized = "true";
+    const filterButtons = [...document.querySelectorAll<HTMLButtonElement>("[data-theme-filter]")];
+    const items = [...document.querySelectorAll<HTMLElement>("[data-article-item]")];
+    const empty = document.querySelector<HTMLElement>("[data-articles-empty]");
+    let selectedTheme = "all";
+
+    const updateArticles = () => {
+      const query = search.value.trim().toLowerCase();
+      let visible = 0;
+      items.forEach((item) => {
+        const matchesTheme = selectedTheme === "all" || item.dataset.theme === selectedTheme;
+        const matchesSearch = !query || (item.dataset.searchText ?? "").includes(query);
+        const isVisible = matchesTheme && matchesSearch;
+        item.hidden = !isVisible;
+        if (isVisible) visible += 1;
+      });
+      if (empty) empty.hidden = visible !== 0;
+    };
+
+    search.addEventListener("input", updateArticles);
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        selectedTheme = button.dataset.themeFilter ?? "all";
+        filterButtons.forEach((candidate) => candidate.classList.toggle("is-active", candidate === button));
+        updateArticles();
+      });
     });
-    if (empty) empty.hidden = visible !== 0;
   };
 
-  search?.addEventListener("input", updateArticles);
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      selectedTheme = button.dataset.themeFilter ?? "all";
-      filterButtons.forEach((candidate) => candidate.classList.toggle("is-active", candidate === button));
-      updateArticles();
-    });
-  });
+  initializeArticles();
+  document.addEventListener("astro:page-load", initializeArticles);
 </script>
 
 <style>

@@ -24,7 +24,7 @@ const capabilities = [
     number: "03",
     title: "Retail / Proyecto",
     text: "Del catálogo al espacio: retail, arquitectura y proyecto obligan a coordinar contexto, producto, prescripción y ejecución sin perder de vista el resultado.",
-    evidence: "Experiencia en iluminación profesional",
+    evidence: "Retail · proyecto · espacio comercial",
   },
   {
     number: "04",
@@ -95,7 +95,7 @@ const capabilities = [
     <section class="trajectory-project" aria-labelledby="project-title">
       <div>
         <p class="interior-eyebrow">Lo aprendido también se construye</p>
-        <h2 id="project-title">La experiencia no se reinicia cuando aprendes algo nuevo.</h2>
+        <h2 id="project-title">Lo aprendido sigue trabajando en cada proyecto.</h2>
         <p>El conocimiento del sector sigue presente cuando aparece una herramienta digital. Cambia el medio, no la necesidad de comprender el contexto y hacer que una solución funcione.</p>
         <nav class="trajectory-links" aria-label="Explorar la trayectoria">
           <a class="section-cta" href="/proyectos/#iluminacion">Ver proyectos de iluminación <span aria-hidden="true">→</span></a>
@@ -109,9 +109,12 @@ const capabilities = [
     </section>
 
     <footer class="trajectory-footer">
-      <p class="interior-eyebrow">ILUMINACIÓN + TECNOLOGÍA + NEGOCIO</p>
-      <h2>Lo que viene sigue conectado con lo que ya sé.</h2>
-      <a class="section-cta" href="/sobre-mi/">Conocer el enfoque personal <span aria-hidden="true">→</span></a>
+      <p class="interior-eyebrow">HOY</p>
+      <h2>La experiencia no se reinicia cuando aprendes algo nuevo.</h2>
+      <p class="trajectory-closing-emphasis">Se acumula.</p>
+      <p class="trajectory-closing-copy">Cada nueva herramienta amplía lo que puedo hacer con todo lo aprendido anteriormente.</p>
+      <p class="trajectory-brand-line">ILUMINACIÓN · TECNOLOGÍA · NEGOCIO</p>
+      <a class="section-cta" href="/sobre-mi/">Sobre mí <span aria-hidden="true">→</span></a>
     </footer>
   </div>
 </InteriorLayout>
@@ -140,9 +143,12 @@ const capabilities = [
   .capability h3 { margin: 0.6rem 0 0.8rem; color: var(--paper); font-size: clamp(1.4rem, 2.4vw, 2.2rem); letter-spacing: -0.03em; }
   .capability-copy > p:not(.capability-label):not(.capability-evidence) { max-width: 35rem; margin: 0; color: var(--trajectory-muted); line-height: 1.7; }
   .capability-evidence { margin-top: 1rem; color: var(--trajectory-muted); letter-spacing: 0.08em; }
-  .trajectory-project { display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.8fr); gap: clamp(2rem, 7vw, 7rem); align-items: center; }
+  .trajectory-project { display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.8fr); gap: clamp(2rem, 7vw, 7rem); align-items: center; margin-top: clamp(3.5rem, 7vw, 7rem); }
   .trajectory-project h2, .trajectory-footer h2 { max-width: 39rem; margin: 0.6rem 0 1.2rem; color: var(--paper); }
   .trajectory-project > div > p:not(.interior-eyebrow), .trajectory-footer > p:not(.interior-eyebrow) { max-width: 36rem; color: var(--trajectory-muted); line-height: 1.7; }
+  .trajectory-closing-emphasis { margin: 0.5rem 0 0; color: var(--paper); font-size: clamp(1.4rem, 2.5vw, 2.2rem); }
+  .trajectory-closing-copy { margin-top: 0.75rem; }
+  .trajectory-brand-line { margin-top: 2rem; color: var(--gold) !important; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; }
   .trajectory-project-image img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
   .trajectory-links { display: flex; flex-wrap: wrap; gap: 1rem 2rem; margin-top: 1.75rem; }
   .section-cta { color: var(--paper); font-size: 0.75rem; letter-spacing: 0.1em; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 0.4rem; text-transform: uppercase; }

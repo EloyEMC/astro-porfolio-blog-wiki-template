@@ -38,7 +38,7 @@ export const publications: ExternalPublication[] = [
 		date: "Diciembre 2025",
 		issue: 14,
 		author: "Eloy Martínez Cuesta",
-		role: "Sales & Project Manager en Iluminación Disano",
+		role: "Project Manager en Iluminación Disano",
 		title: "Iluminación inteligente y conectividad",
 		topics: [
 			"Iluminación",

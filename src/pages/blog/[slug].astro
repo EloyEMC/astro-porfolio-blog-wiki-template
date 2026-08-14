@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 import { siteConfig } from '../../config'; // Importa siteConfig
 import { filterPublishedPosts, getRandomPosts, getRelatedPosts } from '../../utils/posts';
@@ -17,7 +17,7 @@ export async function getStaticPaths() {
         const randomPosts = getRandomPosts(posts, post, relatedPosts);
 
         return {
-          params: { slug: post.slug },
+          params: { slug: post.id },
           props: {
             post,
             siteUrl,
@@ -32,7 +32,7 @@ export async function getStaticPaths() {
 }
 
 const { post, siteUrl, defaultImage, author, relatedPosts, randomPosts } = Astro.props;
-const { Content, headings } = await post.render();
+const { Content, headings } = await render(post);
 ---
 
     <BlogPost

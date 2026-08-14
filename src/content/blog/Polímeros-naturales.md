@@ -46,7 +46,7 @@ faqs:
     answer: "Puedes optar por productos fabricados con bioplásticos o materiales basados en polímeros naturales en lugar de plásticos convencionales. Además, apoyar la investigación y el desarrollo en este campo puede contribuir a la creación de soluciones más sostenibles en diversas industrias."
 ---
 
-Hoy estoy aquí para guiarlos a través de un viaje informativo sobre los [polímeros naturales](https://eloymartinezcuesta.com/polimeros-y-plasticos/). Desde explorar su estructura única hasta comprender sus aplicaciones prácticas y su impacto en la sostenibilidad, este artículo les brindará una visión integral de estos compuestos químicos sorprendentes que la naturaleza nos ofrece.
+Hoy estoy aquí para guiarlos a través de un viaje informativo sobre los [polímeros naturales](https://eloymartinezcuesta.com/blog/polímeros-naturales/). Desde explorar su estructura única hasta comprender sus aplicaciones prácticas y su impacto en la sostenibilidad, este artículo les brindará una visión integral de estos compuestos químicos sorprendentes que la naturaleza nos ofrece.
 
 ---
 

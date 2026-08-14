@@ -3,7 +3,7 @@ title: ¿Qué es el Ritmo Circadiano?
 category: Iluminación
 image: /ritmo-circadiano-hcl-iluminacion-led.webp
 image_alt: "Los denominados biológicamente ritmos circadianos son cambios físicos, mentales y conductuales que siguen un ciclo de un día, en 24 horas"
-description: Análisis de los ritmos circadianos, sus efectos sobre el sueño y la salud, y el papel de la luz, la luminoterapia y el Human Centric Lighting.
+description: "Qué son los ritmos circadianos, cómo se relacionan con el sueño y qué papel tienen la luz, la luminoterapia y el Human Centric Lighting."
 date: 2025-03-21
 tags: [Iluminación LED, Ritmos circadianos, Luz]
 twitter_img: /ritmo-circadiano-hcl-iluminacion-led.webp

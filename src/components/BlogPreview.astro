@@ -18,7 +18,7 @@ const imageHeight = 400;
 
 <article class:list={["legacy-post-card", { "legacy-post-card--image": image }]}>
   {image && (
-    <a href={`/blog/${post.slug}`} class="legacy-post-background" aria-label={title}>
+    <a href={`/blog/${post.id}/`} class="legacy-post-background" aria-label={title}>
       <Image
         src={image}
         alt={title}
@@ -33,7 +33,7 @@ const imageHeight = 400;
   <div class="legacy-post-card-content">
     <header>
       <h2 class="legacy-post-title">
-        <a href={`/blog/${post.slug}`}>{title}</a>
+        <a href={`/blog/${post.id}/`}>{title}</a>
       </h2>
       <div class="legacy-post-date">
         <PostDate date={date} />

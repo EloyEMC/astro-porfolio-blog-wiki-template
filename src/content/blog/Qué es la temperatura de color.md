@@ -59,7 +59,7 @@ faqs:
 
 ---
 
-Hoy nos adentraremos en un emocionante viaje para descubrir [los secretos detrás de la iluminación técnica](https://eloymartinezcuesta.com/iluminacion/) y los [proyectos lumínicos](https://eloymartinezcuesta.com/proyectos-iluminacion/). Vamos a aprender sobre la temperatura de color, las propiedades físicas de la luz y cómo nuestros cerebros perciben los maravillosos colores que nos rodean.
+Hoy nos adentraremos en un emocionante viaje para descubrir [los secretos detrás de la iluminación técnica](https://eloymartinezcuesta.com/iluminacion/) y los [proyectos lumínicos](https://eloymartinezcuesta.com/proyectos/). Vamos a aprender sobre la temperatura de color, las propiedades físicas de la luz y cómo nuestros cerebros perciben los maravillosos colores que nos rodean.
 
 ## La Maravilla de la Luz y sus Propiedades
 

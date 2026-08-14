@@ -1,5 +1,5 @@
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from "@tailwindcss/vite";
 import rehypePrettyCode from "rehype-pretty-code";
 import { siteConfig } from "./src/config";
 
@@ -15,12 +15,18 @@ export default defineConfig({
 		"/eficiencia-energetica/nueva-etiqueta-energetica-2021/":
 			"/blog/la-nueva-etiqueta-energética-adiós-a/",
 		"/aviso-legal-imprint/": "/Aviso-legal/",
+		"/que-es-el-ritmo-circadiano-y-el-hcl/":
+			"/blog/qué-es-el-ritmo-circadiano-y-el-hcl/",
+		"/iluminacion/hormonas-de-la-felicidad-y-la-luz":
+			"/blog/hormonas-de-la-felicidad/",
 	},
 	devToolbar: {
 		enabled: false,
 	},
+	vite: {
+		plugins: [tailwindcss()],
+	},
 	integrations: [
-		tailwind(),
 		sitemap({
 			filter: (page) =>
 				!/^https:\/\/eloymartinezcuesta\.com\/(?:tags(?:\/|$)|archive\/?$|blog\/?(?:\d+\/?)?$)/.test(

@@ -47,7 +47,7 @@ const years = Object.keys(postsByYear).sort((a, b) => Number(b) - Number(a));
               <PostDate date={post.data.date} />
             </span>
             <a 
-              href={`/blog/${post.slug}`}
+              href={`/blog/${post.id}/`}
               class="editorial-archive-link"
             >
               {post.data.title}

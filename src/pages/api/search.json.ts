@@ -11,7 +11,7 @@ export async function GET() {
 			}
 
 			// Remove image paths from content
-			const cleanContent = post.body
+			const cleanContent = (post.body ?? "")
 				.replace(/!\[.*?\]\(.*?\)/g, "") // Remove markdown images
 				.replace(/<img[^>]*>/g, "") // Remove HTML images
 				.replace(/<(video|audio)[^>]*>.*?<\/(video|audio)>/gs, "") // Remove video/audio tags
@@ -24,7 +24,7 @@ export async function GET() {
 				title: post.data.title,
 				description: post.data.description,
 				tags: post.data.tags,
-				slug: post.slug,
+				slug: post.id,
 				content: cleanContent,
 			};
 		}),

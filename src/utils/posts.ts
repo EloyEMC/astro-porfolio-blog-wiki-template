@@ -64,7 +64,7 @@ export function getRelatedPosts(
   const currentTags = currentPost.data.tags || [];
 
   return filterPublishedPosts(posts)
-    .filter(post => post.slug !== currentPost.slug)
+    .filter(post => post.id !== currentPost.id)
     .map(post => ({
       post,
       sharedTags: (post.data.tags || []).filter((tag: string) => currentTags.includes(tag)).length,
@@ -80,10 +80,10 @@ export function getRandomPosts(
   excludedPosts: CollectionEntry<'blog'>[] = [],
   maxPosts = 3,
 ): CollectionEntry<'blog'>[] {
-  const excludedSlugs = new Set([currentPost.slug, ...excludedPosts.map(post => post.slug)]);
-  const candidates = filterPublishedPosts(posts).filter(post => !excludedSlugs.has(post.slug));
+  const excludedSlugs = new Set([currentPost.id, ...excludedPosts.map(post => post.id)]);
+  const candidates = filterPublishedPosts(posts).filter(post => !excludedSlugs.has(post.id));
 
   // Rotate deterministically so builds remain reproducible while each post gets a varied selection.
-  const offset = [...currentPost.slug].reduce((total, character) => total + character.charCodeAt(0), 0) % Math.max(candidates.length, 1);
+  const offset = [...currentPost.id].reduce((total, character) => total + character.charCodeAt(0), 0) % Math.max(candidates.length, 1);
   return [...candidates.slice(offset), ...candidates.slice(0, offset)].slice(0, maxPosts);
 }

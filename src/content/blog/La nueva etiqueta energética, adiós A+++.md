@@ -3,7 +3,7 @@ title: La nueva etiqueta energética, adiós A+++
 category: Conocimiento
 image:  /nueva-etiqueta-eficiencia-energetica-2021.webp
 image_alt: "Nuevas etiquetas energeticas de aparatos eléctricos"
-description: "Qué cambia con la etiqueta energética europea: la escala A-G, los nuevos criterios de ensayo, el calendario de aplicación, el código QR y la calculadora de consumo del proyecto BELT."
+description: "Cómo funciona la etiqueta energética europea: escala A-G, criterios de ensayo, consumo, pictogramas, código QR y recursos del proyecto BELT."
 date: 2025-03-21
 tags: [Ahorro, Energía, Consumidor]
 twitter_img: /nueva-etiqueta-eficiencia-energetica-2021.webp

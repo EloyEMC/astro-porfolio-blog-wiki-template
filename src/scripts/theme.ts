@@ -2,7 +2,7 @@
 const initTheme = () => {
   const theme = (() => {
     if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-      return localStorage.getItem('theme');
+      return localStorage.getItem('theme') ?? 'light';
     }
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       return 'dark';

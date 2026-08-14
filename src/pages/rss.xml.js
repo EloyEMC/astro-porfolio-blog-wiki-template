@@ -20,7 +20,7 @@ export async function GET(context) {
 		items: blog.map((post) => ({
 			title: post.data.title,
 			description: post.data.description,
-			link: new URL(`/blog/${post.slug}/`, context.site).href,
+			link: new URL(`/blog/${post.id}/`, context.site).href,
 			pubDate: post.data.date,
 			content: post.body,
 		})),

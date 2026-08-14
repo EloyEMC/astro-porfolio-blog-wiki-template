@@ -86,16 +86,16 @@ const sectionLinks = [
           <article class:list={["illumination-card", { "illumination-card--image": post.data.image }]}>
             {post.data.image && (
               <div class="illumination-card-background">
-                <a href={`/blog/${post.slug}/`} aria-label={`Leer ${post.data.title}`}>
+                <a href={`/blog/${post.id}/`} aria-label={`Leer ${post.data.title}`}>
                   <Image src={post.data.image} alt="" aria-hidden="true" width={800} height={500} decoding="async" loading="lazy" />
                 </a>
               </div>
             )}
             <div class="illumination-card-content">
               <p class="interior-eyebrow">{post.data.date.toLocaleDateString("es-ES", { year: "numeric", month: "long" })}</p>
-              <h3><a href={`/blog/${post.slug}/`}>{post.data.title}</a></h3>
+              <h3><a href={`/blog/${post.id}/`}>{post.data.title}</a></h3>
               {post.data.description && <p>{post.data.description}</p>}
-              <a class="card-link" href={`/blog/${post.slug}/`}>Leer artículo <span aria-hidden="true">→</span></a>
+              <a class="card-link" href={`/blog/${post.id}/`}>Leer artículo <span aria-hidden="true">→</span></a>
             </div>
           </article>
         ))}

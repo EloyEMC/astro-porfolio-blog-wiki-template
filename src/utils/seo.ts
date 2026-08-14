@@ -149,7 +149,9 @@ export function createSeoSchemas(input: SeoSchemaInput): JsonLd[] {
 					? input.dateModified.toISOString()
 					: input.dateModified,
 			inLanguage: input.inLanguage,
-			author: input.author ? personSchema(input.siteUrl, input.author) : undefined,
+			author: input.author
+				? personSchema(input.siteUrl, input.author)
+				: undefined,
 			articleSection: input.article ? input.category : undefined,
 			publisher: input.article ? publisher : undefined,
 			mainEntityOfPage: { "@type": "WebPage", "@id": canonical },

@@ -1,6 +1,7 @@
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import rehypePrettyCode from "rehype-pretty-code";
+import { unified } from "@astrojs/markdown-remark";
 import { siteConfig } from "./src/config";
 
 import sitemap from "@astrojs/sitemap";
@@ -35,18 +36,20 @@ export default defineConfig({
 		}),
 	],
 	markdown: {
-		rehypePlugins: [
-			[
-				rehypePrettyCode,
-				{
-					theme: "github-dark",
-					onVisitLine(node) {
-						if (node.children.length === 0) {
-							node.children = [{ type: "text", value: " " }];
-						}
+		processor: unified({
+			rehypePlugins: [
+				[
+					rehypePrettyCode,
+					{
+						theme: "github-dark",
+						onVisitLine(node) {
+							if (node.children.length === 0) {
+								node.children = [{ type: "text", value: " " }];
+							}
+						},
 					},
-				},
+				],
 			],
-		],
+		}),
 	},
 });

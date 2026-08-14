@@ -3,7 +3,11 @@ import HomeBaseLayout from "../layouts/HomeBaseLayout.astro";
 import { siteConfig } from "../config";
 ---
 
-<HomeBaseLayout siteUrl={siteConfig.site} title="Eloy Martínez Cuesta — Iluminación, tecnología y negocio">
+<HomeBaseLayout
+  siteUrl={siteConfig.site}
+  title="Eloy Martínez Cuesta | Iluminación, tecnología y negocio"
+  description="Profesional de la iluminación con más de 20 años de experiencia en proyectos, producto y negocio. Tecnología, software e IA aplicados a problemas reales."
+>
   <section class="home-index" aria-labelledby="home-title">
     <header class="home-header">
       <img class="home-logo" src="/logo-emc.webp" alt="" aria-hidden="true" />
@@ -28,7 +32,7 @@ import { siteConfig } from "../config";
     <div class="home-social" aria-label="Contacto y redes sociales">
       <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href={siteConfig.social.github} target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href={`mailto:${siteConfig.social.email}`}>Contacto</a>
+      {siteConfig.social.email && <a href={`mailto:${siteConfig.social.email}`}>Contacto</a>}
     </div>
     <div class="home-swipe-cue" data-home-swipe-cue hidden>
       <img src="/swipe.svg" alt="Deslizá hacia la izquierda para ver Iluminación" />

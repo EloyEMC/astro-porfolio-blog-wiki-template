@@ -1,12 +1,13 @@
 ---
 title: Polímeros Naturales- Descubriendo la Fascinante Química de la Naturaleza
+category: Conocimiento
 description: Recorrido por la estructura y diversidad de los polímeros naturales, sus usos en alimentación y biomedicina, y el potencial sostenible de los bioplásticos.
 date: 2025-03-22
 tags: [Polímeros, Plástico, Extrusión ]
 draft: false
 image: /polimeros-naturales-almidon.webp
-image_alt: "Hormonas de la felicidad y la luz"
-twitter_img: /Eloy-martinez-cuesta-web.webp
+image_alt: "Almidón utilizado como ejemplo de polímero natural"
+twitter_img: /polimeros-naturales-almidon.webp
 twitterCreator: "@eloy_emc"
 twitterSite: "@eloy_emc"
 keywords:
@@ -16,7 +17,6 @@ keywords:
 author: "eloymartinez"
 authorUrl: "https://www.linkedin.com/in/eloymartinezemc/"
 authorImage: "/eloy_feria_iluminacion.webp"
-publishedDate: "2023-08-25T00:00:00Z" # Fecha de publicación en formato ISO
 modifiedDate: "" # Puedes actualizarlo dinámicamente si es necesario
 ogType: "article" # Cambia a 'website' si es una página general
 locale: "es_ES"
@@ -47,7 +47,6 @@ faqs:
 ---
 
 Hoy estoy aquí para guiarlos a través de un viaje informativo sobre los [polímeros naturales](https://eloymartinezcuesta.com/polimeros-y-plasticos/). Desde explorar su estructura única hasta comprender sus aplicaciones prácticas y su impacto en la sostenibilidad, este artículo les brindará una visión integral de estos compuestos químicos sorprendentes que la naturaleza nos ofrece.
-
 
 ---
 

@@ -1,12 +1,13 @@
 ---
 title: Extrusión de polímeros
+category: Conocimiento
 description: "Introducción al proceso de extrusión de polímeros: configuraciones de husillo, componentes, dados, parámetros de calidad y procesos especializados como termoformado y calandrado."
 date: 2025-03-23
 tags: [Polímeros, Plástico, Extrusión ]
 draft: false
 image: /Extrusor-de-polimeros-extrusora-husillo-1024x768.webp
-image_alt: "Extrusora de usillo para polimeros plásticos"
-twitter_img: /Eloy-martinez-cuesta-web.webp
+image_alt: "Extrusora de husillo para polímeros plásticos"
+twitter_img: /Extrusor-de-polimeros-extrusora-husillo-1024x768.webp
 twitterCreator: "@eloy_emc"
 twitterSite: "@eloy_emc"
 keywords:
@@ -16,7 +17,6 @@ keywords:
 author: "eloymartinez"
 authorUrl: "https://www.linkedin.com/in/eloymartinezemc/"
 authorImage: "/eloy_feria_iluminacion.webp"
-publishedDate: "2023-08-25T00:00:00Z" # Fecha de publicación en formato ISO
 modifiedDate: "" # Puedes actualizarlo dinámicamente si es necesario
 ogType: "article" # Cambia a 'website' si es una página general
 locale: "es_ES"
@@ -53,7 +53,6 @@ faqs:
   answer: "Tuberías, perfiles de ventanas, films para empaque, fibras textiles, recubrimientos de cables y marcos plásticos."
 ---
 # Procesos de Extrusión de Polímeros
-
 
 ## ¿Qué es la extrusión?
 

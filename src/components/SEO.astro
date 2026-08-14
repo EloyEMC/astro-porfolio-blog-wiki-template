@@ -15,7 +15,7 @@ interface Props {
 const { entry, siteUrl, defaultImage, defaultLocale = "es_ES" } = Astro.props;
 const { data, slug } = entry;
 const {
-  title, seoTitle, description, date, modifiedDate, tags, image, image_alt,
+  title, seoTitle, description, category, date, modifiedDate, tags, image, image_alt,
   keywords, twitter_img, twitterCreator, twitterSite, author, authorUrl,
   authorImage, ogType = "article", siteName, noindex, nofollow, faqs, canonicalUrl,
 } = data;
@@ -24,7 +24,11 @@ const normalizedSiteUrl = normalizeUrl(siteUrl, "/").replace(/\/$/, "");
 const fullCanonicalUrl = normalizeUrl(siteUrl, canonicalUrl?.url || `/blog/${slug}/`);
 const fullImageUrl = absoluteUrl(siteUrl, image || defaultImage);
 const fullTwitterImageUrl = absoluteUrl(siteUrl, twitter_img || image || defaultImage);
-const robotsContent = [noindex && "noindex", nofollow && "nofollow"].filter(Boolean).join(", ");
+const robotsContent = noindex
+  ? "noindex, follow"
+  : nofollow
+    ? "nofollow"
+    : "";
 const schemaAuthor = authorData ? {
   name: authorData.name,
   url: authorUrl,
@@ -44,6 +48,7 @@ const schemas = createSeoSchemas({
   inLanguage: siteConfig.lang,
   logo: siteConfig.image,
   author: schemaAuthor,
+  category,
   datePublished: date,
   dateModified: modifiedDate,
   article: ogType === "article",

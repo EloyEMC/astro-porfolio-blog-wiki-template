@@ -19,15 +19,15 @@ interface Props {
 }
 
 // Definir las constantes para el SEO
-const { title = "Eloy Martínez Cuesta", slug, noindex = false, canonical = true } = Astro.props;
-const description = "La web de Eloy Martínez Cuesta, donde encontrarás novedades IA, iluminación, marketing, SEO, dev...";
+const { title = siteConfig.title, slug, noindex = false, canonical = true } = Astro.props;
+const description = siteConfig.description || siteConfig.slogan;
 const defaultLocale = "es_ES";
 const { author } = Astro.props;
 const authorData = author || null;
 
 // Obtener siteUrl y defaultImage directamente de siteConfig
 const siteUrl = siteConfig.site;
-const defaultImage = siteConfig.image || "ruta/a/imagen-por-defecto.jpg"; // Valor por defecto
+const defaultImage = siteConfig.defaultImage || siteConfig.image || "";
 ---
 
 <!doctype html> 

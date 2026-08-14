@@ -5,9 +5,7 @@ import InteriorLayout from "../../layouts/InteriorLayout.astro";
 import { filterPublishedPosts, sortPostsByDate } from "../../utils/posts";
 
 const posts = sortPostsByDate(filterPublishedPosts(await getCollection("blog")));
-const illuminationPosts = posts.filter((post) =>
-  post.data.tags?.some((tag) => tag.toLowerCase().includes("luz") || tag.toLowerCase().includes("ilumin"))
-).slice(0, 4);
+const illuminationPosts = posts.filter((post) => post.data.category === "Iluminación").slice(0, 4);
 
 const sectionLinks = [
   { label: "Proyecto y prescripción", href: "#proyecto-prescripcion" },

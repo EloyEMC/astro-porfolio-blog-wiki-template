@@ -7,14 +7,14 @@ import SEOPage from '@components/SEOPage.astro';
 import '../styles/global.css';
 import '../styles/redesign.css';
 
-interface Props { siteUrl: string; defaultImage?: string; title?: string; }
-const { siteUrl, title = 'Eloy Martínez Cuesta' } = Astro.props;
+interface Props { siteUrl: string; defaultImage?: string; title?: string; description?: string; }
+const { siteUrl, title = 'Eloy Martínez Cuesta', description = siteConfig.description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es" class="dark">
   <head>
-    <SEOPage title={title} description={siteConfig.description} siteUrl={siteUrl} defaultImage={siteConfig.image || ''} image_alt={siteConfig.image_alt} slug="" />
+    <SEOPage title={title} description={description} siteUrl={siteUrl} defaultImage={siteConfig.defaultImage || siteConfig.image || ''} image_alt={siteConfig.image_alt} slug="" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/favicon-emc-512.png?v=4" />

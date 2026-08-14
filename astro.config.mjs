@@ -10,7 +10,15 @@ export default defineConfig({
 	devToolbar: {
 		enabled: false,
 	},
-	integrations: [tailwind(), sitemap()],
+	integrations: [
+		tailwind(),
+		sitemap({
+			filter: (page) =>
+				!/^https:\/\/eloymartinezcuesta\.com\/(?:tags(?:\/|$)|archive\/?$|blog\/?(?:\d+\/?)?$)/.test(
+					page,
+				),
+		}),
+	],
 	markdown: {
 		rehypePlugins: [
 			[

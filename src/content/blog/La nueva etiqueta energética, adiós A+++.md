@@ -1,11 +1,12 @@
 ---
 title: La nueva etiqueta energética, adiós A+++
+category: Conocimiento
 image:  /nueva-etiqueta-eficiencia-energetica-2021.webp
 image_alt: "Nuevas etiquetas energeticas de aparatos eléctricos"
 description: "Qué cambia con la etiqueta energética europea: la escala A-G, los nuevos criterios de ensayo, el calendario de aplicación, el código QR y la calculadora de consumo del proyecto BELT."
 date: 2025-03-21
 tags: [Ahorro, Energía, Consumidor]
-twitter_img: /Eloy-martinez-cuesta-web.webp
+twitter_img: /nueva-etiqueta-eficiencia-energetica-2021.webp
 twitterCreator: "@eloy_emc"
 twitterSite: "@eloy_emc"
 keywords:
@@ -17,14 +18,13 @@ keywords:
 author: "eloymartinez"
 authorUrl: "https://www.linkedin.com/in/eloymartinezemc/"
 authorImage: "/eloy_feria_iluminacion.webp"
-publishedDate: "2025-03-25T00:00:00Z" # Fecha de publicación en formato ISO
 modifiedDate: "" # Puedes actualizarlo dinámicamente si es necesario
 ogType: "article" # Cambia a 'website' si es una página general
 locale: "es_ES"
 siteName: "Eloy Martínez Cuesta"
 noindex: false # Cambiar a true si no quieres que los buscadores indexen este post
 nofollow: false # Cambiar a true si no quieres que los enlaces del post sean seguidos por buscadores
-FAQs:
+faqs:
   - question: "¿Por qué cambia la etiqueta energética en 2021?"
     answer: "La Unión Europea ha simplificado la escala para hacerla más clara, eliminando las clases A+++, A++ y A+. La nueva escala va de A (más eficiente) a G (menos eficiente), permitiendo una mejor comparación entre productos."
 

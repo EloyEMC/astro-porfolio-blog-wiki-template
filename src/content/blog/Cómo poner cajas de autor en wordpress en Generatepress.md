@@ -1,12 +1,13 @@
 ---
 title: Cómo poner cajas de autor en wordpress en Generatepress
+category: Tecnología
 description: Explicación práctica para añadir una caja de autor en GeneratePress, configurar Gravatar y elegir entre plugins, hooks y CSS en sus versiones Free y Premium.
 date: 2025-03-23
 tags: [Diseño WEB, Wordpress, DEV ]
 draft: false
 image: /Caja-de-Autor-sin-plugin.webp
-image_alt: "Cómo Personalizar la Página de Categorías en WordPress"
-twitter_img: /Eloy-martinez-cuesta-web.webp
+image_alt: "Caja de autor de WordPress en GeneratePress"
+twitter_img: /Caja-de-Autor-sin-plugin.webp
 twitterCreator: "@eloy_emc"
 twitterSite: "@eloy_emc"
 keywords:
@@ -17,7 +18,6 @@ keywords:
 author: "eloymartinez"
 authorUrl: "https://www.linkedin.com/in/eloymartinezemc/"
 authorImage: "/eloy_feria_iluminacion.webp"
-publishedDate: "2023-08-25T00:00:00Z" # Fecha de publicación en formato ISO
 modifiedDate: "" # Puedes actualizarlo dinámicamente si es necesario
 ogType: "article" # Cambia a 'website' si es una página general
 locale: "es_ES"
@@ -59,7 +59,6 @@ En este artículo, exploraremos cómo implementar el Cuadro de Autor en el tema 
 WordPress.
 
 **El Cuadro de Autor** es una valiosa herramienta que nos permite mostrar información relevante sobre el autor de una publicación, lo cual es especialmente importante para mejorar las señales de Experiencia, Autoridad y Fiabilidad (Expertise, Authoritativeness, Trustworthiness) de [Quality Raters de Google](https://www.google.com/search/howsearchworks/how-search-works/rigorous-testing/) que utiliza Google para mejorar su algoritmo de búsqueda.
-
 
 ## **¿Por qué es importante el Cuadro de Autor en su sitio web?**
 

@@ -1,45 +1,46 @@
 import type { PostFilter } from "./utils/posts";
 
 export interface SiteConfig {
-  lang?: string;
-  title: string;
-  image?: string,
-  defaultImage?: string,
-  image_alt?: string;
-  slogan: string;
-  description?: string; 
-  site: string,
-  social: {
-    github?: string;
-    linkedin?: string;
-    email?: string;
-    rss?: boolean;
-  };
-  homepage: PostFilter;
-  googleAnalysis?: string;
-  search?: boolean;
+	lang?: string;
+	title: string;
+	image?: string;
+	defaultImage?: string;
+	image_alt?: string;
+	slogan: string;
+	description?: string;
+	site: string;
+	social: {
+		github?: string;
+		linkedin?: string;
+		email?: string;
+		rss?: boolean;
+	};
+	homepage: PostFilter;
+	googleAnalysis?: string;
+	search?: boolean;
 }
 
 export const siteConfig: SiteConfig = {
-  lang:"es",
-  site: "https://eloymartinezcuesta.com", // your site url
-  title: "Eloy Martínez Cuesta",
-  slogan: "Innovación, Iluminación y Estrategia Digital",
-  image: "logo-eloy-martinez-cuesta-marketing-digital-blanco.png",
-  defaultImage: "logo-eloy-martinez-cuesta-marketing-digital-blanco.png",
-  image_alt: "Descripción de la imagen",
-  description: "Bienvenido a EMC: Donde la luz de la creatividad se encuentra con el poder del marketing digital y el SEO",
-  social: {
-    github: "https://github.com/EloyEMC", // leave empty if you don't want to show the github
-    linkedin: "https://www.linkedin.com/in/eloymartinezemc/", // leave empty if you don't want to show the linkedin
-    email: "example@gmail.com", // leave empty if you don't want to show the email
-    rss: true, // set this to false if you don't want to provide an rss feed
-  },
-  homepage: {
-    maxPosts: 5,
-    tags: [],
-    excludeTags: [],
-  },
-  googleAnalysis: "G-9W0RCLSX3X", // Google Analytics measurement ID
-  search: true, // set this to false if you don't want to provide a search feature
+	lang: "es",
+	site: "https://eloymartinezcuesta.com", // your site url
+	title: "Eloy Martínez Cuesta",
+	slogan: "Iluminación. Tecnología. Negocio.",
+	image: "logo-emc.webp",
+	defaultImage: "logo-emc.webp",
+	image_alt: "Logotipo de Eloy Martínez Cuesta",
+	description:
+		"Iluminación profesional, tecnología aplicada y negocio. Más de 20 años de experiencia convertidos en proyectos, conocimiento y herramientas.",
+	social: {
+		github: "https://github.com/EloyEMC", // leave empty if you don't want to show the github
+		linkedin: "https://www.linkedin.com/in/eloymartinezemc/", // leave empty if you don't want to show the linkedin
+		email: undefined, // leave empty if you don't want to show the email
+		rss: true, // set this to false if you don't want to provide an rss feed
+	},
+	homepage: {
+		maxPosts: 5,
+		tags: [],
+		excludeTags: [],
+	},
+	googleAnalysis: "G-9W0RCLSX3X", // Google Analytics measurement ID
+	search: true, // set this to false if you don't want to provide a search feature
 };

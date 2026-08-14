@@ -16,7 +16,7 @@ export async function getStaticPaths({ paginate }) {
 const { page } = Astro.props;
 ---
 
-<BaseLayout title="Blog Posts" slug={Astro.url.pathname}>
+<BaseLayout title="Artículos | Eloy Martínez Cuesta" slug={Astro.url.pathname} noindex>
 <h1 class="editorial-page-title">Blog Posts</h1>
   <section class="editorial-post-list">
     {page.data.map((post) => <BlogPreview post={post} />)}

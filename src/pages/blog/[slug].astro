@@ -9,7 +9,7 @@ import { filterPublishedPosts, getRandomPosts, getRelatedPosts } from '../../uti
 
 export async function getStaticPaths() {
   const siteUrl = siteConfig.site; // Usa siteConfig.site
-  const defaultImage = `${siteUrl}/default-image.png`; // Imagen por defecto para SEO
+  const defaultImage = siteConfig.defaultImage || siteConfig.image || "";
 
       const posts = filterPublishedPosts(await getCollection('blog'));
       return posts.map((post) => {

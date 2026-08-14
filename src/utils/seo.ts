@@ -20,6 +20,7 @@ export interface SeoSchemaInput {
 	siteSameAs?: string[];
 	inLanguage?: string;
 	author?: SeoAuthor;
+	category?: string;
 	datePublished?: Date;
 	dateModified?: string | Date;
 	article?: boolean;
@@ -38,7 +39,7 @@ export function normalizeUrl(siteUrl: string, value: string): string {
 	try {
 		const url = new URL(absoluteUrl(siteUrl, value));
 		if (url.pathname.length > 1)
-			url.pathname = url.pathname.replace(/\/+$/, "");
+			url.pathname = `${url.pathname.replace(/\/+$/, "")}/`;
 		return url.href;
 	} catch {
 		return value;
@@ -142,6 +143,7 @@ export function createSeoSchemas(input: SeoSchemaInput): JsonLd[] {
 					: input.dateModified,
 			inLanguage: input.inLanguage,
 			author: input.author ? personSchema(input.author) : undefined,
+			articleSection: input.article ? input.category : undefined,
 			publisher: input.article ? publisher : undefined,
 			mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
 		}),

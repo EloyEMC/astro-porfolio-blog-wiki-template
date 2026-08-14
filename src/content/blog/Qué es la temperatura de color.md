@@ -1,11 +1,12 @@
 ---
 title: ¿Qué es la temperatura de color?
+category: Iluminación
 image: /que-es-la-temperatura-de-color.webp
-image_alt: "Que es la temperatura de colo de la luz"
+image_alt: "Temperatura de color de una fuente de luz"
 description: "Introducción a la temperatura de color: escala Kelvin, luz cálida y fría, espectro electromagnético, percepción del color, bombillas incandescentes y ritmos circadianos."
 date: 2025-03-21
 tags: [Luz, Temperatura de color, Espectro electromagnético, Ritmos circadianos, Iluminación LED]
-twitter_img: "imageswebp/que-es-la-temperatura-de-color.webp"
+twitter_img: /que-es-la-temperatura-de-color.webp
 twitterCreator: "@eloy_emc"
 twitterSite: "@eloy_emc"
 keywords:
@@ -16,7 +17,6 @@ keywords:
 author: "eloymartinez"
 authorUrl: "https://www.linkedin.com/in/eloymartinezemc/"
 authorImage: "/eloy_feria_iluminacion.webp"
-publishedDate: "2023-08-25T00:00:00Z" # Fecha de publicación en formato ISO
 modifiedDate: "" # Puedes actualizarlo dinámicamente si es necesario
 ogType: "article" # Cambia a 'website' si es una página general
 locale: "es_ES"
@@ -60,7 +60,6 @@ faqs:
 ---
 
 Hoy nos adentraremos en un emocionante viaje para descubrir [los secretos detrás de la iluminación técnica](https://eloymartinezcuesta.com/iluminacion/) y los [proyectos lumínicos](https://eloymartinezcuesta.com/proyectos-iluminacion/). Vamos a aprender sobre la temperatura de color, las propiedades físicas de la luz y cómo nuestros cerebros perciben los maravillosos colores que nos rodean.
-
 
 ## La Maravilla de la Luz y sus Propiedades
 

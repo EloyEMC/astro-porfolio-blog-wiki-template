@@ -1,12 +1,13 @@
 ---
 title: Cómo Personalizar la Página de Categorías en WordPress
+category: Tecnología
 description: Guía para personalizar las páginas de categorías de WordPress con plugins o código, añadir imágenes y mejorar su estructura, SEO y visualización responsive.
 date: 2025-03-23
 tags: [Diseño WEB, Wordpress, DEV ]
 draft: false
 image: /personalizar-y-anadir-imagen-destacada-en-categorias-de-wordpress.webp
 image_alt: "Cómo Personalizar la Página de Categorías en WordPress"
-twitter_img: /Eloy-martinez-cuesta-web.webp
+twitter_img: /personalizar-y-anadir-imagen-destacada-en-categorias-de-wordpress.webp
 twitterCreator: "@eloy_emc"
 twitterSite: "@eloy_emc"
 keywords:
@@ -16,7 +17,6 @@ keywords:
 author: "eloymartinez"
 authorUrl: "https://www.linkedin.com/in/eloymartinezemc/"
 authorImage: "/eloy_feria_iluminacion.webp"
-publishedDate: "2023-08-25T00:00:00Z" # Fecha de publicación en formato ISO
 modifiedDate: "" # Puedes actualizarlo dinámicamente si es necesario
 ogType: "article" # Cambia a 'website' si es una página general
 locale: "es_ES"
@@ -52,7 +52,6 @@ faqs:
     answer: "Sí, es recomendable realizar mantenimiento periódico después de personalizar las páginas de categorías, especialmente después de actualizaciones de WordPress, temas o plugins. Esto asegura que las personalizaciones sigan funcionando correctamente y no causen conflictos."
 ---
 Las páginas de categorías son una parte esencial de cualquier sitio web que organice su contenido en diferentes temas o categorías. Si utilizas WordPress como plataforma para tu sitio web, tienes la oportunidad de personalizar estas páginas de categorías para mejorar la apariencia y la experiencia del usuario. En este artículo, exploraremos cómo puedes personalizar la página de categorías en WordPress de acuerdo con tus necesidades y preferencias. **¿Te ayuda en el SEO? No dejes de leer el artículo para descubrirlo.**
-
 
 ---
 

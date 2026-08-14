@@ -1,11 +1,12 @@
 ---
 title: La Luz activa las Hormonas de la Felicidad
+category: Iluminación
 image: /activar-hormonas-felicidad-luz.webp
 image_alt: "Hormonas de la felicidad y la luz"
 description: Explicación de cómo la luz y el diseño de los espacios pueden relacionarse con endorfinas, serotonina, dopamina y oxitocina, junto con el ritmo circadiano.
 date: 2025-03-21
 tags: ["Hormonas", "Psicología", "Luz"]
-twitter_img: /Eloy-martinez-cuesta-web.webp
+twitter_img: /activar-hormonas-felicidad-luz.webp
 twitterCreator: "@eloy_emc"
 twitterSite: "@eloy_emc"
 keywords:
@@ -17,7 +18,6 @@ keywords:
 author: "eloymartinez"
 authorUrl: "https://www.linkedin.com/in/eloymartinezemc/"
 authorImage: "/eloy_feria_iluminacion.webp"
-publishedDate: "2023-08-25T00:00:00Z" # Fecha de publicación en formato ISO
 modifiedDate: "" # Puedes actualizarlo dinámicamente si es necesario
 ogType: "article" # Cambia a 'website' si es una página general
 locale: "es_ES"

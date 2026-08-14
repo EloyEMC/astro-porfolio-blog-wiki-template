@@ -12,19 +12,17 @@ const featuredTitles = new Set([
   "Cómo Personalizar la Página de Categorías en WordPress",
 ]);
 const featuredPosts = posts.filter((post) => featuredTitles.has(post.data.title)).slice(0, 4);
-const themes = ["Iluminación", "Tecnología", "Negocio"];
+const categories = ["Iluminación", "Tecnología", "Negocio", "Conocimiento"];
 
-function themeForPost(post: (typeof posts)[number]) {
-  const tags = (post.data.tags ?? []).map((tag) => tag.toLowerCase());
-  if (tags.some((tag) => /negocio|estrateg|marketing|ventas|empresa/.test(tag))) return "Negocio";
-  if (tags.some((tag) => /tecnolog|wordpress|digital|control|dali|bluetooth|web|dev/.test(tag))) return "Tecnología";
-  return "Iluminación";
+function categoryForPost(post: (typeof posts)[number]) {
+  return post.data.category;
 }
 
 function searchText(post: (typeof posts)[number]) {
   return [
     post.data.title,
     post.data.description,
+    post.data.category,
     ...(post.data.tags ?? []),
     post.body ?? "",
   ]
@@ -33,7 +31,7 @@ function searchText(post: (typeof posts)[number]) {
     .toLowerCase();
 }
 
-const availableThemes = themes.filter((theme) => posts.some((post) => themeForPost(post) === theme));
+const availableCategories = categories.filter((category) => posts.some((post) => categoryForPost(post) === category));
 const collectionPageSchema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -55,7 +53,7 @@ const breadcrumbSchema = {
 
 <InteriorLayout
   title="Artículos sobre iluminación, tecnología y negocio | Eloy Martínez Cuesta"
-  description="Artículos de Eloy Martínez Cuesta sobre iluminación profesional, tecnología aplicada, software, proyectos y negocio, junto a publicaciones en medios especializados."
+  description="Artículos y publicaciones de Eloy Martínez Cuesta sobre iluminación profesional, tecnología, software y negocio: conocimiento nacido de la experiencia y de problemas reales."
   slug="articulos"
 >
   <script type="application/ld+json" set:html={JSON.stringify(collectionPageSchema)}></script>
@@ -91,7 +89,7 @@ const breadcrumbSchema = {
                 </a>
               )}
               <div class="featured-article-copy">
-                <p class="interior-eyebrow">{themeForPost(post)} · {post.data.date.toLocaleDateString("es-ES", { year: "numeric", month: "long" })}</p>
+                <p class="interior-eyebrow">{categoryForPost(post)} · {post.data.date.toLocaleDateString("es-ES", { year: "numeric", month: "long" })}</p>
                 <h3><a href={`/blog/${post.slug}/`}>{post.data.title}</a></h3>
                 {post.data.description && <p>{post.data.description}</p>}
                 <a class="articles-cta" href={`/blog/${post.slug}/`}>Leer artículo <span aria-hidden="true">→</span></a>
@@ -170,20 +168,20 @@ const breadcrumbSchema = {
         </label>
       </div>
 
-      <div class="articles-filters" role="group" aria-label="Filtrar artículos por tema">
-        <button type="button" class="is-active" data-theme-filter="all">Todos</button>
-        {availableThemes.map((theme) => <button type="button" data-theme-filter={theme}>{theme}</button>)}
+      <div class="articles-filters" role="group" aria-label="Filtrar artículos por categoría">
+        <button type="button" class="is-active" data-category-filter="all">Todos</button>
+        {availableCategories.map((category) => <button type="button" data-category-filter={category}>{category}</button>)}
       </div>
 
       <div class="articles-list" data-articles-list>
         {posts.map((post) => {
-          const theme = themeForPost(post);
+          const category = categoryForPost(post);
           const tags = post.data.tags ?? [];
           return (
-            <article class="articles-list-item" data-article-item data-theme={theme} data-search-text={searchText(post)}>
+            <article class="articles-list-item" data-article-item data-category={category} data-search-text={searchText(post)}>
               <div class="articles-list-meta">
                 <p class="interior-eyebrow">{post.data.date.toLocaleDateString("es-ES", { year: "numeric", month: "long" })}</p>
-                <span>{theme}</span>
+                <span>{category}</span>
               </div>
               <div class="articles-list-copy">
                 <h3><a href={`/blog/${post.slug}/`}>{post.data.title}</a></h3>
@@ -220,18 +218,18 @@ const breadcrumbSchema = {
     if (!search || search.dataset.initialized === "true") return;
 
     search.dataset.initialized = "true";
-    const filterButtons = [...document.querySelectorAll<HTMLButtonElement>("[data-theme-filter]")];
+    const filterButtons = [...document.querySelectorAll<HTMLButtonElement>("[data-category-filter]")];
     const items = [...document.querySelectorAll<HTMLElement>("[data-article-item]")];
     const empty = document.querySelector<HTMLElement>("[data-articles-empty]");
-    let selectedTheme = "all";
+    let selectedCategory = "all";
 
     const updateArticles = () => {
       const query = search.value.trim().toLowerCase();
       let visible = 0;
       items.forEach((item) => {
-        const matchesTheme = selectedTheme === "all" || item.dataset.theme === selectedTheme;
+        const matchesCategory = selectedCategory === "all" || item.dataset.category === selectedCategory;
         const matchesSearch = !query || (item.dataset.searchText ?? "").includes(query);
-        const isVisible = matchesTheme && matchesSearch;
+        const isVisible = matchesCategory && matchesSearch;
         item.hidden = !isVisible;
         if (isVisible) visible += 1;
       });
@@ -241,7 +239,7 @@ const breadcrumbSchema = {
     search.addEventListener("input", updateArticles);
     filterButtons.forEach((button) => {
       button.addEventListener("click", () => {
-        selectedTheme = button.dataset.themeFilter ?? "all";
+        selectedCategory = button.dataset.categoryFilter ?? "all";
         filterButtons.forEach((candidate) => candidate.classList.toggle("is-active", candidate === button));
         updateArticles();
       });

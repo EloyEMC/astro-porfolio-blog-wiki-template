@@ -1,12 +1,13 @@
 ---
 title: Polímeros- Conceptos Básicos
+category: Conocimiento
 description: "Guía introductoria sobre los polímeros: monómeros, clasificaciones, comportamiento térmico, propiedades, ejemplos industriales y diferencias entre materiales naturales y sintéticos."
 date: 2025-03-23
-tags: [Polímeros, Plásticos, Extrusión ]
+tags: [Polímeros, Plástico, Extrusión ]
 draft: false
 image: /science-polymer-engineering-macromolecule-material-science-polimero.webp
 image_alt: "Molécula de un polímero"
-twitter_img: /Eloy-martinez-cuesta-web.webp
+twitter_img: /science-polymer-engineering-macromolecule-material-science-polimero.webp
 twitterCreator: "@eloy_emc"
 twitterSite: "@eloy_emc"
 keywords:
@@ -16,7 +17,6 @@ keywords:
 author: "eloymartinez"
 authorUrl: "https://www.linkedin.com/in/eloymartinezemc/"
 authorImage: "/eloy_feria_iluminacion.webp"
-publishedDate: "2023-08-25T00:00:00Z" # Fecha de publicación en formato ISO
 modifiedDate: "" # Puedes actualizarlo dinámicamente si es necesario
 ogType: "article" # Cambia a 'website' si es una página general
 locale: "es_ES"

@@ -1,5 +1,6 @@
 ---
 title: "¿Qué es realmente la luz?"
+category: Iluminación
 seoTitle: "¿Qué es realmente la luz? Propiedades y aplicación en iluminación | Eloy Martínez Cuesta"
 image: "/la-luz-y-sus-propiedades.webp"
 image_alt: "Columnas de luz de distintos colores proyectadas hacia el cielo."
@@ -20,8 +21,7 @@ keywords:
 author: "eloymartinez"
 authorUrl: "https://www.linkedin.com/in/eloymartinezemc/"
 authorImage: "/eloy_feria_iluminacion.webp"
-publishedDate: "2025-03-25T00:00:00Z"
-modifiedDate: "2026-08-11T00:00:00Z"
+modifiedDate: "2025-03-21T00:00:00Z"
 ogType: "article"
 locale: "es_ES"
 siteName: "Eloy Martínez Cuesta"

@@ -40,7 +40,11 @@ const {
 const fullCanonicalUrl = normalizeUrl(siteUrl, canonicalUrl || `/${(slug || "").replace(/^\/+|\/+$/g, "")}`);
 const fullImageUrl = absoluteUrl(siteUrl, image || defaultImage);
 const fullTwitterImageUrl = absoluteUrl(siteUrl, twitter_img || image || defaultImage);
-const robotsContent = [noindex && "noindex", nofollow && "nofollow"].filter(Boolean).join(", ");
+const robotsContent = noindex
+  ? "noindex, follow"
+  : nofollow
+    ? "nofollow"
+    : "";
 const schemas = createSeoSchemas({
   siteUrl,
   title,

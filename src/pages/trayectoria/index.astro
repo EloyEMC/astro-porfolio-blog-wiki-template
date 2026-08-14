@@ -1,25 +1,167 @@
 ---
 import InteriorLayout from "../../layouts/InteriorLayout.astro";
+
+const capabilities = [
+  {
+    number: "00",
+    title: "Producto / Mercado",
+    text: "Desde 2002, la iluminación fue el punto de partida: conocer el producto, leer el mercado y entender qué necesita cada solución para ser útil.",
+    evidence: "Hess · Targetti · Novolux",
+  },
+  {
+    number: "01",
+    title: "Distribución / Ventas",
+    text: "El producto se vuelve realidad cuando circula bien. La experiencia se amplía hacia la distribución, la relación comercial y la venta consultiva.",
+    evidence: "Novolux · TRILUX",
+  },
+  {
+    number: "02",
+    title: "KAM / Desarrollo de negocio",
+    text: "Trabajar con cuentas y oportunidades exige conectar necesidades, equipos y decisiones. La conversación comercial se convierte en visión de negocio.",
+    evidence: "TRILUX · Ansorg",
+  },
+  {
+    number: "03",
+    title: "Retail / Proyecto",
+    text: "Del catálogo al espacio: retail, arquitectura y proyecto obligan a coordinar contexto, producto, prescripción y ejecución sin perder de vista el resultado.",
+    evidence: "Experiencia en iluminación profesional",
+  },
+  {
+    number: "04",
+    title: "Prescripción / Proyectos",
+    text: "En el trabajo actual para Disano, la iluminación vuelve a mirarse como sistema: producto, documentación y acompañamiento para que un proyecto pueda avanzar.",
+    evidence: "Disano · rol actual",
+  },
+  {
+    number: "05",
+    title: "Digital / Software",
+    text: "La experiencia acumulada también pide otras herramientas: ordenar información, hacerla accesible y construir interfaces para trabajar mejor.",
+    evidence: "Herramientas digitales · datos de catálogo",
+  },
+  {
+    number: "06",
+    title: "Software / Automatización / IA",
+    text: "El siguiente paso no rompe con lo anterior. Software, automatización e inteligencia artificial amplían la capacidad de resolver problemas reales.",
+    evidence: "Tecnología aplicada a problemas de negocio",
+  },
+];
 ---
 
 <InteriorLayout
-  title="Trayectoria — Eloy Martínez Cuesta"
-  description="Más de veinte años desarrollando soluciones para proyectos reales."
+  title="Trayectoria profesional | Iluminación, tecnología y negocio | Eloy Martínez Cuesta"
+  description="Más de 20 años de trayectoria en iluminación profesional, proyectos, prescripción, retail, KAM y desarrollo de negocio, ampliados hoy con software, automatización e IA."
   slug="trayectoria"
 >
-  <section aria-labelledby="trajectory-title">
-    <p class="interior-eyebrow">05 / Trayectoria</p>
-    <h1 id="trajectory-title" class="interior-title">Experiencia que sigue en marcha.</h1>
-    <p class="interior-intro">Más de veinte años conectando iluminación, tecnología y negocio. Esta página es un punto de entrada a una trayectoria construida entre proyectos, aprendizaje continuo y trabajo con equipos.</p>
-    <div class="illumination-grid">
-      <article class="illumination-card">
-        <h2><a href="/sobre-mi/">Conocer el enfoque</a></h2>
-        <p>Una introducción personal a la forma de entender el trabajo y los proyectos.</p>
-      </article>
-      <article class="illumination-card">
-        <h2><a href="/blog/">Ver aprendizajes</a></h2>
-        <p>El blog recoge parte de las ideas y experiencias acumuladas durante el camino.</p>
-      </article>
-    </div>
-  </section>
+  <div class="trajectory-page">
+    <header class="trajectory-header">
+      <p class="interior-eyebrow">05 / Trayectoria</p>
+      <div class="trajectory-intro-grid">
+        <div>
+          <h1 id="trajectory-title" class="interior-title">Más de 20 años. Una evolución continua.</h1>
+          <p class="trajectory-declaration">La experiencia no se sustituye. Se acumula.</p>
+          <p class="interior-intro">Mi trayectoria profesional empieza en la iluminación y sigue construyéndose alrededor de ella. Producto, distribución, retail, clientes, ventas, prescripción, proyectos y desarrollo de negocio me han permitido conocer el sector desde perspectivas muy diferentes. Hoy el software, la automatización y la inteligencia artificial añaden una nueva capacidad: convertir parte de ese conocimiento en herramientas.</p>
+        </div>
+        <figure class="trajectory-portrait">
+          <img src="/trayectoria-hero.webp" alt="Persona caminando por un espacio arquitectónico iluminado" fetchpriority="high" />
+          <figcaption>El sector cambia. La curiosidad permanece.</figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <section class="trajectory-evolution" aria-labelledby="evolution-title">
+      <div class="evolution-heading">
+        <p class="interior-eyebrow">Una evolución por capacidades</p>
+        <h2 id="evolution-title">Cada etapa deja una herramienta para la siguiente.</h2>
+        <p>La línea no representa una cronología cerrada. Representa cómo se ensancha el campo de trabajo: del conocimiento del producto a la capacidad de construir nuevas soluciones.</p>
+      </div>
+
+      <div class="capability-list">
+        {capabilities.map((capability) => (
+          <article class="capability" id={`capability-${capability.number}`}>
+            <div class="capability-marker" aria-hidden="true">
+              <span>{capability.number}</span>
+            </div>
+            <div class="capability-copy">
+              <p class="capability-label">Capacidad / {capability.number}</p>
+              <h3>{capability.title}</h3>
+              <p>{capability.text}</p>
+              <p class="capability-evidence">{capability.evidence}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="trajectory-project" aria-labelledby="project-title">
+      <div>
+        <p class="interior-eyebrow">Lo aprendido también se construye</p>
+        <h2 id="project-title">La experiencia no se reinicia cuando aprendes algo nuevo.</h2>
+        <p>El conocimiento del sector sigue presente cuando aparece una herramienta digital. Cambia el medio, no la necesidad de comprender el contexto y hacer que una solución funcione.</p>
+        <nav class="trajectory-links" aria-label="Explorar la trayectoria">
+          <a class="section-cta" href="/proyectos/#iluminacion">Ver proyectos de iluminación <span aria-hidden="true">→</span></a>
+          <a class="section-cta" href="/tecnologia/">Conocer la tecnología aplicada <span aria-hidden="true">→</span></a>
+        </nav>
+      </div>
+      <figure class="trajectory-project-image">
+        <img src="/proyecto-estadio.webp" alt="Estadio iluminado al anochecer" loading="lazy" />
+        <figcaption>Un problema real siempre es el punto de partida.</figcaption>
+      </figure>
+    </section>
+
+    <footer class="trajectory-footer">
+      <p class="interior-eyebrow">ILUMINACIÓN + TECNOLOGÍA + NEGOCIO</p>
+      <h2>Lo que viene sigue conectado con lo que ya sé.</h2>
+      <a class="section-cta" href="/sobre-mi/">Conocer el enfoque personal <span aria-hidden="true">→</span></a>
+    </footer>
+  </div>
 </InteriorLayout>
+
+<style>
+  .trajectory-page { --trajectory-line: rgba(241, 238, 232, 0.16); --trajectory-muted: var(--muted-ink); }
+  .trajectory-header { max-width: 70rem; }
+  .trajectory-intro-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.72fr); gap: clamp(2rem, 7vw, 7rem); align-items: end; margin-top: 3rem; }
+  .trajectory-header .interior-title { max-width: 48rem; margin: 0; }
+  .trajectory-declaration { margin: 1.25rem 0 0; color: var(--paper); font-size: clamp(1.35rem, 2.2vw, 1.8rem); line-height: 1.15; }
+  .trajectory-header .interior-intro { max-width: 42rem; margin-top: 1.5rem; }
+  .trajectory-portrait, .trajectory-project-image { margin: 0; }
+  .trajectory-portrait img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: center; filter: saturate(0.82); }
+  .trajectory-portrait figcaption, .trajectory-project-image figcaption { margin-top: 0.75rem; color: var(--trajectory-muted); font-size: 0.78rem; }
+  .trajectory-evolution, .trajectory-project, .trajectory-footer { border-top: 1px solid var(--trajectory-line); margin-top: clamp(5rem, 10vw, 10rem); padding-top: 1.5rem; }
+  .evolution-heading { display: grid; grid-template-columns: minmax(10rem, 0.6fr) minmax(0, 1fr); column-gap: 2rem; }
+  .evolution-heading .interior-eyebrow { margin: 0; }
+  .evolution-heading h2 { max-width: 40rem; margin: 0; color: var(--paper); }
+  .evolution-heading > p:last-child { grid-column: 2; max-width: 34rem; margin: 1rem 0 0; color: var(--trajectory-muted); line-height: 1.7; }
+  .capability-list { position: relative; max-width: 54rem; margin: 4rem 0 0 clamp(0rem, 10vw, 8rem); }
+  .capability-list::before { position: absolute; top: 0.25rem; bottom: 0.25rem; left: 1.35rem; width: 1px; background: var(--trajectory-line); content: ""; }
+  .capability { position: relative; display: grid; grid-template-columns: 2.7rem minmax(0, 1fr); gap: 1.5rem; padding-bottom: 3.5rem; }
+  .capability-marker { position: relative; z-index: 1; display: grid; width: 2.7rem; height: 2.7rem; place-items: center; border: 1px solid var(--gold); border-radius: 50%; background: var(--ink); color: var(--gold); font-size: 0.72rem; }
+  .capability-copy { max-width: 42rem; }
+  .capability-label, .capability-evidence { margin: 0; color: var(--gold); font-size: 0.7rem; letter-spacing: 0.13em; text-transform: uppercase; }
+  .capability h3 { margin: 0.6rem 0 0.8rem; color: var(--paper); font-size: clamp(1.4rem, 2.4vw, 2.2rem); letter-spacing: -0.03em; }
+  .capability-copy > p:not(.capability-label):not(.capability-evidence) { max-width: 35rem; margin: 0; color: var(--trajectory-muted); line-height: 1.7; }
+  .capability-evidence { margin-top: 1rem; color: var(--trajectory-muted); letter-spacing: 0.08em; }
+  .trajectory-project { display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.8fr); gap: clamp(2rem, 7vw, 7rem); align-items: center; }
+  .trajectory-project h2, .trajectory-footer h2 { max-width: 39rem; margin: 0.6rem 0 1.2rem; color: var(--paper); }
+  .trajectory-project > div > p:not(.interior-eyebrow), .trajectory-footer > p:not(.interior-eyebrow) { max-width: 36rem; color: var(--trajectory-muted); line-height: 1.7; }
+  .trajectory-project-image img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+  .trajectory-links { display: flex; flex-wrap: wrap; gap: 1rem 2rem; margin-top: 1.75rem; }
+  .section-cta { color: var(--paper); font-size: 0.75rem; letter-spacing: 0.1em; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 0.4rem; text-transform: uppercase; }
+  .section-cta span { color: var(--gold); }
+  .trajectory-footer { padding-bottom: 1rem; }
+  .trajectory-footer h2 { max-width: 34rem; }
+  .trajectory-footer .section-cta { display: inline-block; margin-top: 1rem; }
+  @media (max-width: 760px) {
+    .trajectory-intro-grid, .trajectory-project { grid-template-columns: 1fr; gap: 3rem; }
+    .trajectory-portrait { max-width: 30rem; margin-left: auto; }
+    .evolution-heading { display: block; }
+    .evolution-heading h2 { margin-top: 0.8rem; }
+    .evolution-heading > p:last-child { margin-top: 1rem; }
+    .capability-list { margin-left: 0; }
+  }
+  @media (max-width: 520px) {
+    .trajectory-intro-grid { margin-top: 2rem; }
+    .capability { gap: 1rem; }
+    .capability-marker { width: 2.4rem; height: 2.4rem; }
+    .capability-list::before { left: 1.2rem; }
+  }
+</style>

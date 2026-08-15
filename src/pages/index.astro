@@ -11,12 +11,24 @@ import { siteConfig, verifiedPerson } from "../config";
 >
   <section class="home-index" aria-labelledby="home-title">
     <header class="home-header">
-      <img class="home-logo" src="/logo-emc.webp" alt="" aria-hidden="true" />
+      <img class="home-logo" src="/logo-emc-256.webp" alt="" aria-hidden="true" width="256" height="171" />
       <span class="home-header-name">{siteConfig.title.toUpperCase()}</span>
     </header>
 
     <div class="home-architecture" aria-hidden="true"></div>
-    <img class="home-portrait" src="/eloy_feria_iluminacion-2.webp" alt="" aria-hidden="true" transition:name="eloy-portrait" />
+    <img
+          class="home-portrait"
+          src="/eloy_feria_iluminacion-2.webp"
+          srcset="/eloy_feria_iluminacion-2-mobile.webp 432w, /eloy_feria_iluminacion-2.webp 864w"
+          sizes="(max-width: 800px) 55vw, 45vw"
+          alt=""
+          aria-hidden="true"
+          width="864"
+          height="1184"
+          fetchpriority="high"
+          loading="eager"
+          transition:name="eloy-portrait"
+        />
     <div class="home-copy">
       <h1 id="home-title"><span>Iluminación.</span><span>Tecnología.</span><span>Negocio.</span></h1>
       <p class="home-subtitle"><span>+20 años desarrollando</span><span class="subtitle-overflow"> soluciones para proyectos reales.</span></p>

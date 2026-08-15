@@ -17,6 +17,8 @@ const { siteUrl, title = 'Eloy Martínez Cuesta', description = siteConfig.descr
     <SEOPage title={title} description={description} siteUrl={siteUrl} defaultImage={siteConfig.defaultImage || siteConfig.image || ''} image_alt={siteConfig.image_alt} slug="" person={person} />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="/eloy_feria_iluminacion-2-mobile.webp" media="(max-width: 800px)" as="image" fetchpriority="high" />
+    <link rel="preload" href="/eloy_feria_iluminacion-2.webp" media="(min-width: 801px)" as="image" fetchpriority="high" />
     <link rel="icon" type="image/png" href="/favicon-emc-512.png?v=4" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-emc-32.png?v=4" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-emc-16.png?v=4" />

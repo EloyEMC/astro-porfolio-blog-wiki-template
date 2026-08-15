@@ -286,6 +286,29 @@ html.dark body {
 	margin: 0 auto;
 	padding: 5rem 4rem 7rem;
 }
+@media (min-width: 801px) and (max-width: 960px) {
+	.site-sidebar {
+		width: 15rem;
+		padding: 2rem 1.5rem 1.75rem;
+	}
+	.sidebar-portrait {
+		height: 18rem;
+		transform: scale(1.35);
+	}
+	.interior-main {
+		width: calc(100% - 15rem);
+		margin-left: 15rem;
+	}
+	.content-nav {
+		padding-right: 2.5rem;
+		padding-left: 2.5rem;
+	}
+	.interior-content {
+		padding-right: 3rem;
+		padding-left: 3rem;
+	}
+}
+
 .interior-eyebrow {
 	color: var(--gold);
 	font-size: 0.7rem;

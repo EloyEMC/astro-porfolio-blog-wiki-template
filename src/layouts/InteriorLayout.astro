@@ -1,6 +1,6 @@
 ---
 import { ClientRouter } from "astro:transitions";
-import { GoogleAnalytics } from "astro-google-analytics";
+import CookieConsent from "../components/CookieConsent.astro";
 import { siteConfig, type SeoPerson } from "../config";
 import SEOPage from "../components/SEOPage.astro";
 import Sidebar from "../components/Sidebar.astro";
@@ -33,7 +33,6 @@ const {
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-emc-32.png?v=4" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-emc-16.png?v=4" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-emc-v4.png?v=1" />
-    {siteConfig.googleAnalysis && <GoogleAnalytics id={siteConfig.googleAnalysis} />}
     <ClientRouter />
   </head>
   <body class="interior-shell">
@@ -45,6 +44,7 @@ const {
           <slot />
         </main>
       </div>
-    </div>
+</div>
+<CookieConsent measurementId={siteConfig.googleAnalysis} />
   </body>
 </html>

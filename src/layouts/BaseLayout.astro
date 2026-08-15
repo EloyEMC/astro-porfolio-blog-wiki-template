@@ -1,8 +1,8 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import CookieConsent from '../components/CookieConsent.astro';
 import { ClientRouter, slide } from 'astro:transitions';
-import { GoogleAnalytics } from 'astro-google-analytics';
 import { siteConfig } from '../config';
 import SEOPage from '@components/SEOPage.astro';
 import '../styles/global.css';
@@ -51,7 +51,6 @@ const defaultImage = siteConfig.defaultImage || siteConfig.image || "";
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-emc-16.png?v=4" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-emc-v4.png?v=1" />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    {siteConfig.googleAnalysis && <GoogleAnalytics id={siteConfig.googleAnalysis} />}
     <ClientRouter />
   </head>
 <body class="legacy-shell">
@@ -62,5 +61,6 @@ const defaultImage = siteConfig.defaultImage || siteConfig.image || "";
       </main>
     </div>
     <Footer transition:persist />
+    <CookieConsent measurementId={siteConfig.googleAnalysis} />
   </body>
 </html>

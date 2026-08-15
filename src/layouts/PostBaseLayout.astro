@@ -1,6 +1,6 @@
 ---
 import { ClientRouter, slide } from "astro:transitions";
-import { GoogleAnalytics } from "astro-google-analytics";
+import CookieConsent from "../components/CookieConsent.astro";
 import { siteConfig } from "../config";
 import SEO from "../components/SEO.astro";
 import Sidebar from "../components/Sidebar.astro";
@@ -31,11 +31,7 @@ const { entry, siteUrl, defaultImage, defaultLocale = "es_ES" } = Astro.props;
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-emc-16.png?v=4" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-emc-v4.png?v=1" />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    {
-      siteConfig.googleAnalysis && (
-        <GoogleAnalytics id={siteConfig.googleAnalysis} />
-      )
-    }
+
     <ClientRouter />
   </head>
 <body class="interior-shell article-shell">
@@ -46,7 +42,8 @@ const { entry, siteUrl, defaultImage, defaultLocale = "es_ES" } = Astro.props;
       <main class="interior-content" transition:animate={slide({ duration: ".3s" })}>
         <slot />
       </main>
-    </div>
-  </div>
-</body>
-</html>
+        </div>
+      </div>
+      <CookieConsent measurementId={siteConfig.googleAnalysis} />
+    </body>
+    </html>

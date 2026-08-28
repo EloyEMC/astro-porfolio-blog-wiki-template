@@ -17,6 +17,9 @@ keywords:
 author: "eloymartinez"
 authorUrl: "https://www.linkedin.com/in/eloymartinezemc/"
 authorImage: "/eloy_feria_iluminacion.webp"
+image: /dali-2-d4i-dali-plus-proyecto.png
+image_alt: "Esquema conceptual de un sistema de iluminación digital con luminarias, sensores, datos y conectividad para explicar DALI-2, D4i y DALI+."
+twitter_img: /dali-2-d4i-dali-plus-proyecto.png
 ogType: "article"
 locale: "es_ES"
 siteName: "Eloy Martínez Cuesta"

@@ -3,9 +3,9 @@ title: "BC3Tools: cuando conocer un problema termina convirtiéndose en una herr
 category: Tecnología
 seoTitle: "BC3Tools: herramientas para trabajar con archivos BC3/FIEBDC | Eloy Martínez Cuesta"
 description: "Cómo nació BC3Tools y qué resuelve al convertir documentos y hojas de cálculo en datos BC3/FIEBDC para trabajar con Presto, CYPE y Arquímedes."
-image: /bc3tools-herramientas-archivos-bc3.png
+image: /bc3tools-herramientas-archivos-bc3.webp
 image_alt: "Interfaz de BC3Tools mostrando el flujo de documentos a datos BC3/FIEBDC."
-twitter_img: /bc3tools-herramientas-archivos-bc3.png
+twitter_img: /bc3tools-herramientas-archivos-bc3.webp
 date: 2026-08-28
 tags: [BC3, FIEBDC, Presupuestos, Automatización, Iluminación]
 keywords:

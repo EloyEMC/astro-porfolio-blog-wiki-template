@@ -9,7 +9,7 @@ const posts = sortPostsByDate(filterPublishedPosts(await getCollection("blog")))
 const featuredTitles = new Set([
   "¿Qué es la temperatura de color?",
   "¿Qué es realmente la luz?",
-  "Cómo Personalizar la Página de Categorías en WordPress",
+  "BC3Tools: cuando conocer un problema termina convirtiéndose en una herramienta",
 ]);
 const featuredPosts = posts.filter((post) => featuredTitles.has(post.data.title)).slice(0, 4);
 const categories = ["Iluminación", "Tecnología", "Negocio", "Conocimiento"];

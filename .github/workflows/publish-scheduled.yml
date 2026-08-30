@@ -27,7 +27,7 @@ jobs:
           local_hour="$(TZ=Europe/Madrid date +'%H')"
           local_minute="$(TZ=Europe/Madrid date +'%M')"
 
-          if [[ "${local_hour}" == "08" && "${local_minute}" >= "00" && "${local_minute}" <= "09" ]]; then
+          if [[ "${local_hour}" == "08" && "${local_minute}" =~ ^0[0-9]$ ]]; then
             echo "publish=true" >> "${GITHUB_OUTPUT}"
             echo "Europe/Madrid local time is ${local_hour}:${local_minute}; continuing."
           else

@@ -21,7 +21,7 @@ const authorData = authors[author] || null;
       <p>{authorData.bio}</p>
       <div class="social-links">
         {Object.entries(authorData.social).map(([network, url]) => (
-          <a href={String(url)} target="_blank" class="author-social-link">
+          <a href={String(url)} target="_blank" rel="noopener noreferrer" class="author-social-link">
             {network}
           </a>
         ))}

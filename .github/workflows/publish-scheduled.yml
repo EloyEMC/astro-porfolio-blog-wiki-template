@@ -1,0 +1,64 @@
+name: Scheduled Cloudflare Pages publish
+
+on:
+  # Editorial dates use Europe/Madrid. GitHub Actions schedules use UTC:
+  # 06:00 UTC covers CEST, and 07:00 UTC covers CET; the job guard selects only 08:00 local time.
+  schedule:
+    - cron: "0 6 * * *"
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: scheduled-cloudflare-pages-publish
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Allow only the 08:00 Europe/Madrid window
+        id: schedule_guard
+        shell: bash
+        run: |
+          local_hour="$(TZ=Europe/Madrid date +'%H')"
+          local_minute="$(TZ=Europe/Madrid date +'%M')"
+
+          if [[ "${local_hour}" == "08" && "${local_minute}" >= "00" && "${local_minute}" <= "09" ]]; then
+            echo "publish=true" >> "${GITHUB_OUTPUT}"
+            echo "Europe/Madrid local time is ${local_hour}:${local_minute}; continuing."
+          else
+            echo "publish=false" >> "${GITHUB_OUTPUT}"
+            echo "Europe/Madrid local time is ${local_hour}:${local_minute}; skipping this UTC schedule."
+          fi
+
+      - name: Validate deploy hook secret
+        if: steps.schedule_guard.outputs.publish == 'true'
+        env:
+          CLOUDFLARE_DEPLOY_HOOK_URL: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK_URL }}
+        shell: bash
+        run: |
+          if [[ -z "${CLOUDFLARE_DEPLOY_HOOK_URL}" ]]; then
+            echo "::error::CLOUDFLARE_DEPLOY_HOOK_URL is not configured. Add it in Settings > Secrets and variables > Actions."
+            exit 1
+          fi
+          echo "Cloudflare Pages deploy hook secret is configured."
+
+      - name: Trigger Cloudflare Pages deploy
+        if: steps.schedule_guard.outputs.publish == 'true'
+        env:
+          CLOUDFLARE_DEPLOY_HOOK_URL: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK_URL }}
+        shell: bash
+        run: |
+          curl \
+            --fail-with-body \
+            --silent \
+            --show-error \
+            --location \
+            --connect-timeout 30 \
+            --max-time 300 \
+            --request POST \
+            "${CLOUDFLARE_DEPLOY_HOOK_URL}"

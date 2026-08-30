@@ -12,15 +12,15 @@ interface Props {
   defaultLocale?: string;
 }
 
-const { entry, siteUrl, defaultImage, defaultLocale = "es_ES" } = Astro.props;
-const { data, slug } = entry;
+const { entry, siteUrl, defaultImage, defaultLocale = "es-ES" } = Astro.props;
+const { data, id: slug } = entry;
 const {
   title, seoTitle, description, category, date, modifiedDate, tags, image, image_alt,
   keywords, twitter_img, twitterCreator, twitterSite, author, authorUrl,
   authorImage, ogType = "article", siteName, noindex, nofollow, faqs, canonicalUrl,
 } = data;
 const authorData = author ? authors[author] : undefined;
-const normalizedSiteUrl = normalizeUrl(siteUrl, "/").replace(/\/$/, "");
+
 const fullCanonicalUrl = normalizeUrl(siteUrl, canonicalUrl?.url || `/blog/${slug}/`);
 const fullImageUrl = absoluteUrl(siteUrl, image || defaultImage);
 const fullTwitterImageUrl = absoluteUrl(siteUrl, twitter_img || image || defaultImage);

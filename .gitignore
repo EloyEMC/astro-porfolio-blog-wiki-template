@@ -29,3 +29,5 @@ pnpm-debug.log*
 .pi/npm/
 .atl/
 .codegraph/
+
+editorial/calendar.yaml

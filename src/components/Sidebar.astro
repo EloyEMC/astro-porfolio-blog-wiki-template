@@ -47,7 +47,7 @@ const sections = [
   <div class="sidebar-social">
     <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
     <a href={siteConfig.social.github} target="_blank" rel="noopener noreferrer">GitHub</a>
-    <a href={`mailto:${siteConfig.social.email}`}>Contacto</a>
+    {siteConfig.social.email && <a href={`mailto:${siteConfig.social.email}`}>Contacto</a>}
   </div>
 </aside>
 <div class="sidebar-backdrop" aria-hidden="true"></div>

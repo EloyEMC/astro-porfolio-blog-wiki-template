@@ -22,17 +22,19 @@ jobs:
     steps:
       - name: Allow only the 08:00 Europe/Madrid window
         id: schedule_guard
+        env:
+          EVENT_NAME: ${{ github.event_name }}
         shell: bash
         run: |
           local_hour="$(TZ=Europe/Madrid date +'%H')"
           local_minute="$(TZ=Europe/Madrid date +'%M')"
 
-          if [[ "${local_hour}" == "08" && "${local_minute}" =~ ^0[0-9]$ ]]; then
+          if [[ "${EVENT_NAME}" == "workflow_dispatch" || ( "${local_hour}" == "08" && "${local_minute}" =~ ^0[0-9]$ ) ]]; then
             echo "publish=true" >> "${GITHUB_OUTPUT}"
-            echo "Europe/Madrid local time is ${local_hour}:${local_minute}; continuing."
+            echo "Event ${EVENT_NAME} accepted at Europe/Madrid local time ${local_hour}:${local_minute}; continuing."
           else
             echo "publish=false" >> "${GITHUB_OUTPUT}"
-            echo "Europe/Madrid local time is ${local_hour}:${local_minute}; skipping this UTC schedule."
+            echo "Event ${EVENT_NAME} is outside the allowed Europe/Madrid window at ${local_hour}:${local_minute}; skipping."
           fi
 
       - name: Validate deploy hook secret

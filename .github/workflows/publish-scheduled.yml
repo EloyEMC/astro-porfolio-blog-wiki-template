@@ -2,10 +2,10 @@ name: Scheduled Cloudflare Pages publish
 
 on:
   # Editorial dates use Europe/Madrid. GitHub Actions schedules use UTC:
-  # 06:00 UTC covers CEST, and 07:00 UTC covers CET; the job guard selects only 08:00 local time.
+  # 06:05 UTC covers CEST, and 07:05 UTC covers CET; the job guard selects only 08:00 local time.
   schedule:
-    - cron: "0 6 * * *"
-    - cron: "0 7 * * *"
+    - cron: "5 6 * * *"
+    - cron: "5 7 * * *"
   workflow_dispatch:
 
 permissions:

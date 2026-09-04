@@ -1,6 +1,9 @@
 name: Scheduled Cloudflare Pages publish
 
 on:
+  push:
+    branches:
+      - main
   # GitHub Actions schedules use UTC and may start late, so deployment must not
   # depend on the runner's local clock. This runs once daily around the morning
   # editorial window (08:05 CEST / 07:05 CET, subject to GitHub scheduling).

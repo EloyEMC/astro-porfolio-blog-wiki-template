@@ -1,11 +1,11 @@
 name: Scheduled Cloudflare Pages publish
 
 on:
-  # Editorial dates use Europe/Madrid. GitHub Actions schedules use UTC:
-  # 06:05 UTC covers CEST, and 07:05 UTC covers CET; the job guard selects only 08:00 local time.
+  # GitHub Actions schedules use UTC and may start late, so deployment must not
+  # depend on the runner's local clock. This runs once daily around the morning
+  # editorial window (08:05 CEST / 07:05 CET, subject to GitHub scheduling).
   schedule:
     - cron: "5 6 * * *"
-    - cron: "5 7 * * *"
   workflow_dispatch:
 
 permissions:
@@ -20,25 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Allow only the 08:00 Europe/Madrid window
-        id: schedule_guard
-        env:
-          EVENT_NAME: ${{ github.event_name }}
-        shell: bash
-        run: |
-          local_hour="$(TZ=Europe/Madrid date +'%H')"
-          local_minute="$(TZ=Europe/Madrid date +'%M')"
-
-          if [[ "${EVENT_NAME}" == "workflow_dispatch" || ( "${local_hour}" == "08" && "${local_minute}" =~ ^0[0-9]$ ) ]]; then
-            echo "publish=true" >> "${GITHUB_OUTPUT}"
-            echo "Event ${EVENT_NAME} accepted at Europe/Madrid local time ${local_hour}:${local_minute}; continuing."
-          else
-            echo "publish=false" >> "${GITHUB_OUTPUT}"
-            echo "Event ${EVENT_NAME} is outside the allowed Europe/Madrid window at ${local_hour}:${local_minute}; skipping."
-          fi
-
       - name: Validate deploy hook secret
-        if: steps.schedule_guard.outputs.publish == 'true'
         env:
           CLOUDFLARE_DEPLOY_HOOK_URL: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK_URL }}
         shell: bash
@@ -50,7 +32,6 @@ jobs:
           echo "Cloudflare Pages deploy hook secret is configured."
 
       - name: Trigger Cloudflare Pages deploy
-        if: steps.schedule_guard.outputs.publish == 'true'
         env:
           CLOUDFLARE_DEPLOY_HOOK_URL: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK_URL }}
         shell: bash

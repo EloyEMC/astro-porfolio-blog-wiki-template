@@ -4,11 +4,11 @@ slug: "cri-irc"
 category: "Colour and visual quality"
 shortDefinition: "El índice de reproducción cromática, CRI o IRC, es un índice que compara la apariencia de colores bajo una fuente con una referencia definida."
 aliases: ["índice de reproducción cromática", "IRC", "CRI", "Ra"]
-image: "/images/wiki/iluminacion/cri-irc/cri-comparacion.svg"
-imageAlt: "Comparación conceptual de muestras de color bajo una fuente y una referencia"
-imageCaption: "Un índice de reproducción cromática resume una comparación con referencias; no describe por sí solo todos los colores ni toda la calidad de la fuente."
-imageCredit: "Diagrama original creado para esta wiki por Codex worker."
-imageRights: "Obra original del sitio; sin imagen externa ni hotlink."
+image: "/images/wiki/iluminacion/real/cri-irc.webp"
+imageAlt: "Composición editorial de una fotografía real relacionada con cri · ra, con texto explicativo en español."
+imageCaption: "Fotografía real con texto editorial superpuesto sobre cri · ra; no mide ni permite deducir por sí sola sus propiedades o magnitudes técnicas."
+imageCredit: "Archivo del sitio de Eloy Martínez Cuesta."
+imageRights: "Recurso fotográfico local existente de Archivo del sitio de Eloy Martínez Cuesta; composición editorial con texto superpuesto, sin contenido sintético."
 relatedTerms: ["temperatura-de-color", "led", "luminancia"]
 relatedArticles: []
 sources:

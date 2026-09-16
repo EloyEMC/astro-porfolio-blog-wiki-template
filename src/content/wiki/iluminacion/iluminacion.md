@@ -4,11 +4,11 @@ slug: "iluminacion"
 category: "Fundamentals"
 shortDefinition: "La iluminación es la aplicación planificada de luz para hacer visibles tareas, espacios y objetos, atendiendo al uso, el confort, la seguridad y la operación."
 aliases: ["alumbrado", "diseño de iluminación"]
-image: "/images/wiki/iluminacion/iluminacion/iluminacion-sistema.svg"
-imageAlt: "Diagrama de un sistema de iluminación que relaciona fuente, espacio, control y usuario"
-imageCaption: "La iluminación no es solo una fuente: combina luz, espacio, uso, control y verificación."
-imageCredit: "Diagrama original creado para esta wiki por Codex worker."
-imageRights: "Obra original del sitio; sin imagen externa ni hotlink."
+image: "/images/wiki/iluminacion/real/iluminacion.webp"
+imageAlt: "Composición editorial de una fotografía real relacionada con iluminación, con texto explicativo en español."
+imageCaption: "Fotografía real con texto editorial superpuesto sobre iluminación; no mide ni permite deducir por sí sola sus propiedades o magnitudes técnicas."
+imageCredit: "Archivo del sitio de Eloy Martínez Cuesta."
+imageRights: "Recurso fotográfico local existente de Archivo del sitio de Eloy Martínez Cuesta; composición editorial con texto superpuesto, sin contenido sintético."
 relatedTerms: ["luz", "luminaria", "fotometria", "dali"]
 relatedArticles: []
 sources:

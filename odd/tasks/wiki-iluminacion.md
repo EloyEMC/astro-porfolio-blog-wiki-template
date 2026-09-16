@@ -67,6 +67,17 @@ Evidence: 16 Spanish term entries under `src/content/wiki/iluminacion/` and 16 o
 
 Evidence: 18 controlled canonical wiki links were added across the 11 Spanish lighting-category articles. Wiki `relatedArticles` metadata was corrected to exact Astro IDs and reciprocal validity; parent normalized two missing trailing slashes in photometry links. Relationship audit found 0 invalid term/article references; `pnpm build` and `git diff --check` passed.
 
+### WIKI-009 — Raster photo composites with explanatory text
+- [x] Create realistic raster/WebP composites from real local or authorized photographs, with readable Spanish explanatory labels.
+- [x] Point each term to its raster composite and remove any remaining SVG reference or file.
+- [x] Verify image legibility, build output, and metadata accuracy.
+
+### WIKI-008 — Replace diagrams with real photography
+- [x] Replace all generated SVG term visuals with real local or authorized DiSano/site photography.
+- [x] Match each image to the term and record accurate credit, rights, alt text, and caption metadata.
+- [x] Remove unused placeholder/diagram assets from the wiki.
+- [x] Rebuild and verify the local wiki routes after deployment.
+
 ### WIKI-007 — Professional visual and editorial correction
 - [x] Fix wiki body contrast and typography against the dark editorial background.
 - [x] Replace placeholder-like SVGs with polished, legible Codex-generated explanatory diagrams.
@@ -110,7 +121,10 @@ Evidence: final read-only verification passed `pnpm build` (80 pages), `git diff
 - WIKI-005 complete: selected lighting articles now link contextually to canonical wiki terms and term metadata is reciprocal.
 - WIKI-006 complete: final build, route, image, search, relationship, and regression checks passed.
 - WIKI-007 complete: the screenshot findings were addressed with scoped contrast fixes, professional SVG infographics, visible credits, and a content/accessibility audit.
-- Current task: redeploy the correction and verify the live routes.
+- WIKI-008 opened from the user's second visual review: replace generated diagrams with real authorized photography that matches the site's editorial style.
+- WIKI-008 complete locally; production deployment remains pending the user's normal `main`/GitHub Actions flow.
+- WIKI-009 complete locally: 16 raster WebP composites use real photographic backgrounds and embedded Spanish explanatory text; no SVG remains.
+- Current task: none.
 
 ## Next step
-Commit the correction, push `main`, wait for Cloudflare propagation, and verify the live wiki routes.
+Review the new composites in the browser, then commit and push through the normal production workflow.

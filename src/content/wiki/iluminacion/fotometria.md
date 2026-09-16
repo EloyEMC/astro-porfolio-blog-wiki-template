@@ -4,11 +4,11 @@ slug: "fotometria"
 category: "Photometry and optics"
 shortDefinition: "La fotometría es la medición y descripción de la luz ponderada según la respuesta visual, incluyendo flujo, intensidad, iluminancia y luminancia."
 aliases: ["medición fotométrica", "datos fotométricos"]
-image: "/images/wiki/iluminacion/fotometria/curva-fotometrica.svg"
-imageAlt: "Curva polar conceptual que muestra la intensidad luminosa de una luminaria según el ángulo"
-imageCaption: "Una curva fotométrica muestra cómo cambia la intensidad con el ángulo; el archivo y las condiciones de medida deben acompañar a cualquier interpretación."
-imageCredit: "Diagrama original creado para esta wiki por Codex worker."
-imageRights: "Obra original del sitio; sin imagen externa ni hotlink."
+image: "/images/wiki/iluminacion/real/fotometria.webp"
+imageAlt: "Composición editorial de una fotografía real relacionada con fotometría, con texto explicativo en español."
+imageCaption: "Fotografía real con texto editorial superpuesto sobre fotometría; no mide ni permite deducir por sí sola sus propiedades o magnitudes técnicas."
+imageCredit: "DiSano."
+imageRights: "Recurso fotográfico local existente de DiSano; composición editorial con texto superpuesto, sin contenido sintético."
 relatedTerms: ["lumen", "lux", "candela", "luminancia", "luminaria"]
 relatedArticles: ["Que-es-la-luz", "comparar-dos-luminarias", "leer-ficha-tecnica-luminaria"]
 sources:

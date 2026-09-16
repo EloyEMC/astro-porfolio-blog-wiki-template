@@ -4,11 +4,11 @@ slug: "ip"
 category: "Safety and protection"
 shortDefinition: "IP es el código de protección que clasifica, mediante cifras definidas por norma, la protección de una envolvente frente a sólidos y agua."
 aliases: ["grado IP", "código IP", "Ingress Protection"]
-image: "/images/wiki/iluminacion/ip/codigo-ip.svg"
-imageAlt: "Desglose visual de las dos cifras de un código IP para sólidos y agua"
-imageCaption: "Las cifras IP describen ensayos y grados de protección concretos; no equivalen a una autorización general para cualquier instalación."
-imageCredit: "Diagrama original creado para esta wiki por Codex worker."
-imageRights: "Obra original del sitio; sin imagen externa ni hotlink."
+image: "/images/wiki/iluminacion/real/ip.webp"
+imageAlt: "Composición editorial de una fotografía real relacionada con índice ip, con texto explicativo en español."
+imageCaption: "Fotografía real con texto editorial superpuesto sobre índice ip; no mide ni permite deducir por sí sola sus propiedades o magnitudes técnicas."
+imageCredit: "DiSano."
+imageRights: "Recurso fotográfico local existente de DiSano; composición editorial con texto superpuesto, sin contenido sintético."
 relatedTerms: ["luminaria", "dali"]
 relatedArticles: []
 sources:

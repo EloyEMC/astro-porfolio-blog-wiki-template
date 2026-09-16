@@ -6,11 +6,11 @@ shortDefinition: "El lux (lx) es la unidad del SI para la iluminancia: un lumen 
 aliases: ["iluminancia", "lx"]
 unit: "lux"
 symbol: "lx"
-image: "/images/wiki/iluminacion/lux/lux-vs-lumen.svg"
-imageAlt: "Comparación entre flujo luminoso en lúmenes y flujo recibido por una superficie en lux"
-imageCaption: "El lux depende del flujo que recibe una superficie y de su área; por eso cambia con distancia, orientación y distribución."
-imageCredit: "Diagrama original creado para esta wiki por Codex worker."
-imageRights: "Obra original del sitio; sin imagen externa ni hotlink."
+image: "/images/wiki/iluminacion/real/lux.webp"
+imageAlt: "Composición editorial de una fotografía real relacionada con lux · lx, con texto explicativo en español."
+imageCaption: "Fotografía real con texto editorial superpuesto sobre lux · lx; no mide ni permite deducir por sí sola sus propiedades o magnitudes técnicas."
+imageCredit: "Archivo del sitio de Eloy Martínez Cuesta."
+imageRights: "Recurso fotográfico local existente de Archivo del sitio de Eloy Martínez Cuesta; composición editorial con texto superpuesto, sin contenido sintético."
 relatedTerms: ["lumen", "candela", "luminancia", "fotometria"]
 relatedArticles: []
 sources:

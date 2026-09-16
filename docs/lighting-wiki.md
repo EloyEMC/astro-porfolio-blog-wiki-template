@@ -32,7 +32,7 @@ Each term should provide, as applicable:
 - `aliases`: common Spanish, English, acronym, and trade names.
 - `unit` and `symbol`: only when the term represents a measurable quantity.
 - `body`: explanation in Spanish using headings, examples, and comparisons.
-- `image`: local path to the main explanatory visual.
+- `image`: local path to the main explanatory photograph or visual.
 - `imageAlt`: precise description of what the image shows.
 - `imageCaption`: context, not a repetition of the alt text.
 - `imageCredit` and `imageRights`: required for third-party or authorized DiSano assets.
@@ -67,17 +67,13 @@ Use images to explain a concept, not merely to decorate a page.
 
 ### Preferred order
 
-1. Codex-generated diagrams for abstract concepts such as lumen versus lux, beam angles, colour temperature, photometric curves, or DALI topology.
-2. Original project diagrams and charts created for this site.
-3. Authorized DiSano images for real product, installation, luminaire, or application examples when they materially improve understanding.
+1. Authorized real DiSano or site-archive photography of products, installations, and applications.
+2. Existing real project photography from the site's archive when it materially improves understanding.
+3. A diagram or chart only when the concept cannot be explained honestly with a real image; label it clearly and keep it editorially consistent with the site.
 
-Store assets under a term-specific directory, for example:
+Reuse a strong real photograph when an abstract quantity has no visible one-to-one representation. The caption must explain that the image illustrates an application, not that it directly measures the quantity.
 
-```text
-public/images/wiki/iluminacion/lux/
-  lux-vs-lumen.webp
-  lux-vs-lumen.svg
-```
+Keep new assets local and descriptive. The current wiki uses existing site assets rather than shipping a second generated-visual library.
 
 Every image needs:
 
@@ -85,7 +81,7 @@ Every image needs:
 - an accurate Spanish `alt` text;
 - a caption when the visual needs interpretation;
 - source/credit and rights basis in the term data or adjacent editorial metadata;
-- a WebP or SVG version appropriate to the visual;
+- a local WebP or other appropriate raster version for photography;
 - sufficient contrast and legibility on mobile.
 
 Do not hotlink remote images. Do not add an external image solely because it ranks well. The user's stated DiSano rights authorization applies to this project, but each asset should still record its origin and rights basis.

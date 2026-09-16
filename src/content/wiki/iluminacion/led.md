@@ -4,11 +4,11 @@ slug: "led"
 category: "LED and sources"
 shortDefinition: "Un LED es un diodo emisor de luz: un semiconductor que emite radiación cuando circula corriente en la polarización adecuada."
 aliases: ["diodo emisor de luz", "Light Emitting Diode"]
-image: "/images/wiki/iluminacion/led/led-emision.svg"
-imageAlt: "Esquema conceptual de un LED con corriente, semiconductor y emisión de luz"
-imageCaption: "El LED convierte energía eléctrica en radiación mediante un semiconductor; el conjunto final también depende del driver, la óptica y la gestión térmica."
-imageCredit: "Diagrama original creado para esta wiki por Codex worker."
-imageRights: "Obra original del sitio; sin imagen externa ni hotlink."
+image: "/images/wiki/iluminacion/real/led.webp"
+imageAlt: "Composición editorial de una fotografía real relacionada con led, con texto explicativo en español."
+imageCaption: "Fotografía real de fotografía local del proyecto pista de atletismo en gandía. con texto editorial superpuesto; no mide ni permite deducir por sí sola propiedades o magnitudes técnicas."
+imageCredit: "Fotografía local del proyecto Pista de atletismo en Gandía."
+imageRights: "Recurso fotográfico local existente (Fotografía local del proyecto Pista de atletismo en Gandía.); composición raster editorial con texto superpuesto, sin contenido sintético."
 relatedTerms: ["lampara", "lumen", "temperatura-de-color", "cri-irc"]
 relatedArticles: ["sobretensiones-iluminacion-led"]
 sources:

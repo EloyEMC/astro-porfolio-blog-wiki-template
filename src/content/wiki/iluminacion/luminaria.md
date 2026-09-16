@@ -4,11 +4,11 @@ slug: "luminaria"
 category: "Luminaires and components"
 shortDefinition: "Una luminaria es el conjunto que distribuye, filtra o transforma la luz de una o más fuentes e incluye los elementos necesarios para sostenerlas y conectarlas."
 aliases: ["aparato de alumbrado", "fixture"]
-image: "/images/wiki/iluminacion/luminaria/luminaria-componentes.svg"
-imageAlt: "Diagrama de una luminaria con fuente, óptica, cuerpo, alimentación y montaje"
-imageCaption: "Una luminaria integra más elementos que la fuente: óptica, cuerpo, alimentación, protección y montaje según el producto."
-imageCredit: "Diagrama original creado para esta wiki por Codex worker."
-imageRights: "Obra original del sitio; sin imagen externa ni hotlink."
+image: "/images/wiki/iluminacion/real/luminaria.webp"
+imageAlt: "Composición editorial de una fotografía real relacionada con luminaria, con texto explicativo en español."
+imageCaption: "Fotografía real con texto editorial superpuesto sobre luminaria; no mide ni permite deducir por sí sola sus propiedades o magnitudes técnicas."
+imageCredit: "DiSano."
+imageRights: "Recurso fotográfico local existente de DiSano; composición editorial con texto superpuesto, sin contenido sintético."
 relatedTerms: ["lampara", "bombilla", "fotometria", "ip", "dali"]
 relatedArticles: ["comparar-dos-luminarias", "leer-ficha-tecnica-luminaria", "luminaria-nodo-datos-edificio"]
 sources:

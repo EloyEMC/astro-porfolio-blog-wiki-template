@@ -4,11 +4,11 @@ slug: "dali"
 category: "Controls and connectivity"
 shortDefinition: "DALI es una familia de protocolos y especificaciones para la comunicación digital y el control de equipos de iluminación compatibles."
 aliases: ["Digital Addressable Lighting Interface", "DALI-2", "D4i"]
-image: "/images/wiki/iluminacion/dali/dali-topologia.svg"
-imageAlt: "Topología conceptual de un sistema DALI con controlador, bus y equipos de iluminación"
-imageCaption: "DALI organiza comunicación y control entre dispositivos compatibles; la instalación real depende de la especificación, el cableado y la puesta en marcha."
-imageCredit: "Diagrama original creado para esta wiki por Codex worker."
-imageRights: "Obra original del sitio; sin imagen externa ni hotlink."
+image: "/images/wiki/iluminacion/real/dali.webp"
+imageAlt: "Composición editorial de una fotografía real relacionada con dali-2 · d4i, con texto explicativo en español."
+imageCaption: "Fotografía real de fotografía local del proyecto de iluminación del sitio. con texto editorial superpuesto; no mide ni permite deducir por sí sola propiedades o magnitudes técnicas."
+imageCredit: "Fotografía local del proyecto de iluminación del sitio."
+imageRights: "Recurso fotográfico local existente (Fotografía local del proyecto de iluminación del sitio.); composición raster editorial con texto superpuesto, sin contenido sintético."
 relatedTerms: ["luminaria", "ip", "iluminacion"]
 relatedArticles: ["dali-2-d4i-dali-plus-proyecto", "iluminacion-conectada-valor", "iluminacion-no-solo-iluminacion", "luminaria-nodo-datos-edificio"]
 sources:

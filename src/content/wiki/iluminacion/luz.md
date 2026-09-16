@@ -4,11 +4,11 @@ slug: "luz"
 category: "Fundamentals"
 shortDefinition: "La luz es la radiación electromagnética que puede producir una respuesta visual y que, en iluminación, se describe también mediante magnitudes fotométricas."
 aliases: ["luz visible", "radiación visible"]
-image: "/images/wiki/iluminacion/luz/luz-espectro-visible.svg"
-imageAlt: "Esquema conceptual del espectro electromagnético con la banda visible destacada"
-imageCaption: "La región visible es una parte del espectro electromagnético; el esquema no representa límites exactos de percepción para todas las personas."
-imageCredit: "Diagrama original creado para esta wiki por Codex worker."
-imageRights: "Obra original del sitio; sin imagen externa ni hotlink."
+image: "/images/wiki/iluminacion/real/luz.webp"
+imageAlt: "Composición editorial de una fotografía real relacionada con luz, con texto explicativo en español."
+imageCaption: "Fotografía real de archivo del sitio de eloy martínez cuesta. con texto editorial superpuesto; no mide ni permite deducir por sí sola propiedades o magnitudes técnicas."
+imageCredit: "Archivo del sitio de Eloy Martínez Cuesta."
+imageRights: "Recurso fotográfico local existente (Archivo del sitio de Eloy Martínez Cuesta.); composición raster editorial con texto superpuesto, sin contenido sintético."
 relatedTerms: ["iluminacion", "luminancia", "fotometria"]
 relatedArticles: ["Que-es-la-luz", "Qué es el ritmo circadiano y el HCL", "hormonas-de-la-felicidad", "iluminacion-no-solo-iluminacion"]
 sources:

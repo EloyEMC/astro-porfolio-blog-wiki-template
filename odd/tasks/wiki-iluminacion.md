@@ -67,6 +67,14 @@ Evidence: 16 Spanish term entries under `src/content/wiki/iluminacion/` and 16 o
 
 Evidence: 18 controlled canonical wiki links were added across the 11 Spanish lighting-category articles. Wiki `relatedArticles` metadata was corrected to exact Astro IDs and reciprocal validity; parent normalized two missing trailing slashes in photometry links. Relationship audit found 0 invalid term/article references; `pnpm build` and `git diff --check` passed.
 
+### WIKI-007 — Professional visual and editorial correction
+- [x] Fix wiki body contrast and typography against the dark editorial background.
+- [x] Replace placeholder-like SVGs with polished, legible Codex-generated explanatory diagrams.
+- [x] Review Spanish term copy, headings, captions, and image metadata for professional clarity.
+- [x] Rebuild and recheck the rendered production-facing routes before redeploying.
+
+Evidence: scoped wiki prose styles now use high-contrast paper/gold colors; all 16 SVGs were replaced with structured diagrams containing accessible `<title>`/`<desc>`; image credits are rendered; the content audit found stable slugs and local image references. `pnpm build` passed with 80 pages and `git diff --check` passed. An accidental empty `./ ` path was removed before staging.
+
 ### WIKI-006 — Verify and close
 - [x] Run the configured build and focused structural checks.
 - [x] Verify routes, search, sitemap/canonical output, images, links, and no broken blog behavior.
@@ -90,6 +98,7 @@ Evidence: final read-only verification passed `pnpm build` (80 pages), `git diff
 - WIKI-004: `pnpm build` passed with 80 pages; `git diff --check` passed; parent audited 16 term files, 16 SVGs, source links, and required image metadata.
 - WIKI-005: `pnpm build` passed with 80 pages; `git diff --check` passed; parent audited 18 canonical article links and 0 invalid relationship references.
 - WIKI-006: final structural verification passed; browser/accessibility and semantic editorial review remain skipped.
+- WIKI-007: `pnpm build` passed with 80 pages; `git diff --check` passed; 16 SVG accessibility/content references audited successfully.
 
 ## Progress
 - Exploration complete: existing Astro layouts, blog collection, search API, SEO components, image conventions, and integration constraints mapped.
@@ -100,6 +109,8 @@ Evidence: final read-only verification passed `pnpm build` (80 pages), `git diff
 - WIKI-004 complete: the first 16 terms and original explanatory SVG visuals are published in the content tree.
 - WIKI-005 complete: selected lighting articles now link contextually to canonical wiki terms and term metadata is reciprocal.
 - WIKI-006 complete: final build, route, image, search, relationship, and regression checks passed.
+- WIKI-007 complete: the screenshot findings were addressed with scoped contrast fixes, professional SVG infographics, visible credits, and a content/accessibility audit.
+- Current task: redeploy the correction and verify the live routes.
 
 ## Next step
-Review the rendered wiki in a browser and perform a human editorial/accessibility pass before delivery.
+Commit the correction, push `main`, wait for Cloudflare propagation, and verify the live wiki routes.

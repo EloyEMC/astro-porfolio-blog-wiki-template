@@ -2639,7 +2639,26 @@ html.dark body {
 .lighting-wiki-figure { margin: 3rem 0; }
 .lighting-wiki-figure img { display: block; max-width: 100%; height: auto; }
 .lighting-wiki-figure figcaption { margin-top: .7rem; color: var(--muted-ink); font-size: .85rem; }
-.lighting-wiki-body { max-width: 46rem; margin-top: 3rem; }
+.lighting-wiki-body { max-width: 46rem; margin-top: 3rem; color: var(--paper); font-size: 1.05rem; line-height: 1.78; }
+.lighting-wiki-body p, .lighting-wiki-body li, .lighting-wiki-body dd { color: var(--paper); }
+.lighting-wiki-body p { margin: 0 0 1.35rem; }
+.lighting-wiki-body h2, .lighting-wiki-body h3, .lighting-wiki-body h4 { color: var(--paper); line-height: 1.2; }
+.lighting-wiki-body h2 { margin: 3rem 0 1rem; font-size: clamp(1.45rem, 3vw, 2rem); }
+.lighting-wiki-body h3 { margin: 2rem 0 .75rem; font-size: 1.25rem; }
+.lighting-wiki-body strong { color: #fff8e9; font-weight: 700; }
+.lighting-wiki-body a { color: #f0c875; text-decoration-thickness: .1em; text-underline-offset: .16em; }
+.lighting-wiki-body a:hover, .lighting-wiki-body a:focus { color: #fff1c9; }
+.lighting-wiki-body ul, .lighting-wiki-body ol { margin: 0 0 1.5rem; padding-left: 1.35rem; }
+.lighting-wiki-body li { padding-left: .3rem; margin: .45rem 0; }
+.lighting-wiki-body li::marker { color: var(--gold); }
+.lighting-wiki-body blockquote { margin: 2rem 0; padding: 1rem 1.25rem; border-left: 3px solid var(--gold); color: #f4f0e8; background: rgba(255,255,255,.04); }
+.lighting-wiki-body code { color: #ffe0a0; background: rgba(255,255,255,.07); padding: .1em .3em; }
+.lighting-wiki-body table { width: 100%; margin: 2rem 0; border-collapse: collapse; font-size: .95rem; }
+.lighting-wiki-body th, .lighting-wiki-body td { padding: .75rem .65rem; border-bottom: 1px solid rgba(241,238,232,.24); color: var(--paper); text-align: left; vertical-align: top; }
+.lighting-wiki-body th { color: #ffe0a0; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; }
+.lighting-wiki-body caption { margin-bottom: .7rem; color: #d6d0c5; text-align: left; font-size: .88rem; }
+.lighting-wiki-figure-credit { display: block; margin-top: .3rem; color: #b9b4aa; font-size: .75rem; }
+.lighting-wiki-figure-credit::before { content: "Crédito: "; color: #d7b36c; }
 @media (max-width: 700px) { .lighting-wiki-section-heading, .lighting-wiki-category-nav, .lighting-wiki-grid { display: block; } .lighting-wiki-section-note { margin-top: 1rem; } .lighting-wiki-card { margin-top: 1rem; } }
 
 .lighting-application__conclusion {

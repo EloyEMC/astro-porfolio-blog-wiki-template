@@ -54,7 +54,7 @@ La pregunta útil no es cuál de las tres tecnologías es “mejor”, sino qué
 
 ## Qué es DALI
 
-DALI (Digital Addressable Lighting Interface) es un protocolo digital para controlar equipos de iluminación y consultar su estado. Su comunicación bidireccional permite enviar órdenes —por ejemplo, encender, apagar o regular— y recibir información del dispositivo.
+[DALI](/wiki/iluminacion/dali/) (Digital Addressable Lighting Interface) es un protocolo digital para controlar equipos de iluminación y consultar su estado. Su comunicación bidireccional permite enviar órdenes —por ejemplo, encender, apagar o regular— y recibir información del dispositivo.
 
 La base técnica se articula en la familia de normas IEC 62386. La norma no convierte por sí sola cualquier producto en interoperable: las funciones implementadas, los perfiles y la comprobación de cada equipo siguen siendo relevantes.
 

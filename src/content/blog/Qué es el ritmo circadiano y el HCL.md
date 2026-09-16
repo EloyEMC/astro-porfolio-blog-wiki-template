@@ -32,7 +32,7 @@ nofollow: false # Cambiar a true si no quieres que los enlaces del post sean seg
 
 ## ¿Qué es el ritmo circadiano?
 
-Los denominados biológicamente **ritmos circadianos** son cambios físicos, mentales y conductuales que siguen un ciclo de un día, en 24 horas. Estos procesos biológicos naturales responden, principalmente, **a la presencia de la luz y la oscuridad**, y afectan a la mayoría de seres vivos, incluidos los animales, las plantas y los microbios. La rama de la biología que los estudia es la cronobiología.
+Los denominados biológicamente **ritmos circadianos** son cambios físicos, mentales y conductuales que siguen un ciclo de un día, en 24 horas. Estos procesos biológicos naturales responden, principalmente, **a la presencia de la [luz](/wiki/iluminacion/luz/) y la oscuridad**, y afectan a la mayoría de seres vivos, incluidos los animales, las plantas y los microbios. La rama de la biología que los estudia es la cronobiología.
 
 ---
 
@@ -123,7 +123,7 @@ Sin embargo, ya hay firmas trabajando en LED con base en luz violeta u otros col
 
 ## ¿Qué es la temperatura de color?
 
-La **temperatura de color** es una medida que describe el color de la luz emitida por una fuente. Se mide en Kelvin (K) y puede variar desde tonos cálidos (amarillentos) hasta tonos fríos (azulados). Es fundamental en el diseño de iluminación para crear ambientes adecuados.
+La [**temperatura de color**](/wiki/iluminacion/temperatura-de-color/) es una medida que describe el color de la luz emitida por una fuente. Se mide en Kelvin (K) y puede variar desde tonos cálidos (amarillentos) hasta tonos fríos (azulados). Es fundamental en el diseño de iluminación para crear ambientes adecuados.
 
 ---
 

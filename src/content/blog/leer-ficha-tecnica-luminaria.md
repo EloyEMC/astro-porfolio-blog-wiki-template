@@ -39,7 +39,7 @@ faqs:
     answer: "No por sí solos. Hay que comprobar el equipo exacto, la certificación o el registro aplicable, las funciones implementadas, el controlador, la pasarela, el cableado, el firmware y la puesta en marcha. Un nombre de protocolo no describe todo el sistema."
 ---
 
-Una ficha técnica puede tener una cifra de 20.000 lúmenes, una eficacia de 170 lm/W y un precio atractivo. Ninguno de esos datos responde, por sí solo, a la pregunta importante: ¿esta luminaria resuelve mi proyecto?
+Una ficha técnica de una [luminaria](/wiki/iluminacion/luminaria/) puede tener una cifra de 20.000 lúmenes, una eficacia de 170 lm/W y un precio atractivo. Ninguno de esos datos responde, por sí solo, a la pregunta importante: ¿esta luminaria resuelve mi proyecto?
 
 La ficha técnica no es un escaparate de números. Es un documento de decisión. Sirve para relacionar una prestación con una exigencia concreta: iluminar una tarea, caber en un hueco, soportar un ambiente, integrarse con un control, mantenerse durante años o demostrar que cumple los requisitos del mercado.
 
@@ -93,7 +93,7 @@ También distinguí entre flujo **nominal**, **inicial**, **típico**, **máximo
 
 Una luminaria de haz estrecho puede entregar mucha iluminancia en una zona pequeña y dejar otras áreas con poca luz. Una distribución amplia puede ser más adecuada para una retícula de puestos, aunque tenga menos flujo total.
 
-Revisá la curva fotométrica, el ángulo de apertura o la descripción de la distribución. Cuando el producto vaya a entrar en un cálculo, pedí el archivo **IES** o **LDT** correspondiente a la configuración real. Esos archivos permiten modelar la distribución en un software, pero no convierten automáticamente el resultado en una garantía: todavía hay que revisar la calidad del archivo, los parámetros del proyecto y los valores de mantenimiento.
+Revisá la [curva fotométrica](/wiki/iluminacion/fotometria/), el ángulo de apertura o la descripción de la distribución. Cuando el producto vaya a entrar en un cálculo, pedí el archivo **IES** o **LDT** correspondiente a la configuración real. Esos archivos permiten modelar la distribución en un software, pero no convierten automáticamente el resultado en una garantía: todavía hay que revisar la calidad del archivo, los parámetros del proyecto y los valores de mantenimiento.
 
 ![Recorte de datos fotométricos con curva polar, flujo, potencia, CCT, CRI y mantenimiento L90/B10](/images/articles/leer-ficha-tecnica-luminaria/pdf-p2-fotometria.webp)
 

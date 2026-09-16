@@ -57,7 +57,7 @@ Cada nivel resuelve problemas diferentes. Conectar más dispositivos no mejora p
 
 ## 2. Empezá por el problema y la métrica
 
-Antes de hablar de [DALI](/blog/dali-2-d4i-dali-plus-proyecto/), D4i o IoT, escribí el problema en una frase verificable:
+Antes de hablar de [DALI](/wiki/iluminacion/dali/), D4i o IoT, escribí el problema en una frase verificable:
 
 - “Hay espacios que cambian de uso y necesitamos adaptar escenas sin recablear.”
 - “No sabemos qué luminarias fallan y las inspecciones son costosas.”

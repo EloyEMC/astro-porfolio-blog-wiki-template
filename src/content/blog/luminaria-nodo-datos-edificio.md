@@ -25,7 +25,7 @@ noindex: false
 nofollow: false
 ---
 
-Una luminaria puede ser un punto estratégico para observar el edificio, pero no se convierte en un sistema de datos completo por llevar un controlador digital o estar conectada a una red. Para que el dato sirva, tiene que responder a una decisión concreta, llegar con un contexto suficiente, mantener una calidad conocida y tener un responsable operativo.
+Una [luminaria](/wiki/iluminacion/luminaria/) puede ser un punto estratégico para observar el edificio, pero no se convierte en un sistema de datos completo por llevar un controlador digital o estar conectada a una red. Para que el dato sirva, tiene que responder a una decisión concreta, llegar con un contexto suficiente, mantener una calidad conocida y tener un responsable operativo.
 
 La secuencia que conviene evaluar es **sensor → comunicación → plataforma → decisión → operación**. D4i puede resolver parte de esa cadena. IoT, las pasarelas, las plataformas y el BMS pueden añadir otras piezas. Ninguna etiqueta garantiza por sí sola que el resultado sea interoperable, fiable o rentable.
 
@@ -54,7 +54,7 @@ La capacidad real depende del producto, la instalación, la configuración y las
 
 ## Qué puede aportar D4i y qué queda fuera de su alcance
 
-D4i es una extensión de DALI orientada a datos dentro de luminarias y controladores compatibles. En la información de DALI Alliance, las Partes 251, 252 y 253 de DALI Data forman parte de los requisitos para controladores certificados D4i. Esas partes normalizan, respectivamente, información relacionada con luminaire data, energy data y diagnostics data.
+[D4i](/wiki/iluminacion/dali/) es una extensión de DALI orientada a datos dentro de luminarias y controladores compatibles. En la información de DALI Alliance, las Partes 251, 252 y 253 de DALI Data forman parte de los requisitos para controladores certificados D4i. Esas partes normalizan, respectivamente, información relacionada con luminaire data, energy data y diagnostics data.
 
 Eso permite hablar, con prudencia, de capacidades como:
 

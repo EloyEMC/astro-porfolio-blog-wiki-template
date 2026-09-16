@@ -95,14 +95,14 @@ faqs:
 
 ### Ritmo circadiano
 
-**El ritmo circadiano**, a menudo llamado el "**reloj interno**" del cuerpo, regula nuestros patrones de sueño y vigilia a lo largo de un ciclo de 24 horas. La luz juega un papel crucial en la regulación de este ritmo. La exposición a la luz brillante durante el día, especialmente en las primeras horas de la mañana, ayuda a sincronizar nuestro ritmo circadiano y a mantenerlo en equilibrio. Esto no solo mejora la calidad del sueño, sino que también influye en la liberación de las hormonas de la felicidad. Integrar la luz natural en nuestras rutinas diarias, ya sea a través de ventanas amplias o luz artificial de espectro completo, puede tener un impacto significativo en nuestro bienestar emocional.
+**El ritmo circadiano**, a menudo llamado el "**reloj interno**" del cuerpo, regula nuestros patrones de sueño y vigilia a lo largo de un ciclo de 24 horas. La [luz](/wiki/iluminacion/luz/) juega un papel crucial en la regulación de este ritmo. La exposición a la luz brillante durante el día, especialmente en las primeras horas de la mañana, ayuda a sincronizar nuestro ritmo circadiano y a mantenerlo en equilibrio. Esto no solo mejora la calidad del sueño, sino que también influye en la liberación de las hormonas de la felicidad. Integrar la luz natural en nuestras rutinas diarias, ya sea a través de ventanas amplias o luz artificial de espectro completo, puede tener un impacto significativo en nuestro bienestar emocional.
 
 ### Creando entornos luminosos para la activación hormonal
 
 **La iluminación** en espacios interiores puede ser diseñada de manera estratégica **para fomentar la liberación de hormonas de la felicidad**. Aquí hay algunas estrategias efectivas:
 
 - *Variedad de intensidad*: Incorporar una variedad de niveles de iluminación en un espacio puede crear una atmósfera dinámica que estimule la liberación de diferentes hormonas. Áreas más brillantes pueden favorecer la liberación de dopamina, mientras que zonas más suaves y cálidas pueden promover la oxitocina y la relajación.
-- *Espectro de luz*: Elegir la temperatura de color adecuada es esencial. La luz blanca y fría es ideal durante la mañana para activar la serotonina y sincronizar el ritmo circadiano. Por la tarde y noche, optar por tonos cálidos ayuda a la producción de melatonina, una hormona esencial para el sueño.
+- *Espectro de luz*: Elegir la [temperatura de color](/wiki/iluminacion/temperatura-de-color/) adecuada es esencial. La luz blanca y fría es ideal durante la mañana para activar la serotonina y sincronizar el ritmo circadiano. Por la tarde y noche, optar por tonos cálidos ayuda a la producción de melatonina, una hormona esencial para el sueño.
 - *Diseño de espacios*: La disposición del mobiliario y la iluminación puede influir en nuestra experiencia emocional. Espacios abiertos, bien iluminados y visualmente atractivos pueden aumentar la liberación de endorfinas y dopamina, generando un ambiente positivo.
 - *Elementos naturales*: Integrar elementos naturales, como plantas y vistas al aire libre, puede tener un efecto positivo en la liberación de hormonas de la felicidad al proporcionar una sensación de conexión con la naturaleza.
 

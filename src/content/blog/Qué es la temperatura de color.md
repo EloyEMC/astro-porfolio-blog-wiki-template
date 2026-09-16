@@ -75,7 +75,7 @@ Imaginen un día soleado en el parque. El sol nos regala su luz dorada, que llam
 
 Para empezar vamos a acotar la definición sobre qué es la temperatura de color en la iluminación al tono de luz “blanca” que se emite desde una fuente de luz.
 
-La **temperatura de color de una fuente de luz** se define comparando su color dentro del espectro luminoso con el de la luz que emitiría un cuerpo negro calentado a una temperatura determinada. Por este motivo esta temperatura de color se expresa en **Kelvin**, a pesar de no reflejar expresamente una medida de temperatura, por ser la misma solo una medida.
+La [**temperatura de color de una fuente de luz**](/wiki/iluminacion/temperatura-de-color/) se define comparando su color dentro del espectro luminoso con el de la luz que emitiría un cuerpo negro calentado a una temperatura determinada. Por este motivo esta temperatura de color se expresa en **Kelvin**, a pesar de no reflejar expresamente una medida de temperatura, por ser la misma solo una medida.
 
 ![Qué es la temperatura de color](/iluminacion-temperatura-de-color.webp)
 

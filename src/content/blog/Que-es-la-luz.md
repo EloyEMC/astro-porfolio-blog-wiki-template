@@ -42,7 +42,7 @@ faqs:
     answer: "Porque conocer cómo se propaga, se refleja, se refracta y se distribuye ayuda a elegir ópticas, materiales y luminarias de forma coherente con el espacio y su uso."
 ---
 
-La luz está presente en casi todo lo que vemos, pero explicar qué es exactamente no resulta tan sencillo.
+La [luz](/wiki/iluminacion/luz/) está presente en casi todo lo que vemos, pero explicar qué es exactamente no resulta tan sencillo.
 
 Desde un punto de vista físico, la luz forma parte de la radiación electromagnética. La pequeña parte que nuestros ojos pueden detectar se denomina luz visible.
 
@@ -107,7 +107,7 @@ En una escena con polvo o niebla podemos ver el recorrido del haz porque las par
 
 ### De la fotometría al proyecto
 
-La fotometría traduce la radiación en magnitudes ponderadas por la sensibilidad visual humana. En un cálculo pueden aparecer, entre otras:
+La [fotometría](/wiki/iluminacion/fotometria/) traduce la radiación en magnitudes ponderadas por la sensibilidad visual humana. En un cálculo pueden aparecer, entre otras:
 
 - **Flujo luminoso (lumen, lm):** cantidad de luz visible emitida.
 - **Intensidad luminosa (candela, cd):** flujo emitido en una dirección.

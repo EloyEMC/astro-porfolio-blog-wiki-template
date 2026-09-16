@@ -25,7 +25,7 @@ noindex: false
 nofollow: false
 ---
 
-La iluminación no se vuelve valiosa por añadirle una red, un sensor o una aplicación. Se vuelve valiosa cuando resuelve mejor una necesidad de luz y de uso, puede operarse de forma fiable y su coste total tiene sentido para el edificio.
+La iluminación no se vuelve valiosa por añadirle una red, un sensor o una aplicación. Se vuelve valiosa cuando resuelve mejor una necesidad de [luz](/wiki/iluminacion/luz/) y de uso, puede operarse de forma fiable y su coste total tiene sentido para el edificio.
 
 Esa es la idea central de este artículo: la iluminación sigue siendo luz, pero ya no conviene tratarla como una isla. Una luminaria participa en una relación entre espacio, personas, energía, control, mantenimiento y otros sistemas del edificio. La conectividad puede hacer visible esa relación; no la crea por sí sola.
 
@@ -76,7 +76,7 @@ Para comparar alternativas, el coste inicial es solo una parte. Una referencia �
 
 El control aporta valor cuando permite adaptar la luz a un uso real, mantener una condición necesaria, detectar una desviación o facilitar una operación que antes era costosa. Puede ser local, autónomo, cableado, inalámbrico o integrado; la arquitectura debe seguir al requisito.
 
-DALI y D4i son buenos ejemplos de por qué conviene separar capacidad de promesa. La [DALI Alliance](https://www.dali-alliance.org/) documenta un protocolo y sus posibilidades de control, interoperabilidad y datos en dispositivos compatibles. Eso puede facilitar inventario, monitorización o diagnóstico. No demuestra, por sí solo, ahorro energético ni mantenimiento predictivo: para llegar a esos resultados hacen falta datos adecuados, integración, reglas de interpretación, responsables y validación en operación.
+[DALI](/wiki/iluminacion/dali/) y D4i son buenos ejemplos de por qué conviene separar capacidad de promesa. La [DALI Alliance](https://www.dali-alliance.org/) documenta un protocolo y sus posibilidades de control, interoperabilidad y datos en dispositivos compatibles. Eso puede facilitar inventario, monitorización o diagnóstico. No demuestra, por sí solo, ahorro energético ni mantenimiento predictivo: para llegar a esos resultados hacen falta datos adecuados, integración, reglas de interpretación, responsables y validación en operación.
 
 La norma [IEC 62386, overview de la publicación 66891](https://webstore.iec.ch/en/publication/66891), delimita aspectos de sistemas de control de iluminación, control gear, dispositivos y comunicación. No es una especificación de algoritmos completos de optimización ni una garantía de resultado operativo. La diferencia entre una capacidad normalizada y un servicio útil es una decisión de proyecto.
 

@@ -24,7 +24,7 @@ noindex: false
 nofollow: false
 ---
 
-Una luminaria LED puede fallar aunque el cuadro parezca correcto, el cableado cumpla su función y el producto tenga una ficha técnica sólida. La explicación no suele estar en una única pieza: depende del fenómeno eléctrico, la exposición del edificio, el driver, las protecciones, la puesta a tierra, la coordinación entre dispositivos y el mantenimiento.
+Una luminaria [LED](/wiki/iluminacion/led/) puede fallar aunque el cuadro parezca correcto, el cableado cumpla su función y el producto tenga una ficha técnica sólida. La explicación no suele estar en una única pieza: depende del fenómeno eléctrico, la exposición del edificio, el driver, las protecciones, la puesta a tierra, la coordinación entre dispositivos y el mantenimiento.
 
 Por eso, ante un fallo, la pregunta responsable no es «¿la luminaria era defectuosa?» ni «¿la instalación estaba mal?». Es: **¿qué fenómeno ocurrió, qué evidencias existen y cómo respondió el sistema?** Sin registros y diagnóstico de calidad eléctrica, una sobretensión no puede atribuirse a la luminaria.
 

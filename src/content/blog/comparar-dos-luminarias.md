@@ -26,9 +26,9 @@ noindex: false
 nofollow: false
 ---
 
-Comparar dos luminarias no consiste en elegir la que tiene más lúmenes, mejor eficacia o menor precio. Consiste en comprobar cuál de las dos responde mejor al requisito real del proyecto y qué evidencia permite sostener esa decisión.
+Comparar dos [luminarias](/wiki/iluminacion/luminaria/) no consiste en elegir la que tiene más lúmenes, mejor eficacia o menor precio. Consiste en comprobar cuál de las dos responde mejor al requisito real del proyecto y qué evidencia permite sostener esa decisión.
 
-Una comparación útil empieza por la aplicación y termina en el coste de ciclo de vida. Entre ambos extremos hay que revisar fotometría, energía, control, instalación, ambiente, documentación, mantenimiento, seguridad y garantía. Si se mezclan variantes, condiciones de ensayo o supuestos distintos, una tabla llena de cifras puede producir una conclusión engañosa.
+Una comparación útil empieza por la aplicación y termina en el coste de ciclo de vida. Entre ambos extremos hay que revisar [fotometría](/wiki/iluminacion/fotometria/), energía, control, instalación, ambiente, documentación, mantenimiento, seguridad y garantía. Si se mezclan variantes, condiciones de ensayo o supuestos distintos, una tabla llena de cifras puede producir una conclusión engañosa.
 
 Este método sirve para prescriptores, ingenieros, diseñadores, instaladores, compradores y propietarios. No sustituye un cálculo lumínico, un pliego ni una evaluación económica completa: ayuda a formularlos y a comparar alternativas con más rigor.
 

@@ -1,12 +1,12 @@
 ---
 title: ¿Qué es el Ritmo Circadiano?
 category: Iluminación
-image: /ritmo-circadiano-hcl-iluminacion-led.webp
-image_alt: "Los denominados biológicamente ritmos circadianos son cambios físicos, mentales y conductuales que siguen un ciclo de un día, en 24 horas"
+image: /images/articles/lighting-refresh/hcl.webp
+image_alt: "Dormitorio y espacio de trabajo con iluminación cálida de transición y luz natural al amanecer."
 description: "Qué son los ritmos circadianos, cómo se relacionan con el sueño y qué papel tienen la luz, la luminoterapia y el Human Centric Lighting."
 date: 2025-03-21
 tags: [Iluminación LED, Ritmos circadianos, Luz]
-twitter_img: /ritmo-circadiano-hcl-iluminacion-led.webp
+twitter_img: /images/articles/lighting-refresh/hcl.webp
 twitterCreator: "@eloy_emc"
 twitterSite: "@eloy_emc"
 keywords:
@@ -117,7 +117,7 @@ No de la forma más efectiva. La tecnología actual del LED se basa en fósforo 
 
 Sin embargo, ya hay firmas trabajando en LED con base en luz violeta u otros colores para conseguir blancos sin este azul residual.
 
-![¿Qué es la temperatura de color?](/que-es-la-temperatura-de-color.webp)
+![Interior con transición de temperatura de color](/images/articles/lighting-refresh/temperatura-hero.webp)
 
 ---
 
@@ -131,4 +131,4 @@ La [**temperatura de color**](/wiki/iluminacion/temperatura-de-color/) es una me
 
 La **luz** es una forma de energía que se propaga en forma de ondas electromagnéticas. Es esencial para la vida y nos permite percibir el mundo que nos rodea. Sus propiedades, como la reflexión, refracción y dispersión, son fundamentales en la iluminación técnica.
 
-![¿Qué es la luz?](/la-luz-y-sus-propiedades.webp)
+![Interior arquitectónico iluminado por luz natural](/images/articles/lighting-refresh/luz-hero.webp)

@@ -1,12 +1,12 @@
 ---
 title: La Luz activa las Hormonas de la Felicidad
 category: Iluminación
-image: /activar-hormonas-felicidad-luz.webp
-image_alt: "Hormonas de la felicidad y la luz"
+image: /images/articles/lighting-refresh/hormonas.webp
+image_alt: "Persona trabajando y descansando en un interior confortable iluminado con luz natural y cálida."
 description: "Repaso de las endorfinas, serotonina, dopamina y oxitocina, y de cómo el artículo relaciona la luz, los espacios y el ritmo circadiano con el bienestar."
 date: 2025-03-21
 tags: ["Hormonas", "Psicología", "Luz"]
-twitter_img: /activar-hormonas-felicidad-luz.webp
+twitter_img: /images/articles/lighting-refresh/hormonas.webp
 twitterCreator: "@eloy_emc"
 twitterSite: "@eloy_emc"
 keywords:

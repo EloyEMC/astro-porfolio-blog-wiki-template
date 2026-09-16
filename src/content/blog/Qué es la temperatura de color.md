@@ -1,12 +1,12 @@
 ---
 title: ¿Qué es la temperatura de color?
 category: Iluminación
-image: /que-es-la-temperatura-de-color.webp
-image_alt: "Temperatura de color de una fuente de luz"
+image: /images/articles/lighting-refresh/temperatura-hero.webp
+image_alt: "Interior arquitectónico con zonas de luz cálida, neutra y fría para explicar la temperatura de color."
 description: "Qué es la temperatura de color, cómo se mide en Kelvin y qué diferencia hay entre luz cálida, neutra y fría en iluminación."
 date: 2025-03-21
 tags: [Luz, Temperatura de color, Espectro electromagnético, Ritmos circadianos, Iluminación LED]
-twitter_img: /que-es-la-temperatura-de-color.webp
+twitter_img: /images/articles/lighting-refresh/temperatura-hero.webp
 twitterCreator: "@eloy_emc"
 twitterSite: "@eloy_emc"
 keywords:
@@ -77,7 +77,7 @@ Para empezar vamos a acotar la definición sobre qué es la temperatura de color
 
 La [**temperatura de color de una fuente de luz**](/wiki/iluminacion/temperatura-de-color/) se define comparando su color dentro del espectro luminoso con el de la luz que emitiría un cuerpo negro calentado a una temperatura determinada. Por este motivo esta temperatura de color se expresa en **Kelvin**, a pesar de no reflejar expresamente una medida de temperatura, por ser la misma solo una medida.
 
-![Qué es la temperatura de color](/iluminacion-temperatura-de-color.webp)
+![Interior arquitectónico con iluminación cálida y fría](/images/articles/lighting-refresh/temperatura-warm-cool.webp)
 
 ### Luz Fría y Luz Cálida
 
@@ -132,7 +132,7 @@ Un cuerpo negro a temperatura ambiente (unos 300 K) emite radiación de longitud
 
 A partir de cierto momento, irá sumando los colores del espectro en su orden (rojo, anaranjado, amarillo, verde, azul y violeta), sumando colores. Hacia una temperatura de 6000 K (aproximadamente la temperatura superficial del sol), emitirá en todo el espectro visible, consiguiendo luz blanca, y a partir de ese momento irá sumando radiación ultravioleta.
 
-![Temperatura de color](/que-es-temperatura-de-color-tabla.webp)
+![Pasillo arquitectónico con una progresión de temperaturas de color](/images/articles/lighting-refresh/temperatura-kelvin.webp)
 
 ## El Gran Secreto del Cerebro
 

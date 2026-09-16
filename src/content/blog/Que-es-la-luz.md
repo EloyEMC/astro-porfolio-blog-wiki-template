@@ -2,12 +2,12 @@
 title: "¿Qué es realmente la luz?"
 category: Iluminación
 seoTitle: "¿Qué es realmente la luz? Propiedades y aplicación en iluminación | Eloy Martínez Cuesta"
-image: "/la-luz-y-sus-propiedades.webp"
-image_alt: "Columnas de luz de distintos colores proyectadas hacia el cielo."
+image: "/images/articles/lighting-refresh/luz-hero.webp"
+image_alt: "Interior arquitectónico de piedra y madera iluminado por luz natural, con sombras y superficies visibles."
 description: "Qué es la luz, cómo se propaga, se refleja y se refracta, qué parte del espectro podemos ver y por qué estos fenómenos importan en iluminación."
 date: 2025-03-21
 tags: [Luz, Física, Espectro electromagnético, Diseño lumínico]
-twitter_img: "/la-luz-y-sus-propiedades.webp"
+twitter_img: "/images/articles/lighting-refresh/luz-hero.webp"
 twitterCreator: "@eloy_emc"
 twitterSite: "@eloy_emc"
 keywords:
@@ -52,7 +52,7 @@ Entender cómo se propaga, se refleja, se refracta y se distribuye ayuda a compr
 
 En este artículo vamos a recorrer esos conceptos desde lo más sencillo hasta su aplicación práctica.
 
-![Columnas de luz de distintos colores proyectadas hacia el cielo](/la-luz-y-sus-propiedades.webp)
+![Interior arquitectónico iluminado por luz natural](/images/articles/lighting-refresh/luz-hero.webp)
 
 ## La luz: una explicación prudente de su naturaleza
 
@@ -74,7 +74,7 @@ Para una introducción física rigurosa, consulta [la explicación de OpenStax s
 
 El espectro electromagnético reúne radiaciones con distintas frecuencias y longitudes de onda: desde ondas de radio hasta rayos gamma. La luz visible ocupa solo una franja pequeña de ese conjunto. Sus límites no son una frontera exacta igual para todas las personas: la sensibilidad visual cambia con la longitud de onda y con las condiciones de observación.
 
-![Representación del espectro electromagnético](/Qu-es-la-luz-espectro-electromagnetico-1.webp)
+![Estudio fotográfico de la luz sobre una superficie neutra](/images/articles/lighting-refresh/espectro-luz.webp)
 
 En iluminación interesa distinguir dos ideas:
 
@@ -103,7 +103,7 @@ En una escena con polvo o niebla podemos ver el recorrido del haz porque las par
 <p>Una curva fotométrica representa cómo se distribuye la intensidad luminosa según la dirección. DIALux y Relux usan estos datos de luminarias para simular la iluminación sobre superficies y espacios.</p>
 </aside>
 
-![Simulación de iluminación en DIALux](/Que-es-la-luz-Dialux.webp)
+![Profesional revisando una simulación lumínica junto a una maqueta arquitectónica](/images/articles/lighting-refresh/dialux.webp)
 
 ### De la fotometría al proyecto
 

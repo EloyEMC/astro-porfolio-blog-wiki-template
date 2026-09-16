@@ -67,15 +67,25 @@ Evidence: 16 Spanish term entries under `src/content/wiki/iluminacion/` and 16 o
 
 Evidence: 18 controlled canonical wiki links were added across the 11 Spanish lighting-category articles. Wiki `relatedArticles` metadata was corrected to exact Astro IDs and reciprocal validity; parent normalized two missing trailing slashes in photometry links. Relationship audit found 0 invalid term/article references; `pnpm build` and `git diff --check` passed.
 
+### WIKI-015 — Complete new-term imagery and SEO audit
+- [x] Generate realistic raster images for the 18 new terms previously without image metadata.
+- [x] Optimize them to WebP, update term metadata, and verify social previews.
+- [x] Rerun the deep SEO audit and prepare the complete change for commit/push.
+
+### WIKI-014 — Expand the mixed lighting vocabulary
+- [x] Add the selected professional and practical terms with stable slugs, definitions, aliases, units where relevant, sources, FAQs, and SEO metadata.
+- [x] Connect the new terms to existing terms and relevant articles with controlled links.
+- [x] Provide valid local image metadata, build, and audit all term relationships and routes.
+
 ### WIKI-013 — Wiki SEO metadata and sharing audit
 - [x] Pass each term's ficha image and alt text into the page SEO/Open Graph/Twitter metadata.
 - [x] Validate canonical URLs, descriptions, structured data, sitemap inclusion, and indexability on generated wiki pages.
 - [x] Run build and an automated SEO audit for all 16 terms and the wiki index.
 
 ### WIKI-012 — Refresh weak article visuals
-- [ ] Generate replacement hero/internal raster images for the prioritized legacy article visuals.
-- [ ] Update article frontmatters and inline image references, preserving strong diagrams and historical assets.
-- [ ] Optimize generated article images to WebP and verify visual quality, weight, build, and links.
+- [x] Generate replacement hero/internal raster images for the prioritized legacy article visuals.
+- [x] Update article frontmatters and inline image references, preserving strong diagrams and historical assets.
+- [x] Optimize generated article images to WebP and verify visual quality, weight, build, and links.
 
 ### WIKI-011 — Optimize ficha assets for web delivery
 - [x] Convert the 16 generated PNG fichas to appropriately compressed WebP assets while preserving visual quality and text legibility.
@@ -148,9 +158,11 @@ Evidence: final read-only verification passed `pnpm build` (80 pages), `git diff
 - WIKI-010 opened: Codex image generation created 16 realistic raster ficha assets with integrated Spanish technical text.
 - WIKI-011 complete locally: 16 generated fichas are now optimized WebP assets; PNG delivery files were removed.
 - WIKI-012 opened: replace the weak legacy visuals in the related lighting articles with Codex-generated realistic raster images, then optimize delivery.
-- WIKI-012 blocked: `image_gen__imagegen` unavailable; no article files were changed.
+- WIKI-012 complete locally: generated 8 article images with the local Codex image-generation capability, converted them to optimized WebP, and updated four articles without changing strong diagrams or historical assets.
 - WIKI-013 complete locally: term pages now expose their optimized ficha WebP as social preview images with alt text and keywords; generated SEO audit passes.
+- WIKI-014 complete locally: added 24 broad mixed terms, bringing the wiki to 40 valid terms and 104 generated pages.
+- WIKI-015 complete locally: generated and optimized 18 missing term images, attached them to all term pages, and completed the deep SEO audit.
 - Current task: none.
 
 ## Next step
-Review the SEO diff, then commit and push the metadata fix.
+Commit and push the vocabulary, article-image, term-image, and SEO changes.

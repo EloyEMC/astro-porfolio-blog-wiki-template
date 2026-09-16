@@ -4,7 +4,7 @@ slug: "fotometria"
 category: "Photometry and optics"
 shortDefinition: "La fotometría es la medición y descripción de la luz ponderada según la respuesta visual, incluyendo flujo, intensidad, iluminancia y luminancia."
 aliases: ["medición fotométrica", "datos fotométricos"]
-image: "/images/wiki/iluminacion/fichas/fotometria.png"
+image: "/images/wiki/iluminacion/fichas/fotometria.webp"
 imageAlt: "Luminaria instalada en un goniofotómetro de laboratorio frente a un detector, junto a una ficha sobre fotometría."
 imageCaption: "La fotometría mide la luz ponderada según la respuesta visual."
 imageCredit: "Imagen generada con OpenAI image_gen"

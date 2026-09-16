@@ -6,7 +6,7 @@ shortDefinition: "La temperatura de color correlacionada (CCT) describe el aspec
 aliases: ["CCT", "temperatura de color correlacionada", "correlated colour temperature"]
 unit: "kelvin"
 symbol: "K"
-image: "/images/wiki/iluminacion/fichas/temperatura-de-color.png"
+image: "/images/wiki/iluminacion/fichas/temperatura-de-color.webp"
 imageAlt: "Interior iluminado con luz cálida a un lado y luz fría al otro, acompañado de una ficha sobre temperatura de color."
 imageCaption: "La temperatura de color, expresada en kelvin, describe el aspecto cálido o frío de la luz."
 imageCredit: "Imagen generada con OpenAI image_gen"

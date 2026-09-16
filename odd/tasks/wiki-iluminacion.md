@@ -67,6 +67,21 @@ Evidence: 16 Spanish term entries under `src/content/wiki/iluminacion/` and 16 o
 
 Evidence: 18 controlled canonical wiki links were added across the 11 Spanish lighting-category articles. Wiki `relatedArticles` metadata was corrected to exact Astro IDs and reciprocal validity; parent normalized two missing trailing slashes in photometry links. Relationship audit found 0 invalid term/article references; `pnpm build` and `git diff --check` passed.
 
+### WIKI-013 — Wiki SEO metadata and sharing audit
+- [x] Pass each term's ficha image and alt text into the page SEO/Open Graph/Twitter metadata.
+- [x] Validate canonical URLs, descriptions, structured data, sitemap inclusion, and indexability on generated wiki pages.
+- [x] Run build and an automated SEO audit for all 16 terms and the wiki index.
+
+### WIKI-012 — Refresh weak article visuals
+- [ ] Generate replacement hero/internal raster images for the prioritized legacy article visuals.
+- [ ] Update article frontmatters and inline image references, preserving strong diagrams and historical assets.
+- [ ] Optimize generated article images to WebP and verify visual quality, weight, build, and links.
+
+### WIKI-011 — Optimize ficha assets for web delivery
+- [x] Convert the 16 generated PNG fichas to appropriately compressed WebP assets while preserving visual quality and text legibility.
+- [x] Update all wiki frontmatters and remove oversized PNG delivery assets if no longer referenced.
+- [x] Verify total weight, dimensions, build output, and zero broken image paths.
+
 ### WIKI-010 — Codex-generated realistic lighting fichas
 - [x] Generate 16 realistic raster ficha images through the Codex image-generation worker.
 - [x] Add concise, accurate Spanish explanatory text inside each ficha and update frontmatter metadata.
@@ -131,4 +146,11 @@ Evidence: final read-only verification passed `pnpm build` (80 pages), `git diff
 - WIKI-008 complete locally; production deployment remains pending the user's normal `main`/GitHub Actions flow.
 - WIKI-009 superseded: the provisional photo composites were rejected by the user.
 - WIKI-010 opened: Codex image generation created 16 realistic raster ficha assets with integrated Spanish technical text.
-- Current task: WIKI-010.
+- WIKI-011 complete locally: 16 generated fichas are now optimized WebP assets; PNG delivery files were removed.
+- WIKI-012 opened: replace the weak legacy visuals in the related lighting articles with Codex-generated realistic raster images, then optimize delivery.
+- WIKI-012 blocked: `image_gen__imagegen` unavailable; no article files were changed.
+- WIKI-013 complete locally: term pages now expose their optimized ficha WebP as social preview images with alt text and keywords; generated SEO audit passes.
+- Current task: none.
+
+## Next step
+Review the SEO diff, then commit and push the metadata fix.

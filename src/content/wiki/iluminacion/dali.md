@@ -4,7 +4,7 @@ slug: "dali"
 category: "Controls and connectivity"
 shortDefinition: "DALI es una familia de protocolos y especificaciones para la comunicación digital y el control de equipos de iluminación compatibles."
 aliases: ["Digital Addressable Lighting Interface", "DALI-2", "D4i"]
-image: "/images/wiki/iluminacion/fichas/dali-2-d4i.png"
+image: "/images/wiki/iluminacion/fichas/dali-2-d4i.webp"
 imageAlt: "Luminaria inteligente abierta con driver, sensor y cableado de control, acompañada de una ficha DALI-2 y D4i."
 imageCaption: "DALI-2 y D4i permiten control digital e interoperabilidad en sistemas de iluminación compatibles."
 imageCredit: "Imagen generada con OpenAI image_gen"

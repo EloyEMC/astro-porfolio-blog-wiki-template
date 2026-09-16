@@ -13,6 +13,9 @@ interface Props {
   description?: string;
   slug?: string;
   person?: SeoPerson;
+  image?: string;
+  image_alt?: string;
+  keywords?: string[];
 }
 
 const {
@@ -20,13 +23,16 @@ const {
   description = "Iluminación, tecnología y negocio con Eloy Martínez Cuesta.",
   slug = "iluminacion",
   person,
+  image,
+  image_alt,
+  keywords,
 } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es" class="dark">
   <head>
-    <SEOPage title={title} description={description} siteUrl={siteConfig.site} defaultImage={siteConfig.image || ""} image_alt={siteConfig.image_alt} slug={slug} person={person} />
+    <SEOPage title={title} description={description} siteUrl={siteConfig.site} defaultImage={siteConfig.image || ""} image={image} image_alt={image_alt ?? siteConfig.image_alt} keywords={keywords} slug={slug} person={person} />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/favicon-emc-512.png?v=4" />

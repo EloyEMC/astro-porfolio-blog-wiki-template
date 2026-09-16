@@ -6,7 +6,7 @@ shortDefinition: "El lumen (lm) es la unidad del SI para el flujo luminoso, es d
 aliases: ["lúmenes", "flujo luminoso"]
 unit: "lumen"
 symbol: "lm"
-image: "/images/wiki/iluminacion/fichas/lumen.png"
+image: "/images/wiki/iluminacion/fichas/lumen.webp"
 imageAlt: "Luminaria suspendida emitiendo un volumen amplio de luz, con una ficha que identifica el lumen como unidad de flujo luminoso."
 imageCaption: "El lumen, símbolo lm, es la unidad del flujo luminoso total."
 imageCredit: "Imagen generada con OpenAI image_gen"

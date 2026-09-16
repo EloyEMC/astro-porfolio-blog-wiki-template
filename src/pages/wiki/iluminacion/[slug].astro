@@ -16,7 +16,7 @@ const wikiTerms = await getCollection("lightingWiki");
 const blogPosts = await getCollection("blog");
 const relatedTerms = resolveRelatedTerms(term.data.relatedTerms, wikiTerms, term.id);
 const relatedArticles = resolveRelatedArticles(term.data.relatedArticles, blogPosts);
-const { title, category, shortDefinition, aliases, unit, symbol, image, imageAlt, imageCaption, imageCredit, seoTitle, description, faqs } = term.data;
+const { title, category, shortDefinition, aliases, unit, symbol, image, imageAlt, imageCaption, imageCredit, seoTitle, description, keywords, faqs } = term.data;
 const canonicalUrl = `${siteConfig.site}${lightingWikiUrl(term.id)}`;
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -39,7 +39,7 @@ const definedTermSchema = {
 };
 ---
 
-<InteriorLayout title={seoTitle || `${title} | Wiki de iluminación`} description={description || shortDefinition} slug={lightingWikiUrl(term.id)}>
+<InteriorLayout title={seoTitle || `${title} | Wiki de iluminación`} description={description || shortDefinition} image={image} image_alt={imageAlt} keywords={keywords} slug={lightingWikiUrl(term.id)}>
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
   <script type="application/ld+json" set:html={JSON.stringify(definedTermSchema)}></script>
   {faqs.length > 0 && <script type="application/ld+json" set:html={JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })) })}></script>}

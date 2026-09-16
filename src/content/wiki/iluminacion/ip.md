@@ -4,7 +4,7 @@ slug: "ip"
 category: "Safety and protection"
 shortDefinition: "IP es el código de protección que clasifica, mediante cifras definidas por norma, la protección de una envolvente frente a sólidos y agua."
 aliases: ["grado IP", "código IP", "Ingress Protection"]
-image: "/images/wiki/iluminacion/fichas/ip.png"
+image: "/images/wiki/iluminacion/fichas/ip.webp"
 imageAlt: "Luminaria exterior sometida a agua y polvo en un ensayo de protección de envolvente, junto a una ficha del código IP."
 imageCaption: "El código IP clasifica la protección de una envolvente frente a sólidos y agua."
 imageCredit: "Imagen generada con OpenAI image_gen"

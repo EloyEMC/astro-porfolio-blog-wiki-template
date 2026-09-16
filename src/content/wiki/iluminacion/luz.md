@@ -4,7 +4,7 @@ slug: "luz"
 category: "Fundamentals"
 shortDefinition: "La luz es la radiación electromagnética que puede producir una respuesta visual y que, en iluminación, se describe también mediante magnitudes fotométricas."
 aliases: ["luz visible", "radiación visible"]
-image: "/images/wiki/iluminacion/fichas/luz.png"
+image: "/images/wiki/iluminacion/fichas/luz.webp"
 imageAlt: "Rayo de luz cálida visible en un interior arquitectónico, junto a una ficha que define la luz como radiación visible."
 imageCaption: "La luz es radiación capaz de producir una respuesta visual."
 imageCredit: "Imagen generada con OpenAI image_gen"

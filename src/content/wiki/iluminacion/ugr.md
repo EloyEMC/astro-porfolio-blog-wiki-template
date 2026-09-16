@@ -4,7 +4,7 @@ slug: "ugr"
 category: "Colour and visual quality"
 shortDefinition: "UGR es el índice unificado de deslumbramiento de una instalación interior calculado mediante un método que considera luminancias, posición y geometría."
 aliases: ["Unified Glare Rating", "índice unificado de deslumbramiento"]
-image: "/images/wiki/iluminacion/fichas/ugr.png"
+image: "/images/wiki/iluminacion/fichas/ugr.webp"
 imageAlt: "Oficina con luminarias apantalladas y una fuente brillante que provoca deslumbramiento, acompañada de una ficha UGR."
 imageCaption: "UGR es el índice de deslumbramiento de una instalación interior."
 imageCredit: "Imagen generada con OpenAI image_gen"

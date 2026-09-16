@@ -67,6 +67,17 @@ Evidence: 16 Spanish term entries under `src/content/wiki/iluminacion/` and 16 o
 
 Evidence: 18 controlled canonical wiki links were added across the 11 Spanish lighting-category articles. Wiki `relatedArticles` metadata was corrected to exact Astro IDs and reciprocal validity; parent normalized two missing trailing slashes in photometry links. Relationship audit found 0 invalid term/article references; `pnpm build` and `git diff --check` passed.
 
+### WIKI-017 — Spanish lighting regulations cornerstone article
+- [x] Create the original article with a national regulatory map, project-type workflow, source links, and clear legal disclaimers.
+- [x] Link the article to the new wiki terms and relevant existing articles with descriptive anchors.
+- [x] Validate official sources, SEO metadata, FAQs, build, and internal links.
+- [x] Set the editorial date to 2026-09-18, add the article-specific WebP hero, and verify canonical, Open Graph, JSON-LD, image, title, and description output.
+
+### WIKI-016 — Expose wiki in the home navigation
+- [x] Add a visible `WIKI ILUMINACIÓN` entry to the home index menu.
+- [x] Add the wiki entry to the legacy header menu for consistency.
+- [x] Build and verify the generated home route contains the canonical wiki link.
+
 ### WIKI-015 — Complete new-term imagery and SEO audit
 - [x] Generate realistic raster images for the 18 new terms previously without image metadata.
 - [x] Optimize them to WebP, update term metadata, and verify social previews.
@@ -162,7 +173,11 @@ Evidence: final read-only verification passed `pnpm build` (80 pages), `git diff
 - WIKI-013 complete locally: term pages now expose their optimized ficha WebP as social preview images with alt text and keywords; generated SEO audit passes.
 - WIKI-014 complete locally: added 24 broad mixed terms, bringing the wiki to 40 valid terms and 104 generated pages.
 - WIKI-015 complete locally: generated and optimized 18 missing term images, attached them to all term pages, and completed the deep SEO audit.
+- WIKI-016 complete locally: added the wiki entry to the home index menu and legacy header navigation.
+- WIKI-017 complete locally: created the original Spanish lighting regulations cornerstone article with official sources, project workflow, norm categories, PDF distribution guidance, and internal wiki links; scheduled for 2026-09-18, added a dedicated WebP hero image, and completed the SEO audit.
 - Current task: none.
-
-## Next step
-Commit and push the vocabulary, article-image, term-image, and SEO changes.
+- Review the deployed 40-term wiki in desktop and mobile browsers, including image legibility and social preview cards.
+- Monitor Search Console for indexing, impressions, queries, and duplicate/cannibalized intent before adding another large batch.
+- Add the next terms in focused batches, prioritizing: deslumbramiento, óptica, difusor, reflector, curva fotométrica, eficiencia energética, consumo energético, factor de potencia, THD, sobretensiones, HCL, KNX, Casambi, Bluetooth Mesh, iluminación industrial, iluminación comercial, iluminación deportiva, tunable white, mantenimiento y vida útil de la luminaria.
+- Keep each new term tied to at least one relevant blog article and one authoritative source; generate/optimize a dedicated WebP only when the existing visual cannot explain it honestly.
+- Re-run the deep SEO audit after every batch: title/description, canonical, social image, JSON-LD, sitemap, internal links, image weight, and no broken relations.

@@ -43,4 +43,41 @@ const blog = defineCollection({
 	}),
 });
 
-export const collections = { blog };
+const lightingWiki = defineCollection({
+	loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/wiki/iluminacion" }),
+	schema: z.object({
+		title: z.string(),
+		slug: z.string().optional(),
+		category: z.enum([
+			"Fundamentals",
+			"Quantities and measurement",
+			"Colour and visual quality",
+			"Photometry and optics",
+			"LED and sources",
+			"Luminaires and components",
+			"Controls and connectivity",
+			"Safety and protection",
+			"Applications and design",
+			"Standards and regulation",
+		]),
+		shortDefinition: z.string(),
+		aliases: z.array(z.string()).default([]),
+		unit: z.string().optional(),
+		symbol: z.string().optional(),
+		image: z.string().optional(),
+		imageAlt: z.string().optional(),
+		imageCaption: z.string().optional(),
+		imageCredit: z.string().optional(),
+		imageRights: z.string().optional(),
+		relatedTerms: z.array(z.string()).default([]),
+		relatedArticles: z.array(z.string()).default([]),
+		sources: z.array(z.object({ publisher: z.string(), title: z.string().optional(), url: z.string().url() })).default([]),
+		faqs: z.array(z.object({ question: z.string(), answer: z.string() })).default([]),
+		seoTitle: z.string().optional(),
+		description: z.string().optional(),
+		keywords: z.array(z.string()).default([]),
+		draft: z.boolean().default(false),
+	}),
+});
+
+export const collections = { blog, lightingWiki };

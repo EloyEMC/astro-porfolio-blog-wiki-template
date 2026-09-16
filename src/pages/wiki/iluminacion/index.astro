@@ -1,0 +1,132 @@
+---
+import { getCollection } from "astro:content";
+import InteriorLayout from "../../../layouts/InteriorLayout.astro";
+import LightingWikiBreadcrumbs from "../../../components/LightingWikiBreadcrumbs.astro";
+import LightingWikiCard from "../../../components/LightingWikiCard.astro";
+import {
+  LIGHTING_WIKI_CATEGORIES,
+  LIGHTING_WIKI_CATEGORY_LABELS,
+  lightingWikiLetter,
+  sortLightingWikiTerms,
+} from "../../../utils/lightingWiki";
+import { siteConfig } from "../../../config";
+
+const terms = sortLightingWikiTerms((await getCollection("lightingWiki")).filter((term) => !term.data.draft));
+const letters = [...new Set(terms.map((term) => lightingWikiLetter(term.data.title)))];
+const categoryCounts = new Map(LIGHTING_WIKI_CATEGORIES.map((category) => [category, terms.filter((term) => term.data.category === category).length]));
+const canonicalUrl = `${siteConfig.site}/wiki/iluminacion/`;
+const collectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Wiki de iluminación profesional",
+  description: "Glosario de conceptos y magnitudes de iluminación profesional.",
+  url: canonicalUrl,
+  inLanguage: "es-ES",
+  hasPart: terms.map((term) => ({ "@type": "DefinedTerm", name: term.data.title, url: `${siteConfig.site}/wiki/iluminacion/${term.id}/` })),
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: siteConfig.title, item: siteConfig.site },
+    { "@type": "ListItem", position: 2, name: "Wiki de iluminación", item: canonicalUrl },
+  ],
+};
+---
+
+<InteriorLayout
+  title="Wiki de iluminación profesional | Eloy Martínez Cuesta"
+  description="Glosario de conceptos, magnitudes y soluciones de iluminación profesional."
+  slug="wiki/iluminacion"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)}></script>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+
+  <section class="lighting-wiki-page" aria-labelledby="lighting-wiki-title">
+    <LightingWikiBreadcrumbs items={[{ label: "Inicio", href: "/" }, { label: "Wiki de iluminación" }]} />
+    <header class="lighting-wiki-hero">
+      <p class="interior-eyebrow">WIKI / ILUMINACIÓN</p>
+      <h1 id="lighting-wiki-title" class="interior-title">Wiki de iluminación.</h1>
+      <p class="lighting-wiki-lede">Conceptos claros para entender mejor la luz.</p>
+      <p class="interior-intro">Un espacio de referencia para consultar términos, magnitudes y sistemas de iluminación profesional.</p>
+      <form class="lighting-wiki-search" data-wiki-search-form role="search">
+        <label for="lighting-wiki-search-input">Buscar en el wiki</label>
+        <input id="lighting-wiki-search-input" data-wiki-search type="search" placeholder="Por ejemplo: lumen, LED o color" autocomplete="off" />
+      </form>
+    </header>
+
+    <section class="lighting-wiki-navigation editorial-section" aria-labelledby="wiki-navigation-title">
+      <div class="lighting-wiki-section-heading">
+        <div>
+          <p class="interior-eyebrow">EXPLORAR</p>
+          <h2 id="wiki-navigation-title">Encontrá un punto de partida.</h2>
+        </div>
+        <p class="lighting-wiki-section-note">Navegá por categoría o saltá a una letra para descubrir los términos disponibles.</p>
+      </div>
+      <nav class="lighting-wiki-category-nav" aria-label="Categorías de iluminación">
+        {LIGHTING_WIKI_CATEGORIES.map((category) => (
+          categoryCounts.get(category) ? (
+            <a href="#wiki-terms-title">
+              <span>{LIGHTING_WIKI_CATEGORY_LABELS[category]}</span>
+              <small>{categoryCounts.get(category)} términos</small>
+            </a>
+          ) : (
+            <span class="lighting-wiki-category-nav-empty"><span>{LIGHTING_WIKI_CATEGORY_LABELS[category]}</span><small>Próximamente</small></span>
+          )
+        ))}
+      </nav>
+      <nav class="lighting-wiki-alphabet" aria-label="Índice alfabético">
+        {letters.length > 0 ? letters.map((letter) => <a href={`#letter-${letter.toLowerCase()}`}>{letter}</a>) : <span aria-disabled="true">El índice alfabético aparecerá al publicar los primeros términos.</span>}
+      </nav>
+    </section>
+
+    <section class="lighting-wiki-terms editorial-section" aria-labelledby="wiki-terms-title">
+      <div class="lighting-wiki-section-heading">
+        <div>
+          <p class="interior-eyebrow">DICCIONARIO</p>
+          <h2 id="wiki-terms-title">Términos de iluminación.</h2>
+        </div>
+        <p class="lighting-wiki-section-note">Cada entrada explicará el concepto, sus diferencias y su aplicación práctica.</p>
+      </div>
+      {terms.length > 0 ? (
+        <div class="lighting-wiki-groups" data-wiki-groups>
+          {letters.map((letter) => (
+            <section id={`letter-${letter.toLowerCase()}`} class="lighting-wiki-letter-group" aria-labelledby={`letter-title-${letter.toLowerCase()}`}>
+              <h3 id={`letter-title-${letter.toLowerCase()}`}>{letter}</h3>
+              <div class="lighting-wiki-grid">
+                {terms.filter((term) => lightingWikiLetter(term.data.title) === letter).map((term) => <LightingWikiCard term={term} />)}
+              </div>
+            </section>
+          ))}
+        </div>
+      ) : (
+        <div class="lighting-wiki-empty"><h3>El diccionario está tomando forma.</h3><p>Próximamente vas a encontrar aquí las primeras definiciones de iluminación.</p></div>
+      )}
+      {terms.length > 0 && <div class="lighting-wiki-empty" data-wiki-empty hidden><h3>No encontramos ese término.</h3><p>Probá con otra palabra, un alias o una magnitud relacionada.</p></div>}
+    </section>
+  </section>
+</InteriorLayout>
+
+<script>
+  const initializeWikiSearch = () => {
+    const search = document.querySelector<HTMLInputElement>("[data-wiki-search]");
+    if (!search || search.dataset.initialized === "true") return;
+    search.dataset.initialized = "true";
+    const items = [...document.querySelectorAll<HTMLElement>("[data-wiki-item]")];
+    const empty = document.querySelector<HTMLElement>("[data-wiki-empty]");
+    const normalize = (value: string) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    const update = () => {
+      const query = normalize(search.value.trim());
+      let visible = 0;
+      items.forEach((item) => {
+        const isVisible = !query || normalize(item.dataset.searchText ?? "").includes(query);
+        item.hidden = !isVisible;
+        if (isVisible) visible += 1;
+      });
+      if (empty) empty.hidden = visible !== 0;
+    };
+    search.addEventListener("input", update);
+  };
+  initializeWikiSearch();
+  document.addEventListener("astro:page-load", initializeWikiSearch);
+</script>

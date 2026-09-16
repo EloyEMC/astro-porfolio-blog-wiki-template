@@ -2587,6 +2587,61 @@ html.dark body {
 	color: var(--muted-ink);
 	line-height: 1.65;
 }
+.lighting-wiki-page, .lighting-wiki-term-page { max-width: 72rem; margin: 0 auto; }
+.lighting-wiki-breadcrumbs { margin-bottom: 2.5rem; color: var(--muted-ink); font-size: .7rem; letter-spacing: .08em; }
+.lighting-wiki-breadcrumbs ol { display: flex; flex-wrap: wrap; gap: .55rem; margin: 0; padding: 0; list-style: none; }
+.lighting-wiki-breadcrumbs li { display: flex; gap: .55rem; }
+.lighting-wiki-breadcrumbs a { text-decoration: none; }
+.lighting-wiki-breadcrumbs a:hover, .lighting-wiki-breadcrumbs a:focus { color: var(--gold); }
+.lighting-wiki-hero { padding-bottom: 4rem; border-bottom: 1px solid rgba(241,238,232,.16); }
+.lighting-wiki-lede { max-width: 38rem; margin: 0 0 1rem; color: var(--paper); font-size: clamp(1.3rem,2.5vw,2rem); }
+.lighting-wiki-section-heading { display: flex; justify-content: space-between; gap: 2rem; align-items: end; margin-bottom: 2rem; }
+.lighting-wiki-section-heading h2 { margin: .65rem 0 0; font-size: clamp(1.5rem,3vw,2.5rem); }
+.lighting-wiki-section-note { max-width: 25rem; margin: 0; color: var(--muted-ink); }
+.lighting-wiki-category-nav { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 2rem; border-top: 1px solid rgba(241,238,232,.16); }
+.lighting-wiki-category-nav a, .lighting-wiki-category-nav-empty { display: flex; justify-content: space-between; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid rgba(241,238,232,.16); color: var(--paper); text-decoration: none; }
+.lighting-wiki-category-nav-empty { color: var(--muted-ink); }
+.lighting-wiki-category-nav a:hover, .lighting-wiki-category-nav a:focus { color: var(--gold); }
+.lighting-wiki-category-nav small { color: var(--muted-ink); }
+.lighting-wiki-alphabet { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 2rem; color: var(--muted-ink); }
+.lighting-wiki-alphabet a { display: grid; place-items: center; width: 2rem; height: 2rem; border: 1px solid rgba(241,238,232,.2); color: var(--paper); text-decoration: none; }
+.lighting-wiki-alphabet a:hover, .lighting-wiki-alphabet a:focus { border-color: var(--gold); color: var(--gold); }
+.lighting-wiki-empty { padding: 3rem 2rem; border: 1px dashed rgba(199,154,87,.55); background: #171715; }
+.lighting-wiki-empty h3 { margin-top: 0; }
+.lighting-wiki-empty p { margin-bottom: 0; color: var(--muted-ink); }
+.lighting-wiki-groups { display: grid; gap: 3rem; }
+.lighting-wiki-letter-group > h3 { margin: 0 0 1rem; color: var(--gold); font-size: 1.7rem; }
+.lighting-wiki-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
+.lighting-wiki-card { padding: 1.5rem; border: 1px solid rgba(241,238,232,.16); background: #171715; }
+.lighting-wiki-card h3 { display: flex; justify-content: space-between; gap: 1rem; margin: .7rem 0; font-size: 1.35rem; }
+.lighting-wiki-card h3 a { text-decoration: none; }
+.lighting-wiki-card h3 a:hover, .lighting-wiki-card h3 a:focus { color: var(--gold); }
+.lighting-wiki-card p:not(.interior-eyebrow) { color: var(--muted-ink); }
+.lighting-wiki-card-symbol { color: var(--gold); font-size: .9rem; }
+.lighting-wiki-card-link { display: inline-block; margin-top: .8rem; color: var(--paper); font-size: .75rem; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
+.lighting-wiki-search { display: grid; gap: .5rem; max-width: 38rem; margin-top: 2rem; }
+.lighting-wiki-search label { color: var(--muted-ink); font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; }
+.lighting-wiki-search input { width: 100%; padding: .9rem 1rem; border: 1px solid rgba(241,238,232,.25); background: #171715; color: var(--paper); font: inherit; }
+.lighting-wiki-empty-inline { color: var(--muted-ink); }
+.lighting-wiki-relations { margin-top: 4rem; }
+.lighting-wiki-article-links { display: grid; gap: .75rem; }
+.lighting-wiki-article-links a { display: grid; gap: .35rem; padding: 1rem 0; border-bottom: 1px solid rgba(241,238,232,.16); color: var(--paper); text-decoration: none; }
+.lighting-wiki-article-links a:hover, .lighting-wiki-article-links a:focus { color: var(--gold); }
+.lighting-wiki-article-links span { color: var(--muted-ink); }
+@media (max-width: 680px) { .lighting-wiki-grid { grid-template-columns: 1fr; } }
+.lighting-wiki-card-link:hover, .lighting-wiki-card-link:focus { color: var(--gold); }
+.lighting-wiki-term-header { padding-bottom: 3rem; border-bottom: 1px solid rgba(241,238,232,.16); }
+.lighting-wiki-term-definition { max-width: 42rem; color: var(--paper); font-size: 1.2rem; line-height: 1.55; }
+.lighting-wiki-facts { display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 2rem 0 0; }
+.lighting-wiki-facts div { min-width: 8rem; }
+.lighting-wiki-facts dt { color: var(--gold); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; }
+.lighting-wiki-facts dd { margin: .35rem 0 0; color: var(--paper); }
+.lighting-wiki-figure { margin: 3rem 0; }
+.lighting-wiki-figure img { display: block; max-width: 100%; height: auto; }
+.lighting-wiki-figure figcaption { margin-top: .7rem; color: var(--muted-ink); font-size: .85rem; }
+.lighting-wiki-body { max-width: 46rem; margin-top: 3rem; }
+@media (max-width: 700px) { .lighting-wiki-section-heading, .lighting-wiki-category-nav, .lighting-wiki-grid { display: block; } .lighting-wiki-section-note { margin-top: 1rem; } .lighting-wiki-card { margin-top: 1rem; } }
+
 .lighting-application__conclusion {
 	margin: 2rem 0;
 	border-left: 2px solid var(--gold);

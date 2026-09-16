@@ -6,11 +6,11 @@ shortDefinition: "La luminancia describe la luz que una superficie o fuente pres
 aliases: ["luminancia fotométrica"]
 unit: "candela por metro cuadrado"
 symbol: "cd/m²"
-image: "/images/wiki/iluminacion/real/luminancia.webp"
-imageAlt: "Composición editorial de una fotografía real relacionada con luminancia, con texto explicativo en español."
-imageCaption: "Fotografía real con texto editorial superpuesto sobre luminancia; no mide ni permite deducir por sí sola sus propiedades o magnitudes técnicas."
-imageCredit: "Archivo del sitio de Eloy Martínez Cuesta."
-imageRights: "Recurso fotográfico local existente de Archivo del sitio de Eloy Martínez Cuesta; composición editorial con texto superpuesto, sin contenido sintético."
+image: "/images/wiki/iluminacion/fichas/luminancia.png"
+imageAlt: "Observadora frente a una superficie luminosa en un interior, junto a una ficha sobre luminancia."
+imageCaption: "La luminancia expresa la luz que una superficie presenta hacia una dirección, en cd/m²."
+imageCredit: "Imagen generada con OpenAI image_gen"
+imageRights: "Imagen generada con OpenAI image_gen; recurso original de uso editorial del sitio."
 relatedTerms: ["luz", "lux", "candela", "ugr"]
 relatedArticles: []
 sources:

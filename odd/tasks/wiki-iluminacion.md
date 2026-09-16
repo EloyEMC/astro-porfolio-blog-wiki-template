@@ -67,6 +67,12 @@ Evidence: 16 Spanish term entries under `src/content/wiki/iluminacion/` and 16 o
 
 Evidence: 18 controlled canonical wiki links were added across the 11 Spanish lighting-category articles. Wiki `relatedArticles` metadata was corrected to exact Astro IDs and reciprocal validity; parent normalized two missing trailing slashes in photometry links. Relationship audit found 0 invalid term/article references; `pnpm build` and `git diff --check` passed.
 
+### WIKI-010 — Codex-generated realistic lighting fichas
+- [x] Generate 16 realistic raster ficha images through the Codex image-generation worker.
+- [x] Add concise, accurate Spanish explanatory text inside each ficha and update frontmatter metadata.
+- [x] Remove the rejected provisional composites and keep zero SVG assets.
+- [x] Run build and focused image audit.
+
 ### WIKI-009 — Raster photo composites with explanatory text
 - [x] Create realistic raster/WebP composites from real local or authorized photographs, with readable Spanish explanatory labels.
 - [x] Point each term to its raster composite and remove any remaining SVG reference or file.
@@ -123,8 +129,6 @@ Evidence: final read-only verification passed `pnpm build` (80 pages), `git diff
 - WIKI-007 complete: the screenshot findings were addressed with scoped contrast fixes, professional SVG infographics, visible credits, and a content/accessibility audit.
 - WIKI-008 opened from the user's second visual review: replace generated diagrams with real authorized photography that matches the site's editorial style.
 - WIKI-008 complete locally; production deployment remains pending the user's normal `main`/GitHub Actions flow.
-- WIKI-009 complete locally: 16 raster WebP composites use real photographic backgrounds and embedded Spanish explanatory text; no SVG remains.
-- Current task: none.
-
-## Next step
-Review the new composites in the browser, then commit and push through the normal production workflow.
+- WIKI-009 superseded: the provisional photo composites were rejected by the user.
+- WIKI-010 opened: Codex image generation created 16 realistic raster ficha assets with integrated Spanish technical text.
+- Current task: WIKI-010.

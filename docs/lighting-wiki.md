@@ -68,12 +68,13 @@ Use images to explain a concept, not merely to decorate a page.
 ### Preferred order
 
 1. Authorized real DiSano or site-archive photography of products, installations, and applications.
-2. Existing real project photography from the site's archive when it materially improves understanding.
-3. A diagram or chart only when the concept cannot be explained honestly with a real image; label it clearly and keep it editorially consistent with the site.
+2. A realistic Codex/ChatGPT-generated raster ficha when no suitable real technical image exists; the asset and metadata must identify it as AI-generated.
+3. Existing real project photography from the site's archive when it materially improves understanding.
+4. A diagram or chart only when the concept cannot be explained honestly with a real image or ficha; never ship SVG for the wiki.
 
-Reuse a strong real photograph when an abstract quantity has no visible one-to-one representation. The caption must explain that the image illustrates an application, not that it directly measures the quantity.
+Use a real photograph for concrete products and projects. Use a generated raster ficha for abstract quantities or technical concepts when it can communicate the idea more clearly; keep the composition editorial, realistic, and text-led rather than decorative. Captions must state when an image illustrates a concept rather than directly measuring it.
 
-Keep new assets local and descriptive. The current wiki uses existing site assets rather than shipping a second generated-visual library.
+Keep new assets local and descriptive. The current wiki stores generated fichas as raster PNG assets and does not ship a generated SVG library.
 
 Every image needs:
 

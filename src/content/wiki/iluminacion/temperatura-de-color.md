@@ -6,11 +6,11 @@ shortDefinition: "La temperatura de color correlacionada (CCT) describe el aspec
 aliases: ["CCT", "temperatura de color correlacionada", "correlated colour temperature"]
 unit: "kelvin"
 symbol: "K"
-image: "/images/wiki/iluminacion/real/temperatura-de-color.webp"
-imageAlt: "Composición editorial de una fotografía real relacionada con temperatura de color, con texto explicativo en español."
-imageCaption: "Fotografía real con texto editorial superpuesto sobre temperatura de color; no mide ni permite deducir por sí sola sus propiedades o magnitudes técnicas."
-imageCredit: "Archivo del sitio de Eloy Martínez Cuesta."
-imageRights: "Recurso fotográfico local existente de Archivo del sitio de Eloy Martínez Cuesta; composición editorial con texto superpuesto, sin contenido sintético."
+image: "/images/wiki/iluminacion/fichas/temperatura-de-color.png"
+imageAlt: "Interior iluminado con luz cálida a un lado y luz fría al otro, acompañado de una ficha sobre temperatura de color."
+imageCaption: "La temperatura de color, expresada en kelvin, describe el aspecto cálido o frío de la luz."
+imageCredit: "Imagen generada con OpenAI image_gen"
+imageRights: "Imagen generada con OpenAI image_gen; recurso original de uso editorial del sitio."
 relatedTerms: ["cri-irc", "luz", "led"]
 relatedArticles: ["Qué es el ritmo circadiano y el HCL", "hormonas-de-la-felicidad"]
 sources:

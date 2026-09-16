@@ -6,11 +6,11 @@ shortDefinition: "La candela (cd) es la unidad básica del SI para la intensidad
 aliases: ["intensidad luminosa", "cd"]
 unit: "candela"
 symbol: "cd"
-image: "/images/wiki/iluminacion/real/candela.webp"
-imageAlt: "Composición editorial de una fotografía real relacionada con candela · cd, con texto explicativo en español."
-imageCaption: "Fotografía real con texto editorial superpuesto sobre candela · cd; no mide ni permite deducir por sí sola sus propiedades o magnitudes técnicas."
-imageCredit: "Archivo del sitio de Eloy Martínez Cuesta."
-imageRights: "Recurso fotográfico local existente de Archivo del sitio de Eloy Martínez Cuesta; composición editorial con texto superpuesto, sin contenido sintético."
+image: "/images/wiki/iluminacion/fichas/candela.png"
+imageAlt: "Proyector de laboratorio emitiendo un haz en una dirección, con una ficha que define la candela."
+imageCaption: "La candela, símbolo cd, mide la intensidad luminosa en una dirección."
+imageCredit: "Imagen generada con OpenAI image_gen"
+imageRights: "Imagen generada con OpenAI image_gen; recurso original de uso editorial del sitio."
 relatedTerms: ["lumen", "lux", "luminancia", "fotometria"]
 relatedArticles: []
 sources:

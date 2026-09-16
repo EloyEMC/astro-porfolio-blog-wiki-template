@@ -4,11 +4,11 @@ slug: "lampara"
 category: "LED and sources"
 shortDefinition: "Una lámpara es una fuente de luz eléctrica o de otro tipo, reemplazable o integrada, que convierte energía en radiación visible y no visible."
 aliases: ["fuente de luz", "lamp"]
-image: "/images/wiki/iluminacion/real/lampara.webp"
-imageAlt: "Composición editorial de una fotografía real relacionada con lámpara, con texto explicativo en español."
-imageCaption: "Fotografía real con texto editorial superpuesto sobre lámpara; no mide ni permite deducir por sí sola sus propiedades o magnitudes técnicas."
-imageCredit: "DiSano."
-imageRights: "Recurso fotográfico local existente de DiSano; composición editorial con texto superpuesto, sin contenido sintético."
+image: "/images/wiki/iluminacion/fichas/lampara.png"
+imageAlt: "Lámpara reemplazable encendida junto al portalámparas de una luminaria, con una ficha que la identifica como fuente de luz."
+imageCaption: "La lámpara es la fuente que convierte energía en luz."
+imageCredit: "Imagen generada con OpenAI image_gen"
+imageRights: "Imagen generada con OpenAI image_gen; recurso original de uso editorial del sitio."
 relatedTerms: ["bombilla", "luminaria", "led", "luz"]
 relatedArticles: []
 sources:

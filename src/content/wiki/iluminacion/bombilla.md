@@ -4,11 +4,11 @@ slug: "bombilla"
 category: "LED and sources"
 shortDefinition: "Bombilla es el nombre habitual de una lámpara de formato doméstico, normalmente con casquillo, destinada a sustituirse como unidad."
 aliases: ["bombillo", "bombilla LED", "lámpara doméstica"]
-image: "/images/wiki/iluminacion/real/bombilla.webp"
-imageAlt: "Composición editorial de una fotografía real relacionada con bombilla, con texto explicativo en español."
-imageCaption: "Fotografía real con texto editorial superpuesto sobre bombilla; no mide ni permite deducir por sí sola sus propiedades o magnitudes técnicas."
-imageCredit: "Archivo del sitio de Eloy Martínez Cuesta."
-imageRights: "Recurso fotográfico local existente de Archivo del sitio de Eloy Martínez Cuesta; composición editorial con texto superpuesto, sin contenido sintético."
+image: "/images/wiki/iluminacion/fichas/bombilla.png"
+imageAlt: "Bombilla LED doméstica con casquillo roscado sobre una peana, acompañada de una ficha explicativa."
+imageCaption: "La bombilla es una lámpara doméstica reemplazable con casquillo."
+imageCredit: "Imagen generada con OpenAI image_gen"
+imageRights: "Imagen generada con OpenAI image_gen; recurso original de uso editorial del sitio."
 relatedTerms: ["lampara", "luminaria", "led"]
 relatedArticles: []
 sources:

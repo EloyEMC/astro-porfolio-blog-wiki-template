@@ -4,11 +4,11 @@ slug: "luz"
 category: "Fundamentals"
 shortDefinition: "La luz es la radiación electromagnética que puede producir una respuesta visual y que, en iluminación, se describe también mediante magnitudes fotométricas."
 aliases: ["luz visible", "radiación visible"]
-image: "/images/wiki/iluminacion/real/luz.webp"
-imageAlt: "Composición editorial de una fotografía real relacionada con luz, con texto explicativo en español."
-imageCaption: "Fotografía real de archivo del sitio de eloy martínez cuesta. con texto editorial superpuesto; no mide ni permite deducir por sí sola propiedades o magnitudes técnicas."
-imageCredit: "Archivo del sitio de Eloy Martínez Cuesta."
-imageRights: "Recurso fotográfico local existente (Archivo del sitio de Eloy Martínez Cuesta.); composición raster editorial con texto superpuesto, sin contenido sintético."
+image: "/images/wiki/iluminacion/fichas/luz.png"
+imageAlt: "Rayo de luz cálida visible en un interior arquitectónico, junto a una ficha que define la luz como radiación visible."
+imageCaption: "La luz es radiación capaz de producir una respuesta visual."
+imageCredit: "Imagen generada con OpenAI image_gen"
+imageRights: "Imagen generada con OpenAI image_gen; recurso original de uso editorial del sitio."
 relatedTerms: ["iluminacion", "luminancia", "fotometria"]
 relatedArticles: ["Que-es-la-luz", "Qué es el ritmo circadiano y el HCL", "hormonas-de-la-felicidad", "iluminacion-no-solo-iluminacion"]
 sources:

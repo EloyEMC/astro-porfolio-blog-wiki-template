@@ -19,8 +19,8 @@ interface Props {
 }
 
 const {
-  title = "Eloy Martínez Cuesta",
-  description = "Iluminación, tecnología y negocio con Eloy Martínez Cuesta.",
+  title = "Generic Author",
+  description = "Iluminación, tecnología y negocio con Generic Author.",
   slug = "iluminacion",
   person,
   image,
@@ -35,10 +35,10 @@ const {
     <SEOPage title={title} description={description} siteUrl={siteConfig.site} defaultImage={siteConfig.image || ""} image={image} image_alt={image_alt ?? siteConfig.image_alt} keywords={keywords} slug={slug} person={person} />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/favicon-emc-512.png?v=4" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-emc-32.png?v=4" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-emc-16.png?v=4" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-emc-v4.png?v=1" />
+    <link rel="icon" type="image/png" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg" />
     <ClientRouter />
   </head>
   <body class="interior-shell">

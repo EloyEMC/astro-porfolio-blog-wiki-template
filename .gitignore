@@ -31,3 +31,6 @@ pnpm-debug.log*
 .codegraph/
 
 editorial/calendar.yaml
+
+# Local demo video
+docs/demo.mp4

@@ -5,17 +5,17 @@
 	animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-::view-transition-group(eloy-portrait) {
+::view-transition-group(generic-portrait) {
 	animation-duration: 900ms;
 	animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-::view-transition-image-pair(eloy-portrait) {
+::view-transition-image-pair(generic-portrait) {
 	isolation: isolate;
 }
 
-::view-transition-old(eloy-portrait),
-::view-transition-new(eloy-portrait) {
+::view-transition-old(generic-portrait),
+::view-transition-new(generic-portrait) {
 	animation-duration: 900ms;
 	animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
 	backface-visibility: hidden;
@@ -81,7 +81,7 @@ html.dark body {
 	border-right: 1px solid rgba(241, 238, 232, 0.14);
 	background:
 		linear-gradient(rgba(8, 8, 8, 0.78), rgba(8, 8, 8, 0.88)),
-		url("/home-background.webp") center / cover no-repeat;
+		url("/abstract-card.svg") center / cover no-repeat;
 	overflow: hidden;
 }
 .site-sidebar::before {
@@ -359,7 +359,7 @@ html.dark body {
 	position: relative;
 	min-height: 100svh;
 	overflow: hidden;
-	background: #110f0d url("/home-background.webp") center / cover no-repeat;
+	background: #110f0d url("/abstract-card.svg") center / cover no-repeat;
 	color: var(--paper);
 }
 .home-index::before {

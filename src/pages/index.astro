@@ -5,21 +5,21 @@ import { siteConfig, verifiedPerson } from "../config";
 
 <HomeBaseLayout
   siteUrl={siteConfig.site}
-  title="Eloy Martínez Cuesta | Iluminación, tecnología y negocio"
-  description="Profesional de la iluminación con más de 20 años de experiencia en proyectos, producto y negocio. Tecnología, software e IA aplicados a problemas reales."
+  title="Your Site | Portfolio, technology, and ideas"
+  description="A generic editorial portfolio for practical projects, thoughtful writing, and useful references."
   person={verifiedPerson}
 >
   <section class="home-index" aria-labelledby="home-title">
     <header class="home-header">
-      <img class="home-logo" src="/logo-emc-256.webp" alt="" aria-hidden="true" width="256" height="171" />
+      <img class="home-logo" src="/abstract-card.svg" alt="" aria-hidden="true" width="256" height="171" />
       <span class="home-header-name">{siteConfig.title.toUpperCase()}</span>
     </header>
 
     <div class="home-architecture" aria-hidden="true"></div>
     <img
           class="home-portrait"
-          src="/eloy_feria_iluminacion-2.webp"
-          srcset="/eloy_feria_iluminacion-2-mobile.webp 432w, /eloy_feria_iluminacion-2.webp 864w"
+          src="/abstract-card.svg"
+          srcset="/abstract-card.svg 432w, /abstract-card.svg 864w"
           sizes="(max-width: 800px) 55vw, 45vw"
           alt=""
           aria-hidden="true"
@@ -27,21 +27,21 @@ import { siteConfig, verifiedPerson } from "../config";
           height="1184"
           fetchpriority="high"
           loading="eager"
-          transition:name="eloy-portrait"
+          transition:name="generic-portrait"
         />
     <div class="home-copy">
-      <h1 id="home-title"><span>Iluminación.</span><span>Tecnología.</span><span>Negocio.</span></h1>
-      <p class="home-subtitle"><span>+20 años desarrollando</span><span class="subtitle-overflow"> soluciones para proyectos reales.</span></p>
+      <h1 id="home-title"><span>Projects.</span><span>Technology.</span><span>Ideas.</span></h1>
+      <p class="home-subtitle"><span>A considered space for</span><span class="subtitle-overflow"> useful work and writing.</span></p>
     </div>
     <nav class="home-index-list" aria-label="Inicio, categorías, wiki, blog y páginas">
       <a href="/"><span>00</span>HOME</a>
-      <a href="/iluminacion/" data-kind="category"><span>01</span>ILUMINACIÓN</a>
-      <a href="/tecnologia/" data-kind="category"><span>02</span>TECNOLOGÍA</a>
-      <a href="/proyectos/" data-kind="category"><span>03</span>PROYECTOS</a>
-      <a href="/articulos/" data-kind="blog"><span>04</span>ARTÍCULOS</a>
-      <a href="/wiki/iluminacion/" data-kind="wiki"><span>05</span>WIKI ILUMINACIÓN</a>
-      <a href="/trayectoria/" data-kind="page"><span>06</span>TRAYECTORIA</a>
-      <a href="/sobre-mi/" data-kind="page"><span>07</span>SOBRE MÍ</a>
+      <a href="/iluminacion/" data-kind="category"><span>01</span>LIGHTING</a>
+      <a href="/tecnologia/" data-kind="category"><span>02</span>TECHNOLOGY</a>
+      <a href="/projects/" data-kind="category"><span>03</span>PROJECTS</a>
+      <a href="/articulos/" data-kind="blog"><span>04</span>ARTICLES</a>
+      <a href="/wiki/iluminacion/" data-kind="wiki"><span>05</span>REFERENCE WIKI</a>
+      <a href="/trayectoria/" data-kind="page"><span>06</span>JOURNEY</a>
+      <a href="/sobre-mi/" data-kind="page"><span>07</span>ABOUT</a>
     </nav>
     <div class="home-social" aria-label="Contacto y redes sociales">
       <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -49,7 +49,7 @@ import { siteConfig, verifiedPerson } from "../config";
       {siteConfig.social.email && <a href={`mailto:${siteConfig.social.email}`}>Contacto</a>}
     </div>
     <div class="home-swipe-cue" data-home-swipe-cue hidden>
-      <img src="/swipe.svg" alt="Deslizá hacia la izquierda para ver Iluminación" />
+      <img src="/abstract-card.svg" alt="Swipe left to open Lighting" />
     </div>
   </section>
 
@@ -121,7 +121,7 @@ import { siteConfig, verifiedPerson } from "../config";
   <script>
     import { navigate } from "astro:transitions/client";
 
-    const HOME_SWIPE_SEEN_KEY = "eloy-swipe-hint-seen-v3";
+    const HOME_SWIPE_SEEN_KEY = "generic-swipe-hint-seen-v1";
     const SWIPE_HINT_DURATION = 5000;
     const SWIPE_THRESHOLD = 84;
     const MAX_SWIPE_DISTANCE = 180;

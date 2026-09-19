@@ -1,141 +1,70 @@
-# Eloy Martínez Cuesta
+# Astro Portfolio + Blog + Wiki Template
 
-Sitio web personal de Eloy Martínez Cuesta, construido con Astro alrededor de tres áreas de trabajo:
+A generic, buildable Astro starter for a portfolio, editorial blog, and optional knowledge wiki. It contains example content and placeholder assets only—replace them before publishing.
 
-**Iluminación · Tecnología · Negocio**
+Created by [Eloy Martínez Cuesta](https://eloymartinezcuesta.com).
 
-El proyecto ya no es una plantilla genérica de blog. Es una web editorial y profesional que reúne experiencia en iluminación, proyectos reales, herramientas digitales, software, laboratorio y artículos técnicos.
+## Quick start
 
-## Estado del proyecto
-
-El sitio está en desarrollo activo. La arquitectura visual, el contenido y las páginas principales se han adaptado a la identidad de Eloy y a su forma de trabajar: entender primero el problema y construir después una solución útil.
-
-La futura extracción de una plantilla reutilizable se realizará en una fase posterior. Este repositorio representa actualmente el sitio personal, no una plantilla independiente.
-
-## Secciones principales
-
-- `/` — Página de inicio y navegación principal.
-- `/iluminacion/` — Experiencia y conocimiento aplicado a la iluminación profesional.
-- `/tecnologia/` — Software, automatización, datos, APIs y herramientas para problemas reales.
-- `/proyectos/` — Proyectos de iluminación, herramientas digitales, open source y laboratorio.
-- `/articulos/` — Índice de artículos.
-- `/trayectoria/` — Recorrido profesional.
-- `/sobre-mi/` — Presentación personal y contacto.
-
-## Stack
-
-- [Astro](https://astro.build/) 5
-- TypeScript
-- Markdown y MDX para los artículos
-- Tailwind CSS y CSS específico por página
-- `@astrojs/rss` para el feed RSS
-- `@astrojs/sitemap` para el sitemap
-- JSON-LD y metadatos SEO reutilizables
-- Cloudflare Pages para el despliegue
-
-## Desarrollo local
-
-### Requisitos
-
-- Node.js `>=18.20.8`
-- npm
-
-### Instalación
+Requirements: Node.js `>=22.12.0` and npm.
 
 ```bash
 npm install
-```
-
-### Servidor de desarrollo
-
-```bash
 npm run dev
-```
-
-La web estará disponible en `http://localhost:4321`.
-
-### Compilar el sitio
-
-```bash
 npm run build
 ```
 
-### Vista previa de producción
+The local site runs at `http://localhost:4321`.
 
-```bash
-npm run preview
-```
+## Customization
 
-## Contenido
+1. Edit `src/config.ts` for the site name, URL, description, social links, SEO image, and homepage filters.
+2. Replace `src/authors.js` with your author profiles.
+3. Add Markdown or MDX posts under `src/content/blog/` and update the collection loader in `src/content.config.ts` if you want a different content pattern.
+4. Add wiki entries under `src/content/wiki/iluminacion/`, or rename the collection and route for your subject area.
+5. Replace the SVG placeholders in `public/` with your own optimized assets.
+6. Update navigation and visual tokens in `src/components/` and `src/styles/`.
 
-Los artículos viven en `src/content/blog/` y utilizan frontmatter validado por el esquema de contenido del proyecto.
+All URLs, names, social handles, analytics IDs, and legal text in this repository are examples. Search, RSS, sitemap, responsive navigation, SEO metadata, article layouts, tag/archive routes, and the wiki pattern are designed to be extended rather than treated as finished product copy.
 
-Para crear un artículo nuevo:
-
-```bash
-npm run new-post nombre-del-articulo
-```
-
-La configuración editorial y de sitio se encuentra en:
-
-- `src/config.ts`
-- `src/content/config.ts`
-
-## Estructura del proyecto
+## Project map
 
 ```text
-eloy-blog/
-├── public/                  # Imágenes, fuentes y otros recursos estáticos
-├── scripts/                 # Scripts de apoyo, incluido el creador de artículos
-├── src/
-│   ├── components/          # Componentes Astro reutilizables
-│   ├── content/blog/        # Artículos en Markdown/MDX
-│   ├── layouts/             # Layouts de inicio, interiores y artículos
-│   ├── pages/               # Rutas públicas del sitio
-│   ├── styles/              # Estilos globales y del sistema visual
-│   ├── utils/               # Utilidades de contenido y SEO
-│   ├── config.ts             # Configuración editorial y datos del sitio
-│   └── content/config.ts     # Validación de colecciones de contenido
-├── astro.config.mjs
-├── package.json
-└── README.md
+src/
+├── components/       # Navigation, search, SEO, cards, and shared UI
+├── content/          # Blog and optional wiki Markdown collections
+├── layouts/          # Site, home, interior, and article shells
+├── pages/            # Portfolio, blog, tags, archive, API, and wiki routes
+├── styles/           # Global and page-level styles
+├── config.ts         # Site identity and reusable settings
+└── content.config.ts # Content schemas and loaders
+public/               # Curated generic SVG placeholders
+astro.config.mjs      # Markdown, sitemap, and Tailwind integration
+wrangler.toml         # Optional Cloudflare Pages settings
 ```
 
-## Principios del proyecto
+## Screenshots
 
-- El contenido y la experiencia de lectura tienen prioridad sobre la lógica de plantilla.
-- La identidad visual debe mantenerse sobria, editorial y orientada a la claridad.
-- Las páginas deben explicar problemas y soluciones reales, no presentar tecnología como decoración.
-- Las URLs y los artículos existentes se mantienen estables salvo decisión explícita.
-- Los schemas SEO se construyen de forma centralizada y reutilizable.
-- Las imágenes deben optimizarse antes de incorporarse a `public/`.
+The template includes representative captures of the generic example site:
 
-## Despliegue
+| Home | Blog | Wiki |
+| --- | --- | --- |
+| [![Home](docs/screenshots/home.png)](docs/screenshots/home.png) | [![Blog](docs/screenshots/blog.png)](docs/screenshots/blog.png) | [![Wiki](docs/screenshots/wiki.png)](docs/screenshots/wiki.png) |
 
-El sitio se compila como un proyecto Astro estático y se despliega en Cloudflare Pages.
+## Demo video
 
-Configuración principal de salida:
+GitHub does not render a YouTube iframe inside a README. Upload `docs/demo.mp4` to a GitHub issue, discussion, or release, then replace the URL below with the generated asset URL:
 
-```toml
-pages_build_output_dir = "dist"
+```md
+[![Watch the template walkthrough](docs/screenshots/home.png)](GITHUB_VIDEO_ASSET_URL)
 ```
 
-El comando de compilación y la versión de Node se configuran en el panel de Cloudflare Pages.
+The local demo is generated from the three captures. It is intentionally ignored by Git so the repository does not carry a binary video; GitHub hosts the uploaded asset instead.
 
-## Próxima fase: extraer una plantilla
+## Deployment
 
-Cuando la identidad y la arquitectura del sitio estén suficientemente consolidadas, se podrá separar lo reutilizable de lo específico de Eloy para crear una plantilla independiente.
+Run `npm run build` and deploy the generated `dist/` directory to any static host, including Cloudflare Pages.
 
-Esa plantilla deberá extraer, entre otros elementos:
+## License
 
-- layouts y componentes visuales reutilizables;
-- sistema de navegación y páginas interiores;
-- configuración SEO y JSON-LD;
-- colección de artículos y scripts editoriales;
-- documentación de instalación y personalización.
-
-Esa extracción no forma parte todavía de este repositorio: primero se termina y estabiliza el sitio real.
-
-## Licencia
-
-Este repositorio contiene el sitio personal y sus contenidos. La licencia y las condiciones de reutilización se definirán junto con la futura plantilla.
+MIT. Copyright © 2026 [Eloy Martínez Cuesta](https://eloymartinezcuesta.com). Replace the example identity, content, and links before redistribution.

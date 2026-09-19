@@ -1,48 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
-import BlogPost from '../../layouts/BlogPost.astro';
-import { siteConfig } from '../../config'; // Importa siteConfig
-import { filterPublishedPosts, getRandomPosts, getRelatedPosts } from '../../utils/posts';
-
-
-
-
-export async function getStaticPaths() {
-  const siteUrl = siteConfig.site; // Usa siteConfig.site
-  const defaultImage = siteConfig.defaultImage || siteConfig.image || "";
-
-      const posts = filterPublishedPosts(await getCollection('blog'));
-      return posts.map((post) => {
-        const relatedPosts = getRelatedPosts(posts, post);
-        const randomPosts = getRandomPosts(posts, post, relatedPosts);
-
-        return {
-          params: { slug: post.id },
-          props: {
-            post,
-            siteUrl,
-            defaultImage,
-            relatedPosts,
-            randomPosts,
-            author: post.data.author,
-          },
-        };
-      });
-
-}
-
-const { post, siteUrl, defaultImage, author, relatedPosts, randomPosts } = Astro.props;
-const { Content, headings } = await render(post);
+import BaseLayout from '../../layouts/BaseLayout.astro';
+export async function getStaticPaths() { return (await getCollection('blog')).filter((post) => !post.data.draft).map((post) => ({ params: { slug: post.id }, props: { post } })); }
+const { post } = Astro.props; const { Content } = await render(post);
 ---
-
-    <BlogPost
-      post={post}
-      siteUrl={siteUrl}
-      defaultImage={defaultImage}
-      author={author}
-      headings={headings}
-      relatedPosts={relatedPosts}
-      randomPosts={randomPosts}
-    >
-  <Content />
-</BlogPost>
+<BaseLayout title={post.data.title} description={post.data.description} slug={`blog/${post.id}`}><article class="editorial-article"><p class="interior-eyebrow">{post.data.category} · {post.data.date.toLocaleDateString()}</p><h1>{post.data.title}</h1>{post.data.description && <p class="lede">{post.data.description}</p>}<div class="prose"><Content /></div></article></BaseLayout>

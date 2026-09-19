@@ -11,7 +11,7 @@ const sections = [
   { number: "00", label: "HOME", href: "/", kind: "home" },
   { number: "01", label: "ILUMINACIÓN", href: "/iluminacion/", kind: "category" },
   { number: "02", label: "TECNOLOGÍA", href: "/tecnologia/", kind: "category" },
-  { number: "03", label: "PROYECTOS", href: "/proyectos/", kind: "category" },
+  { number: "03", label: "PROJECTS", href: "/projects/", kind: "category" },
   { number: "04", label: "ARTÍCULOS", href: "/articulos/", kind: "blog" },
   { number: "05", label: "WIKI ILUMINACIÓN", href: "/wiki/iluminacion/", kind: "wiki" },
   { number: "06", label: "TRAYECTORIA", href: "/trayectoria/", kind: "page" },
@@ -22,15 +22,15 @@ const sections = [
 <aside id="_sidebar" class="site-sidebar" aria-label="Navegación principal">
   <div class="sidebar-top">
     <a class="sidebar-brand" href="/" aria-label={`${siteConfig.title}, inicio`}>
-      <img class="sidebar-logo" src="/logo-emc-256.webp" alt="" aria-hidden="true" width="256" height="171" />
+      <img class="sidebar-logo" src="/abstract-card.svg" alt="" aria-hidden="true" width="256" height="171" />
       <span class="sidebar-brand-name">{siteConfig.title.toUpperCase()}</span>
     </a>
     {!omitPortrait && (
-      <img class="sidebar-portrait" src="/eloy_feria_iluminacion-2.webp" alt="Eloy Martínez Cuesta" transition:name="eloy-portrait" />
+      <img class="sidebar-portrait" src="/abstract-card.svg" alt="Generic Author" transition:name="generic-portrait" />
     )}
   </div>
   <p class="sidebar-swipe-cue" data-swipe-indicator hidden>
-    <img src="/swipe.svg" alt="Deslizá desde el borde izquierdo para cerrar el menú" />
+    <img src="/abstract-card.svg" alt="Swipe from the left edge to close the menu" />
   </p>
   <nav class="sidebar-nav">
     <p class="sidebar-kicker">Índice</p>
@@ -63,7 +63,7 @@ const sections = [
     const SWIPE_VELOCITY = 0.45;
         let gesture = null;
         let lastPointerTime = -Infinity;
-        const SWIPE_HINT_KEY = "eloy-swipe-hint-seen-v3";
+        const SWIPE_HINT_KEY = "generic-swipe-hint-seen-v1";
         const SWIPE_HINT_DURATION = 5000;
         let swipeHintTimer = null;
 

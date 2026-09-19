@@ -57,13 +57,11 @@ The repository includes reference captures from the original implementation at [
 
 ## Demo video
 
-GitHub does not render a YouTube iframe inside a README. Upload `docs/demo.mp4` to a GitHub issue, discussion, or release, then replace the URL below with the generated asset URL:
+GitHub does not render a YouTube iframe inside a README, so the video is linked through its thumbnail:
 
-```md
-[![Watch the template walkthrough](docs/screenshots/home.png)](GITHUB_VIDEO_ASSET_URL)
-```
+[![Watch the Astro template walkthrough](https://img.youtube.com/vi/IjI0EbcuNrw/maxresdefault.jpg)](https://youtu.be/IjI0EbcuNrw)
 
-The local demo is generated from the three captures. It is intentionally ignored by Git so the repository does not carry a binary video; GitHub hosts the uploaded asset instead.
+The local demo video is also generated from the reference captures as `docs/demo.mp4`. It is intentionally ignored by Git so the repository does not carry a binary video.
 
 ## Deployment
 

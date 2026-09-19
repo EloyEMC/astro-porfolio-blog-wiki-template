@@ -45,11 +45,15 @@ wrangler.toml         # Optional Cloudflare Pages settings
 
 ## Screenshots
 
-The template includes representative captures of the generic example site:
+The repository includes reference captures from the original implementation at [eloymartinezcuesta.com](https://eloymartinezcuesta.com). They show the visual direction the clean template preserves:
 
-| Home | Blog | Wiki |
+| Home | Articles | Wiki |
 | --- | --- | --- |
-| [![Home](docs/screenshots/home.png)](docs/screenshots/home.png) | [![Blog](docs/screenshots/blog.png)](docs/screenshots/blog.png) | [![Wiki](docs/screenshots/wiki.png)](docs/screenshots/wiki.png) |
+| [![Home](docs/screenshots/home-real.png)](docs/screenshots/home-real.png) | [![Articles](docs/screenshots/articles-real.png)](docs/screenshots/articles-real.png) | [![Wiki](docs/screenshots/wiki-real.png)](docs/screenshots/wiki-real.png) |
+
+| Article detail |
+| --- |
+| [![Article detail](docs/screenshots/article-real.png)](docs/screenshots/article-real.png) |
 
 ## Demo video
 

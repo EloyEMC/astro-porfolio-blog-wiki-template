@@ -4,6 +4,10 @@ A generic, buildable Astro starter for a portfolio, editorial blog, and optional
 
 Created by [Eloy Martínez Cuesta](https://eloymartinezcuesta.com).
 
+<p align="center">
+  <a href="docs/screenshots/home-real.webp"><img src="docs/screenshots/home-real.webp" alt="Home page of the reference implementation" width="1100" /></a>
+</p>
+
 ## Quick start
 
 Requirements: Node.js `>=22.12.0` and npm.
@@ -49,11 +53,11 @@ The repository includes reference captures from the original implementation at [
 
 | Home | Articles | Wiki |
 | --- | --- | --- |
-| [![Home](docs/screenshots/home-real.png)](docs/screenshots/home-real.png) | [![Articles](docs/screenshots/articles-real.png)](docs/screenshots/articles-real.png) | [![Wiki](docs/screenshots/wiki-real.png)](docs/screenshots/wiki-real.png) |
+| [![Home](docs/screenshots/home-real.webp)](docs/screenshots/home-real.webp) | [![Articles](docs/screenshots/articles-real.webp)](docs/screenshots/articles-real.webp) | [![Wiki](docs/screenshots/wiki-real.webp)](docs/screenshots/wiki-real.webp) |
 
 | Article detail |
 | --- |
-| [![Article detail](docs/screenshots/article-real.png)](docs/screenshots/article-real.png) |
+| [![Article detail](docs/screenshots/article-real.webp)](docs/screenshots/article-real.webp) |
 
 ## Demo video
 
